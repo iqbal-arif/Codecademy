@@ -19,3 +19,11 @@ A:
 ```
 <p>I'm ready to rock and roll!</p>
 ```
+
+Q3: Which of the following elements will directly affect the vertical spacing in an HTML layout?
+
+A: <br>
+
+Q4: Which of the following tags would contain the HTML for a web page’s visible content?
+
+A: <body>
