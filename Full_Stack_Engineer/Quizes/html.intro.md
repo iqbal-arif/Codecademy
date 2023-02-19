@@ -64,4 +64,36 @@ Q9: What is the correct definition of an HTML element?
 
 A: An HTML tag and the content that it contains or marks up.
 
-Q10:
+Q10: What HTML code will most web browsers display as italics?
+
+A:Text written between <em></em> tags will be italicized.
+
+```
+<em>Hello</em>
+```
+
+Q12: The following code is supposed to display an image, but fails to do so. Why?
+
+```
+<img https://www.example.com/laptop.jpg />
+```
+
+A: The src attribute is missing and must be set equal to the image URL, enclosed in double quotation marks.
+
+Q13: Which of the following is valid HTML for the heading tag with the smallest size and lowest rank in the hierarchy?
+
+A: <h6>: HTML supports headings from ranging from <h1> (biggest) to <h6> (smallest).
+
+Q14: Which element is the parent of <p>My Paragraph</p>?
+
+```
+<body>
+  <p>Paragraph 1</p>
+  <div>
+    <a href="http://www.codecademy.com">Codecademy</a>
+    <p>My Paragraph</p>
+  </div>
+</body>
+```
+
+A: <div>
