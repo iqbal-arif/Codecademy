@@ -51,3 +51,17 @@ Q7: How would the output of the code below change if <ul> and </ul> were changed
 ```
 
 A: Bullet points in the output would change to numbers.
+
+Q8: The following code results in no visible output to the browser. Why?
+
+```
+<ol> </ol>
+```
+
+A: List items must be added to the list.
+
+Q9: What is the correct definition of an HTML element?
+
+A: An HTML tag and the content that it contains or marks up.
+
+Q10:
