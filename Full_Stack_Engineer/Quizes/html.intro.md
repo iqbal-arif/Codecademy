@@ -27,3 +27,27 @@ A: <br>
 Q4: Which of the following tags would contain the HTML for a web page’s visible content?
 
 A: <body>
+
+Q5: Which of the following is the correct syntax for the paragraph HTML element?
+
+A:
+
+```
+<p>I'm A Paragraph</p>
+```
+
+Q6: The abbreviation HTML stands for which of the following?
+
+A: HyperText Markup Language.
+
+Q7: How would the output of the code below change if <ul> and </ul> were changed to <ol> and </ol>, respectively?
+
+```
+<ul>
+  <li>Lorem</li>
+  <li>Ipsum</li>
+  <li>Horribilis</li>
+</ul>
+```
+
+A: Bullet points in the output would change to numbers.
