@@ -8,7 +8,7 @@ Q3: Which of the following tags is used to separate the body of the table from i
 A3: <tbody></tbody> : The table body content are contained inside of the <tbody> element.
 
 Q4: Which tag should surround an entire table of data?
-A4: <table></table>
+A4: <table></table> : The <table> element will contain all of the tabular data you plan on displaying.
 
 Q5: What does the following code do?
 
