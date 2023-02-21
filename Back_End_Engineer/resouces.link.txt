@@ -1,0 +1,32 @@
+1. MDN
+https://developer.mozilla.org/en-US/
+
+2. W3
+https://www.w3.org/TR/CSS2/selector.html
+
+3. Dev Community
+https://dev.to/
+
+4. StackOverFlow
+https://stackoverflow.com/
+
+5. Can I Use
+https://caniuse.com/
+
+6. Replit
+https://replit.com/
+
+Books:
+1. Cracking the Coding Interview: 189 Programming Questions and Solutions
+Gayle Laakmann McDowell is an author
+EAN/UPC 9780984782857
+
+2. Eloquent JavaScript
+3rd edition (2018)
+
+
+Forums
+1. Codecademy Forums
+ https://discuss.codecademy.com/
+
+2. 
