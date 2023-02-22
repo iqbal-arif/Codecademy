@@ -1,0 +1,30 @@
+Now that you have your Command Line Interface open on your desktop, you are ready to use it. Go ahead and try some of the commands on your personal computer. Here are some good commands for practice:
+
+   1. ls to list the contents of the current directory. It may look something like this:
+
+    $ ls
+    Applications                Pictures
+    Codecademy                  Public
+    Desktop                     Downloads
+    Documents                   Library
+
+   2. mkdir test to make a new directory named test. Now, when you type ls you should see a folder called test:
+
+    $ ls
+    Applications                Pictures
+    Codecademy                  Public
+    Desktop                     Downloads
+    Documents                   Library
+    test
+
+    3. cd test to navigate into the new directory. You won’t see an output when you do this.
+    
+    4. echo "Hello Command Line" >> hello_cli.txt to create a new file named hello_cli.txt and add Hello Command Line to that file. When you type ls, you should see the following:
+
+    $ ls
+    hello_cli.txt
+
+    5. cat hello_cli.txt to print the contents of the hello_cli.txt file to the terminal. You should see something like:
+
+    $ cat hello_cli.txt
+    Hello Command Lin
