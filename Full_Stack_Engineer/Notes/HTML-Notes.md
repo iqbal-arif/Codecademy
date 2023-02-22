@@ -23,3 +23,13 @@
    9. Indentation also helps make code easier to read. It makes parent-child relationships visible.
 
    10. Comments are written in HTML using the following syntax: <!-- comment -->.
+
+   11. Semantic Elements
+       1. The Aside Elements:
+          Some common uses of the <aside> element are for:
+          1. Bibliographies
+          2. Endnotes
+          3. Comments
+          4. Pull quotes
+          5. Editorial sidebars
+          6. Additional information
