@@ -36,3 +36,20 @@ Take this knowledge to the next lesson, where you start learning how to select H
 Specificity:
 
 1. IDs are the most specific selector in CSS, followed by classes, and finally, type.
+
+Selectors
+Review
+
+Throughout this lesson, you learned how to select HTML elements with CSS and apply styles to them. Let’s review what you learned:
+
+    1. CSS can select HTML elements by type, class, ID, and attribute.
+    2. All elements can be selected using the universal selector.
+    3. An element can have different states using the pseudo-class selector.
+    4. Multiple CSS classes can be applied to one HTML element.
+    5. Classes can be reusable, while IDs can only be used once.
+    6. IDs are more specific than classes, and classes are more specific than type. That means IDs will override any styles from a class, and classes will override any styles from a type selector.
+    7. Multiple selectors can be chained together to select an element. This raises the specificity but can be necessary.
+    8. Nested elements can be selected by separating selectors with a space.
+    9. Multiple unrelated selectors can receive the same styles by separating the selector names with commas.
+
+Great work this lesson. With this knowledge, you’ll be able to use CSS to change the look and feel of websites to make them look great!
