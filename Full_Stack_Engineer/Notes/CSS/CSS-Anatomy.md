@@ -14,6 +14,8 @@
    4. Property—The first part of the declaration that signifies what visual characteristic of the element is to be modified.
    5. Value—The second part of the declaration that signifies the value of the property.
 
+---
+
 Review:
 
 Great work so far! By understanding how to incorporate CSS code into your HTML file, as well as learning some of the key terms, you’re on your way to creating spectacular websites with HTML and CSS.
@@ -37,6 +39,8 @@ Specificity:
 
 1. IDs are the most specific selector in CSS, followed by classes, and finally, type.
 
+---
+
 Selectors
 Review
 
@@ -53,3 +57,19 @@ Throughout this lesson, you learned how to select HTML elements with CSS and app
     9. Multiple unrelated selectors can receive the same styles by separating the selector names with commas.
 
 Great work this lesson. With this knowledge, you’ll be able to use CSS to change the look and feel of websites to make them look great!
+
+---
+
+Visual Rules
+Review Visual Rules
+
+Incredible work! You used CSS to alter text and images on a website. Throughout this lesson, you learned concepts including:
+
+    1. The font-family property defines the typeface of an element.
+    2. font-size controls the size of text displayed.
+    3. font-weight defines how thin or thick text is displayed.
+    4. The text-align property places text in the left, right, or center of its parent container.
+    5. Text can have two different color attributes: color and background-color. color defines the color of the text, while background-color defines the color behind the text.
+    6. CSS can make an element transparent with the opacity property.
+    7. CSS can also set the background of an element to an image with the background-image property.
+    8. The !important flag will override any style, however it should almost never be used, as it is extremely difficult to override.
