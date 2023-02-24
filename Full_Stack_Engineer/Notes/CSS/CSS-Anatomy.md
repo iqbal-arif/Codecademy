@@ -32,3 +32,7 @@ Let’s review what you learned so far:
     9. External stylesheets are linked to HTML using the <link> element.
 
 Take this knowledge to the next lesson, where you start learning how to select HTML elements to style!
+
+Specificity:
+
+1. IDs are the most specific selector in CSS, followed by classes, and finally, type.
