@@ -198,3 +198,35 @@ Let’s take a look at the code:
 ```
 
 There are three rectangular divs that each contain a paragraph of text. The .rectangle <div>s will all appear inline (provided there is enough space from left to right) with a width of 200 pixels and height of 300 pixels, even though the text inside of them may not require 200 pixels by 300 pixels of space.
+
+Float
+
+---
+
+So far, you’ve learned how to specify the exact position of an element using offset properties. If you’re simply interested in moving an element as far left or as far right as possible in the container, you can use the float property.
+
+The float property is commonly used for wrapping text around an image. Note, however, that moving elements left or right for layout purposes is better suited for tools like CSS grid and flexbox, which you’ll learn about later on.
+
+The float property is often set using one of the values below:
+
+    left - moves, or floats, elements as far left as possible.
+    right - moves elements as far right as possible.
+
+```
+.green-section {
+  width: 50%;
+  height: 150px;
+}
+
+.orange-section {
+  background-color: orange;
+  width: 50%;
+  float: right;
+}
+```
+
+In the example above, we float the .orange-section element to the right. This works for static and relative positioned elements. See the result of the code below:
+
+Diagrm of an element floating on the right
+
+Floated elements must have a width specified, as in the example above. Otherwise, the element will assume the full width of its containing element, and changing the float value will not yield any visible results.
