@@ -16,6 +16,9 @@ https://caniuse.com/
 6. Replit
 https://replit.com/
 
+7. DevTools
+https://developer.chrome.com/docs/devtools/
+
 Books:
 1. Cracking the Coding Interview: 189 Programming Questions and Solutions
 Gayle Laakmann McDowell is an author
