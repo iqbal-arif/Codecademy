@@ -49,3 +49,8 @@ A9: Position the **.card** element 10 pixels lower than its default position.
 Correct! The combination of **position: relative** and **top: 10px** will result in this behavior.
 
 Q10: Which of the following values will position an element in relation to the nearest non-static element?
+A10: Absolute
+
+Q11: What does **z-index** control?
+A11: How far 'back' or 'forward' overlapping elements appear on a page.
+Correct! **z-index** controls the relative depth of overlapping elements.
