@@ -71,7 +71,7 @@ Position: Sticky
 
 ---
 
-Since static and relative positioned elements stay in the normal flow of the document, when a user scrolls the page (or parent element) these elements will scroll too. And since fixed and absolute positioned elements are removed from the document flow, when a user scrolls, these elements will stay at their specified offset position.
+Since **static and relative** positioned elements **stay in the normal flow** of the document, when a user scrolls the page (or parent element) these elements will scroll too. And since **fixed and absolute** positioned elements are **removed from the document flow**, when a user scrolls, these elements will stay at their specified offset position.
 
 The sticky value is another position value that keeps an element in the document flow as the user scrolls, but sticks to a specified position as the page is scrolled further. This is done by using the sticky value along with the familiar offset properties, as well as one new one.
 
