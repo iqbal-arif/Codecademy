@@ -6,6 +6,12 @@ body {
 
 header {
   background-color: #333333;
+  position: sticky;
+  top: 0px;
+  /* q: Set its position property so that it stays stuck to the top of the window when the document is scrolled.
+  a: position: sticky;
+  top: 0px;
+  */
 }
 
 nav {
