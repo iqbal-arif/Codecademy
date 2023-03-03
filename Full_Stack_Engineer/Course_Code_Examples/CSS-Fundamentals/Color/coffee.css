@@ -51,24 +51,24 @@ body {
 
 /* Roast types */
 .green {
-  background-color: #8FBC8F;
+  background-color: #9eb599;
 }
 
 .light {
-    background-color: #A0522D;
-  }
-  
-  .city {
-    background-color: #8B4513;
-  }
-  
-  .vienna {
-    background-color: #A52A2A;
-  }
-  
-  .italian {
-    background-color: #000000;
-  }
+  background-color: #683c2c;
+}
+
+.city {
+  background-color: #4c352d;
+}
+
+.vienna {
+  background-color: #352926;
+}
+
+.italian {
+  background-color: #000000;
+}
 
 /* Typography */
 h1 {
@@ -84,7 +84,7 @@ h1 {
 }
 
 h2 {
-  color: #e4bb97;f
+  color: #e4bb97;
   font-family: 'Raleway', sans-serif;
   font-size: 28px;
   font-weight: 500;
