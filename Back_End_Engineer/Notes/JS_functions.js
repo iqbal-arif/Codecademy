@@ -59,3 +59,15 @@ function costOfMonitors(rows, columns) {
 const totalCost = costOfMonitors(5, 4);
 
 console.log(totalCost);
+
+// Function Expressions
+
+// IMPORTANT NOTE: Unlike function declarations, function expressions are not hoisted so they cannot be called before they are defined.
+
+const plantNeedsWater = function (day) {
+  return day === 'Wednesday' ? true : false;
+};
+
+plantNeedsWater('Tuesday');
+
+console.log(plantNeedsWater('Tuesday'));
