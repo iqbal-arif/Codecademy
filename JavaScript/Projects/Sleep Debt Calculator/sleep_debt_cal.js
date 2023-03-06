@@ -1,7 +1,7 @@
 // Random Sleep Hours Generator
 let sleepHourRandomCalculator = (min, max) =>
   Math.floor(Math.random() * (max - min) + min);
-// console.log(sleepHourRandomCalculator(5, 10));
+console.log(sleepHourRandomCalculator(5, 10));
 
 // Random Day Calculator
 const daysOfWeek = () => {
@@ -30,20 +30,22 @@ const daysOfWeek = () => {
       day = 'Sunday';
       break;
   }
-  return day;
+  //   return day;
 };
 
 // Ideal Sleep hours Per Week
 const getIdealSleepHours = () => {
   return (idealHours = 6 * 7);
 };
-console.log(getIdealSleepHours());
+// console.log(getIdealSleepHours());
 // console.log(daysOfWeek());
+
 //  Sleep Hours Entry with Days
 
 // No. of Hours of Rest per night
 const getSleepHours = (day) => {
   // Sleep Hours per each night
+  let totalSleepPerWeek = 0;
   switch (day) {
     case 'Monday':
       sleepPerNight = sleepHourRandomCalculator(5, 10);
@@ -67,40 +69,28 @@ const getSleepHours = (day) => {
       sleepPerNight = sleepHourRandomCalculator(5, 10);
       break;
   }
-  return `For ${day} total hours of sleep is ${sleepPerNight}`;
+  return sleepPerNight;
+  //   return `For ${day} total hours of sleep is ${sleepPerNight}
+  //           And Total Sleep per Week is ${totalSleepPerWeek}`;
 };
 
-console.log(getSleepHours(daysOfWeek()));
+// console.log(getSleepHours(daysOfWeek()));
 
 // Calculating Debt Hours of Sleep per Night
-const getActualSleepHours = () => {
-  const dayList = [
-    'Monday',
-    'Tuesday',
-    'Wednesday',
-    'Thursday',
-    'Friday',
-    'Saturday',
-    'Sunday',
-  ];
-  let i = 0;
-  let sumHoursOfSleep = 0;
-  getSleepHours(daysOfWeek());
-  const sleepDays = [];
-  let j = 0;
-  do {
-    if (day === dayList[i]) {
-      sleepDays.push(dayList[i]);
-      sumHoursOfSleep = sumHoursOfSleep + sleepPerNight;
-    }
-    console.log(day, sleepPerNight);
-    i++;
-  } while (i < dayList.length);
+// const getActualSleepHours = () => console.log(getSleepHours(daysOfWeek()));
 
-  console.log(day, sleepPerNight, sumHoursOfSleep, sleepDays);
-};
+// getActualSleepHours();
 
-getActualSleepHours();
+const getActualSleepHours = () =>
+  getSleepHours('Monday') +
+  getSleepHours('Tuesday') +
+  getSleepHours('Wednesday') +
+  getSleepHours('Thursday') +
+  getSleepHours('Friday') +
+  getSleepHours('Saturday') +
+  getSleepHours('Sunday');
+
+console.log(getActualSleepHours());
 
 //   do {
 //     if (day !== sleepDays[j]) {
