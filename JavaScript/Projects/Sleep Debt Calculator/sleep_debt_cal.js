@@ -86,14 +86,15 @@ const getSleepHours = (day) => {
 
 // getActualSleepHours();
 
-const getActualSleepHours = () =>
-  getSleepHours('Monday') +
-  getSleepHours('Tuesday') +
-  getSleepHours('Wednesday') +
-  getSleepHours('Thursday') +
-  getSleepHours('Friday') +
-  getSleepHours('Saturday') +
-  getSleepHours('Sunday');
+// const getActualSleepHours = () =>
+//   getSleepHours('Monday') +
+//   getSleepHours('Tuesday') +
+//   getSleepHours('Wednesday') +
+//   getSleepHours('Thursday') +
+//   getSleepHours('Friday') +
+//   getSleepHours('Saturday') +
+//   getSleepHours('Sunday');
+const getActualSleepHours = () => 8 + 7 + 6 + 5 + 8 + 8 + 4;
 
 console.log(getActualSleepHours());
 
@@ -109,7 +110,7 @@ console.log(getActualSleepHours());
 
 const calculateSleepDebt = () => {
   let actualSleepHours = getActualSleepHours();
-  let idealSleepHours = getIdealSleepHours();
+  let idealSleepHours = getIdealSleepHours(extraSleep);
 
   if (actualSleepHours === idealSleepHours) {
     return `Total Hours of Sleep per week = ${actualSleepHours}
