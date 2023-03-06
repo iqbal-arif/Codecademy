@@ -1,7 +1,7 @@
 // Random Sleep Hours Generator
 let sleepHourRandomCalculator = (min, max) =>
   Math.floor(Math.random() * (max - min) + min);
-console.log(sleepHourRandomCalculator(5, 10));
+// console.log(sleepHourRandomCalculator(5, 10));
 
 // Random Day Calculator
 const daysOfWeek = () => {
@@ -34,10 +34,15 @@ const daysOfWeek = () => {
 };
 
 // Ideal Sleep hours Per Week
-const getIdealSleepHours = () => {
-  return (idealHours = 6 * 7);
+const extraSleep = 8;
+const getIdealSleepHours = (extraSleep) => {
+  if (extraSleep > 6) {
+    return (idealHours = extraSleep * 7);
+  } else {
+    return (idealHours = 6 * 7);
+  }
 };
-// console.log(getIdealSleepHours());
+console.log(getIdealSleepHours(extraSleep));
 // console.log(daysOfWeek());
 
 //  Sleep Hours Entry with Days
@@ -99,3 +104,24 @@ console.log(getActualSleepHours());
 //     }
 //     j++;
 //   } while (j < sleepDays);
+
+// Calculate Sleep Debt
+
+const calculateSleepDebt = () => {
+  let actualSleepHours = getActualSleepHours();
+  let idealSleepHours = getIdealSleepHours();
+
+  if (actualSleepHours === idealSleepHours) {
+    return `Total Hours of Sleep per week = ${actualSleepHours}
+        User got perfect amount of sleep`;
+  } else if (actualSleepHours > idealSleepHours) {
+    return `Total Hours of Sleep per week = ${actualSleepHours}
+        User got more sleep than needed`;
+  } else if (actualSleepHours < idealSleepHours) {
+    return `
+        Total Hours of Sleep per week = ${actualSleepHours}User should get some rest`;
+  }
+};
+
+// Starting the Program
+console.log(calculateSleepDebt());
