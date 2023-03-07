@@ -1,4 +1,4 @@
-// Block Scope
+// Block & Scope
 const city = 'New York City';
 
 function logCitySkyline() {
@@ -19,3 +19,5 @@ function callMyNightSky() {
 }
 
 console.log(callMyNightSky());
+
+// Block Scope
