@@ -21,3 +21,10 @@ function callMyNightSky() {
 console.log(callMyNightSky());
 
 // Block Scope
+function logVisibleLightWaves() {
+  const lightWaves = 'Moonlight';
+  console.log(lightWaves);
+}
+
+logVisibleLightWaves();
+console.log(lightWaves);
