@@ -9,3 +9,8 @@
 
 4. HTML Attribute Reference
    https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes
+
+5. UI-Patterns
+   https://ui-patterns.com/
+
+6.
