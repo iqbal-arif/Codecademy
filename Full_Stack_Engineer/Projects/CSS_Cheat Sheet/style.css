@@ -1,11 +1,18 @@
 * {
-  font-family: 'Lucida Console', Courier, monospace;
-  font-size: 15px;
+  font-family: fantasy;
+  font-size: 12px;
   padding: 0;
   margin: 0;
   text-align: center;
 }
 
+h1 {
+  font-family: fantasy;
+  background-color: #8b4513;
+  color: #fff5ee;
+  height: 40px;
+  font-size: 25px;
+}
 table {
   width: 100vw;
   margin: 8px 0px;
@@ -14,13 +21,11 @@ table {
 
 table,
 td {
-  border: 1px solid #333;
-  /* height: 8vh; */
-  /* text-overflow: hidden; */
+  border: 1px solid #8b4513;
 }
 
 thead,
 tfoot {
-  background-color: #333;
-  color: #fff;
+  background-color: #8b4513;
+  color: #fff5ee;
 }
