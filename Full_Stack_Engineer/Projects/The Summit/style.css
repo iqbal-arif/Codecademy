@@ -1,3 +1,15 @@
+a:any-link {
+  color: hsl(197, 45%, 55%);
+}
 .btn {
   font-family: 'Raleway', sans-serif;
+  background-color: hsl(226, 46%, 23%);
+  box-shadow: inset;
+  border-radius: 47%;
+  padding: 10px 10px;
+}
+
+.btn:hover {
+  background-color: hsla(226, 46%, 23%, 0.9);
+  border-radius: 10px 10px;
 }
