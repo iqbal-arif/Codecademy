@@ -36,3 +36,8 @@ const removedMessage = secretMessage.pop();
 At this point, the length should be 1 less than the original length.
 */
 console.log(secretMessage.length);
+
+/*
+3.Use an array method to add the words to and Program as separate strings to the end of the secretMessage array. 
+*/
+secretMessage.push('to', 'Program');
