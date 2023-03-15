@@ -25,8 +25,7 @@ let secretMessage = [
   'JavaScript',
 ];
 
+/*
+1.Use an array method to remove the last string of the array secretMessage. 
+*/
 const removedMessage = secretMessage.pop();
-console.log(secretMessage.length);
-
-secretMessage.push('to', 'Program');
-console.log(secretMessage);
