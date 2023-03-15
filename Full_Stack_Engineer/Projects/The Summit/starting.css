@@ -138,6 +138,9 @@ p {
   margin: 5px;
 }
 
+.activity:hover {
+  font-size: 40px;
+}
 .footer {
   background-color: #2176ff;
   padding: 30px;

@@ -11,5 +11,23 @@ a:any-link {
 
 .btn:hover {
   background-color: hsla(226, 46%, 23%, 0.9);
+  /* border-radius: 10px 10px; */
+}
+.btn:active {
   border-radius: 10px 10px;
+}
+
+.activity {
+  border: 1px #225b72 solid;
+  border-radius: 5px 5px;
+}
+
+.activity:hover {
+  background-color: hsla(217, 100%, 56%, 0.8);
+  border-radius: 15px 15px;
+}
+.activity:active {
+  background-color: hsla(217, 100%, 56%, 0.9);
+  border-radius: 20px 20px;
+  color: hsl(197, 72%, 20%);
 }
