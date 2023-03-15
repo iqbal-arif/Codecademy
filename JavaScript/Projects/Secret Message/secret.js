@@ -51,3 +51,8 @@ secretMessage[7] = 'right';
 5.Use an array method to remove the first string of the array.
 */
 secretMessage.shift();
+
+/*
+6.Use an array method to add the string Programming to the beginning of the array. 
+*/
+secretMessage.unshift('Programming');
