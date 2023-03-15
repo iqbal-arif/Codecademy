@@ -66,3 +66,9 @@ secretMessage.splice(6, 5, 'know,');
 8.On one line, use console.log() and .join() to print the secret message as a sentence.
 */
 console.log(secretMessage.join(' '));
+
+const countries = ['Japan', 'Denmark', 'Mexico', 'Morocco'];
+countries.shift();
+console.log(countries);
+countries = ['England', 'Mozambique', 'Cambodia', 'Peru'];
+console.log(countries);
