@@ -41,3 +41,8 @@ console.log(secretMessage.length);
 3.Use an array method to add the words to and Program as separate strings to the end of the secretMessage array. 
 */
 secretMessage.push('to', 'Program');
+
+/*
+4.Change the word easily to the word right by accessing the index and replacing it. 
+*/
+secretMessage[7] = 'right';
