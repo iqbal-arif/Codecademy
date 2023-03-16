@@ -19,3 +19,16 @@ Finally, breadcrumbs can be based on a user’s unique **path** through the site
 Note that this breadcrumb trail will be different for each user and each visit. For even mildly complex sites, the number of steps will become large. To simplify the display, the beginning of the trail is often abbreviated:
 
 **_... > About > Register_**
+
+## Summary
+
+In this lesson we covered the concept of using breadcrumbs as a secondary navigation method for a site:
+
+    1. Use breadcrumbs to indicate where a user is and the extent of the site
+    2. Breadcrumbs are implemented using unordered lists in HTML with custom CSS styling
+    3. Three types of breadcrumbs exist:
+        location - based on hierarchical structure of site
+        attribute - based on attributes of current page or item
+        path - unique to a user’s journey on the site
+    4. Path-based breadcrumbs can be confusing, only use if needed
+    5. Ensure breadcrumbs will add value before adding to a site
