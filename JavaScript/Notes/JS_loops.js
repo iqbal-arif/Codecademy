@@ -62,7 +62,7 @@ for (let i = 0; i < vacationSpots.length; i++) {
   console.log(`I would love to visit ${vacationSpots[i]}`);
 }
 
-// Nested Loop Example
+// *******Nested Loop Example**********/
 const myArray = [6, 19, 20];
 const yourArray = [19, 81, 2];
 for (let i = 0; i < myArray.length; i++) {
@@ -73,7 +73,20 @@ for (let i = 0; i < myArray.length; i++) {
   }
 }
 
-// Make a variable called bobsFollowers and set it equal to an array with four strings representing the names of Bob’s friends.
+// 1. Make a variable called bobsFollowers and set it equal to an array with four strings representing the names of Bob’s friends.
 const bobsFollowers = ['Jackie', 'John', 'Jane', 'Justine'];
 
-// Make a variable called tinasFollowers and set it equal to an array with three strings representing the names of Tina’s friends. Make exactly two of these the same as two of the friends in the bobsFollowers array.
+// 2. Make a variable called tinasFollowers and set it equal to an array with three strings representing the names of Tina’s friends. Make exactly two of these the same as two of the friends in the bobsFollowers array.
+const tinasFollowers = ['Jackie', 'Jane', 'Rose'];
+
+//3. Create a third variable named mutualFollowers and set it to an empty array
+const mutualFollowers = [];
+
+for (let i = 0; i < bobsFollowers.length; i++) {
+  for (let j = 0; j < tinasFollowers.length; j++) {
+    if (bobsFollowers[i] === tinasFollowers[j]) {
+      mutualFollowers.push();
+    }
+  }
+}
+console.log(mutualFollowers);
