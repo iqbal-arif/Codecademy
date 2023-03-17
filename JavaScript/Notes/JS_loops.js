@@ -90,3 +90,30 @@ for (let i = 0; i < bobsFollowers.length; i++) {
   }
 }
 console.log(mutualFollowers);
+
+/*********The While Loop***********/
+
+// A for loop that prints 1, 2, and 3
+for (let counterOne = 1; counterOne < 4; counterOne++) {
+  console.log(counterOne);
+}
+
+// A while loop that prints 1, 2, and 3
+let counterTwo = 1;
+while (counterTwo < 4) {
+  console.log(counterTwo);
+  counterTwo++;
+}
+
+//    1. Below the cards array, declare a variable, currentCard, with the let keyword but don’t assign it a value.
+
+const cards = ['diamond', 'spade', 'heart', 'club'];
+
+// Write your code below
+
+let currentCard;
+
+while (currentCard < currentCard.length) {
+  currentCard = cards[Math.floor(Math.random() * 4)];
+  currentCard++;
+}
