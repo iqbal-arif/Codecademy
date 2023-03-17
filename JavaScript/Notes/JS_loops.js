@@ -72,3 +72,8 @@ for (let i = 0; i < myArray.length; i++) {
     }
   }
 }
+
+// Make a variable called bobsFollowers and set it equal to an array with four strings representing the names of Bob’s friends.
+const bobsFollowers = ['Jackie', 'John', 'Jane', 'Justine'];
+
+// Make a variable called tinasFollowers and set it equal to an array with three strings representing the names of Tina’s friends. Make exactly two of these the same as two of the friends in the bobsFollowers array.
