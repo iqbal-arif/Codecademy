@@ -31,10 +31,16 @@ const howOld = (givenYear = 0, givenAge = 0) => {
       ageAdjustment = Math.abs(ageAdjustment);
     }
     console.log(`You will be ${ageAdjustment} in the year ${givenYear}`);
+  } else if (givenYear < currentYear && givenAge < 0) {
+    console.log(
+      `The ${givenYear} was ${ageAdjustment} years before you were born`
+    );
+  } else if (givenYear < currentYear && givenAge > 0) {
+    console.log(`You were ${ageAdjustment} in the year ${givenYear}`);
   }
   console.log(yearAdjustment);
   console.log(currentYear);
   console.log(ageAdjustment);
 };
 
-howOld(2085);
+howOld(2013, 10);
