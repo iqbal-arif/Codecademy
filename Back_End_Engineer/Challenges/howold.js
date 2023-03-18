@@ -24,12 +24,11 @@ const currentYear = currentDate.getFullYear();
 // console.log(currentYear)
 const howOld = (givenYear = 0, givenAge = 0) => {
   let yearAdjustment = currentYear - givenYear;
-  let ageAdjustment = givenAge + yearAdjustment;
+  let ageAdjustment;
   if (givenYear > currentYear) {
-    if (yearAdjustment < 0 && ageAdjustment < 0) {
-      yearAdjustment = Math.abs(yearAdjustment);
-      ageAdjustment = Math.abs(ageAdjustment);
-    }
+    yearAdjustment = givenYear - currentYear;
+    ageAdjustment = givenAge + yearAdjustment;
+
     console.log(`You will be ${ageAdjustment} in the year ${givenYear}`);
   } else if (givenYear < currentYear && givenAge < 0) {
     console.log(
@@ -43,4 +42,4 @@ const howOld = (givenYear = 0, givenAge = 0) => {
   console.log(ageAdjustment);
 };
 
-howOld(2013, 10);
+howOld(2050, 17);
