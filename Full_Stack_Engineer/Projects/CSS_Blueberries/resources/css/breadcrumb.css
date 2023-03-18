@@ -1,3 +1,20 @@
-.breadcrumb {
-  display: inline-block;
+.breadcrumb li {
+  display: inline;
+}
+.breadcrumb li.location::after {
+  color: red;
+  content: '>>';
+}
+.breadcrumb li.attribute::before {
+  color: green;
+  content: ' || ';
+  text-shadow: 2px 2px orange;
+}
+.breadcrumb li.attribute::after {
+  color: green;
+  content: ' (X)';
+}
+
+.breadcrumb :hover {
+  color: orange;
 }
