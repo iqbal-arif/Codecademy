@@ -13,4 +13,5 @@
 5. UI-Patterns
    https://ui-patterns.com/
 
-6.
+6. Everything You Need to Know about Wireframes and Prototypes
+   https://xd.adobe.com/ideas/process/wireframing/wireframe-design-definition/
