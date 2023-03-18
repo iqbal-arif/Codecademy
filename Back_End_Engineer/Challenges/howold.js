@@ -22,12 +22,19 @@ Write a function, howOld(), that has two number parameters, age and year, and re
 const currentDate = new Date(2023, 02);
 const currentYear = currentDate.getFullYear();
 // console.log(currentYear)
-const howOld = (givenYear, giveNAge) => {
-  const yearAdjustment = currentYear - givenYear;
-  const ageAdjustment = givenAge + yearAdjustment;
+const howOld = (givenYear = 0, givenAge = 0) => {
+  let yearAdjustment = currentYear - givenYear;
+  let ageAdjustment = givenAge + yearAdjustment;
+  if (givenYear > currentYear) {
+    if (yearAdjustment < 0 && ageAdjustment < 0) {
+      yearAdjustment = Math.abs(yearAdjustment);
+      ageAdjustment = Math.abs(ageAdjustment);
+    }
+    console.log(`You will be ${ageAdjustment} in the year ${givenYear}`);
+  }
   console.log(yearAdjustment);
   console.log(currentYear);
-  console.log(age);
+  console.log(ageAdjustment);
 };
 
-howOld(1985, 30);
+howOld(2085);
