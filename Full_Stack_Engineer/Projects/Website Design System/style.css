@@ -1,0 +1,35 @@
+/* Photo by <a href="https://unsplash.com/@marvelous?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Marvin Meyer</a> on <a href="https://unsplash.com/photos/SYTO3xs06fU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+   */
+* {
+  font-family: monospace;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+#main {
+  height: 80vh;
+  width: auto;
+  background-image: url(./images/main.jpg);
+  /* opacity: 0.55; */
+}
+.backdrop {
+  background-color: hsla(34, 57%, 70%, 0.6);
+  height: 80vh;
+}
+h1.heading {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #203636;
+  /* color: #703912; */
+  font-size: 65px;
+  font-weight: 900;
+  padding: 150px 0px;
+}
+
+p.paragraph {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: justify;
+  padding: 0px 65px;
+}
