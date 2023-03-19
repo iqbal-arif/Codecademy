@@ -7,7 +7,8 @@
 
 .color-box {
   display: inline-block;
-  border: 0.5px #000 solid;
+  border: 1px #000 solid;
+  border-radius: 10px;
   width: 160px;
   margin: 0px 20px;
   padding: 15px 15px;
@@ -20,8 +21,9 @@
   padding: 25px 18px;
   margin: 20px 20px;
 }
-.swatch {
-  border: 1px pink solid;
+.swatch-1 {
+  border: 1px #afed12 solid;
+  border-radius: 25px;
   padding: 15px 0px;
   margin: 20px 0px;
 }
@@ -32,6 +34,8 @@
 .color4,
 .color5 {
   margin-bottom: 15px;
+  position: relative;
+  top: 8px;
 }
 
 .swatch-1 .color1 {
@@ -53,4 +57,26 @@
 h1 {
   margin-bottom: 15px;
   text-align: center;
+}
+
+.swatch-2 {
+  border: 1px #f4bc2e solid;
+  border-radius: 25px;
+  padding: 15px 0px;
+  margin: 20px 0px;
+}
+.swatch-2 .color1 {
+  background-color: #a67c52;
+}
+.swatch-2 .color2 {
+  background-color: #c60000;
+}
+.swatch-2 .color3 {
+  background-color: #f46d2e;
+}
+.swatch-2 .color4 {
+  background-color: #f4952e;
+}
+.swatch-2 .color5 {
+  background-color: #f4bc2e;
 }
