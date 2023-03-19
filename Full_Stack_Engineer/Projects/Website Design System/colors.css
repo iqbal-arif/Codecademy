@@ -7,7 +7,7 @@
 
 .color-box {
   display: inline-block;
-  border: 1px #000 solid;
+  border: 1px #b1aa94 solid;
   border-radius: 10px;
   width: 160px;
   margin: 0px 20px;
@@ -17,7 +17,9 @@
   /* margin-bottom: 25px; */
 }
 .colors {
-  border: 1px red solid;
+  background-color: hsla(46, 16%, 64%, 0.9);
+  border: 1px rgb(99, 94, 49) solid;
+  border-radius: 25px;
   padding: 25px 15px;
   margin: 20px 20px;
 }
@@ -82,4 +84,26 @@ h1 {
 }
 .swatch-2 .color5 {
   background-color: #f4bc2e;
+}
+.swatch-3 {
+  text-align: center;
+  border: 1px #e7f738 solid;
+  border-radius: 25px;
+  padding: 15px 0px;
+  margin: 20px 0px;
+}
+.swatch-3 .color1 {
+  background-color: #a67c52;
+}
+.swatch-3 .color2 {
+  background-color: #c60000;
+}
+.swatch-3 .color3 {
+  background-color: #f7bb38;
+}
+.swatch-3 .color4 {
+  background-color: #f7e138;
+}
+.swatch-3 .color5 {
+  background-color: #e7f738;
 }
