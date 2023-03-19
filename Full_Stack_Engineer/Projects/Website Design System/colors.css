@@ -2,7 +2,7 @@
   /* font-size: 12px; */
   padding: 0;
   margin: 0;
-  /* text-align: center; */
+  font-family: monospace;
 }
 
 .color-box {
@@ -18,10 +18,11 @@
 }
 .colors {
   border: 1px red solid;
-  padding: 25px 18px;
+  padding: 25px 15px;
   margin: 20px 20px;
 }
 .swatch-1 {
+  text-align: center;
   border: 1px #afed12 solid;
   border-radius: 25px;
   padding: 15px 0px;
@@ -33,6 +34,7 @@
 .color3,
 .color4,
 .color5 {
+  margin-top: 5px;
   margin-bottom: 15px;
   position: relative;
   top: 8px;
@@ -60,6 +62,7 @@ h1 {
 }
 
 .swatch-2 {
+  text-align: center;
   border: 1px #f4bc2e solid;
   border-radius: 25px;
   padding: 15px 0px;
