@@ -1,0 +1,58 @@
+<span class=comment>/* List */</span>
+a67c52, c60000, edd312, dbed12, afed12
+#a67c52, #c60000, #edd312, #dbed12, #afed12
+
+<span class=comment>/* Comma Seperated */</span>
+a67c52,c60000,edd312,dbed12,afed12
+#a67c52,#c60000,#edd312,#dbed12,#afed12
+
+<span class=comment>/* Array */</span>
+["a67c52","c60000","edd312","dbed12","afed12"]
+["#a67c52","#c60000","#edd312","#dbed12","#afed12"]
+
+
+
+code 2
+
+<span class=comment>/* List */</span>
+a67c52, c60000, f46d2e, f4952e, f4bc2e
+#a67c52, #c60000, #f46d2e, #f4952e, #f4bc2e
+
+<span class=comment>/* Comma Seperated */</span>
+a67c52,c60000,f46d2e,f4952e,f4bc2e
+#a67c52,#c60000,#f46d2e,#f4952e,#f4bc2e
+
+<span class=comment>/* Array */</span>
+["a67c52","c60000","f46d2e","f4952e","f4bc2e"]
+["#a67c52","#c60000","#f46d2e","#f4952e","#f4bc2e"]
+
+code 3
+
+<span class=comment>/* List */</span>
+a67c52, c60000, d88d24, d8b124, d8d524
+#a67c52, #c60000, #d88d24, #d8b124, #d8d524
+
+<span class=comment>/* Comma Seperated */</span>
+a67c52,c60000,d88d24,d8b124,d8d524
+#a67c52,#c60000,#d88d24,#d8b124,#d8d524
+
+<span class=comment>/* Array */</span>
+["a67c52","c60000","d88d24","d8b124","d8d524"]
+["#a67c52","#c60000","#d88d24","#d8b124","#d8d524"]
+
+code 4
+
+<span class=comment>/* List */</span>
+a67c52, c60000, f7bb38, f7e138, e7f738
+#a67c52, #c60000, #f7bb38, #f7e138, #e7f738
+
+<span class=comment>/* Comma Seperated */</span>
+a67c52,c60000,f7bb38,f7e138,e7f738
+#a67c52,#c60000,#f7bb38,#f7e138,#e7f738
+
+<span class=comment>/* Array */</span>
+["a67c52","c60000","f7bb38","f7e138","e7f738"]
+["#a67c52","#c60000","#f7bb38","#f7e138","#e7f738"]
+
+
+https://colorkit.co/palette/121211-c60000-f7bb38-5b3715-8e5520/
