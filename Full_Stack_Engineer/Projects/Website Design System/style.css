@@ -33,3 +33,18 @@ p.paragraph {
   text-align: justify;
   padding: 0px 65px;
 }
+
+button {
+  display: inline-block;
+  margin: 10px auto;
+  margin-right: 15px;
+  width: 180px;
+  padding: 10px 10px;
+  border: #203636 2px solid;
+  border-radius: 25px;
+  background-color: hsla(180, 26%, 17%, 0.9);
+  color: hsla(33, 46%, 78%, 1);
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
