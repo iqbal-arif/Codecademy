@@ -15,7 +15,7 @@
   /* opacity: 0.55; */
 }
 .backdrop {
-  background-color: hsla(34, 57%, 70%, 0.6);
+  background-color: hsla(34, 57%, 70%, 0.7);
   height: 80vh;
 }
 h1.heading {
@@ -24,21 +24,22 @@ h1.heading {
   /* color: #703912; */
   font-size: 65px;
   font-weight: 900;
-  padding: 150px 0px;
+  padding: 120px 0px;
 }
 
 p.paragraph {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 23px;
+  font-weight: 500;
   text-align: justify;
   padding: 0px 65px;
+  line-height: 30px;
 }
 
 button {
   display: inline-block;
-  margin: 10px auto;
-  margin-right: 15px;
-  width: 180px;
+  margin: 40px auto;
+  margin-right: 25px;
+  width: 170px;
   padding: 10px 10px;
   border: #203636 2px solid;
   border-radius: 25px;
