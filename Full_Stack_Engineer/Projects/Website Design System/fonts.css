@@ -6,10 +6,11 @@
 
 h1.title {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 5px;
+  text-align: center;
 }
 .cormorant {
   font-family: 'cormorant';
-  font-size: ;
 }
 
 .font-box {
@@ -38,7 +39,7 @@ h1.title {
 .fw-600 {
   margin: 20px 10px;
   padding: 5px 50px;
-  line-height: 25px;
+  line-height: 35px;
 }
 
 .h1,
@@ -46,4 +47,16 @@ h1.title {
 .h4 {
   margin: 20px 0px;
   line-height: 35px;
+}
+
+.f-style-normal {
+  font-style: normal;
+}
+
+.f-style-italic {
+  font-style: italic;
+}
+
+.f-sytle-oblique {
+  font-style: oblique;
 }
