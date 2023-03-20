@@ -4,12 +4,50 @@
   box-sizing: border-box;
 }
 
+.fw-100 {
+  font-weight: 100;
+}
+
+.fw-200 {
+  font-weight: 200;
+}
+.fw-300 {
+  font-weight: 300;
+}
+.fw-400 {
+  font-weight: 400;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.fw-600 {
+  font-weight: 600;
+}
+
 h1.title,
-h3.title {
+h3.title,
+.font-weight {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   letter-spacing: 5px;
   text-align: center;
 }
+
+.fw-300 > .font-weight {
+  font-weight: 300;
+}
+.fw-200 > .font-weight {
+  font-weight: 200;
+}
+.fw-400 > .font-weight {
+  font-weight: 1000;
+}
+.fw-500 > .font-weight {
+  font-weight: 500;
+}
+.fw-600 > .font-weight {
+  font-weight: 600;
+}
+
 h3.title {
   font-weight: 100;
   text-align: left;
@@ -53,6 +91,7 @@ p {
   margin: 20px 10px;
   padding: 5px 50px;
   line-height: 35px;
+  color: #203636;
 }
 
 .h1,
