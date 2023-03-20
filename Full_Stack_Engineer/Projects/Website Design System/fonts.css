@@ -4,10 +4,14 @@
   box-sizing: border-box;
 }
 
-h1.title {
+h1.title,
+h3.title {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   letter-spacing: 5px;
   text-align: center;
+}
+h3.title {
+  font-weight: 100;
 }
 .cormorant {
   font-family: 'cormorant';
