@@ -29,6 +29,12 @@
 .fw-500,
 .fw-600 {
   margin: 20px 10px;
-  padding: 0px 50px;
+  padding: 5px 50px;
   line-height: 25px;
+}
+
+h1,
+h2,
+h4 {
+  margin: 20px 0px;
 }
