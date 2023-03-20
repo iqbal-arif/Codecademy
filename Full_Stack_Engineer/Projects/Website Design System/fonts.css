@@ -1,0 +1,34 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.font-box {
+  margin: 20px 20px;
+  padding: 20px 20px;
+  border: 1px sandybrown solid;
+  border-radius: 25px;
+  background-color: linen;
+}
+
+.font-1,
+.font-2,
+.font-3,
+.font-4 {
+  margin: 25px 5px;
+  padding: 20px 20px;
+  border-radius: 15px;
+  border: 1px rgb(163, 244, 96) solid;
+}
+
+.fw-100,
+.fw-200,
+.fw-300,
+.fw-400,
+.fw-500,
+.fw-600 {
+  margin: 20px 10px;
+  padding: 0px 50px;
+  line-height: 25px;
+}
