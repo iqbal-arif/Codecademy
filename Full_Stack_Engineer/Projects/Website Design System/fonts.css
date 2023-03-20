@@ -57,6 +57,30 @@ h1.title {
   font-style: italic;
 }
 
-.f-sytle-oblique {
+.f-style-oblique {
+  font-style: oblique;
+}
+
+p.f-size-12 {
+  font-size: 12px;
+}
+
+p.f-size-24 {
+  font-size: 24px;
+}
+
+p.f-size-36 {
+  font-size: 36px;
+}
+
+p.f-style-normal {
+  font-style: normal;
+}
+
+p.f-style-italic {
+  font-style: italic;
+}
+
+p.f-style-oblique {
   font-style: oblique;
 }
