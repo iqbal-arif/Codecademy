@@ -12,6 +12,15 @@ h3.title {
 }
 h3.title {
   font-weight: 100;
+  text-align: left;
+}
+
+h3.title::first-line {
+  color: #c60000;
+}
+
+p {
+  margin: 10px 0px;
 }
 .cormorant {
   font-family: 'cormorant';
