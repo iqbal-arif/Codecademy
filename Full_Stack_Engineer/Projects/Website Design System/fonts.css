@@ -7,6 +7,7 @@
 }
 
 .navbar {
+  position: fixed;
   height: 10vh;
   width: 100%;
   padding-top: 20px;
@@ -94,7 +95,7 @@ p {
 }
 
 .font-box {
-  margin: 20px 20px;
+  margin: 0px 20px;
   padding: 20px 20px;
   border: 1px sandybrown solid;
   border-radius: 25px;
