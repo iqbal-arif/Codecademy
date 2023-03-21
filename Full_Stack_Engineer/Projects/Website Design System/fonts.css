@@ -1,9 +1,28 @@
 * {
   padding: 0;
   margin: 0;
+  text-align: center;
   box-sizing: border-box;
+  font-family: monospace;
 }
 
+.navbar {
+  height: 10vh;
+  width: 100%;
+  padding-top: 20px;
+  margin: 0px auto;
+  background-color: #203636;
+}
+
+.navbar a {
+  margin-right: 45px;
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(238, 216, 187);
+}
+a {
+  padding-top: 20px;
+}
 .fw-100 {
   font-weight: 100;
 }
