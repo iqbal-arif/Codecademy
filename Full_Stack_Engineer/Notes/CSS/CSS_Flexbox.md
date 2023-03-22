@@ -48,3 +48,7 @@ Below are five commonly used values for the align-items property:
     5. stretch — if possible, the items will stretch from top to bottom of the container (this is the default value; elements with a specified height will not stretch; elements with a minimum height or no height specified will stretch).
 
 These five values tell the elements how to behave along the cross axis of the parent container. In these examples, the cross axis stretches from top to bottom of the container.
+
+3. flex-grow
+
+---
