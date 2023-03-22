@@ -196,3 +196,26 @@ h2 {
   min-height: 200px;
   align-items: center;
 }
+
+/* FLEX - SHRINK */
+
+.top.side {
+  flex-shrink: 2;
+}
+
+.top.center {
+}
+
+.middle.side {
+  flex-shrink: 0;
+}
+
+.middle.center {
+}
+
+.bottom.side {
+}
+
+.bottom.center {
+  flex-shrink: 2;
+}
