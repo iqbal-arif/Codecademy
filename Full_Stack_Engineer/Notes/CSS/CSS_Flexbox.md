@@ -8,9 +8,9 @@ To designate an element as a flex container, set the element’s display propert
 
 1.  justify-content - To position item left to right.
 2.  align-items - To align items vertically within the container.
-3.  flex-grow
-4.  flex-shrink
-5.  flex-basis
+3.  flex-grow - specify if items should grow and which item & in what proportions
+4.  flex-shrink - specify which elements will shrink and in what proportions
+5.  flex-basis -
 6.  flex \*\*\*
 7.  flex-wrap
 8.  align-content
@@ -37,6 +37,8 @@ Below are five commonly used values for the justify-content property:
 
 2. align-items
 
+---
+
 The align-items property makes it possible to space flex items vertically.
 
 Below are five commonly used values for the align-items property:
@@ -52,3 +54,79 @@ These five values tell the elements how to behave along the cross axis of the pa
 3. flex-grow
 
 ---
+
+we learned that all flex items shrink proportionally when the flex container is too small. However, if the parent container is larger than necessary then the flex items will not stretch by default. The flex-grow property allows us to specify if items should grow to fill a container and also which items should grow proportionally more or less than others.
+
+```
+<div class='container'>
+  <div class='side'>
+    <h1>I’m on the side of the flex container!</h1>
+  </div>
+  <div class='center'>
+    <h1>I'm in the center of the flex container!</h1>
+  </div>
+  <div class='side'>
+    <h1>I'm on the other side of the flex container!</h1>
+  </div>
+</div>
+
+.container {
+  display: flex;
+}
+
+.side {
+  width: 100px;
+  flex-grow: 1;
+}
+
+.center {
+  width: 100px;
+  flex-grow: 2;
+}
+```
+
+In the example above, the .container div has a display value of flex, so its three child divs will be positioned next to each other. If there is additional space in the .container div (in this case, if it is wider than 300 pixels), the flex items will grow to fill it. The .center div will stretch twice as much as the .side divs. For example, if there were 60 additional pixels of space, the center div would absorb 30 pixels and the side divs would absorb 15 pixels each.
+
+If a max-width is set for an element, it will not grow larger than that even if there is more space for it to absorb.
+
+All of the previous properties we have learned are declared on flex containers, or the parent elements. This property — flex-grow — is the first we have learned that is declared on flex items.
+
+4. flex-shrink
+
+---
+
+Just as the flex-grow property proportionally stretches flex items, the flex-shrink property can be used to specify which elements will shrink and in what proportions.
+
+You may have noticed in earlier exercises that flex items shrank when the flex container was too small, even though we had not declared the property. This is because the default value of flex-shrink is 1. However, flex items do not grow unless the flex-grow property is declared because the default value of flex-grow is 0.
+
+```
+<div class='container'>
+  <div class='side'>
+    <h1>I'm on the side of the flex container!</h1>
+  </div>
+  <div class='center'>
+    <h1>I'm in the center of the flex container!</h1>
+  </div>
+  <div class='side'>
+    <h1>I'm on the other side of the flex container!</h1>
+  </div>
+</div>
+
+.container {
+  display: flex;
+}
+
+.side {
+  width: 100px;
+  flex-shrink: 1;
+}
+
+.center {
+  width: 100px;
+  flex-shrink: 2;
+}
+```
+
+In the example above, the .center div will shrink twice as much as the .side divs if the .container div is too small to fit the elements within it. If the content is 60 pixels too large for the flex container that surrounds it, the .center div will shrink by 30 pixels and the outer divs will shrink by 15 pixels each. Margins are unaffected by flex-grow and flex-shrink.
+
+Keep in mind, minimum and maximum widths will take precedence over flex-grow and flex-shrink. As with flex-grow, flex-shrink will only be employed if the parent container is too small or the browser is adjusted.
