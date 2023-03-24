@@ -130,3 +130,39 @@ You may have noticed in earlier exercises that flex items shrank when the flex c
 In the example above, the .center div will shrink twice as much as the .side divs if the .container div is too small to fit the elements within it. If the content is 60 pixels too large for the flex container that surrounds it, the .center div will shrink by 30 pixels and the outer divs will shrink by 15 pixels each. Margins are unaffected by flex-grow and flex-shrink.
 
 Keep in mind, minimum and maximum widths will take precedence over flex-grow and flex-shrink. As with flex-grow, flex-shrink will only be employed if the parent container is too small or the browser is adjusted.
+
+5.  flex-basis - allows us to specify the width of an item before it stretches or shrinks.
+
+Another way of specifying the width of a flex item is with the flex-basis property. flex-basis allows us to specify the width of an item before it stretches or shrinks.
+
+```
+<div class='container'>
+  <div class='side'>
+    <h1>Left side!</h1>
+  </div>
+  <div class='center'>
+    <h1>Center!</h1>
+  </div>
+  <div class='side'>
+    <h1>Right side!</h1>
+  </div>
+</div>
+
+.container {
+  display: flex;
+}
+
+.side {
+  flex-grow: 1;
+  flex-basis: 100px;
+}
+
+.center {
+  flex-grow: 2;
+  flex-basis: 150px;
+}
+```
+
+In the example above, the .side divs will be 100 pixels wide and the .center div will be 150 pixels wide if the .container div has just the right amount of space (350 pixels, plus a little extra for margins and borders). If the .container div is larger, the .center div will absorb twice as much space as the .side divs.
+
+The same would hold true if we assigned flex-shrink values to the divs above as well
