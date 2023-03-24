@@ -219,3 +219,41 @@ h2 {
 .bottom.center {
   flex-shrink: 2;
 }
+
+/* FLEX - BASIS */
+.grow,
+.shrink {
+  width: 100px;
+  height: 100px;
+  background-color: dodgerblue;
+  border: 2px solid lightgrey;
+  margin: 10px 30px;
+}
+
+.grow.side {
+  flex-grow: 1;
+  flex-basis: 60px;
+}
+
+.grow.center {
+  flex-grow: 3;
+}
+
+.shrink.side {
+  flex-basis: 300px;
+  flex-shrink: 3;
+}
+
+.shrink.center {
+  flex-shrink: 2;
+  flex-basis: 150px;
+}
+
+#grows,
+#shrinks {
+  display: flex;
+  background-color: whitesmoke;
+  justify-content: center;
+  min-height: 200px;
+  align-items: center;
+}
