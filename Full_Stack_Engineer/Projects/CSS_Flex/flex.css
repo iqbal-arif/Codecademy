@@ -86,6 +86,7 @@ h3 {
   display: flex;
   align-items: center;
   min-height: 125px;
+  justify-content: space-around;
 }
 
 .flex-wrap-box {
@@ -96,10 +97,65 @@ h3 {
 }
 
 #wrap {
+  flex-wrap: wrap;
 }
 
 #nowrap {
+  flex-wrap: nowrap;
 }
 
 #reverse {
+  flex-wrap: wrap-reverse;
+}
+
+/* Flex Align-content */
+body {
+  font-family: 'Roboto Mono', monospace;
+}
+
+h1 {
+  margin: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.align-content-container {
+  height: 300px;
+  width: 600px;
+  background-color: whitesmoke;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.left,
+.center,
+.right {
+  /* Changed this to min-height */
+  /* height: 75px; */
+  min-height: 75px;
+  width: 200px;
+  margin: 2px;
+  background-color: dodgerblue;
+  border: 2px solid lightgrey;
+}
+
+#flexstart {
+  align-content: flex-start;
+}
+
+#flexend {
+  align-content: flex-end;
+}
+
+#center {
+  align-content: center;
+}
+
+#between {
+  align-content: space-between;
+}
+
+#around {
+  align-content: space-around;
 }
