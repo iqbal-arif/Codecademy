@@ -55,3 +55,44 @@ The browser to the right has two flex containers, each with three flex items. In
 Stretch the browser window to increase its width. Observe that once the top outer divs reach 100 pixels wide, they begin to grow faster than the top center div. Also notice that once the bottom center div reaches 100 pixels wide, it begins to grow faster than the outer divs.
 
 Now, shrink the browser window and notice that once the top center div reaches 50 pixels wide it begins to shrink faster than the outer divs and when the bottom outer divs reach 75 pixels, they begin to shrink faster than the center div.
+
+## flex-wrap
+
+Sometimes, we don’t want our content to shrink to fit its container. Instead, we might want flex items to move to the next line when necessary. This can be declared with the flex-wrap property. The flex-wrap property can accept three values:
+
+    wrap — child elements of a flex container that don’t fit into a row will move down to the next line
+    wrap-reverse — the same functionality as wrap, but the order of rows within a flex container is reversed (for example, in a 2-row flexbox, the first row from a wrap container will become the second in wrap-reverse and the second row from the wrap container will become the first in wrap-reverse)
+    nowrap — prevents items from wrapping; this is the default value and is only necessary to override a wrap value set by a different CSS rule.
+
+```
+<div class='container'>
+  <div class='item'>
+    <h1>We're going to wrap!</h1>
+  </div>
+  <div class='item'>
+    <h1>We're going to wrap!</h1>
+  </div>
+  <div class='item'>
+    <h1>We're going to wrap!</h1>
+  </div>
+</div>
+```
+
+CSS - Style
+
+```
+.container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 250px;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+}
+```
+
+In the example above, three flex items are contained by a parent flex container. The flex container is only 250 pixels wide so the three 100 pixel wide flex items cannot fit inline. The flex-wrap: wrap; setting causes the third, overflowing item to appear on a new line, below the other two items.
+
+Note: The flex-wrap property is declared on flex containers.
