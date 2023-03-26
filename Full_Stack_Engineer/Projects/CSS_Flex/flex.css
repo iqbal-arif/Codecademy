@@ -159,3 +159,39 @@ h1 {
 #around {
   align-content: space-around;
 }
+
+/* Flex Direction */
+
+.flex-direction-container {
+  background-color: dodgerblue;
+  display: flex;
+  /* height: 600px; */
+  /* Modified for flex-direction column property */
+  max-height: 600px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.box {
+  background-color: whitesmoke;
+  border: 1px solid white;
+  width: 100px;
+  height: 100px;
+  flex-grow: 1;
+}
+
+#row {
+  flex-direction: row;
+}
+
+#row-reverse {
+  flex-direction: row-reverse;
+}
+
+#column {
+  flex-direction: column;
+}
+
+#column-reverse {
+  flex-direction: column-reverse;
+}
