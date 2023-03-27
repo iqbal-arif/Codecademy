@@ -43,3 +43,34 @@ Q6: Imagine there are 60 extra pixels along the main axis and elements #alpha, #
 
 A6: 30 px
 Correct! #alpha will grow twice as much as #beta and #gamma do.
+
+Q7: Which of the following choices will set a flex container’s flex-direction property to column and its flex-wrap property to wrap?
+
+A7: flex-flow: column wrap
+
+Q8: Based on the code below where #container is a flex container and .box are its flex items, what can we assume about the width of the .box elements?
+
+```
+div#container {
+   display: flex;
+}
+
+.box {
+   width: 300px;
+}
+```
+
+A8: The width of the .box elements will depend on the size of the screen.
+
+Q9:Which of the following shorthand syntaxes would achieve the same styling on the item class?
+
+```
+.item {
+  flex-grow: 2;
+  flex-shrink: 1;
+  flex-basis: 120px;
+}
+```
+
+A9: flex: 2 1 120px
+Correct! Values of flex-grow, flex-shrink and flex-basis can be declared in one line using the flex property.
