@@ -74,3 +74,10 @@ Q9:Which of the following shorthand syntaxes would achieve the same styling on t
 
 A9: flex: 2 1 120px
 Correct! Values of flex-grow, flex-shrink and flex-basis can be declared in one line using the flex property.
+
+Q10: Which property does not use the main axis to position the flex items?
+A10: align-content
+Correct! The cross axis, which is the vertical axis by default, is used to position flex items when the align-content property is declared.
+
+Q11: What is the difference between the align-content property and the align-items property?
+A11: The align-items property is used to align items within a single row, whereas the align-content property is used to align multiple rows.
