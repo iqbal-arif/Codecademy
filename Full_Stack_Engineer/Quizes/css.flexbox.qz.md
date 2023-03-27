@@ -7,7 +7,7 @@ Q2: What is the align-items property used for?
 A2: To align flex items on the cross axis.
 Correct! The align-items property makes it possible to space out flex items on the cross axis.
 
-Q3: Which three values do the justify-content and align-items properties share?
+Q3: Which three values do the **justify-content** and **align-items** properties share?
 A3: flex-start, flex-end, center
 
 Q4: Which of the following justify-content values positions all flex items in order with no additional spacing at the end of the row?
@@ -61,6 +61,7 @@ div#container {
 ```
 
 A8: The width of the .box elements will depend on the size of the screen.
+Correct! Given there is enough space, the .box elements will have the width of 300px, but if not, they will shrink to fit the screen.
 
 Q9:Which of the following shorthand syntaxes would achieve the same styling on the item class?
 
@@ -79,5 +80,5 @@ Q10: Which property does not use the main axis to position the flex items?
 A10: align-content
 Correct! The cross axis, which is the vertical axis by default, is used to position flex items when the align-content property is declared.
 
-Q11: What is the difference between the align-content property and the align-items property?
+Q11: What is the difference between the **align-content** property and the **align-items** property?
 A11: The align-items property is used to align items within a single row, whereas the align-content property is used to align multiple rows.
