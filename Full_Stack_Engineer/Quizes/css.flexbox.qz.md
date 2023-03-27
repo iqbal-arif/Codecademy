@@ -3,14 +3,14 @@ Q1: Which of the following display values will allow multiple flex containers to
 A1: inline-flex
 Correct! inline-flex allows us to create flex containers that are also inline elements.
 
-Q2: What is the align-items property used for?
+Q2: What is the **align-items** property used for?
 A2: To align flex items on the cross axis.
 Correct! The align-items property makes it possible to space out flex items on the cross axis.
 
 Q3: Which three values do the **justify-content** and **align-items** properties share?
 A3: flex-start, flex-end, center
 
-Q4: Which of the following justify-content values positions all flex items in order with no additional spacing at the end of the row?
+Q4: Which of the following **justify-content** values positions all **flex items** in order with no additional spacing at the end of the row?
 A4: flex-end
 Correct! flex-end will set all items to be positioned in order, with the last item starting on the right side of the parent container, with no extra space between or after them.
 
@@ -44,7 +44,7 @@ Q6: Imagine there are 60 extra pixels along the main axis and elements #alpha, #
 A6: 30 px
 Correct! #alpha will grow twice as much as #beta and #gamma do.
 
-Q7: Which of the following choices will set a flex container’s flex-direction property to column and its flex-wrap property to wrap?
+Q7: Which of the following choices will set a flex container’s **flex-direction** property to column and its **flex-wrap** property to wrap?
 
 A7: flex-flow: column wrap
 
