@@ -7,4 +7,7 @@ Q2: What is the align-items property used for?
 A2: To align flex items on the cross axis.
 Correct! The align-items property makes it possible to space out flex items on the cross axis.
 
-Q3:
+Q3: Which three values do the justify-content and align-items properties share?
+A3: flex-start, flex-end, center
+
+Q4:
