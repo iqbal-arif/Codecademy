@@ -11,3 +11,7 @@ body {
   background-color: black;
   opacity: 0.9;
 }
+
+.nav-container {
+  display: inline-flex;
+}
