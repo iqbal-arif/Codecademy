@@ -14,4 +14,37 @@ body {
 
 .nav-container {
   display: inline-flex;
+  background-color: slateblue;
+}
+
+.tea-container {
+  background-color: skyblue;
+}
+
+.tea-item {
+  background-color: palevioletred;
+}
+
+.hero-container {
+  background-color: thistle;
+}
+
+.location-container {
+  background-color: teal;
+}
+
+.location-item-container {
+  background-color: gray;
+}
+
+.location-item {
+  background-color: yellowgreen;
+}
+
+.foot-container {
+  background-color: navy;
+}
+
+.foot-item {
+  background-color: goldenrod;
 }
