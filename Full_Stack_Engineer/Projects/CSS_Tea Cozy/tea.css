@@ -56,12 +56,22 @@ body {
   justify-content: space-around;
 }
 
-.tea-item {
+.tea-item > img {
   height: 200px;
   width: 300px;
 }
 
-.sp .locations {
+.fall > img {
+  /* background-image: url('./images/img-berryblitz.jpg'); */
+  /* object-fit: fill; */
+}
+
+.spiced {
+  /* background-image: url('./images/img-spiced-rum.jpg');
+  object-fit: cover; */
+}
+
+.locations {
   background-image: url('./images/img-locations-background.jpg');
   object-fit: contain;
   margin: 20px 50px;
