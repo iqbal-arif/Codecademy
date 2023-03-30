@@ -56,7 +56,22 @@ body {
   justify-content: space-around;
 }
 
+.month {
+  text-align: center;
+}
+.tea-container {
+  width: 1000px;
+  justify-content: center;
+  /* justify-content: space-around; */
+
+  flex-direction: row;
+  display: inline-flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+}
+
 .tea-item > img {
+  text-align: center;
   height: 200px;
   width: 300px;
 }
