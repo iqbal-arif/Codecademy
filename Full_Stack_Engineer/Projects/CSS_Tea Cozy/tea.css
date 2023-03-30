@@ -23,11 +23,16 @@ body {
   justify-self: flex-start;
 }
 .tea-container {
-  background-color: skyblue;
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: skyblue; */
+  margin: 10px 0px;
+  padding: 20px 0px;
 }
 
 .tea-item {
-  background-color: palevioletred;
+  margin: 10px 10px;
+  /* background-color: palevioletred; */
 }
 
 .hero-container {
@@ -57,6 +62,7 @@ body {
 }
 
 .month {
+  margin: 70px 0px;
   text-align: center;
 }
 .tea-container {
