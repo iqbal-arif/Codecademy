@@ -56,7 +56,12 @@ body {
   justify-content: space-around;
 }
 
-.locations {
+.tea-item {
+  height: 200px;
+  width: 300px;
+}
+
+.sp .locations {
   background-image: url('./images/img-locations-background.jpg');
   object-fit: contain;
   margin: 20px 50px;
