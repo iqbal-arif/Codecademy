@@ -13,13 +13,21 @@ body {
 }
 
 .nav-container {
-  display: inline-flex;
-  background-color: slateblue;
+  display: flex;
+  height: 69px;
   width: 100vw;
   justify-content: flex-end;
+  text-decoration: underline;
+  align-items: center;
+  background-color: slateblue;
 }
 
-.log {
+.nav-item {
+  margin-left: 50px;
+}
+
+.nav-container > .log {
+  color: salmon;
   justify-self: flex-start;
 }
 .tea-container {
