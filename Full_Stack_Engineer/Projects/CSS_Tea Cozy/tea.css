@@ -37,10 +37,12 @@ body {
 
 .hero {
   background-image: url('./images/img-mission-background.jpg');
-  /* width: 1200px;
-  height: 700px; */
   object-fit: contain;
-  /* margin: 20px 50px; */
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+  height: 700px;
+  margin: 20px 50px;
   text-align: center;
   /* flex-direction: row; */
   /* justify-content: space-around; */
@@ -55,24 +57,24 @@ body {
   background-color: thistle;
   display: flex;
   /* flex-direction: column; */
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
   margin: auto;
 }
 
-.hero-item {
+#hero-item {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   width: 1200px;
   height: 100px;
   background-color: black;
-  text-align: center;
+  /* text-align: center; */
 }
 
-.hero-label {
+/* .hero-label {
   justify-content: space-around;
-}
+} */
 
 .month {
   margin: 70px 0px;
