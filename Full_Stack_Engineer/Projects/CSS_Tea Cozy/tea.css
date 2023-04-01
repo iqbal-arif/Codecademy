@@ -35,15 +35,28 @@ body {
   /* background-color: palevioletred; */
 }
 
-.hero-container {
+.hero {
   background-image: url('./images/img-mission-background.jpg');
   width: 1200px;
   height: 700px;
+  /* object-fit: contain; */
+  /* margin: 20px 50px; */
+  text-align: center;
+  /* flex-direction: row; */
+  /* justify-content: space-around; */
+  /* align-content: center; */
+  /* padding: 30px 0px; */
+}
+
+.hero-container {
+  /* background-image: url('./images/img-mission-background.jpg');
+  width: 1200px;
+  height: 700px; */
   background-color: thistle;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
   margin: auto;
 }
 
@@ -57,7 +70,7 @@ body {
   text-align: center;
 }
 
-.hero {
+.hero-label {
   justify-content: space-around;
 }
 
