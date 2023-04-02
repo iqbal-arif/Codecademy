@@ -171,9 +171,10 @@ body {
   justify-content: center;
 }
 
-/* .foot-container {
+.foot-container {
   background-color: navy;
-} */
+  height: 200px;
+}
 
 .foot-item {
   /* background-color: goldenrod; */
@@ -185,7 +186,6 @@ body {
 }
 
 .foot-item-copyright {
-  text-align: left;
   margin-left: 20px;
   margin-bottom: 30px;
 }
