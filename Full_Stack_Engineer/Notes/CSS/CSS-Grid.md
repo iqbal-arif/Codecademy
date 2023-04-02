@@ -85,3 +85,58 @@ The shorthand property, grid-template, can replace the previous two CSS properti
 When using grid-template, the values before the slash will determine the size of each row. The values after the slash determine the size of each column. In this example, we’ve made two rows and three columns of varying sizes.
 
 The same rules from before apply; when using percentages to set rows, each row will be a percentage of the grid’s total height. Columns are still a percentage of the total width.
+
+## Fraction
+
+You may already be familiar with several types of responsive units such as percentages (%), ems and rems. CSS Grid introduced a new relative sizing unit — fr, like fraction.
+
+By using the fr unit, we can define the size of columns and rows as a fraction of the grid’s length and width. This unit was specifically created for use in CSS Grid. Using fr makes it easier to prevent grid items from overflowing the boundaries of the grid. Consider the code below:
+
+```
+.grid {
+  display: grid;
+  width: 1000px;
+  height: 400px;
+  grid-template: 2fr 1fr 1fr / 1fr 3fr 1fr;
+}
+```
+
+In this example, the grid will have three rows and three columns. The rows are splitting up the available 400 pixels of height into four parts. The first row gets two of those parts, the second row gets one, and the third row gets one. Therefore the first row is 200 pixels tall, and the second and third rows are 100 pixels tall.
+
+Each column’s width is a fraction of the available space. In this case, the available space is split into five parts. The first column gets one-fifth of the space, the second column gets three-fifths, and the last column gets one-fifth. Since the total width is 1000 pixels, this means that the columns will have widths of 200 pixels, 600 pixels, and 200 pixels respectively.
+
+It is possible to use fr with other units as well. When this happens, each fr represents a fraction of the available space.
+
+```
+.grid {
+  display: grid;
+  width: 100px;
+  grid-template-columns: 1fr 60px 1fr;
+}
+```
+
+In this example, 60 pixels are taken up by the second column. Therefore the first and third columns have 40 available to split between them. Since each gets one fraction of the total, they both end up being 20 pixels wide.
+
+## Repeat
+
+The properties that define the number of rows and columns in a grid can take a function as a value. repeat() is one of these functions. The repeat() function was created specifically for CSS Grid.
+
+```
+.grid {
+  display: grid;
+  width: 300px;
+  grid-template-columns: repeat(3, 100px);
+}
+```
+
+The repeat function will duplicate the specifications for rows or columns a given number of times. In the example above, using the repeat function will make the grid have three columns that are each 100 pixels wide. It is the same as writing:
+
+grid-template-columns: 100px 100px 100px;
+
+Repeat is particularly useful with fr. For example, repeat(5, 1fr) would split your table into five equal rows or columns.
+
+Finally, the second parameter of repeat() can have multiple values.
+
+grid-template-columns: repeat(2, 20px 50px)
+
+This code will create four columns where the first and third columns will be 20 pixels wide and the second and fourth will be 50 pixels wide.
