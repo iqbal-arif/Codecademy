@@ -140,3 +140,50 @@ Finally, the second parameter of repeat() can have multiple values.
 grid-template-columns: repeat(2, 20px 50px)
 
 This code will create four columns where the first and third columns will be 20 pixels wide and the second and fourth will be 50 pixels wide.
+
+## minmax
+
+So far, all of the grids that we have worked with have been a fixed size. The grid in our example has been 400 pixels wide and 500 pixels tall. But sometimes you might want a grid to resize based on the size of your web browser.
+
+In these situations, you might want to prevent a row or column from getting too big or too small. For example, if you have a 100-pixel wide image in your grid, you probably don’t want its column to get thinner than 100 pixels! The minmax() function can help us solve this problem.
+
+```
+.grid {
+  display: grid;
+  grid-template-columns: 100px minmax(100px, 500px) 100px;
+}
+```
+
+In this example, the first and third columns will always be 100 pixels wide, no matter the size of the grid. The second column, however, will vary in size as the overall grid resizes. The second column will always be between 100 and 500 pixels wide.
+
+## Grid Gap
+
+In all of our grids so far, there hasn’t been any space between the items in our grid. The CSS properties row-gap and column-gap will put blank space between every row and column in the grid.
+
+```
+.grid {
+  display: grid;
+  width: 320px;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
+}
+```
+
+It is important to note that grid gap properties do not add space at the beginning or end of the grid. In the example code, our grid will have three columns with two ten-pixel gaps between them.
+
+Let’s quickly calculate how wide these columns are. Remember that using fr considers all of the available space. The grid is 320 pixels wide and 20 of those pixels are taken up by the two grid gaps. Therefore each column takes a piece of the 300 available pixels. Each column gets 1fr, so the columns are evenly divided into thirds (or 100 pixels each).
+
+Finally, there is a shorthand CSS property, gap, that can set the row and column gap at the same time.
+
+```
+.grid {
+  display: grid;
+  width: 320px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px 10px;
+}
+```
+
+The example above will set the distance between rows to 20 pixels and the distance between columns to 10 pixels. Unlike other CSS grid properties, this shorthand does not take a / between values! If only one value is given, it will set the column gap and the row gap to that value.
+
+    **Note:** You might have seen grid-row-gap, grid-column-gap, and grid-gap in other code, but these properties are now deprecated.
