@@ -13,21 +13,28 @@ body {
 }
 
 .nav-container {
-  display: flex;
+  display: inline-flex;
   height: 69px;
   width: 100vw;
-  justify-content: flex-end;
   text-decoration: underline;
   align-items: center;
+  justify-content: space-between;
   background-color: slateblue;
 }
-
+.nav-menu-container {
+  display: inline-flex;
+}
 .nav-item {
+  /* justify-content: flex-end; */
   margin-left: 50px;
 }
 
-.nav-container > .log {
+.log {
+  background-image: url('./images/img-tea-cozy-logo.png');
+  object-fit: cover;
   color: salmon;
+  width: 50px;
+  margin-right: 50px;
   justify-self: flex-start;
 }
 .tea-container {
@@ -53,7 +60,6 @@ body {
   margin: 20px 50px;
   text-align: center;
   /* flex-direction: row; */
-  /* justify-content: space-around; */
   /* align-content: center; */
   /* padding: 30px 0px; */
 }
