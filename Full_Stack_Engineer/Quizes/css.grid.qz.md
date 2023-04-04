@@ -48,3 +48,11 @@ Q5: Which of the following is equivalent to the sample code below?
   grid-template-rows: 100px 200px 100px;
 }
 ```
+
+A5:
+
+```
+grid-template: 100px 200px 100px / 200px 200px;
+```
+
+The format for using grid-template as a shorthand is grid-template-rows / grid-template-columns.
