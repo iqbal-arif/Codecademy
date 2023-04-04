@@ -1,0 +1,27 @@
+.grid {
+  border: 2px blue solid;
+  height: 500px;
+  width: 500px;
+  display: grid;
+  /*
+    Structure the grid to have four columns — the first two each taking up 25% of the total width, the third column taking up two-thirds of the remaining space, and the last column taking up the last third of the remaining space.
+    */
+  grid-template-columns: 25% 25% 2fr 1fr;
+
+  /*
+    Give the grid two rows, both 200px in size.
+    */
+  grid-template-rows: 200px 200px;
+
+  /*
+    Put a 10px gap in between the rows of the grid and a 15px gap in between the columns of the grid.
+    */
+  gap: 10px 15px;
+}
+
+.box {
+  background-color: beige;
+  color: black;
+  border-radius: 5px;
+  border: 2px dodgerblue solid;
+}
