@@ -60,9 +60,12 @@ When an item spans multiple rows or columns using these properties, it will also
 Refactor your code from the last exercise. Replace grid-row-start and grid-row-end with grid-row. Make sure the item still takes up rows five and six.
 */
 
+/*
+Deactivated for Gird Column property.
 .a {
   grid-row: 5/7;
 }
+*/
 
 .box {
   background-color: beige;
@@ -102,7 +105,24 @@ This is telling the item element to begin in column four and take up two columns
 span is a useful keyword, because it avoids off-by-one errors (miscalculating the ending grid line) you might make when determining the ending grid line of an element. If you know where you want your grid item to start and how long it should be, use span!
 */
 
+/*
+
+Let’s make box b take up a few rows. Go back to style.css, in the .b ruleset, use grid-row with span to make the item take up rows two through four.
+
+Next, make box b take up six columns. In style.css, in the .b ruleset, use grid-column to set its starting column to 2. Use span to make the item take up six columns.
+*/
+
 .b {
   grid-row: 2 / span 3;
   grid-column: 2 / span 6;
+}
+
+/*
+Now let’s go back to the box a ruleset. Refactor the grid-column-start and grid-column-end declarations into a shorthand grid-column declaration. The grid item should still start in the first column and span 2 columns using the span keyword.
+*/
+.a {
+  grid-row: 5 / 7;
+  /* grid-column-start: 1;
+    grid-column-end: 3; */
+  grid-column: 1 / span 2;
 }
