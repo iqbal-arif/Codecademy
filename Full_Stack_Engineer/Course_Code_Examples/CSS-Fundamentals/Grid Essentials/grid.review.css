@@ -25,3 +25,15 @@
   border-radius: 5px;
   border: 2px dodgerblue solid;
 }
+
+/*
+Without using span, make the box with class a take up the first two rows of the grid
+
+Using the span keyword, make the box with class a take up the first two columns of the grid. 
+*/
+.a {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: span 2;
+}
