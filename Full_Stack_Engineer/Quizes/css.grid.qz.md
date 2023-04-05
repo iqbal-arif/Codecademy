@@ -122,3 +122,13 @@ A11:
 grid-template-columns : 1fr 2fr;
 
 That’s it! The available space in the grid is split into 3 equal parts, of which the first column takes 1 part and the second column takes 2 parts.
+
+Q12: Which of the following would make a grid with 2 equally sized columns and 4 equally sized rows?
+A12:
+
+```
+grid-template-columns: 50% 50%;
+grid-template-rows: 1fr 1fr 1fr 1fr;
+```
+
+Yes! The 2 columns are the same size because they each take up 50% of the total width. The 4 rows split up the available height into 4 equal parts.
