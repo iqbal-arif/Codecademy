@@ -136,3 +136,21 @@ Yes! The 2 columns are the same size because they each take up 50% of the total 
 Q13: Which of the following would make an item start at row 2 and end right before row 5?
 A13:
 grid-row: 2 / span 3;
+
+Q14: Which of the following is equivalent to the sample code below?
+
+.item {
+grid-column-start: 2;
+grid-column-end: 5;
+grid-row-start: 1;
+grid-row-end: 4;
+}
+
+A14:
+
+```
+grid-column: 2/5;
+grid-row: 1/4;
+
+Right! The item takes up columns 2 through 4 and rows 1 through 3.
+```
