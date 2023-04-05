@@ -108,3 +108,12 @@ Great! This will make the item take up columns 1, 2, and 3 – spanning 3 column
 Q9: Which of the following is a display value for a CSS Grid parent element?
 A9: grid
 Great! This display value turns the container into a 2-dimensional system to lay out HTML elements.
+
+Q10: Which of the following would create an item that begins at the 3rd row of the grid?
+A10:
+
+```
+grid-row-start: 3;
+Correct! In the CSS Grid, row and column values are 1-indexed, so you can get the 3rd row by using index 3 with grid-row-start.
+
+```
