@@ -132,3 +132,7 @@ grid-template-rows: 1fr 1fr 1fr 1fr;
 ```
 
 Yes! The 2 columns are the same size because they each take up 50% of the total width. The 4 rows split up the available height into 4 equal parts.
+
+Q13: Which of the following would make an item start at row 2 and end right before row 5?
+A13:
+grid-row: 2 / span 3;
