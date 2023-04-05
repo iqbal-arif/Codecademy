@@ -115,5 +115,10 @@ A10:
 ```
 grid-row-start: 3;
 Correct! In the CSS Grid, row and column values are 1-indexed, so you can get the 3rd row by using index 3 with grid-row-start.
-
 ```
+
+Q11: Which of the following would make a grid with 2 columns - one twice as big as the other?
+A11:
+grid-template-columns : 1fr 2fr;
+
+That’s it! The available space in the grid is split into 3 equal parts, of which the first column takes 1 part and the second column takes 2 parts.
