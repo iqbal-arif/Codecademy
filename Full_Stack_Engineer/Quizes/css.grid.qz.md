@@ -77,7 +77,7 @@ A6:
 This item spans two rows, one of height 100px and one of height 200px, and one grid-gap of size 10px in between them, for a total of 100 + 200 + 10 = 310px in total.
 
 Q7: How wide will the .item element be if the following CSS is in effect?
-A7:
+A7:200px
 
 ```
 .layout {
@@ -136,6 +136,7 @@ Yes! The 2 columns are the same size because they each take up 50% of the total 
 Q13: Which of the following would make an item start at row 2 and end right before row 5?
 A13:
 grid-row: 2 / span 3;
+Great! This will have the element take up rows 2, 3, and 4.
 
 Q14: Which of the following is equivalent to the sample code below?
 
@@ -154,3 +155,7 @@ grid-row: 1/4;
 
 Right! The item takes up columns 2 through 4 and rows 1 through 3.
 ```
+
+Q15: Which function can be used to set minimum and maximum heights and widths for your rows and columns?
+A15: minmax();
+Right! You can use minmax() to bound your rows and columns.
