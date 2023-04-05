@@ -77,3 +77,47 @@ You may want to expand this section of the website to view the code above more c
     The grid-template-columns declaration uses the fr value to cause the left column to use one fourth of the available space on the page and the right column to use three-fourths of the available space on the page.
     In each ruleset below .container, we use the grid-area property to tell that section to cover the portion of the page specified. The header element spans the first row and both columns. The nav element spans the second row and both columns. The element with class .info spans the third row and left column. The element with class .services spans the third row and right column. The footer element spans the bottom row and both columns.
     That’s it! An entire page laid out in 40 lines of code.
+
+## Overlapping Elements
+
+Another powerful feature of CSS Grid Layout is the ability to easily overlap elements.
+
+When overlapping elements, it is generally easiest to use the grid-area property with grid row names. Remember that grid-area will set the starting and ending positions for both the rows and columns of an item.
+
+```
+<div class="container">
+  <div class="info">Info!</div>
+  <img src="#" />
+  <div class="services">Services!</div>
+</div>
+```
+
+CSS Style Sheet
+
+```
+.container {
+  display: grid;
+  grid-template: repeat(8, 200px) / repeat(6, 100px);
+}
+
+.info {
+  grid-area: 1 / 1 / 9 / 4;
+}
+
+.services {
+  grid-area: 1 / 4 / 9 / 7;
+}
+
+img {
+  grid-area: 2 / 3 / 5 / 5;
+  z-index: 5;
+}
+```
+
+In the example above, there is a grid container with eight rows and six columns. There are three grid items within the container — a <div> with the class info, a <div> with the class services, and an image.
+
+The info section covers all eight rows and the first three columns. The services section covers all eight rows and the last three columns.
+
+The image spans the 2nd, 3rd, and 4th rows and the 3rd and 4th columns.
+
+The z-index property tells the browser to render the image element on top of the services and info sections so that it is visible.
