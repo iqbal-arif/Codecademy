@@ -75,3 +75,36 @@ A6:
 ```
 
 This item spans two rows, one of height 100px and one of height 200px, and one grid-gap of size 10px in between them, for a total of 100 + 200 + 10 = 310px in total.
+
+Q7: How wide will the .item element be if the following CSS is in effect?
+A7:
+
+```
+.layout {
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 100px 100px 200px 100px;
+  gap: 10px;
+}
+.item {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+```
+
+The item only spans 1 column, and each column is 200px.
+
+Q8: Which of the following would make an item span 3 columns?
+A8:
+
+```
+grid-column-start:1;
+gird-column-end:4;
+
+Great! This will make the item take up columns 1, 2, and 3 – spanning 3 columns in total.
+```
+
+Q9: Which of the following is a display value for a CSS Grid parent element?
+A9: grid
+Great! This display value turns the container into a 2-dimensional system to lay out HTML elements.
