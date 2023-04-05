@@ -56,3 +56,22 @@ grid-template: 100px 200px 100px / 200px 200px;
 ```
 
 The format for using grid-template as a shorthand is grid-template-rows / grid-template-columns.
+
+Q6: How tall will the .item element be if the following CSS is in effect?
+A6:
+
+```
+.layout {
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 100px 100px 200px 100px;
+  gap: 10px;
+}
+.item {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+```
+
+This item spans two rows, one of height 100px and one of height 200px, and one grid-gap of size 10px in between them, for a total of 100 + 200 + 10 = 310px in total.
