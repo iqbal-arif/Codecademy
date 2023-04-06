@@ -290,3 +290,20 @@ align-content: center;
 
     1. In the example above, the grid container is 600 pixels tall, but we only specified two rows that are 200 pixels each. This will leave 200 pixels of unused space in the grid container.
     2. align-content: center; positions the rows in the center of the grid, leaving 100 pixels at the top and 100 pixels at the bottom of the grid.
+
+## Justify Self and Align Self
+
+The justify-items and align-items properties specify how all grid items contained within a single container will position themselves along the row and column axes, respectively.
+
+justify-self specifies how an individual element should position itself with respect to the row axis. This property will override justify-items for any item on which it is declared.
+
+align-self specifies how an individual element should position itself with respect to the column axis. This property will override align-items for any item on which it is declared.
+
+These properties are declared on grid items. They both accept these four properties:
+
+    start — positions grid items on the left side/top of the grid area
+    end — positions grid items on the right side/bottom of the grid area
+    center — positions grid items on the center of the grid area
+    stretch — positions grid items to fill the grid area (default)
+
+align-self and justify-self accept the same values as align-items and justify-items. You can read about these values on the Mozilla Developer Network. The definitions for these values can also be found in the documentation. It is important to note that the page with the definitions includes some values that are not accepted in CSS Grid layout.
