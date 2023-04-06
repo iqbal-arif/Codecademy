@@ -252,27 +252,32 @@ In the example above, we use align-items to adjust the positioning of some eleme
     4. By setting the align-items property to center, the .card <div>s will be centered vertically inside of their rows. They will only be as tall as necessary to contain their content (the words Card 1, etc).
     5. If we specify a height for the .card elements, they will not stretch the height of their row even if align-items: stretch; is set.
 
-## Align Content
+## Align Content - Position Rows - Column Axis - Top - Bottom - Grid Container
 
 In the previous exercise, we positioned grid items within their rows. align-content positions the rows along the column axis, or from top to bottom, and is declared on grid containers.
 
 It accepts these positional values:
 
-    start — aligns the grid to the top of the grid container
-    end — aligns the grid to the bottom of the grid container
-    center — centers the grid vertically in the grid container
-    stretch — stretches the grid items to increase the size of the grid to expand vertically across the container
-    space-around — includes an equal amount of space on each side of a grid element, resulting in double the amount of space between elements as there is before the first and after the last element
-    space-between — includes an equal amount of space between grid items and no space at either end
-    space-evenly — places an even amount of space between grid items and at either end
+    1. start — aligns the grid to the top of the grid container
+    2. end — aligns the grid to the bottom of the grid container
+    3. center — centers the grid vertically in the grid container
+    4. stretch — stretches the grid items to increase the size of the grid to expand vertically across the container
+    5. space-around — includes an equal amount of space on each side of a grid element, resulting in double the amount of space between elements as there is before the first and after the last element
+    6. space-between — includes an equal amount of space between grid items and no space at either end
+    7. space-evenly — places an even amount of space between grid items and at either end
 
 There are several other values that align-content accepts, which you can read about on the Mozilla Developer Network. The definitions for these values can also be found in the documentation. It is important to note that the page with the definitions includes some values that are not accepted in CSS Grid layout.
 
+```
 <main>
   <div class="top">Top</div>
   <div class="bottom">Bottom</div>
 </main>
+```
 
+CSS Style Sheet
+
+```
 main {
 display: grid;
 height: 600px;
@@ -281,6 +286,7 @@ grid-template-areas: "top"
 "bottom";
 align-content: center;
 }
+```
 
-    In the example above, the grid container is 600 pixels tall, but we only specified two rows that are 200 pixels each. This will leave 200 pixels of unused space in the grid container.
-    align-content: center; positions the rows in the center of the grid, leaving 100 pixels at the top and 100 pixels at the bottom of the grid.
+    1. In the example above, the grid container is 600 pixels tall, but we only specified two rows that are 200 pixels each. This will leave 200 pixels of unused space in the grid container.
+    2. align-content: center; positions the rows in the center of the grid, leaving 100 pixels at the top and 100 pixels at the bottom of the grid.
