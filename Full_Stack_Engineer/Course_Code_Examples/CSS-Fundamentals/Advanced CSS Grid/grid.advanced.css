@@ -17,8 +17,10 @@ main {
   /* align-items: end; */
   /* align-items: center; */
   align-items: stretch;
-  height: 1600px;
+  /* height: 1600px; */
   align-content: center;
+  grid-auto-rows: 500px;
+  grid-auto-flow: column;
 }
 
 h2 {
