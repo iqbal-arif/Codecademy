@@ -17,6 +17,8 @@ main {
   /* align-items: end; */
   /* align-items: center; */
   align-items: stretch;
+  height: 1600px;
+  align-content: center;
 }
 
 h2 {
