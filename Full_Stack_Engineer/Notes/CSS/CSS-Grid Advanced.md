@@ -210,3 +210,77 @@ justify-content: center;
 
     1. In the example above, the grid container is 1000 pixels wide, but we only specified two columns that are 300 pixels each. This will leave 400 pixels of unused space in the grid container.
     2. justify-content: center; positions the columns in the center of the grid, leaving 200 pixels on the right and 200 pixels on the left of the grid.
+
+## Align Items - Column - Top - to - Bottom - Grid Area
+
+In the previous two exercises, we learned how to position grid items and grid columns from left to right across the page. Now we’ll learn how to position grid items from top to bottom!
+
+align-items is a property that positions grid items along the block, or column axis. This means that it positions items from top to bottom. This property is declared on grid containers.
+
+align-items accepts these values:
+
+    start — aligns grid items to the top side of the grid area
+    end — aligns grid items to the bottom side of the grid area
+    center — aligns grid items to the center of the grid area
+    stretch — stretches all items to fill the grid area
+
+There are several other values that align-items accepts, which you can read about on the Mozilla Developer Network. The definitions for these values can also be found in the documentation. It is important to note that the page with the definitions includes some values that are not accepted in CSS Grid layout.
+
+```
+<main>
+  <div class="card">Card 1</div>
+  <div class="card">Card 2</div>
+  <div class="card">Card 3</div>
+</main>
+```
+
+CSS Style Sheet
+
+```
+main {
+display: grid;
+grid-template-rows: repeat(3, 400px);
+align-items: center;
+}
+```
+
+In the example above, we use align-items to adjust the positioning of some elements on this web page.
+
+    1. There is a grid container with three rows that are 400 pixels tall.
+    2. The container has three grid items that do not have a specified width.
+    3. Without setting the align-items property, these elements will span the height of the row they are in (400 pixels).
+    4. By setting the align-items property to center, the .card <div>s will be centered vertically inside of their rows. They will only be as tall as necessary to contain their content (the words Card 1, etc).
+    5. If we specify a height for the .card elements, they will not stretch the height of their row even if align-items: stretch; is set.
+
+## Align Content
+
+In the previous exercise, we positioned grid items within their rows. align-content positions the rows along the column axis, or from top to bottom, and is declared on grid containers.
+
+It accepts these positional values:
+
+    start — aligns the grid to the top of the grid container
+    end — aligns the grid to the bottom of the grid container
+    center — centers the grid vertically in the grid container
+    stretch — stretches the grid items to increase the size of the grid to expand vertically across the container
+    space-around — includes an equal amount of space on each side of a grid element, resulting in double the amount of space between elements as there is before the first and after the last element
+    space-between — includes an equal amount of space between grid items and no space at either end
+    space-evenly — places an even amount of space between grid items and at either end
+
+There are several other values that align-content accepts, which you can read about on the Mozilla Developer Network. The definitions for these values can also be found in the documentation. It is important to note that the page with the definitions includes some values that are not accepted in CSS Grid layout.
+
+<main>
+  <div class="top">Top</div>
+  <div class="bottom">Bottom</div>
+</main>
+
+main {
+display: grid;
+height: 600px;
+grid-template-rows: 200px 200px;
+grid-template-areas: "top"
+"bottom";
+align-content: center;
+}
+
+    In the example above, the grid container is 600 pixels tall, but we only specified two rows that are 200 pixels each. This will leave 200 pixels of unused space in the grid container.
+    align-content: center; positions the rows in the center of the grid, leaving 100 pixels at the top and 100 pixels at the bottom of the grid.
