@@ -52,3 +52,32 @@ A9: 100px
 The new box will still be in one of the explicitly defined columns, which are 100px each.
 
 Q10: What does justify-content: end do?
+A10: It aligns the grid items to the right end of the grid container.
+Yes! justify-content aligns along the row axis, where end corresponds to the right side of the container.
+
+Q11:Which pair of properties both align along the row axis (as opposed to the column axis)?
+A11: **justify-content,justify-self**
+
+Q12: Imagine we have a grid with 2 explicitly defined rows and 2 explicitly defined columns and no other grid properties set in the CSS, with the following divs inside of it. If we added a <div class="box">E</div> to the HTML after box D, where would box E appear on the page?
+
+```
+<div class="box">A</div>
+<div class="box">B</div>
+<div class="box">C</div>
+<div class="box">D</div>
+```
+
+A12: It would appear underneath box C in a new row.
+Great. The default is for the grid to implicitly create new rows, unless grid-auto-flow is specifically set to column.
+
+Q13: Imagine we have a grid with the following CSS properties, with 4 boxes inside of it. If we added a fifth box to the HTML, what height would it have?
+
+.grid {
+grid-template-rows: repeat(2, 50px);
+grid-template-columns: repeat(2, 100px);
+grid-auto-rows: 60px;
+grid-auto-columns: 70px;
+}
+
+A13: 60px
+Any implicitly created rows will have the height specified by grid-auto-rows, not the height of the explicitly created rows.

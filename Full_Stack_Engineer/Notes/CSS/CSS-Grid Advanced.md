@@ -291,7 +291,7 @@ align-content: center;
     1. In the example above, the grid container is 600 pixels tall, but we only specified two rows that are 200 pixels each. This will leave 200 pixels of unused space in the grid container.
     2. align-content: center; positions the rows in the center of the grid, leaving 100 pixels at the top and 100 pixels at the bottom of the grid.
 
-## Justify Self and Align Self - Row -Axis - Individual Item
+## Justify Self (Row -Axis) and Align Self - (Column -Axis) - Individual Item
 
 The justify-items and align-items properties specify how all grid items contained within a single container will position themselves along the row and column axes, respectively.
 
