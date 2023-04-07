@@ -390,3 +390,71 @@ Great work! You have learned many new properties to use when creating a layout u
 
     10. grid-auto-columns specifies the width of columns added implicitly to the grid
     11. grid-auto-flow specifies in which direction implicit elements should be created
+
+**Concept Review**
+
+## Justify Self
+
+// The grid items are positioned to the right (end) of the row.
+
+#grid-container {
+display: grid;
+justify-items: start;
+}
+
+.grid-items {
+justify-self: end;
+}
+
+The CSS justify-self property is used to set how an individual grid item positions itself along the row or inline axis. By default grid items inherit the value of the justify-items property on the container. So if the justify-self value is set, it would over-ride the inherited justify-items value.
+
+The value start positions grid items on the left side of the grid area.
+
+The value end positions the grid items on the right side of the grid area.
+
+The value center positions grid items on the center of the grid area.
+
+The value stretch positions grid items to fill the grid area (default).
+
+## CSS grid-auto-flow
+
+/_CSS Syntax _/
+grid-auto-flow: row|column|dense|row dense|column dense;
+
+The CSS grid-auto-flow property specifies whether implicity-added elements should be added as rows or columns within a grid or, in other words, it controls how auto-placed items get inserted in the grid and this property is declared on the grid container.
+
+The value row specifies the new elements should fill rows from left to right and create new rows when there are too many elements (default).
+
+The value column specifies the new elements should fill columns from top to bottom and create new columns when there are too many elements.
+
+The value dense invokes an algorithm that attempts to fill holes earlier in the grid layout if smaller elements are added.
+
+## CSS Block Level Grid
+
+#grid-container {
+display: grid;
+}
+
+CSS Grid is a two-dimensional CSS layout system. To set an HTML element into a block-level grid container use display: grid property/value. The nested elements inside this element are called grid items.
+
+## CSS grid-area
+
+.item1 {
+grid-area: 2 / 1 / span 2 / span 3;
+}
+
+The CSS grid-area property specifies a grid item’s size and location in a grid layout and is a shorthand property for the grid-row-start, grid-column-start, grid-row-end, and grid-column-end in that order. Each value is separated by a /.
+
+In the included example, Item1 will start on row 2 and column 1, and span 2 rows and 3 columns
+
+## Align Self
+
+The CSS align-self property is used to set how an individual grid item positions itself along the column or block axis. By default grid items inherit the value of the align-items property on the container. So if the align-self value is set, it would over-ride the inherited align-items value.
+
+The value start positions grid items on the top of the grid area.
+
+The value end aligns the grid on the bottom of the grid area.
+
+The value center positions grid items on the center of the grid area.
+
+The value stretch positions grid items to fill the grid area (default).
