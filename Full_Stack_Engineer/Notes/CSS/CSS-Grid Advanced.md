@@ -363,7 +363,7 @@ If we did not specify grid-auto-rows, the rows would be auto-adjusted to the hei
 
 In addition to setting the dimensions of implicitly-added rows and columns, we can specify the order in which they are rendered.
 
-grid-auto-flow specifies whether new elements should be added to rows or columns, and is declared on grid containers.
+grid-auto-flow specifies whether new elements should be added to rows or columns, and is **declared on grid containers**.
 
 grid-auto-flow accepts these values:
 
