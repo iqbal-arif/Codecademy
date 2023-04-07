@@ -32,6 +32,7 @@ grid-auto-flow: column;
 
 A7: 100px
 The boxes will fill up implicitly created columns which alternate between being 100px and 200px.
+Awesome! The boxes will fill up implicitly created columns which alternate between being 100px and 200px. Odd rows will be 100px in size.
 
 Q8: Which of the following can **grid-auto-flow** take as a value to favor filling holes earlier in the grid?
 A8: **dense**
@@ -81,3 +82,34 @@ grid-auto-columns: 70px;
 
 A13: 60px
 Any implicitly created rows will have the height specified by grid-auto-rows, not the height of the explicitly created rows.
+
+Q14: Choose the correct code snippet which specifies that the new elements should fill the rows from left to right, and that they should also fill the holes as well.
+
+A14:
+
+```
+.grid{
+    display: gird;
+    grid-auto-flow: row dense;
+}
+Correct! The value row dense specifies that the elements should fill the rows and the holes as well.
+
+```
+
+Q15:Which of the following is equivalent to the sample code below?
+
+```
+.item {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+```
+
+A15: grid-area: 2 / 1/ 4/ 2;
+Correct! The order for grid-area is: grid-row-start, grid-column-start, grid-row-end, grid-column-end.
+
+Q16: The align-self property is declared on the grid container.
+A16: False.
+Correct! The align-self property is declared on grid items and not the grid container.
