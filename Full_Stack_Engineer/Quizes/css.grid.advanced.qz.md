@@ -23,13 +23,32 @@ Yes! align-self is for the grid child elements.
 
 Q7: Imagine we have a grid with 4 items in it, with the following CSS properties. What width would the 3rd column be?
 
+```
 .grid {
 grid-auto-columns: 100px 200px;
 grid-auto-flow: column;
 }
+```
+
 A7: 100px
 The boxes will fill up implicitly created columns which alternate between being 100px and 200px.
 
 Q8: Which of the following can **grid-auto-flow** take as a value to favor filling holes earlier in the grid?
 A8: **dense**
 Yes! A grid with a **dense** setting for **grid-auto-flow** will try to fit an item into spaces earlier in the grid if there is room for it.
+
+Q9: Imagine we have a grid with the following CSS properties, with 4 boxes inside of it. If we added a fifth box to the HTML, what width would it have?
+
+```
+.grid {
+  grid-template-rows: repeat(2, 50px);
+  grid-template-columns: repeat(2, 100px);
+  grid-auto-rows: 60px;
+  grid-auto-columns: 70px;
+}
+```
+
+A9: 100px
+The new box will still be in one of the explicitly defined columns, which are 100px each.
+
+Q10: What does justify-content: end do?

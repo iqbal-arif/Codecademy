@@ -322,10 +322,11 @@ The default behavior of the implicit grid is as follows: items fill up rows firs
 
 ## Grid Auto Rows and Grid Auto Columns
 
-CSS Grid provides two properties to specify the size of grid tracks added implicitly: grid-auto-rows and grid-auto-columns. These properties are declared on grid containers.
+CSS Grid provides two properties to specify the size of grid tracks added implicitly: grid-auto-rows and grid-auto-columns. **These properties are declared on grid containers**.
 
+**_Implicit_**
 grid-auto-rows specifies the height of implicitly added grid rows. grid-auto-columns specifies the width of implicitly added grid columns.
-
+**_Explicit_**
 grid-auto-rows and grid-auto-columns accept the same values as their explicit counterparts, grid-template-rows and grid-template-columns:
 
     1. pixels (px)
