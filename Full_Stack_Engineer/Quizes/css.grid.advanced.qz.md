@@ -17,4 +17,13 @@ Q5: Which **justify-conten**t value would you use to have an even amount of spac
 A5: **space-around**
 Right! This creates even space between the grid items, with a half space on each end.
 
-Q6:
+Q6:Which of the following can be applied to a grid item (as opposed to the grid container)?
+A6: **align-self**
+Yes! align-self is for the grid child elements.
+
+Q7: Imagine we have a grid with 4 items in it, with the following CSS properties. What width would the 3rd column be?
+
+.grid {
+grid-auto-columns: 100px 200px;
+grid-auto-flow: column;
+}

@@ -20,7 +20,7 @@ You will also learn about the explicit and implicit grids and grid axes.
 
 ## Grid Template Areas
 
-The grid-template-areas property allows you to name sections of your web page to use as values in the grid-row-start, grid-row-end, grid-column-start,grid-column-end, and grid-area properties. This property is declared on grid containers.
+The grid-template-areas property allows you to name sections of your web page to use as values in the grid-row-start, grid-row-end, grid-column-start,grid-column-end, and grid-area properties. **This property is declared on grid containers**.
 
 ```
 <div class="container">
@@ -134,7 +134,7 @@ The row axis stretches from left to right across the web page.
 
 In the following four exercises, we will learn and use properties that rely on an understanding of grid axes.
 
-justify-items is a property that positions grid items along the inline, or row, axis. This means that it positions items from left to right across the web page. This property is declared on grid containers.
+justify-items is a property that positions grid items along the inline, or row, axis. This means that it positions items from left to right across the web page. **This property is declared on grid containers**.
 
 justify-items accepts these values:
 
@@ -175,7 +175,7 @@ In the example above, we use justify-items to adjust the positioning of some ele
 
 In the previous exercise, we learned how to position elements within their columns. In this exercise, we will learn how to position a grid within its parent element.
 
-We can use justify-content to position the entire grid along the row axis. This property is declared on grid containers.
+We can use justify-content to position the entire grid along the row axis. **This property is declared on grid containers**.
 
 It accepts these values:
 
@@ -215,7 +215,7 @@ justify-content: center;
 
 In the previous two exercises, we learned how to position grid items and grid columns from left to right across the page. Now we’ll learn how to position grid items from top to bottom!
 
-align-items is a property that positions grid items along the block, or column axis. This means that it positions items from top to bottom. This property is declared on grid containers.
+align-items is a property that positions grid items along the block, or column axis. This means that it positions items from top to bottom. **This property is declared on grid containers**.
 
 align-items accepts these values:
 
@@ -299,7 +299,7 @@ justify-self specifies how an individual element should position itself with res
 
 align-self specifies how an individual element should position itself with respect to the column axis. This property will override align-items for any item on which it is declared.
 
-These properties are declared on grid items. They both accept these four properties:
+**_These properties are declared on grid items_**. They both accept these four properties:
 
     start — positions grid items on the left side/top of the grid area
     end — positions grid items on the right side/bottom of the grid area
