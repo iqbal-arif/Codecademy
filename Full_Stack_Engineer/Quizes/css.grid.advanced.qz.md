@@ -27,3 +27,9 @@ Q7: Imagine we have a grid with 4 items in it, with the following CSS properties
 grid-auto-columns: 100px 200px;
 grid-auto-flow: column;
 }
+A7: 100px
+The boxes will fill up implicitly created columns which alternate between being 100px and 200px.
+
+Q8: Which of the following can **grid-auto-flow** take as a value to favor filling holes earlier in the grid?
+A8: **dense**
+Yes! A grid with a **dense** setting for **grid-auto-flow** will try to fit an item into spaces earlier in the grid if there is room for it.
