@@ -92,7 +92,6 @@ img {
 
 .testimonial {
   display: grid;
-
   background-color: #f0f0f0;
   color: #db6363;
   font-family: Poppins;
@@ -106,7 +105,7 @@ img {
 }
 
 .two {
-  grid-column: 1 / span 3;
+  grid-column: 4 / span 3;
 }
 
 footer {
