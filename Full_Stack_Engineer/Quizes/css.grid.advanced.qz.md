@@ -17,7 +17,7 @@ Q5: Which **justify-conten**t value would you use to have an even amount of spac
 A5: **space-around**
 Right! This creates even space between the grid items, with a half space on each end.
 
-Q6:Which of the following can be applied to a grid item (as opposed to the grid container)?
+Q6:Which of the following can be applied to a **grid item** (as opposed to the grid container)?
 A6: **align-self**
 Yes! align-self is for the grid child elements.
 
@@ -52,9 +52,9 @@ Q9: Imagine we have a grid with the following CSS properties, with 4 boxes insid
 A9: 100px
 The new box will still be in one of the explicitly defined columns, which are 100px each.
 
-Q10: What does justify-content: end do?
+Q10: What does **justify-content**: end do?
 A10: It aligns the grid items to the right end of the grid container.
-Yes! justify-content aligns along the row axis, where end corresponds to the right side of the container.
+Yes! **justify-content** aligns along the row axis, where end corresponds to the right side of the container.
 
 Q11:Which pair of properties both align along the row axis (as opposed to the column axis)?
 A11: **justify-content,justify-self**
@@ -110,6 +110,6 @@ Q15:Which of the following is equivalent to the sample code below?
 A15: grid-area: 2 / 1/ 4/ 2;
 Correct! The order for grid-area is: grid-row-start, grid-column-start, grid-row-end, grid-column-end.
 
-Q16: The align-self property is declared on the grid container.
+Q16: The **align-self** property is declared on the **grid container**.
 A16: False.
-Correct! The align-self property is declared on grid items and not the grid container.
+Correct! The **align-self** property is declared on **grid items** and not the grid container.
