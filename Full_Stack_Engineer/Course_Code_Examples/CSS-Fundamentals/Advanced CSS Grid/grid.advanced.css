@@ -13,11 +13,7 @@ main {
   margin-top: 44px;
   justify-items: center;
   justify-content: center;
-  /* align-items: start; */
-  /* align-items: end; */
-  /* align-items: center; */
   align-items: stretch;
-  /* height: 1600px; */
   align-content: center;
   grid-auto-rows: 500px;
   grid-auto-flow: column;

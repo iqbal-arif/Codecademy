@@ -113,7 +113,8 @@ const cards = ['diamond', 'spade', 'heart', 'club'];
 
 let currentCard;
 
-while (currentCard < currentCard.length) {
-  currentCard = cards[Math.floor(Math.random() * 4)];
+currentCard = cards[Math.floor(Math.random() * 4)];
+while (currentCard < cards[1]) {
   currentCard++;
+  console.log(currentCard);
 }
