@@ -210,3 +210,24 @@ body {
 In the example above, the first CSS declaration sets the background image (# is a placeholder for an image URL in this example). The second declaration instructs the CSS compiler to not repeat the image (by default, images will repeat). The third declaration centers the image within the element.
 
 The final declaration, however, is the focus of the example above. It’s what scales the background image. The image will cover the entire background of the element, all while keeping the image in proportion. If the dimensions of the image exceed the dimensions of the container then only a portion of the image will display.
+
+10. Review: Relative Measurements
+
+---
+
+Great work! You learned how to size elements on a website relative to other elements on the page.
+
+Let’s review what you learned:
+
+    1. Content on a website can be sized relative to other elements on the page using relative measurements.
+    2. The unit of em sizes font relative to the font size of a parent element.
+    3. The unit of rem sizes font relative to the font size of a root element. That root element is the <html> element.
+    4. Percentages are commonly used to size box-model features, like the width, height, padding, or margin of an element.
+    5. When percentages are used to size width and height, child elements will be sized relative to the dimensions of their parent (remember that parent dimensions must first be set).
+    6. Percentages can be used to set padding and margin. Horizontal and vertical padding and margin are set relative to the width of a parent element.
+    7. The minimum and maximum width of elements can be set using min-width and max-width.
+    8. The minimum and maximum height of elements can be set using min-height and max-height.
+    9. When the height of an image or video is set, then its width can be set to auto so that the media scales proportionally. Reversing these two properties and values will also achieve the same result.
+    10. A background image of an HTML element will scale proportionally when its background-size property is set to cover.
+
+Relative units of measurement are a first step towards incorporating responsive design in a website. When combined with more advanced responsive techniques, you can create a seamless user experience regardless of a device’s screen size.
