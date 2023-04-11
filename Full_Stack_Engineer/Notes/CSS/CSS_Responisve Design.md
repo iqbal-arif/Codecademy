@@ -116,10 +116,10 @@ For example, when a property like margin-left is set using a percentage (say 50%
 
 Vertical padding and margin are also calculated based on the width of the parent. Why? Consider the following scenario:
 
-    A container div is defined, but its height is not set (meaning it’s flat).
-    The container then has a child element added within. The child element does have a set height. This causes the height of its parent container to stretch to that height.
-    The child element requires a change, and its height is modified. This causes the parent container’s height to also stretch to the new height. This cycle occurs endlessly whenever the child element’s height is changed!
+    1. A container div is defined, but its height is not set (meaning it’s flat).
+    2. The container then has a child element added within. The child element does have a set height. This causes the height of its parent container to stretch to that height.
+    3. The child element requires a change, and its height is modified. This causes the parent container’s height to also stretch to the new height. This cycle occurs endlessly whenever the child element’s height is changed!
 
 In the scenario above, an unset height (the parent’s) results in a constantly changing height due to changes to the child element. This is why vertical padding and margin are based on the width of the parent, and not the height.
 
-Note: When using relative sizing, ems and rems should be used to size text and dimensions on the page related to text size (i.e. padding around text). This creates a consistent layout based on text size. Otherwise, percentages should be used.
+**_Note: When using relative sizing, ems and rems should be used to size text and dimensions on the page related to text size (i.e. padding around text). This creates a consistent layout based on text size. Otherwise, percentages should be used._**
