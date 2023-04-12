@@ -26,7 +26,7 @@ Incorporating relative sizing starts by using units other than pixels. One unit 
 
 Historically, the em represented the width of a capital letter M in the typeface and size being used. That is no longer the case.
 
-Today, the em represents the font-size of the current element or the default base font-size set by the browser if none is given. For example, if the base font of a browser is 16 pixels (which is normally the default size of text in a browser), then 1 em is equal to 16 pixels. 2 ems would equal 32 pixels, and so on.
+Today, the **em** **_represents the font-size of the current element or the default base font-size set by the browser if none is given_**. For example, if the base font of a browser is 16 pixels (which is normally the default size of text in a browser), then 1 em is equal to 16 pixels. 2 ems would equal 32 pixels, and so on.
 
 Let’s take a look at two examples that show how em can be used in CSS.
 
