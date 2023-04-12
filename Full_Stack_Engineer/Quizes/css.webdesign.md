@@ -130,4 +130,36 @@ A13: Relative units of measurements ensure consistent proportions across a websi
 Correct! Ensuring consistent proportions across a website regardless of layout or screen size is one of the main advantages to using relative units.
 
 Q14: When percentages are used to size padding and width, dimensions are set relative to which of the following?
-A14:
+A14: The width of the parent element.
+
+Correct! When using percentages to size the **padding** and **width** properties, dimensions are set relative to the **width** of parent element of the element whose dimensions are being set.
+
+Q15: What are the maximum dimensions of a div with the following properties?
+
+```
+div.container {
+  min-height: 150px;
+  max-height: 600px;
+  min-width: 300px;
+  max-width: 900px;
+}
+```
+
+A15: 600px tall and 900px wide.
+
+Correct! **max-height** sets the maximum height of an element and **max-width** sets the maximum width of an element. Here, the maximum height of **div.container** is **600px** and the maximum width is **900px**.
+
+Q16: Which of the following property/value pairs will ensure that the background image of the div in the code below will scale proportionally while filling the entire div?
+
+```
+div {
+  background-image: url('#');
+  background-repeat: no-repeat;
+  background-position: center;
+  /* ? */
+}
+```
+
+A16: background-size: cover;
+
+Correct! **background-size: cover;** ensures that the background image of the div scales as large as possible proportionally to cover the entire element. If the dimensions of the image exceed the dimensions of the div the image will be cropped, leaving no empty space.
