@@ -26,4 +26,32 @@ html {
 }
 ```
 
-A4:
+A4: 24px
+When using rem, use the font size specified in the html selector. In this case, 16 x 1.5 will make the pixel size 24.
+
+Q5: In the code below, how many pixels should the font size of the root element be set to in order to set the size of main headings to 36 pixels?
+
+```
+html {
+  font-size: ?
+}
+
+h1 {
+  font-size: 2rem;
+}
+```
+
+A5: 18px
+Correct! 36px &divide; 2rem = 18px
+
+Q6: The height property in the code below should be set to which of the following values to ensure that the image remains proportional to its original size?
+
+```
+img {
+  width: 500px;
+  height: ?
+}
+```
+
+A6: auto
+Correct! Setting height to auto ensures that the height of the image will automatically scale proportionally to the explicitly set width.
