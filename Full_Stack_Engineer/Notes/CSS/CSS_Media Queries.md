@@ -69,3 +69,48 @@ The example above can be written using two separate rules as well:
 The first media query in the example above will apply CSS rules when the size of the screen meets or exceeds 320 pixels. The second media query will then apply CSS rules when the size of the screen meets or exceeds 480 pixels, meaning that it can override CSS rules present in the first media query or apply additional CSS rules that are not already present in the first.
 
 Both examples above are valid, and it is likely that you will see both patterns used when reading another developer’s code.
+
+## 4. Dots Per Inch (DPI)
+
+Another media feature we can target is screen resolution. Many times we will want to supply higher quality media (images, video, etc.) only to users with screens that can support high resolution media. Targeting screen resolution also helps users avoid downloading high resolution (large file size) images that their screen may not be able to properly display.
+
+To target by resolution, we can use the min-resolution and max-resolution media features. These media features accept a resolution value in either dots per inch (dpi) or dots per centimeter (dpc). Learn more about resolution measurements here.
+
+@media only screen and (min-resolution: 300dpi) {
+/_ CSS for high resolution screens _/
+}
+
+The media query in the example above targets high resolution screens by making sure the screen resolution is at least 300 dots per inch. If the screen resolution query is met, then we can use CSS to display high resolution images and other media.
+
+## 5. And Operator
+
+In previous exercises, we chained multiple media features of the same type in one media query by using the and operator. It allowed us to create a range by using min-width and max-width in the same media query.
+
+The and operator can be used to require multiple media features. Therefore, we can use the and operator to require both a max-width of 480px and to have a min-resolution of 300dpi.
+
+For example:
+
+@media only screen and (max-width: 480px) and (min-resolution: 300dpi) {
+/_ CSS ruleset _/
+}
+
+By placing the and operator between the two media features, the browser will require both media features to be true before it renders the CSS within the media query. The and operator can be used to chain as many media features as necessary.
+
+## 6. Comma Separated List
+
+If only one of multiple media features in a media query must be met, media features can be separated in a comma separated list.
+
+For example, if we needed to apply a style when only one of the below is true:
+
+    The screen is more than 480 pixels wide
+    The screen is in landscape mode
+
+We could write:
+
+@media only screen and (min-width: 480px), (orientation: landscape) {
+/_ CSS ruleset _/
+}
+
+In the example above, we used a comma (,) to separate multiple rules. The example above requires only one of the media features to be true for its CSS to apply.
+
+Note that the second media feature is orientation. The orientation media feature detects if the page has more width than height. If a page is wider, it’s considered landscape, and if a page is taller, it’s considered portrait.
