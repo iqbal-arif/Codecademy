@@ -27,6 +27,14 @@ Q4: What browser dimensions will meet the media query below?
 }
 
 A4: A browser with a width of 250px and a height of 750px.
+You got it! The media query will trigger only for screens that are 200-600px wide.
 
 Q5: What is a responsive website?
+
 A5: A website that alters its styles depending on the dimensions of the browser.
+Correct! Whether a user is on their desktop, laptop, tablet, or smartphone, a responsive website renders pages on all devices and screen sizes by automatically adapting to the screen.
+
+Q6: At which dimensions should a media query breakpoint be added?
+
+A6:It's necessary to add breakpoints for dimensions where a website's content naturally breaks or looks odd when resizing the browser.
+Correct! In responsive web design, choose breakpoints based on your design.
