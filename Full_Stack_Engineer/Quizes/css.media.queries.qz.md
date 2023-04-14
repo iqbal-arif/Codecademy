@@ -38,3 +38,12 @@ Q6: At which dimensions should a media query breakpoint be added?
 
 A6:It's necessary to add breakpoints for dimensions where a website's content naturally breaks or looks odd when resizing the browser.
 Correct! In responsive web design, choose breakpoints based on your design.
+
+Q7: How would you explain the following media query to another front-end developer?
+
+@media only screen and (min-width: 320px), (orientation: landscape) {
+/_ CSS rules _/
+}
+
+A7: This query applies to browsers with a width above 320px OR an orientation of landscape.
+Correct! Only one query needs to match, so either the browser’s width is within the specific range of the media query’s constraints or the orientation should be landscape.
