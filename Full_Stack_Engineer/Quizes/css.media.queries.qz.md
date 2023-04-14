@@ -20,4 +20,13 @@ Q3: What mistakes are present in the media query code below, if any?
 A3: The **for** keyword is not used in a media query.
 Correct! The for keyword is not used in a media query.
 
-Q4: What is the purpose of a media query?
+Q4: What browser dimensions will meet the media query below?
+
+@media only screen and (min-width: 200px) and (max-width: 600px) {
+
+}
+
+A4: A browser with a width of 250px and a height of 750px.
+
+Q5: What is a responsive website?
+A5: A website that alters its styles depending on the dimensions of the browser.
