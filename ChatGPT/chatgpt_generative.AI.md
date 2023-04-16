@@ -83,3 +83,17 @@ This can happen for a few reasons:
     Limitations of the model: Although GPT-# is a powerful AI model, it’s not perfect. It may not always generate accurate, factually correct, or contextually appropriate responses, leading to hallucinations in some cases.
 
 ChatGPT is a powerful tool, but it’s important to remember that even it can make mistakes! We should always double-check any data it gives us.
+
+## Review
+
+We’ve learned a lot about generative AI! Let’s review the process:
+
+    1. Collect Training Data
+    2. Encode Training Data
+    3. Train and Create a Probability Distribution
+    4. Extra Learning & Filtering: Reinforcement Learning or Unsupervised Learning
+    5. Collect and Encode User Input
+    6. Generate Content
+    7. Decode and Output Generated Content
+
+With this knowledge, you’re ready to explore generative AI tools with a better understanding of how they work.
