@@ -155,9 +155,11 @@ while (true === false) {
 
 const cupsOfSugarNeeded = 9;
 let cupsAdded = 0;
+let i = 0;
 
 do {
-  cupsAdded = cupsAdded++;
+  cupsAdded = cupsAdded + i;
+  i++;
 } while (cupsAdded < cupsOfSugarNeeded);
 
 console.log(cupsAdded);
