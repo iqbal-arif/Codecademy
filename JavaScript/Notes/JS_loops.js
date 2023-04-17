@@ -150,3 +150,14 @@ do {
 while (true === false) {
   console.log(secondMessage);
 }
+
+// simulate part of the cake-baking process.
+
+const cupsOfSugarNeeded = 9;
+let cupsAdded = 0;
+
+do {
+  cupsAdded = cupsAdded++;
+} while (cupsAdded < cupsOfSugarNeeded);
+
+console.log(cupsAdded);
