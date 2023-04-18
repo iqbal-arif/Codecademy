@@ -93,3 +93,19 @@ for (let i = 0; i < animal.length; i++) {
 /*
 c 1 2 3 a 1 2 3 t 1 2 3
 */
+
+
+/*
+Q9: What is incorrect about the code block?
+*/
+  for (let i = 0, i < myArray.length,  i++) {
+    console.log(myArray[i]);
+  };
+  /*
+  The condition of the loop should be separated by semicolons, not commas.
+  */
+
+  /*
+  Q10: You want to run a code block at least once, then loop as long as a condition remains true. Which kind of loop would you use?
+  A10: A do...while statement
+  */
