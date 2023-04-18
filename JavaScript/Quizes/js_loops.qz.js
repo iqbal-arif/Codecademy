@@ -38,3 +38,43 @@ for (let i = phrase.length - 3; i >= 0; i -= 3) {
   result += phrase[i];
 }
 console.log(result);
+
+/*
+Q4: Fill in the missing code to log the even numbers between 1 and 100 (inclusive) to the console.
+*/
+let i = 0;
+
+do {
+  i++;
+  if (i % 2 == 0) {
+    console.log(i);
+  }
+} while (i < 100);
+
+/*
+Q5: What is the general purpose of a loop?
+A5: Loops automatically iterate a block of code based on conditions.
+Correct, loops automate repetition!
+*/
+
+/*
+Q6: What do nested for loops do?
+A6: Nested for loops allow us to run multiple for loops at once.
+*/
+
+/*
+Q7: What will be the result of the code block?
+*/
+let socialMedia = ['Instagram', 'Facebook', 'Twitter'];
+
+for (
+  let socialMediaIndex = 0;
+  socialMediaIndex < socialMedia.length;
+  socialMediaIndex++
+) {
+  console.log(socialMedia[socialMediaIndex]);
+}
+
+/*
+'Instagram', 'Facebook', 'Twitter'
+*/
