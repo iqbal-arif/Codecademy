@@ -19,10 +19,15 @@ const resultArray = [];
 
 let i = 0;
 while (i < input.length) {
-  console.log(input[i]);
+  let j = 0;
+  while (j < vowels.length) {
+    console.log(j);
+    j++;
+  }
+  console.log(i + ' ' + input[i]);
+  // console.log(i)
   i++;
 }
-
 // for (let i = 0; i<input.length; i++){
 //   console.log(input[i]);
 // }
