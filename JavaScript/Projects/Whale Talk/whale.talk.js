@@ -15,3 +15,14 @@ To accomplish this translation, we can use our knowledge of loops. Let’s get s
 
 let input = 'Vowel Conversion';
 const vowels = ['a', 'e', 'i', 'o', 'u'];
+const resultArray = [];
+
+let i = 0;
+while (i < input.length) {
+  console.log(input[i]);
+  i++;
+}
+
+// for (let i = 0; i<input.length; i++){
+//   console.log(input[i]);
+// }
