@@ -126,3 +126,8 @@ The code will loop forever because i will always be greater than 0.
 Q12: Which statement is true about while loops?
 A12: while loops evaluate a condition or however long it's true and the looping stops when the condition is false.
 */
+
+/*
+Q13: Which statement is true about for loops?
+A13: for loops are appropriate when looping a predetermined number of times.
+*/
