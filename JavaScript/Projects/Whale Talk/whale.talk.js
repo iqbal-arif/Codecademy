@@ -21,6 +21,10 @@ let i = 0;
 while (i < input.length) {
   let j = 0;
   while (j < vowels.length) {
+    if (input[i] === vowels[j]) {
+      resultArray.push(input[i]);
+      console.log(resultArray);
+    }
     console.log(j);
     j++;
   }
