@@ -13,22 +13,24 @@ Once we have converted text to the whale language, the result is sung slowly, as
 To accomplish this translation, we can use our knowledge of loops. Let’s get started!
 */
 
-let input = 'Vowel Conversion';
+let input = 'Vowel Conversion uptown';
 const vowels = ['a', 'e', 'i', 'o', 'u'];
 const resultArray = [];
 
 let i = 0;
 while (i < input.length) {
+  if (input[i] === 'e' || input[i] === 'u') {
+    resultArray.push(input[i]);
+  }
   let j = 0;
   while (j < vowels.length) {
     if (input[i] === vowels[j]) {
       resultArray.push(input[i]);
-      console.log(resultArray);
     }
-    console.log(j);
+    // console.log(j)
     j++;
   }
-  console.log(i + ' ' + input[i]);
+  // console.log( i +" "+ input[i]);
   // console.log(i)
   i++;
 }
