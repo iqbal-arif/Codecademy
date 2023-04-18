@@ -26,3 +26,15 @@ Each vowel is tested against each word: 5 * 4 = 20. The outer loop generates one
 Q2: Determine the option that best describes the JavaScript break keyword.
 A2: It jumps out of a loop when a specific condition in the loop iteration is met.
 */
+
+/*
+Q3: Which of the following for loop definitions will result in the word 'loop' being extracted from the phrase 'proof of lag' ?
+*/
+const phrase = 'proof of lag';
+
+result = '';
+// for (let i = ____ ; i ____ ; i ____ ) {
+for (let i = phrase.length - 3; i >= 0; i -= 3) {
+  result += phrase[i];
+}
+console.log(result);
