@@ -109,3 +109,20 @@ Q9: What is incorrect about the code block?
   Q10: You want to run a code block at least once, then loop as long as a condition remains true. Which kind of loop would you use?
   A10: A do...while statement
   */
+
+  /*
+  Q11: What problem is caused by this code block?
+*/
+for (let i = 10; i > 0; i++) {
+  console.log(i);
+};
+
+/*
+The code will loop forever because i will always be greater than 0.
+*/
+
+
+/*
+Q12: Which statement is true about while loops?
+A12: while loops evaluate a condition or however long it's true and the looping stops when the condition is false.
+*/
