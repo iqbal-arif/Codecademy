@@ -60,3 +60,8 @@ const checkThatTwoPlusTwoEqualsFourAMillionTimes = () => {
 // Write your code below
 
 const isTwoPlusTwo = checkThatTwoPlusTwoEqualsFourAMillionTimes;
+
+// Invoking the Function
+isTwoPlusTwo();
+// Name Property to get original function name
+console.log(isTwoPlusTwo.name);
