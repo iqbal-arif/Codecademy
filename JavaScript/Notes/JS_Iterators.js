@@ -176,3 +176,26 @@ console.log(shortWords); // Output: ['chair', 'music', 'brick', 'pen', 'door']
 /*
 Observe how words was not mutated, i.e. changed, and shortWords is a new array.
 */
+
+/************PRACTICE***************/
+
+const randomNumbers = [375, 200, 3.14, 7, 13, 852];
+
+// Call .filter() on randomNumbers below
+
+const smallNumbers2 = randomNumbers.filter((small) => {
+  return small < 250;
+});
+const favoriteWords = [
+  'nostalgia',
+  'hyperbole',
+  'fervent',
+  'esoteric',
+  'serene',
+];
+
+// Call .filter() on favoriteWords below
+
+const longFavoriteWords = favoriteWords.filter((fWord) => {
+  return fWord.length > 7;
+});
