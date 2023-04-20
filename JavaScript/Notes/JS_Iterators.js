@@ -72,3 +72,9 @@ The above example uses a function declaration but you can also use a function ex
 
 All three code snippets do the same thing. In each array iteration method, we can use any of the three examples to supply a callback function as an argument to the iterator. It’s good to be aware of the different ways to pass in callback functions as arguments in iterators because developers have different stylistic preferences. Nonetheless, due to the strong adoption of ES6, we will be using arrow function syntax in the later exercises.
 */
+
+const fruits = ['mango', 'papaya', 'pineapple', 'apple'];
+
+// Iterate over fruits below
+
+fruits.forEach((fruit = (fruit) => console.log(`I want to eat a ${fruit}`)));
