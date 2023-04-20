@@ -72,9 +72,83 @@ The above example uses a function declaration but you can also use a function ex
 
 All three code snippets do the same thing. In each array iteration method, we can use any of the three examples to supply a callback function as an argument to the iterator. It’s good to be aware of the different ways to pass in callback functions as arguments in iterators because developers have different stylistic preferences. Nonetheless, due to the strong adoption of ES6, we will be using arrow function syntax in the later exercises.
 */
-
+/************PRACTICE***************/
 const fruits = ['mango', 'papaya', 'pineapple', 'apple'];
 
 // Iterate over fruits below
 
 fruits.forEach((fruit = (fruit) => console.log(`I want to eat a ${fruit}`)));
+
+/*
+The .map() Method
+*****************
+*****************
+The second iterator we’re going to cover is .map(). When .map() is called on an array, it takes an argument of a callback function and returns a new array! Take a look at an example of calling .map():
+*/
+const numbers2 = [1, 2, 3, 4, 5];
+
+const bigNumbers = numbers2.map((number) => {
+  return number * 10;
+});
+/*
+.map() works in a similar manner to .forEach()— the major difference is that .map() returns a new array.
+
+In the example above:
+
+    1. numbers is an array of numbers.
+    2. bigNumbers will store the return value of calling .map() on numbers.
+    3. numbers.map will iterate through each element in the numbers array and pass the element into the callback function.
+    4. return number * 10 is the code we wish to execute upon each element in the array. This will save each value from the numbers array, multiplied by 10, to a new array.
+
+If we take a look at numbers and bigNumbers:
+*/
+console.log(numbers); // Output: [1, 2, 3, 4, 5]
+console.log(bigNumbers); // Output: [10, 20, 30, 40, 50]
+/*
+Notice that the elements in numbers were not altered and bigNumbers is a new array.
+*/
+
+/************PRACTICE***************/
+
+const animals = [
+  'Hen',
+  'elephant',
+  'llama',
+  'leopard',
+  'ostrich',
+  'Whale',
+  'octopus',
+  'rabbit',
+  'lion',
+  'dog',
+];
+
+// Create the secretMessage array below
+
+const animalsArray = [
+  'Hen',
+  'elephant',
+  'llama',
+  'leopard',
+  'ostrich',
+  'Whale',
+  'octopus',
+  'rabbit',
+  'lion',
+  'dog',
+];
+
+// Create the secretMessage array below
+const secretMessage = animalsArray.map((animal) => {
+  return animal.slice(0, 1);
+});
+
+console.log(secretMessage.join(''));
+
+const bigNumbers2 = [100, 200, 300, 400, 500];
+
+// Create the smallNumbers array below
+
+const smallNumbers = bigNumbers2.map((bInt) => {
+  return bInt / 100;
+});
