@@ -234,3 +234,31 @@ const greaterThan1000 = jumbledNums.findIndex((num) => {
 });
 
 console.log(greaterThan1000); // Output: -1
+
+/************PRACTICE***************/
+/*
+Invoke .findIndex() on the animals array to find the index of the element that has the value 'elephant' and save the returned value to a const variable named foundAnimal.
+*/
+
+const animals2 = [
+  'hippo',
+  'tiger',
+  'lion',
+  'seal',
+  'cheetah',
+  'monkey',
+  'salamander',
+  'elephant',
+];
+
+const foundAnimal = animals2.findIndex((animal) => {
+  return animal === 'elephant';
+});
+
+/*
+Let’s see if we can find the index of the first animal that starts with the letter 's'.
+
+Call .findIndex() on the animals array and return the index of the first element that starts with 's'. Assign the returned value to a const variable named startsWithS.
+*/
+
+const startWithS = animals2.findIndex();
