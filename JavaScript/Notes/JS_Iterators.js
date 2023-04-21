@@ -261,4 +261,6 @@ Let’s see if we can find the index of the first animal that starts with the le
 Call .findIndex() on the animals array and return the index of the first element that starts with 's'. Assign the returned value to a const variable named startsWithS.
 */
 
-const startWithS = animals2.findIndex();
+const startsWithS = animals2.findIndex((animal) => {
+  return animal[0] === 's';
+});
