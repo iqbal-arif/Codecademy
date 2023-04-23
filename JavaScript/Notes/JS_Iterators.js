@@ -284,8 +284,8 @@ console.log(summedNums) // Output: 17
 /*
 Here are the values of accumulator and currentValue as we iterate through the numbers array:
 Iteration 	accumulator 	currentValue 	return value
-  First 	1 	2 	3
-  Second 	3 	4 	7
+  First 	     1 	              2 	          3
+  Second 	     3 	              4 	          7
   Third 	7 	10 	17
 
 Now let’s go over the use of .reduce() from the example above:
