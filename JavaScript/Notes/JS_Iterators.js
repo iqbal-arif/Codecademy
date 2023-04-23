@@ -354,3 +354,35 @@ const newSum = newNumbers.reduce((accumulator, currentValue) => {
 }, 10);
 
 console.log(newSum);
+
+
+/*
+7. Array.prototype.some()
+
+The some() method tests whether at least one element in the array passes the test implemented by the provided function. It returns true if, in the array, it finds an element for which the provided function returns true; otherwise it returns false. It doesn't modify the array. 
+*/
+const array = [1, 2, 3, 4, 5];
+
+// Checks whether an element is even
+const even = (element) => element % 2 === 0;
+
+console.log(array.some(even));
+// Expected output: true
+
+/*
+8. Iterator Documentation
+**********************
+There are many additional built-in array methods, a complete list of which is on the MDN’s Array iteration methods page.
+
+The documentation for each method contains several sections:
+
+    A short definition.
+    A block with the correct syntax for using the method.
+    A list of parameters the method accepts or requires.
+    The return value of the function.
+    An extended description.
+    Examples of the method’s use.
+    Other additional information.
+
+In the instructions below, there are some errors in the code. Use the documentation for a given method to determine the error or fill in a blank to make the code run correctly.
+
