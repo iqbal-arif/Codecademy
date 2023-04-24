@@ -145,3 +145,18 @@ hof(cb); // 'this function returned 8'
 /*
 Use the parameter func with the correct values to yield 8.
 */
+
+/*
+Q3: The code snippet includes a function assigned to the variable sum. Given the fact that JavaScript functions are first-class objects, fill in the blanks so that a property of sum called alias is assigned the string value, 'summation'.
+*/
+const sum = (x, y) => x + y;
+sum.alias = 'summation';
+
+/*
+Q4: Use the .map() method on the oddNumbers array to return each number multiplied by 2 into the evenNumbers array.
+*/
+const oddNumbers = [1, 3, 5, 7];
+
+const evenNumbers = oddNumbers.map((number) => {
+  return number * 2;
+});
