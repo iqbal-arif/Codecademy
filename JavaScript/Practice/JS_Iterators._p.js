@@ -112,3 +112,36 @@ The .forEach() method executes a callback function on each of the elements in an
 
 In the above example code, the callback function containing a console.log() method will be executed 5 times, once for each element.
 */
+/************************Practice************************/
+
+/*
+Q1: Determine the value of the variable sum after the given block of code executes.
+*/
+const numbers3 = [10, 20, 30, 40];
+const sum3 = numbers3.reduce((accumulator, currentValue) => {
+  return accumulator + currentValue;
+});
+
+/*
+A1: 100
+Precisely! The JavaScript array .reduce() method iterates through an array. The sum of the array elements will be returned by the help of the accumulator.
+*/
+
+/*
+Q2: In the following Javascript code snippet, the callback function cb is a function that sums the value of two numbers.
+
+Fill in the blank so that when the function is passed into the higher order function hof, it is then invoked so that the value returned is 8.
+*/
+let cb = (n1, n2) => {
+  return n1 + n2;
+};
+
+let hof = (func) => {
+  let value = func(3, 5);
+  return `this function returned ${value}`;
+};
+
+hof(cb); // 'this function returned 8'
+/*
+Use the parameter func with the correct values to yield 8.
+*/
