@@ -41,3 +41,43 @@ const increment = (salary) => {
 };
 
 const incrementHolder = increment;
+/*
+Q5: In the following Javascript code snippet, the callback function cb is a function that sums the value of two numbers.
+
+Fill in the blank so that when the function is passed into the higher order function hof, it is then invoked so that the value returned is 8.
+*/
+let cb2 = (n1, n2) => {
+  return n1 + n2;
+};
+
+let hof2 = (func) => {
+  let value = func(3, 5);
+  return `this function returned ${value}`;
+};
+
+hof(cb2); // 'this function returned 8'
+/*
+Use the parameter func with the correct values to yield 8.
+*/
+
+/*
+Q6: Examine the below code. Which of the functions represents a higher-order function?
+*/
+let multiplyTwoValues = (val1, val2) => {
+  return val1 * val2;
+};
+
+let square = (val) => {
+  return val * val;
+};
+
+let getFunctionString = (func) => {
+  return func.toString();
+};
+
+let result = multiplyTwoValues(2, 2);
+square(result);
+/*
+A higher-order function accepts functions as parameters and/or returns a function.
+getFunctionString()
+*/
