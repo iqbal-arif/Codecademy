@@ -77,3 +77,38 @@ JavaScript functions are first-class objects. Therefore:
     4. They can be assigned to variables, array elements, and other objects.
 
 */
+
+/*
+4. The .map() Method
+********************
+*/
+const finalParticipants = ['Taylor', 'Donald', 'Don', 'Natasha', 'Bobby'];
+
+// add string after each final participant
+const announcements = finalParticipants.map((member) => {
+  return member + ' joined the contest.';
+});
+
+console.log(announcements);
+/*
+The .map() method executes a callback function on each element in an array. It returns a new array made up of the return values from the callback function.
+
+The original array does not get altered, and the returned array may contain different elements than the original array.
+
+In the example code above, the .map() method is used to add ' joined the contest.' string at the end of each element in the finalParticipants array.
+*/
+
+/*
+5. The .forEach() Method
+************************
+*/
+const numbers = [28, 77, 45, 99, 27];
+
+numbers.forEach((number) => {
+  console.log(number);
+});
+/*
+The .forEach() method executes a callback function on each of the elements in an array in order.
+
+In the above example code, the callback function containing a console.log() method will be executed 5 times, once for each element.
+*/
