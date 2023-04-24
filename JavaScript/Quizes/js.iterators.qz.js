@@ -42,6 +42,9 @@ const increment = (salary) => {
 
 const incrementHolder = increment;
 /*
+Awesome! JavaScript functions can be assigned to variables as values.*/
+
+/*
 Q5: In the following Javascript code snippet, the callback function cb is a function that sums the value of two numbers.
 
 Fill in the blank so that when the function is passed into the higher order function hof, it is then invoked so that the value returned is 8.
@@ -80,4 +83,11 @@ square(result);
 /*
 A higher-order function accepts functions as parameters and/or returns a function.
 getFunctionString()
+Correct! This function accepts a function as a parameter, which makes it a higher-order function.
+*/
+
+/*
+Q7: Which of the following methods returns an array with values that evaluate to truthy based on the condition in the method’s block? 
+
+A6: .filter()
 */
