@@ -38,7 +38,7 @@ Since, in JavaScript, functions are objects, functions can be passed as argument
 */
 
 /*
-3. avaScript Functions: First-Class Objects
+3. JavaScript Functions: First-Class Objects
 */
 //Assign a function to a variable originalFunc
 const originalFunc = (num) => {
@@ -112,7 +112,41 @@ The .forEach() method executes a callback function on each of the elements in an
 
 In the above example code, the callback function containing a console.log() method will be executed 5 times, once for each element.
 */
+
+/*
+6. The .filter() Method
+***********************
+*/
+const randomNumbers = [4, 11, 42, 14, 39];
+const filteredArray = randomNumbers.filter((n) => {
+  return n > 5;
+});
+/*
+The .filter() method executes a callback function on each element in an array. The callback function for each of the elements must return either true or false. The returned array is a new array with any elements for which the callback function returns true.
+
+In the above code example, the array filteredArray will contain all the elements of randomNumbers but 4.
+*/
+
+/*
+7. Functions Assigned to Variables
+**********************************
+*/
+let plusFive = (number) => {
+  return number + 5;
+};
+// f is assigned the value of plusFive
+let f = plusFive;
+
+plusFive(3); // 8
+// Since f has a function value, it can be invoked.
+f(9); // 14
+
+/*
+In JavaScript, functions are a data type just as strings, numbers, and arrays are data types. Therefore, functions can be assigned as values to variables, but are different from all other data types because they can be invoked.
+*/
+/********************************************************/
 /************************Practice************************/
+/********************************************************/
 
 /*
 Q1: Determine the value of the variable sum after the given block of code executes.
@@ -132,16 +166,16 @@ Q2: In the following Javascript code snippet, the callback function cb is a func
 
 Fill in the blank so that when the function is passed into the higher order function hof, it is then invoked so that the value returned is 8.
 */
-let cb = (n1, n2) => {
+let cb2 = (n1, n2) => {
   return n1 + n2;
 };
 
-let hof = (func) => {
+let hof2 = (func) => {
   let value = func(3, 5);
   return `this function returned ${value}`;
 };
 
-hof(cb); // 'this function returned 8'
+hof(cb2); // 'this function returned 8'
 /*
 Use the parameter func with the correct values to yield 8.
 */
@@ -149,7 +183,7 @@ Use the parameter func with the correct values to yield 8.
 /*
 Q3: The code snippet includes a function assigned to the variable sum. Given the fact that JavaScript functions are first-class objects, fill in the blanks so that a property of sum called alias is assigned the string value, 'summation'.
 */
-const sum = (x, y) => x + y;
+const sum2 = (x, y) => x + y;
 sum.alias = 'summation';
 
 /*
@@ -160,3 +194,23 @@ const oddNumbers = [1, 3, 5, 7];
 const evenNumbers = oddNumbers.map((number) => {
   return number * 2;
 });
+
+/*
+Q5: Select the correct code snippet to print only the name of the fruits from the given JavaScript array.
+
+(Hint: Celery is not a fruit!)
+*/
+const discountedItems = ['Celery', 'Apple', 'Cherry', 'Orange'];
+
+discountedItems.forEach((item) => {
+  if (item != 'Celery') console.log(item);
+});
+/*
+Precisely! The JavaScript Array .forEach() method executes a callback function on each element in an array in order. No log will be printed when the item is Celery in the callback function.
+*/
+
+/*
+Q6: Which of the following methods returns an array with values that evaluate to truthy based on the condition in the method’s block? 
+
+A6: .filter()
+*/
