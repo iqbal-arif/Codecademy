@@ -214,3 +214,57 @@ Q6: Which of the following methods returns an array with values that evaluate to
 
 A6: .filter()
 */
+
+/*
+Q7: Fill in the blanks to make addItUp log 100 to the console.
+*/
+const nums = [1, 2, 3, 4];
+const initializer = 90;
+
+const addItUp = nums.reduce((accumulator, currentValue) => {
+  return accumulator + currentValue;
+}, initializer);
+
+console.log(addItUp);
+
+/*
+Q8: Select the correct option regarding the included code, JavaScript callback functions, and higher order functions.
+*/
+const getSquare = (n) => {
+  return n * n;
+};
+
+const isEven2 = (n) => {
+  return n % 2 == 0;
+};
+
+let printFacts = (squareFunc, evenFunc, num) => {
+  const squareVal = squareFunc(num);
+  const isSquareEven = evenFunc(squareVal);
+  console.log(`The square value of ${num} is ${squareVal}.`);
+  console.log(`The square value is an even number: ${isSquareEven}.`);
+};
+
+printFacts(getSquare, isEven2, 7);
+
+/*
+printFacts is a higher order functions, isEven is a callback function.
+Awesome! In JavaScript, a callback function is a function passed into another function (the higher order function) as an argument.
+*/
+
+/*
+Q9: Complete the JavaScript code block so that the variable orderCopy will contain the function expression order.
+*/
+const order = (item, qty) => {
+  console.log(`${qty} ${item}(s) added to the cart.`);
+};
+
+const orderCopy = order;
+
+orderCopy('Lemon', 5);
+// 5 Lemon(s) added to the cart.
+
+/*
+Q10: Which of the following is true about the .map() method?
+A10: The .map() method returns a new array made up of the return values from its callback function.
+*/
