@@ -21,3 +21,23 @@ Q3: The code snippet includes a function assigned to the variable sum. Given the
 */
 const sum2 = (x, y) => x + y;
 sum.alias = 'summation';
+
+/*
+Q4: What is the value of foundElement after the code runs?
+*/
+const randomNums = [1, 123, 25, 90, 3543, 42];
+
+const foundElement = randomNums.findIndex((num) => num > 200);
+/*
+A4: 4
+*/
+
+/*Q5: Select the option that correctly assigns the increment function to the variable incrementHolder.
+ */
+const increment = (salary) => {
+  const revisedSalary = salary + 5;
+  console.log(revisedSalary);
+  return revisedSalary;
+};
+
+const incrementHolder = increment;
