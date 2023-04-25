@@ -50,3 +50,4 @@ console.log(misspelledWords);
 
 /******Length Check*********/
 lengthCheck = misspelledWords.every((word) => word <= 10);
+console.log(lengthCheck);
