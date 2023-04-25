@@ -51,3 +51,9 @@ console.log(misspelledWords);
 /******Length Check*********/
 lengthCheck = misspelledWords.every((word) => word <= 10);
 console.log(lengthCheck);
+
+/******Replacing Word.length>=10*******/
+finalStoryWords = misspelledWords.map((word) =>
+  word.length < 10 ? word : (word = 'Lighthut')
+);
+console.log(finalStoryWords);
