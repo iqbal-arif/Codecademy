@@ -33,8 +33,20 @@ filterWords = storyWords.filter((word) => {
 
 console.log(filterWords);
 /******Removing misspelledWord from story*********/
-filterWords.map((word) => {
-  return word === misspelledWord ? (word = 'beautiful') : word;
-});
+misspelledWords = filterWords.map((word) =>
+  word !== misspelledWord ? word : (word = 'beautiful')
+);
+
 /****Logging Story Words******/
-console.log(filterWords);
+console.log(misspelledWords);
+
+/*****Index of Bad Word******/
+badWordIndex = misspelledWords.findIndex((word) => word === badWord);
+console.log(badWordIndex);
+
+/*****Replace Bad Word******/
+misspelledWords[78] = 'really';
+console.log(misspelledWords);
+
+/******Length Check*********/
+lengthCheck = misspelledWords.every((word) => word <= 10);
