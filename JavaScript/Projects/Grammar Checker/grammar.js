@@ -34,7 +34,7 @@ filterWords = storyWords.filter((word) => {
 console.log(filterWords);
 /******Removing misspelledWord from story*********/
 filterWords.map((word) => {
-  return (word = misspelledWord ? (word = 'beautiful') : word);
+  return word === misspelledWord ? (word = 'beautiful') : word;
 });
 /****Logging Story Words******/
 console.log(filterWords);
