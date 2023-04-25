@@ -14,8 +14,20 @@ let storyWords = story.split(' ');
 let unnecessaryWord = 'literally';
 let misspelledWord = 'beautifull';
 let badWord = 'freaking';
+let count = 0;
 
-console.log(storyWords);
-const joinWords = storyWords.join(' ');
-console.log(joinWords);
-storyWords.forEach((letter) => {});
+/****Joining storyWords [] back to original text******/
+story = storyWords.join(' ');
+console.log(story);
+
+/******Counting Words*********/
+storyWords.forEach((word) => {
+  count++;
+});
+console.log(count);
+
+story = storyWords.filter((word) => {
+  return word !== unnecessaryWord;
+});
+/****Logging Story Words******/
+console.log(story);
