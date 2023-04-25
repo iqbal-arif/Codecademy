@@ -21,20 +21,20 @@ storyWords.join(' ');
 console.log(story);
 
 /******Counting Words*********/
-storyWords.forEach((word) => {
+storyWords.forEach(() => {
   count++;
 });
 console.log(count);
 
 /******Removing unnecessaryWord from story*********/
-storyWords.filter((word) => {
+filterWords = storyWords.filter((word) => {
   return word !== unnecessaryWord;
 });
 
-// console.log(story);
+console.log(filterWords);
 /******Removing misspelledWord from story*********/
 storyWords.map((word) => {
   return misspelledWord ? (word = 'beautiful') : word;
 });
 /****Logging Story Words******/
-console.log(story);
+// console.log(story);
