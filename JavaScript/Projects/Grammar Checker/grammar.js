@@ -17,7 +17,7 @@ let badWord = 'freaking';
 let count = 0;
 
 /****Joining storyWords [] back to original text******/
-story = storyWords.join(' ');
+storyWords.join(' ');
 console.log(story);
 
 /******Counting Words*********/
@@ -26,8 +26,15 @@ storyWords.forEach((word) => {
 });
 console.log(count);
 
-story = storyWords.filter((word) => {
+/******Removing unnecessaryWord from story*********/
+storyWords.filter((word) => {
   return word !== unnecessaryWord;
+});
+
+// console.log(story);
+/******Removing misspelledWord from story*********/
+storyWords.map((word) => {
+  return misspelledWord ? (word = 'beautiful') : word;
 });
 /****Logging Story Words******/
 console.log(story);
