@@ -323,6 +323,41 @@ Let’s look at what happened in the code example:
     2. When we tried the same thing using a function designed to reassign the object passed into it, the reassignment didn’t stick (even though calling console.log() on the object produced the expected result).
     3. When we passed spaceship into that function, obj became a reference to the memory location of the spaceship object, but not to the spaceship variable. This is because the obj parameter of the tryReassignment() function is a variable in its own right. The body of tryReassignment() has no knowledge of the spaceship variable at all!
     4. When we did the reassignment in the body of tryReassignment(), the obj variable came to refer to the memory location of the object {'identified' : false, 'transport type' : 'flying'}, while the spaceship variable was completely unchanged from its earlier value.
+*/
+/***************************/
+/**********Practice*********/
+/**************************/
+let spaceship10 = {
+  'Fuel Type': 'Turbo Fuel',
+  homePlanet: 'Earth',
+};
 
+// Write your code below
+/*
+1.
+
+Write a function greenEnergy() that has an object as a parameter and sets that object’s 'Fuel Type' property to 'avocado oil'.
 
 */
+let greenEnergy = (obj) => {
+  obj['Fuel Type'] = 'avocado oil';
+};
+
+/*
+2.
+
+Write a function remotelyDisable() that has an object as a parameter and sets (or reassigns) that object’s disabled property to true.
+
+*/
+let remotelyDisable = (obj) => {
+  obj.disabled = true;
+};
+/*
+3.
+
+Call your two functions with the spaceship object in the code editor, then console.log() the spaceship object to confirm those properties were changed/added.
+
+*/
+greenEnergy(spaceship10);
+remotelyDisable(spaceship10);
+console.log(spaceship10);
