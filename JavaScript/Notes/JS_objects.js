@@ -447,7 +447,24 @@ let spaceship12 = {
 };
 
 // Write your code below
+/*
+1.
 
+Using for...in, iterate through the spaceship.crew object in the code editor and console.log() a list of crew roles and names in the following format: '[crew member's role]: [crew member's name]', e.g.,'chief officer: Dan'.
+
+*/
 for (let crewMember in spaceship12.crew) {
   console.log(`[${crewMember}]: [${spaceship12.crew[crewMember].name}]`);
+}
+
+/*
+2.
+
+Using for...in, iterate through the spaceship.crew object in the code editor and console.log() a list of crew names and degrees in the following format: '[crew member's name]: [crew member's degree]', i.e.,'Lily: Computer Engineering'.
+
+*/
+for (let crewMember in spaceship12.crew) {
+  console.log(
+    `${spaceship12.crew[crewMember].name}: ${spaceship12.crew[crewMember].degree}`
+  );
 }
