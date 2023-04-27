@@ -149,3 +149,42 @@ Call .recharge() on robot to find out.
 Notice that a funky string is printed to the console! This is known as a side-effect of type-coercion. No need to worry about what this means for now, but it’s important to understand that you can cause unwanted side-effects when mutating objects and their properties.
 
 */
+
+/*
+***********
+4. Getters
+***********
+
+Getters are methods that get and return the internal properties of an object. But they can do more than just retrieve the value of a property! Let’s take a look at a getter method:
+*/
+const person = {
+  _firstName: 'John',
+  _lastName: 'Doe',
+  get fullName() {
+    if (this._firstName && this._lastName) {
+      return `${this._firstName} ${this._lastName}`;
+    } else {
+      return 'Missing a first name or a last name.';
+    }
+  },
+};
+
+// To call the getter method:
+person.fullName; // 'John Doe'
+/*
+Notice that in the getter method above:
+
+    1. We use the get keyword followed by a function.
+    2. We use an if...else conditional to check if both _firstName and _lastName exist (by making sure they both return truthy values) and then return a different value depending on the result.
+    3. We can access the calling object’s internal properties using this. In fullName, we’re accessing both this._firstName and this._lastName.
+    4. In the last line we call fullName on person. In general, getter methods do not need to be called with a set of parentheses. Syntactically, it looks like we’re accessing a property.
+
+Now that we’ve gone over syntax, let’s discuss some notable advantages of using getter methods:
+
+    1. Getters can perform an action on the data when getting a property.
+    2. Getters can return different values using conditionals.
+    3. In a getter, we can access the properties of the calling object using this.
+    4. The functionality of our code is easier for other developers to understand.
+
+Another thing to keep in mind when using getter (and setter) methods is that properties cannot share the same name as the getter/setter function. If we do so, then calling the method will result in an infinite call stack error. One workaround is to add an underscore before the property name like we did in the example above. 
+*/
