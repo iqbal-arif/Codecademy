@@ -361,3 +361,52 @@ Call your two functions with the spaceship object in the code editor, then conso
 greenEnergy(spaceship10);
 remotelyDisable(spaceship10);
 console.log(spaceship10);
+
+
+/*
+9. Looping Through Objects
+***********************
+***********************
+Loops are programming tools that repeat a block of code until a condition is met. We learned how to iterate through arrays using their numerical indexing, but the key-value pairs in objects aren’t ordered! JavaScript has given us alternative solution for iterating through objects with the for...in syntax .
+
+for...in will execute a given block of code for each property in an object.
+*/
+let spaceship11
+ = {
+  crew: {
+    captain: { 
+      name: 'Lily', 
+      degree: 'Computer Engineering', 
+      cheerTeam() { console.log('You got this!') } 
+    },
+    'chief officer': { 
+      name: 'Dan', 
+      degree: 'Aerospace Engineering', 
+      agree() { console.log('I agree, captain!') } 
+    },
+    medic: { 
+      name: 'Clementine', 
+      degree: 'Physics', 
+      announce() { console.log(`Jets on!`) } },
+    translator: {
+      name: 'Shauna', 
+      degree: 'Conservation Science', 
+      powerFuel() { console.log('The tank is full!') } 
+    }
+  }
+}; 
+ 
+// for...in
+for (let crewMember in spaceship11
+    .crew) {
+  console.log(`${crewMember}: ${spaceship11
+    .crew[crewMember].name}`);
+}
+
+Our for...in will iterate through each element of the spaceship11
+.crew object. In each iteration, the variable crewMember is set to one of spaceship11
+.crew‘s keys, enabling us to log a list of crew members’ role and name.
+
+
+
+*/
