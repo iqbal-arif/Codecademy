@@ -362,7 +362,6 @@ greenEnergy(spaceship10);
 remotelyDisable(spaceship10);
 console.log(spaceship10);
 
-
 /*
 9. Looping Through Objects
 ***********************
@@ -371,42 +370,84 @@ Loops are programming tools that repeat a block of code until a condition is met
 
 for...in will execute a given block of code for each property in an object.
 */
-let spaceship11
- = {
+let spaceship11 = {
   crew: {
-    captain: { 
-      name: 'Lily', 
-      degree: 'Computer Engineering', 
-      cheerTeam() { console.log('You got this!') } 
+    captain: {
+      name: 'Lily',
+      degree: 'Computer Engineering',
+      cheerTeam() {
+        console.log('You got this!');
+      },
     },
-    'chief officer': { 
-      name: 'Dan', 
-      degree: 'Aerospace Engineering', 
-      agree() { console.log('I agree, captain!') } 
+    'chief officer': {
+      name: 'Dan',
+      degree: 'Aerospace Engineering',
+      agree() {
+        console.log('I agree, captain!');
+      },
     },
-    medic: { 
-      name: 'Clementine', 
-      degree: 'Physics', 
-      announce() { console.log(`Jets on!`) } },
+    medic: {
+      name: 'Clementine',
+      degree: 'Physics',
+      announce() {
+        console.log(`Jets on!`);
+      },
+    },
     translator: {
-      name: 'Shauna', 
-      degree: 'Conservation Science', 
-      powerFuel() { console.log('The tank is full!') } 
-    }
-  }
-}; 
- 
-// for...in
-for (let crewMember in spaceship11
-    .crew) {
-  console.log(`${crewMember}: ${spaceship11
-    .crew[crewMember].name}`);
-}
+      name: 'Shauna',
+      degree: 'Conservation Science',
+      powerFuel() {
+        console.log('The tank is full!');
+      },
+    },
+  },
+};
 
+// for...in
+for (let crewMember in spaceship11.crew) {
+  console.log(`${crewMember}: ${spaceship11.crew[crewMember].name}`);
+}
+/*
 Our for...in will iterate through each element of the spaceship11
 .crew object. In each iteration, the variable crewMember is set to one of spaceship11
 .crew‘s keys, enabling us to log a list of crew members’ role and name.
-
-
-
 */
+
+let spaceship12 = {
+  crew: {
+    captain: {
+      name: 'Lily',
+      degree: 'Computer Engineering',
+      cheerTeam() {
+        console.log('You got this!');
+      },
+    },
+    'chief officer': {
+      name: 'Dan',
+      degree: 'Aerospace Engineering',
+      agree() {
+        console.log('I agree, captain!');
+      },
+    },
+    medic: {
+      name: 'Clementine',
+      degree: 'Physics',
+      announce() {
+        console.log(`Jets on!`);
+      },
+    },
+    translator: {
+      name: 'Shauna',
+      degree: 'Conservation Science',
+      powerFuel() {
+        console.log('The tank is full!');
+      },
+    },
+  },
+};
+
+// Write your code below
+
+for (let crewMember in spaceship12.crew) {
+  console.log(`[${crewMember}]: [${spaceship12.crew[crewMember].name}]`);
+}
