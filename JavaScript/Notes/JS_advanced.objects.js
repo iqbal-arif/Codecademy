@@ -498,3 +498,27 @@ const newRobot = Object.assign({}, robot2, {
   voiceRecognition: true,
 });
 console.log(newRobot);
+
+/*
+Review
+
+Congratulations on finishing Advanced Objects!
+
+Let’s review the concepts covered in this lesson:
+
+    1. The object that a method belongs to is called the calling object.
+    2. The this keyword refers to the calling object and can be used to access properties of the calling object.
+    3. Methods do not automatically have access to other internal properties of the calling object.
+    4. The value of this depends on where the this is being accessed from.
+    5. We cannot use arrow functions as methods if we want to access other internal properties.
+    6. JavaScript objects do not have built-in privacy, rather there are conventions to follow to notify other developers about the intent of the code.
+    7. The usage of an underscore before a property name means that the original developer did not intend for that property to be directly changed.
+    8. Setters and getter methods allow for more detailed ways of accessing and assigning properties.
+    9. Factory functions allow us to create object instances quickly and repeatedly.
+    10. There are different ways to use object destructuring: one way is the property value shorthand and another is destructured assignment.
+    11. As with any concept, it is a good skill to learn how to use the documentation with objects!
+
+You’re ready to start leveraging more elegant code for creating and accessing objects in your code!
+
+
+*/
