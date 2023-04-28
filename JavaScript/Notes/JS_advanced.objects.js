@@ -399,3 +399,36 @@ We can even use destructured assignment to grab nested properties of an object:
 */
 const { day } = vampire.preferences;
 console.log(day); // Prints 'stay inside'
+
+/*************Drill************/
+
+/*
+1.
+
+Use destructured assignment to create a const variable named functionality that extracts the functionality property of robot.
+
+If you need a reminder on how to use destructured assignment, review the example in the narrative or check the hint.
+Checkpoint 2 Passed
+2.
+
+Since functionality is referencing robot.functionality we can call the methods available to robot.functionality simply through functionality.
+
+Take advantage of this shortcut and call the .beep() method on functionality.
+
+*/
+const robot2 = {
+  model: '1E78V2',
+  energyLevel: 100,
+  functionality: {
+    beep() {
+      console.log('Beep Boop');
+    },
+    fireLaser() {
+      console.log('Pew Pew');
+    },
+  },
+};
+
+const { functionality } = robot2;
+
+functionality.beep();
