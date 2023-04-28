@@ -273,9 +273,9 @@ const startsWithS = animals2.findIndex((animal) => {
 
 Another widely used iteration method is .reduce(). The .reduce() method returns a single value after iterating through the elements of an array, thereby reducing the array. Take a look at the example below:
 */
-const numbers = [1, 2, 4, 10];
+const numbers4 = [1, 2, 4, 10];
 
-const summedNums = numbers.reduce((accumulator, currentValue) => {
+const summedNums = numbers4.reduce((accumulator, currentValue) => {
   return accumulator + currentValue;
 });
 

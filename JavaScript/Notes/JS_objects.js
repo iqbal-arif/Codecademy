@@ -19,7 +19,7 @@ At their core, JavaScript objects are containers storing related data and functi
 
 Objects can be assigned to variables just like any JavaScript type. We use curly braces, {}, to designate an object literal:
 */
-let spaceship = {}; // spaceship is an empty object
+let spaceship13 = {}; // spaceship is an empty object
 /*
 We fill an object with unordered data. This data is organized into key-value pairs. A key is like a variable name that points to a location in memory that holds a value.
 
@@ -28,7 +28,7 @@ A key’s value can be of any data type in the language including functions or o
 We make a key-value pair by writing the key’s name, or identifier, followed by a colon and then the value. We separate each key-value pair in an object literal with a comma (,). Keys are strings, but when we have a key that does not have any special characters in it, JavaScript allows us to omit the quotation marks:
 */
 // An object literal with two key-value pairs
-let spaceship = {
+let spaceship14 = {
   'Fuel Type': 'diesel',
   color: 'silver',
 };
@@ -167,7 +167,7 @@ const alienShip = {
 /*
 With the new method syntax introduced in ES6 we can omit the colon and the function keyword.
 */
-const alienShip = {
+const alienShip2 = {
   invade() {
     console.log(
       'Hello! We have come to dominate your planet. Instead of Earth, it shall be called New Xaculon.'
