@@ -48,6 +48,9 @@ const menu = {
   },
 };
 
+const { _meal } = menu.meal;
+const { _price } = menu.price;
+
 menu._meal = 10;
 menu._price = 'price';
 
