@@ -46,15 +46,24 @@ const menu = {
       return (_price = priceToCheck);
     }
   },
+  get todaysSpecial() {
+    // if(_meal && _price){
+    //   return `Today’s Special is ${_meal} for $${_price}!`
+    // }else{
+    //   return `Meal or price was not set correctly!`
+    // }
+    this._meal && this._price
+      ? console.log(`Today’s Special is ${this._meal} for $${this._price}!`)
+      : console.log(`Meal or price was not set correctly!`);
+  },
 };
 
-const { _meal } = menu.meal;
-const { _price } = menu.price;
+_meal = menu.meal;
+_price = menu.price;
 
-menu._meal = 10;
-menu._price = 'price';
+menu._meal = 'Soup';
+menu._price = 10;
 
-menu.meal = _meal;
-menu.price = _price;
+menu.todaysSpecial;
 
 console.log(menu);
