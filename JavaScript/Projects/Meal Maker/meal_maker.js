@@ -54,4 +54,7 @@ const { _price } = menu.price;
 menu._meal = 10;
 menu._price = 'price';
 
+menu.meal = _meal;
+menu.price = _price;
+
 console.log(menu);
