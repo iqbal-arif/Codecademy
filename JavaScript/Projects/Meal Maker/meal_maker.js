@@ -41,6 +41,11 @@ const menu = {
       return (_meal = mealToCheck);
     }
   },
+  set price(priceToCheck) {
+    if (priceToCheck === number) {
+      return (_price = priceToCheck);
+    }
+  },
 };
 
 menu._meal = 10;
