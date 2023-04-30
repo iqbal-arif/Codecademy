@@ -36,6 +36,7 @@ Then, below the new assignments, console.log() the menu object to see how not ty
 const menu = {
   _meal: ' ',
   _price: 0,
+  set meal(mealToCheck) {},
 };
 
 menu._meal = 10;
