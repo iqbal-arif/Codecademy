@@ -116,3 +116,17 @@ It is the reference to the object, bound to the variable, that cannot be changed
 /*************************************************/
 /********************Practice*********************/
 /*************************************************/
+
+/*
+Complete the JavaScript code block that mutates the object locationOfLondon inside a function.
+*/
+locationOfLondon = {
+  latitude: 51.5074,
+  longitude: 0.1278,
+};
+
+function changeProp(loc) {
+  loc.longitude += 0.001;
+}
+
+changeProp(locationOfLondon);
