@@ -7,6 +7,15 @@ After we create these data structures in this project, feel free to challenge yo
 */
 
 const team = {
-  _players: [],
-  _games: [],
+  _players: [{ firstName: 'Arif', lastName: 'Iqbal', age: 48 }],
+  _games: [{ opponent: 5, teamPoints: 10, opponentPoints: 12 }],
+  get player() {
+    console.log(Object.value(_players));
+  },
+  get games() {
+    console.log(Object.entries(this._games));
+  },
 };
+
+team.player;
+team.games;
