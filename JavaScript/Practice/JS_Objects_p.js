@@ -417,3 +417,21 @@ const restaurant2 = {
 /*
  Every JavaScript function or method has a this context. For a function defined inside of an object, this will refer to that object itself. For a function defined outside of an object, this will refer to the global object (window in a browser, global in Node.js).
 */
+
+
+/*************************************************/
+/********************Practice*********************/
+/*************************************************/
+
+/*
+Q1: Which of the following lines of code is a more restricted way of accessing an object property?
+*/
+const coat = {
+  _pockets: 5,
+  get pockets() {
+    return this._pockets;
+  },
+  set pockets(newPockets){
+    this._pockets = newPockets;
+  }
+};
