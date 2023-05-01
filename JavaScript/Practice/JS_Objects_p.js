@@ -118,7 +118,7 @@ It is the reference to the object, bound to the variable, that cannot be changed
 /*************************************************/
 
 /*
-Complete the JavaScript code block that mutates the object locationOfLondon inside a function.
+Q1: Complete the JavaScript code block that mutates the object locationOfLondon inside a function.
 */
 locationOfLondon = {
   latitude: 51.5074,
@@ -130,3 +130,13 @@ function changeProp(loc) {
 }
 
 changeProp(locationOfLondon);
+
+/*
+Q2: Access a property of the myDog object so that undefined will be printed out to the console.
+*/
+const myDog = {
+  name: 'Snowflake',
+  age: 7,
+};
+
+console.log(myDog.color);
