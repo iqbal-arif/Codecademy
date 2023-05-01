@@ -23,5 +23,6 @@ const team = {
   },
 };
 
+team.addPlayer('Bugs', 'Bunny', 76);
 team.player;
 team.games;
