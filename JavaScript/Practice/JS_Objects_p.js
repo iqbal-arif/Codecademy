@@ -322,4 +322,45 @@ const {duration} = summerSeason;
 Correct! JavaScript destructuring assignment is a shorthand syntax that allows object properties to be unpacked into specific variable values.
 */
 
+/*
+11. javascript getters and setters restricted
+*/
 
+const myCat = {
+    _name: 'Dottie',
+    get name() {
+      return this._name;  
+    },
+    set name(newName) {
+      this._name = newName;  
+    }
+  };
+   
+  // Reference invokes the getter
+  console.log(myCat.name);
+   
+  // Assignment invokes the setter
+  myCat.name = 'Yankee';
+  /*
+  JavaScript object properties are not private or protected. Since JavaScript objects are passed by reference, there is no way to fully prevent incorrect interactions with object properties.
+  
+  One way to implement more restricted interactions with object properties is to use getter and setter methods.
+  
+  Typically, the internal value is stored as a property with an identifier that matches the getter and setter method names, but begins with an underscore (_).
+  */
+
+/*
+12. Dot Notation for Accessing Object Properties
+*/
+const apple = { 
+  color: 'Green',
+  price: {
+    bulk: '$3/kg',
+    smallQty: '$4/kg'
+  }
+};
+console.log(apple.color); // 'Green'
+console.log(apple.price.bulk); // '$3/kg'
+/*
+Properties of a JavaScript object can be accessed using the dot notation in this manner: object.propertyName. Nested properties of an object can be accessed by chaining key names in the correct order.
+*/
