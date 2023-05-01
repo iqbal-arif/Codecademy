@@ -172,3 +172,13 @@ const bag = {
 
 delete bag.price;
 delete bag['fabric-material'];
+
+/*
+Q5: Change the type property of the shoes object from 'sneakers' to 'boots'.
+*/
+const shoes = {
+  color: 'black',
+  type: 'sneakers',
+};
+
+shoes.type = 'boots';
