@@ -8,7 +8,7 @@ After we create these data structures in this project, feel free to challenge yo
 
 const team = {
   _players: [{ firstName: 'Arif', lastName: 'Iqbal', age: 48 }],
-  _games: [{ opponent: 5, teamPoints: 10, opponentPoints: 12 }],
+  _games: [{ opponent: 'ObjectTeam', teamPoints: 10, opponentPoints: 12 }],
   get player() {
     console.log(Object.value(_players));
   },
@@ -37,5 +37,7 @@ const team = {
 };
 
 team.addPlayer('Bugs', 'Bunny', 76);
-team.player;
-team.games;
+team.addGame('Titans', 100, 98);
+
+console.log(team.players);
+console.log(team.games);
