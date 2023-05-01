@@ -323,10 +323,12 @@ Correct! JavaScript destructuring assignment is a shorthand syntax that allows o
 */
 
 /*
+*********************************************
 11. javascript getters and setters restricted
+*********************************************
 */
 
-const myCat = {
+const myCat2 = {
     _name: 'Dottie',
     get name() {
       return this._name;  
@@ -337,10 +339,10 @@ const myCat = {
   };
    
   // Reference invokes the getter
-  console.log(myCat.name);
+  console.log(myCat2.name);
    
   // Assignment invokes the setter
-  myCat.name = 'Yankee';
+  myCat2.name = 'Yankee';
   /*
   JavaScript object properties are not private or protected. Since JavaScript objects are passed by reference, there is no way to fully prevent incorrect interactions with object properties.
   
@@ -350,7 +352,9 @@ const myCat = {
   */
 
 /*
+************************************************
 12. Dot Notation for Accessing Object Properties
+************************************************
 */
 const apple = { 
   color: 'Green',
@@ -363,4 +367,35 @@ console.log(apple.color); // 'Green'
 console.log(apple.price.bulk); // '$3/kg'
 /*
 Properties of a JavaScript object can be accessed using the dot notation in this manner: object.propertyName. Nested properties of an object can be accessed by chaining key names in the correct order.
+*/
+
+/*
+***********
+13. Objects
+***********
+
+An object is a built-in data type for storing key-value pairs. Data inside objects are unordered, and the values can be of any type.
+*/
+
+/*
+*************************************************
+14. getters and setters intercept property access
+*************************************************
+*/
+const myCat3 = {
+  _name: 'Snickers',
+  get name(){
+    return this._name
+  },
+  set name(newName){
+    //Verify that newName is a non-empty string before setting as name property
+    if (typeof newName === 'string' && newName.length > 0){
+      this._name = newName; 
+    } else {
+      console.log("ERROR: name must be a non-empty string"); 
+    }
+  }
+}
+/*
+JavaScript getter and setter methods are helpful in part because they offer a way to intercept property access and assignment, and allow for additional actions to be performed before these changes go into effect.
 */
