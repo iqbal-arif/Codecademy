@@ -399,3 +399,21 @@ const myCat3 = {
 /*
 JavaScript getter and setter methods are helpful in part because they offer a way to intercept property access and assignment, and allow for additional actions to be performed before these changes go into effect.
 */
+
+/*
+****************************
+15. javascript function this
+****************************
+*/
+const restaurant2 = {
+  numCustomers: 45,
+  seatCapacity: 100,
+  availableSeats() {
+    // this refers to the restaurant object
+    // and it's used to access its properties
+    return this.seatCapacity - this.numCustomers;
+  }
+}
+/*
+ Every JavaScript function or method has a this context. For a function defined inside of an object, this will refer to that object itself. For a function defined outside of an object, this will refer to the global object (window in a browser, global in Node.js).
+*/
