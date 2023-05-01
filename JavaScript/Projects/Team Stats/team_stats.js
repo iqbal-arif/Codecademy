@@ -6,4 +6,7 @@ We want to create, retrieve, and add information about your favorite sports team
 After we create these data structures in this project, feel free to challenge yourself to gain insights from them. For example, you might want to get the total number of games your team has played, or the average score of all of their games.
 */
 
-const team = {};
+const team = {
+  _players: [],
+  _games: [],
+};
