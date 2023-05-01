@@ -271,3 +271,19 @@ const rubiksCubeFacts = {
   
   It uses a pair of curly braces ({}) with property names on the left-hand side of an assignment to extract values from objects. The number of variables can be less than the total properties of an object.
   */
+
+
+/*************************************************/
+/********************Practice*********************/
+/*************************************************/
+
+/*
+Q1: Which of the following is true about JavaScript getters and setters?
+A1: They allow for additional actions to be performed before property access and assignment go into effect.
+*/
+
+/*
+Q2: Select the correct option that creates a JavaScript object using the shorthand property name syntax.
+A2:*/
+const score  = 10;
+const team2 = {score};
