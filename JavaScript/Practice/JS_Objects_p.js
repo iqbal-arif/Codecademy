@@ -140,3 +140,16 @@ const myDog = {
 };
 
 console.log(myDog.color);
+
+/*
+Q3: Complete the JavaScript code block which implements a factory function.
+*/
+const objFactory = (name, description) => {
+  return {
+    name,
+    description,
+    printHello() {
+      console.log('Hello!');
+    },
+  };
+};
