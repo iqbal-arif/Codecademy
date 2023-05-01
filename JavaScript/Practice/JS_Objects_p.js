@@ -425,6 +425,7 @@ const restaurant2 = {
 
 /*
 Q1: Which of the following lines of code is a more restricted way of accessing an object property?
+
 */
 const coat = {
   _pockets: 5,
@@ -435,3 +436,6 @@ const coat = {
     this._pockets = newPockets;
   }
 };
+// A1: Accessing Property
+coat.pockets;
+// Correct! This is using the getter method to access the pockets property of the coat object, which is a more restricted interaction.
