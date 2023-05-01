@@ -25,6 +25,15 @@ const team = {
       })
     );
   },
+  addGame(newOpponent, newTeamPoints, newOpponentPoints) {
+    return this._games.push(
+      (game = {
+        opponent: newOpponent,
+        teamPoints: newTeamPoints,
+        opponentPoints: newOpponentPoints,
+      })
+    );
+  },
 };
 
 team.addPlayer('Bugs', 'Bunny', 76);
