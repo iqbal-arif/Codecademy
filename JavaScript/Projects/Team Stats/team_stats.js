@@ -18,7 +18,13 @@ const team = {
 
   addPlayer(newFirstName, newLastName, newAge) {
     console.log(
-      (player = { firstName: newFirstName, lastName: newLastName, age: newAge })
+      this._player.push(
+        (player = {
+          firstName: newFirstName,
+          lastName: newLastName,
+          age: newAge,
+        })
+      )
     );
   },
 };
