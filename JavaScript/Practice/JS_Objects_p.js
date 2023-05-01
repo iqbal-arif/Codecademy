@@ -287,3 +287,20 @@ Q2: Select the correct option that creates a JavaScript object using the shortha
 A2:*/
 const score  = 10;
 const team2 = {score};
+
+/*
+Q3: Select the invalid JavaScript object key name.
+A3: random key
+*/
+
+/*
+Q4: What does the this keyword refer to in the .totalCost() function?
+A4: The pizzaOrder Object.
+*/
+const pizzaOrder = {
+  numPizzas: 3,
+  pizzaPrice: 10,
+  totalCost() {
+    return this.numPizzas * this.pizzaPrice;  
+  }
+}
