@@ -439,3 +439,36 @@ const coat = {
 // A1: Accessing Property
 coat.pockets;
 // Correct! This is using the getter method to access the pockets property of the coat object, which is a more restricted interaction.
+
+/*
+Q2: Select the choice demonstrating the correct way to access a nested property of a JavaScript object, using the dot notation.
+*/
+const chair = {
+  arms: 2,
+  legs: 4,
+  material: {
+    woodtype: "Oak",
+    color: "reddish-brown"
+  }
+}
+// A2: Accessing Property
+chair.material.woodtype;
+// Awesome! Nested properties of objects can be accessed by chaining key names.
+
+/*
+Q3: Select the option that is NOT true for the JavaScript Object data type.
+A3: Object is not a built-in data type.
+Correct! JavaScript object is a built-in data type.
+*/
+
+/*
+Q4: Create a method printInfo() in the movie object that prints out the _name, _director, and _year properties of the object.
+*/
+const movie = {
+  _name: "Citizen Kane",
+  _director: "Orson Welles",
+  _year: 1941,
+  printInfo(){
+    console.log( this._name+ " was directed by " + this._director + " in " + this._year );
+  }
+}
