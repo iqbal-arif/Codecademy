@@ -287,7 +287,9 @@ Q2: Select the correct option that creates a JavaScript object using the shortha
 A2:*/
 const score  = 10;
 const team2 = {score};
-
+/*
+Great job! Shorthand property names populate an object with a key matching the identifier and a value matching the identifier’s value.
+*/
 /*
 Q3: Select the invalid JavaScript object key name.
 A3: random key
@@ -318,4 +320,8 @@ const {duration} = summerSeason;
 
 /*
 Correct! JavaScript destructuring assignment is a shorthand syntax that allows object properties to be unpacked into specific variable values.
+*/
+
+/*
+Q6: Select the correct option that creates a JavaScript object using the shorthand property name syntax.
 */
