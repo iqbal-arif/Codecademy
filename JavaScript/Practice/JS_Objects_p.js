@@ -85,3 +85,34 @@ console.log(person);
 /*
   Once an object is created in JavaScript, it is possible to remove properties from the object using the delete operator. The delete keyword deletes both the value of the property and the property itself from the object. The delete operator only works on properties, not on variables or functions.
   */
+
+/*
+*********************************
+5. JavaScript Objects are Mutable
+*********************************
+  */
+const student = {
+  name: 'Sheldon',
+  score: 100,
+  grade: 'A',
+};
+
+console.log(student);
+// { name: 'Sheldon', score: 100, grade: 'A' }
+
+delete student.score;
+student.grade = 'F';
+console.log(student);
+// { name: 'Sheldon', grade: 'F' }
+
+student = {};
+// TypeError: Assignment to constant variable.
+/*
+  JavaScript objects are mutable, meaning their contents can be changed, even when they are declared as const. New properties can be added, and existing property values can be changed or deleted.
+
+It is the reference to the object, bound to the variable, that cannot be changed.
+*/
+
+/*************************************************/
+/********************Practice*********************/
+/*************************************************/
