@@ -182,3 +182,92 @@ const shoes = {
 };
 
 shoes.type = 'boots';
+
+
+/*
+************************************************
+6. getters and setters intercept property access
+************************************************
+*/
+const myCat = {
+  _name: 'Snickers',
+  get name(){
+    return this._name
+  },
+  set name(newName){
+    //Verify that newName is a non-empty string before setting as name property
+    if (typeof newName === 'string' && newName.length > 0){
+      this._name = newName; 
+    } else {
+      console.log("ERROR: name must be a non-empty string"); 
+    }
+  }
+}
+/*
+JavaScript getter and setter methods are helpful in part because they offer a way to intercept property access and assignment, and allow for additional actions to be performed before these changes go into effect.
+*/
+
+/*
+*****************************************************
+7. shorthand property name syntax for object creation
+*****************************************************
+*/
+const activity = 'Surfing';
+const beach = { activity };
+console.log(beach); // { activity: 'Surfing' }
+/*
+The shorthand property name syntax in JavaScript allows creating objects without explicitly specifying the property names (ie. explicitly declaring the value after the key). In this process, an object is created where the property names of that object match variables which already exist in that context. Shorthand property names populate an object with a key matching the identifier and a value matching the identifier’s value.
+*/
+
+/*
+************************************
+8. Restrictions in Naming Properties
+************************************
+*/
+// Example of invalid key names
+const trainSchedule = {
+    platform num: 10, // Invalid because of the space between words.
+    40 - 10 + 2: 30, // Expressions cannot be keys.
+    +compartment: 'C' // The use of a + sign is invalid unless it is enclosed in quotations.
+  }
+  /*
+  JavaScript object key names must adhere to some restrictions to be valid. Key names must either be strings or valid identifier or variable names (i.e. special characters such as - are not allowed in key names that are not strings).
+  */
+
+/*
+****************************
+9. javascript function this
+****************************
+*/
+const restaurant = {
+  numCustomers: 45,
+  seatCapacity: 100,
+  availableSeats() {
+    // this refers to the restaurant object
+    // and it's used to access its properties
+    return this.seatCapacity - this.numCustomers;
+  }
+}
+/*
+Every JavaScript function or method has a this context. For a function defined inside of an object, this will refer to that object itself. For a function defined outside of an object, this will refer to the global object (window in a browser, global in Node.js).
+*/
+
+/*
+********************************************************
+10. JavaScript destructuring assignment shorthand syntax
+********************************************************
+*/
+const rubiksCubeFacts = {
+    possiblePermutations: '43,252,003,274,489,856,000',
+    invented: '1974',
+    largestCube: '17x17x17'
+  };
+  const {possiblePermutations, invented, largestCube} = rubiksCubeFacts;
+  console.log(possiblePermutations); // '43,252,003,274,489,856,000'
+  console.log(invented); // '1974'
+  console.log(largestCube); // '17x17x17'
+  /*
+  The JavaScript destructuring assignment is a shorthand syntax that allows object properties to be extracted into specific variable values.
+  
+  It uses a pair of curly braces ({}) with property names on the left-hand side of an assignment to extract values from objects. The number of variables can be less than the total properties of an object.
+  */
