@@ -304,3 +304,18 @@ const pizzaOrder = {
     return this.numPizzas * this.pizzaPrice;  
   }
 }
+
+/*
+Q5: Select the correct option that uses the JavaScript destructuring assignment to assign a property value of the given object to a variable.
+*/
+const summerSeason = {
+  'duration': '6 months',
+  'maxTemp': '42 Degrees C',
+  'nextSeason': 'Autumn'  
+};
+
+const {duration} = summerSeason;
+
+/*
+Correct! JavaScript destructuring assignment is a shorthand syntax that allows object properties to be unpacked into specific variable values.
+*/
