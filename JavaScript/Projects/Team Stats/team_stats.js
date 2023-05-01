@@ -15,6 +15,12 @@ const team = {
   get games() {
     console.log(Object.entries(this._games));
   },
+
+  addPlayer(newFirstName, newLastName, newAge) {
+    console.log(
+      (player = { firstName: newFirstName, lastName: newLastName, age: newAge })
+    );
+  },
 };
 
 team.player;
