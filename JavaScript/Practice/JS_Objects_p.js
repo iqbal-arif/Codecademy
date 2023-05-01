@@ -322,6 +322,4 @@ const {duration} = summerSeason;
 Correct! JavaScript destructuring assignment is a shorthand syntax that allows object properties to be unpacked into specific variable values.
 */
 
-/*
-Q6: Select the correct option that creates a JavaScript object using the shorthand property name syntax.
-*/
+
