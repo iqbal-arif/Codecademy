@@ -28,3 +28,39 @@ When JavaScript objects are passed as arguments to functions or methods, they ar
 2. Accessing non-existent JavaScript properties
 ***********************************************
 */
+const classElection = {
+  date: 'January 12',
+};
+
+console.log(classElection.place); // undefined
+/*
+  When trying to access a JavaScript object property that has not been defined yet, the value of undefined will be returned by default.
+  */
+
+/*
+*******************************
+3. javascript factory functions
+*******************************
+*/
+// A factory function that accepts 'name',
+// 'age', and 'breed' parameters to return
+// a customized dog object.
+const dogFactory = (name, age, breed) => {
+  return {
+    name: name,
+    age: age,
+    breed: breed,
+    bark() {
+      console.log('Woof!');
+    },
+  };
+};
+/*
+  A JavaScript function that returns an object is known as a factory function. Factory functions often accept parameters in order to customize the returned object.
+  */
+
+/*
+******************
+4. Delete operator
+******************
+*/
