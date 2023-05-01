@@ -153,3 +153,22 @@ const objFactory = (name, description) => {
     },
   };
 };
+
+/*
+Q4: Fill in the blanks to demonstrate two ways to delete properties from a JavaScript object.
+*/
+const bag = {
+  price: 20,
+  pockets: 2,
+  'fabric-material': {
+    front: {
+      fabric: 'Leather',
+    },
+    back: {
+      fabric: 'Nylon',
+    },
+  },
+};
+
+delete bag.price;
+delete bag['fabric-material'];
