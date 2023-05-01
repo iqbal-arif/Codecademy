@@ -64,3 +64,24 @@ const dogFactory = (name, age, breed) => {
 4. Delete operator
 ******************
 */
+const person = {
+  firstName: 'Matilda',
+  age: 27,
+  hobby: 'knitting',
+  goal: 'learning JavaScript',
+};
+
+delete person.hobby; // or delete person[hobby];
+
+console.log(person);
+/*
+  {
+    firstName: "Matilda"
+    age: 27
+    goal: "learning JavaScript"
+  }
+  */
+
+/*
+  Once an object is created in JavaScript, it is possible to remove properties from the object using the delete operator. The delete keyword deletes both the value of the property and the property itself from the object. The delete operator only works on properties, not on variables or functions.
+  */
