@@ -13,6 +13,7 @@ let bikes = {
 
 // A2:
 bikes['specialized'] = 'red';
+// Good job! We could accomplish the same thing using dot notation: bikes.specialized = 'red';
 
 /*
 Q3: Which line of code would NOT print the value saved to the _num key in the tempObj object.
@@ -112,3 +113,28 @@ A10
 let myObjSample = {
   greeting: 'hello',
 };
+
+/*
+Q11: What is a method?
+A11: A method is property with a function as its value. 
+*/
+
+/*
+Q12: Which of the following Object methods can be used to copy all of the properties of an object into a new object?
+A12: Object.assign()
+*/
+
+/*
+Q13: Given the following code, which expression will evaluate to apples?
+*/
+const refrigerator = {
+  dairy: ['cheese', 'milk', 'sour cream'],
+  temperature: 35,
+  'produce drawer': {
+    vegetables: ['lettuce', 'broccoli', 'peas'],
+    fruit: ['apples', 'berries', 'grapes'],
+  },
+};
+// A13: Correct! refrigerator['produce drawer'] will evaluate to the object containing the fruit key which holds an array. At the 0th index of that array is 'apples'
+
+refrigerator['produce drawer'].fruit[0];
