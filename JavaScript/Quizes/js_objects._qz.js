@@ -50,3 +50,14 @@ const myDog = {
 let { name } = myDog;
 
 //Correct! Using ES6’s destructured assignment, we can use this syntax to create a variable name with a value of myDog‘s .name property
+
+/*
+Q6: How can we call the method in the code below?
+*/
+let myObj = {
+  sayHello() {
+    return 'Hello there!';
+  },
+};
+//A6:
+myObj.sayHello();
