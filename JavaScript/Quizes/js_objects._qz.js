@@ -25,6 +25,7 @@ let tempObj = {
 };
 // A3:
 console.log(tempObj.num());
+// Correct! We wrote a getter. This line is looking for a regular method called .num() and would cause an error
 
 /*
 Q4: What should we add to the empty .withDiscount() method to return the cost of the meatballs object with a two dollar discount?
@@ -61,3 +62,13 @@ let myObj = {
 };
 //A6:
 myObj.sayHello();
+
+/*
+Which line of code would NOT print the value saved to the _num key in the tempObj object.
+*/
+let tempObj2 = {
+  _num: 22,
+  get num() {
+    return this._num;
+  },
+};
