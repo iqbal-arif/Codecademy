@@ -72,3 +72,35 @@ let tempObj2 = {
     return this._num;
   },
 };
+
+/*
+Q7: Which of the following statements is correct?
+A7: Objects store unordered data of amy type as key-value pairs.
+*/
+
+/*
+Q8: What will the following code output?
+*/
+const car = {
+  numDoors: 4,
+  isDirty: true,
+  color: 'red',
+};
+
+for (let key in car) {
+  console.log(key);
+}
+
+// A8: numDoors, isDirty, color
+// Correct! This code will iterate through the car object and print each key.
+
+/*
+Q9: What are the keys in this object?
+*/
+let apartment = {
+  coffeeMaker: 'Aeropress',
+  ceilingFan: true,
+  books: 114,
+};
+
+// A9: coffeeMaker, ceilingFan, books
