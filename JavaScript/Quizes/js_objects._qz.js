@@ -36,3 +36,15 @@ let meatballs = {
 
 // A4:
 return this.cost - 2;
+
+/*
+Q5: Which of the following is an example of destructured assignment?
+*/
+const myDog = {
+  name: 'Tadpole',
+  breed: 'mutt',
+  color: 'tan',
+  weight: 32,
+};
+// A5:
+let { name } = myDog;
