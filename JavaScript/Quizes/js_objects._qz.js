@@ -104,3 +104,11 @@ let apartment = {
 };
 
 // A9: coffeeMaker, ceilingFan, books
+
+/*
+Q10: Which is the correct syntax for creating an object literal?
+A10
+*/
+let myObjSample = {
+  greeting: 'hello',
+};
