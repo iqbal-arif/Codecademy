@@ -164,3 +164,17 @@ class Dog {
 /*
 In the example above, we add getter methods for name and behavior. Notice, we also prepended our property names with underscores (_name and _behavior), which indicate these properties should not be accessed directly. Under the getters, we add a method named .incrementBehavior(). When you call .incrementBehavior() on a Dog instance, it adds 1 to the _behavior property. Between each of our methods, we did not include commas.
 */
+
+/************************************/
+/**************Practice**************/
+/************************************/
+
+class Surgeon {
+  constructor(name, department) {
+    this.name = name;
+    this.department = department;
+  }
+}
+
+const surgeonRomero2 = new Surgeon('Francisco Romero', 'Cardiovascular');
+const surgeonJackson2 = new Surgeon('Ruth Jackson', 'Orthopedics');
