@@ -29,3 +29,28 @@ As you can see, classes are a great way to reduce duplicate code and debugging t
 
 After we lay the foundation for classes in the first few exercises, we will introduce inheritance and static methods — two features that will make your code more efficient and meaningful.
 */
+
+/************************************/
+/**************Practice**************/
+/************************************/
+
+/*
+1.
+
+In the next exercise, you will learn about classes in greater detail. Before you do, take a moment to study the class in main.js.
+
+Spend some time identifying the similarities and differences between the Dog class in main.js and the code we used to create our halley object in the instructions above.
+Checkpoint 2 Passed
+2.
+
+Copy the class instantiation, method call, and console.log() statements below into main.js.
+*/
+const halley = new Dog('Halley');
+console.log(halley.name); // Print name value to console
+console.log(halley.behavior); // Print behavior value to console
+halley.incrementBehavior(); // Add one to behavior
+console.log(halley.name); // Print name value to console
+console.log(halley.behavior); // Print behavior value to console
+/*
+What do you expect to see when you run this code?
+*/
