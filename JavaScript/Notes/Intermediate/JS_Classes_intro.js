@@ -168,7 +168,33 @@ In the example above, we add getter methods for name and behavior. Notice, we al
 /************************************/
 /**************Practice**************/
 /************************************/
+/*
+1.
 
+In the Surgeon constructor, prepend the name and department properties with an underscore (_).
+Checkpoint 2 Passed
+2.
+
+Inside of the constructor(), add a property named _remainingVacationDays and set it equal to 20.
+Checkpoint 3 Passed
+3.
+
+Under the constructor(), create a getter called name that returns the value saved to _name.
+Checkpoint 4 Passed
+4.
+
+Under the name getter, create a getter called department that returns the value saved to _department.
+Checkpoint 5 Passed
+5.
+
+Under the department getter, create a getter called remainingVacationDays that returns the value saved to _remainingVacationDays.
+Checkpoint 6 Passed
+6.
+
+Under the remainingVacationDays getter, create a method called takeVacationDays that accepts one argument named daysOff.
+
+Inside of the method, subtract daysOff from the number saved to _remainingVacationDays. Set _remainingVacationDays to the result.
+*/
 class Surgeon {
   constructor(name, department) {
     this._name = name;
