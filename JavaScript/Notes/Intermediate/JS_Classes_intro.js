@@ -171,10 +171,20 @@ In the example above, we add getter methods for name and behavior. Notice, we al
 
 class Surgeon {
   constructor(name, department) {
-    this.name = name;
-    this.department = department;
+    this._name = name;
+    this._department = department;
+    this._remainingVacationDays = 20;
+  }
+  get name() {
+    return this._name;
+    return this._department;
+  }
+  get department() {
+    return this._department;
+  }
+  get remainingVacationDays() {
+    return this._remainingVacationDays;
   }
 }
-
 const surgeonRomero2 = new Surgeon('Francisco Romero', 'Cardiovascular');
 const surgeonJackson2 = new Surgeon('Ruth Jackson', 'Orthopedics');
