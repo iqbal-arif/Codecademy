@@ -286,14 +286,13 @@ surgeonRomero2.takeVacationDays(3);
 
 console.log(surgeonRomero2.remainingVacationDays);
 
-
 /*
 ****************
 6. Inheritance I
 ****************
 Imagine our doggy daycare is so successful that we decide to expand the business and open a kitty daycare. Before the daycare opens, we need to create a Cat class so we can quickly generate Cat instances. We know that the properties in our Cat class (name, behavior) are similar to the properties in our Dog class, though, there will be some differences, because of course, cats are not dogs.
-*/
 Let’s say that our Cat class looks like this:
+*/
 
 class Cat {
   constructor(name, usesLitter) {
@@ -301,19 +300,19 @@ class Cat {
     this._usesLitter = usesLitter;
     this._behavior = 0;
   }
- 
+
   get name() {
     return this._name;
   }
- 
+
   get usesLitter() {
     return this._usesLitter;
   }
- 
+
   get behavior() {
     return this._behavior;
-  }  
- 
+  }
+
   incrementBehavior() {
     this._behavior++;
   }
@@ -332,21 +331,77 @@ class Animal {
     this._name = name;
     this._behavior = 0;
   }
- 
+
   get name() {
     return this._name;
   }
- 
+
   get behavior() {
     return this._behavior;
-  }   
- 
+  }
+
   incrementBehavior() {
     this._behavior++;
   }
-} 
+}
 /*
 In the example above, the Animal class contains the properties and methods that the Cat and Dog classes share (name, behavior, .incrementBehavior()).
 
 The diagram to the right shows the relationships we want to create between the Animal, Cat, and Dog classes.
+*/
+
+/*
+******************
+7. Inheritance II
+******************
+In the last exercise, we created a parent class named Animal for two child classes named Cat and Dog.
+
+The Animal class below contains the shared properties and methods of Cat and Dog.
+*/
+class Animal {
+  constructor(name) {
+    this._name = name;
+    this._behavior = 0;
+  }
+
+  get name() {
+    return this._name;
+  }
+
+  get behavior() {
+    return this._behavior;
+  }
+
+  incrementBehavior() {
+    this._behavior++;
+  }
+}
+/*
+The code below shows the Cat class that will inherit information from the Animal class.
+*/
+class Cat {
+  constructor(name, usesLitter) {
+    this._name = name;
+    this._usesLitter = usesLitter;
+    this._behavior = 0;
+  }
+
+  get name() {
+    return this._name;
+  }
+
+  get behavior() {
+    return this._behavior;
+  }
+
+  get usesLitter() {
+    return this._usesLitter;
+  }
+
+  incrementBehavior() {
+    this._behavior++;
+  }
+}
+/*
+To the right, in main.js, you will put what you learned to practice by creating a parent class named HospitalEmployee.
 */
