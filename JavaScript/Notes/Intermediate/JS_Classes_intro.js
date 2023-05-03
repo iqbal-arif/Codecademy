@@ -6,7 +6,7 @@ JavaScript is an object-oriented programming (OOP) language we can use to model 
 
 Take, for example, an object representing a dog named halley. This dog’s name (a key) is "Halley" (a value) and has a behavior (another key) of 0 (another value). We create the halley object below:
 */
-let halley = {
+let halley3 = {
   _name: 'Halley',
   _behavior: 0,
 
@@ -185,10 +185,12 @@ class Surgeon {
   get remainingVacationDays() {
     return this._remainingVacationDays;
   }
-  takeVacationDays = (daysOff) => {
-    this._remainingVacationDays = daysOff - this._remainingVacationDays;
-  };
+  takeVacationDays(daysOff) {
+    return this._remainingVacationDays - daysOff;
+  }
 }
 
 const surgeonRomero2 = new Surgeon('Francisco Romero', 'Cardiovascular');
 const surgeonJackson2 = new Surgeon('Ruth Jackson', 'Orthopedics');
+
+console.log(surgeonRomero.takeVacationDays(5));
