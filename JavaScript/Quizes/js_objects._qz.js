@@ -138,3 +138,14 @@ const refrigerator = {
 // A13: Correct! refrigerator['produce drawer'] will evaluate to the object containing the fruit key which holds an array. At the 0th index of that array is 'apples'
 
 refrigerator['produce drawer'].fruit[0];
+
+/*
+Q14: What’s wrong with the setter method in the example below?
+*/
+let tempObj3 = {
+  _num: 22,
+  set num(numIn) {
+    _num = numIn;
+  },
+};
+// A14: The setter should contain this._num in place of _num.
