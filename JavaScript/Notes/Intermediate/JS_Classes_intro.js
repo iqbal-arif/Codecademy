@@ -185,6 +185,10 @@ class Surgeon {
   get remainingVacationDays() {
     return this._remainingVacationDays;
   }
+  takeVacationDays = (daysOff) => {
+    this._remainingVacationDays = daysOff - this._remainingVacationDays;
+  };
 }
+
 const surgeonRomero2 = new Surgeon('Francisco Romero', 'Cardiovascular');
 const surgeonJackson2 = new Surgeon('Ruth Jackson', 'Orthopedics');
