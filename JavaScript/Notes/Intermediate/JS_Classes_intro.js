@@ -513,3 +513,18 @@ In the example above, we create a new instance the Cat class, named bryceCat. We
 
 In the example above, we abandoned best practices by calling our _name property directly. In the next exercise, we’ll address this by calling an inherited getter method for our name property.
 */
+
+/************************************/
+/**************Practice**************/
+/************************************/
+
+/*
+1.
+
+In this exercise, you will begin to create the Nurse class as a child of the HospitalEmployee class. Remember the Nurse class has the following properties and methods:
+Nurse
+
+    Properties: _name, _remainingVacationDays (set to 20 inside constructor()), _certifications
+    Methods: .takeVacationDays(), .addCertification()
+
+Under HospitalEmployee, create an empty class named Nurse that extends HospitalEmployee.
