@@ -797,6 +797,10 @@ Nurse
 
 Under the Nurse constructor(), add a getter that returns the value saved to the Nurse instance’s _certifications.
 
+2. Add a method called addCertification under the certifications getter.
+
+The method should accept one input (newCertification). Inside the method, use the push method to add the newCertification value to the nurse’s certifications array.
+
 */
 
 class HospitalEmployee {
