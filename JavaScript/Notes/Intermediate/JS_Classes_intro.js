@@ -596,6 +596,27 @@ Nurse
     Methods: .takeVacationDays(), .addCertification()
 
 Under HospitalEmployee, create an empty class named Nurse that extends HospitalEmployee.
+2.
+
+Inside the Nurse class, create a constructor() that accepts two arguments. Use the list of properties above to name these arguments.
+
+Check the Hint if you need help.
+Checkpoint 3 Passed
+3.
+
+In the Nurse constructor, call the parent’s constructor method and pass the appropriate value(s).
+Checkpoint 4 Passed
+4.
+
+Inside of the Nurse constructor, and under super, set _certifications.
+Checkpoint 5 Passed
+5.
+
+Under the Nurse class, create a new instance of Nurse and save it to a constant variable named nurseOlynyk. Pass in the following values for each property:
+
+    name: 'Olynyk'
+    certifications: ['Trauma', 'Pediatrics']
+
 
 
 */
@@ -620,6 +641,9 @@ class HospitalEmployee {
 
 class Nurse extends HospitalEmployee {
   constructor(name, certifications) {
-    super();
+    super(name);
+    this._certifications = certifications;
   }
 }
+
+const nurseOlynyk = new Nurse('Olynyk', ['Trauma', 'Pediatrics']);
