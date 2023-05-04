@@ -830,8 +830,15 @@ class Nurse extends HospitalEmployee {
   get certifications() {
     return (this._certifications = certifications);
   }
+
+  addCertification(newCertification) {
+    this._certifications.push(newCertification);
+  }
 }
 
 const nurseOlynyk2 = new Nurse('Olynyk', ['Trauma', 'Pediatrics']);
 nurseOlynyk.takeVacationDays(5);
 console.log(nurseOlynyk.remainingVacationDays);
+
+nurseOlynyk2.addCertification('Genetics');
+console.log(nurseOlynyk2._certifications);
