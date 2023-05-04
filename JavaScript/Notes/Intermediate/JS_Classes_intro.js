@@ -566,10 +566,10 @@ class Cat extends Animal {
 /*
 In the example above, we create a new class named Cat that extends the Animal class. Let’s pay special attention to our new keywords: extends and super.
 
-    The extends keyword makes the methods of the animal class available inside the cat class.
-    The constructor, called when you create a new Cat object, accepts two arguments, name and usesLitter.
-    The super keyword calls the constructor of the parent class. In this case, super(name) passes the name argument of the Cat class to the constructor of the Animal class. When the Animal constructor runs, it sets this._name = name; for new Cat instances.
-    _usesLitter is a new property that is unique to the Cat class, so we set it in the Cat constructor.
+    1. The extends keyword makes the methods of the animal class available inside the cat class.
+    2. The constructor, called when you create a new Cat object, accepts two arguments, name and usesLitter.
+    3. The super keyword calls the constructor of the parent class. In this case, super(name) passes the name argument of the Cat class to the constructor of the Animal class. When the Animal constructor runs, it sets this._name = name; for new Cat instances.
+    4. _usesLitter is a new property that is unique to the Cat class, so we set it in the Cat constructor.
 
 Notice, we call super on the first line of our constructor(), then set the usesLitter property on the second line. In a constructor(), you must always call the super method before you can use the this keyword — if you do not, JavaScript will throw a reference error. To avoid reference errors, it is best practice to call super on the first line of subclass constructors.
 
@@ -582,3 +582,44 @@ In the example above, we create a new instance the Cat class, named bryceCat. We
 
 In the example above, we abandoned best practices by calling our _name property directly. In the next exercise, we’ll address this by calling an inherited getter method for our name property.
 */
+
+/************************************/
+/**************Practice**************/
+/************************************/
+/*
+1.
+
+In this exercise, you will begin to create the Nurse class as a child of the HospitalEmployee class. Remember the Nurse class has the following properties and methods:
+Nurse
+
+    Properties: _name, _remainingVacationDays (set to 20 inside constructor()), _certifications
+    Methods: .takeVacationDays(), .addCertification()
+
+Under HospitalEmployee, create an empty class named Nurse that extends HospitalEmployee.
+
+
+*/
+class HospitalEmployee {
+  constructor(name) {
+    this._name = name;
+    this._remainingVacationDays = 20;
+  }
+
+  get name() {
+    return this._name;
+  }
+
+  get remainingVacationDays() {
+    return this._remainingVacationDays;
+  }
+
+  takeVacationDays(daysOff) {
+    this._remainingVacationDays -= daysOff;
+  }
+}
+
+class Nurse extends HospitalEmployee {
+  constructor(name, certifications) {
+    super();
+  }
+}
