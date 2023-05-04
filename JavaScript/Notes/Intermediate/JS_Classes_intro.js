@@ -841,4 +841,4 @@ nurseOlynyk.takeVacationDays(5);
 console.log(nurseOlynyk.remainingVacationDays);
 
 nurseOlynyk2.addCertification('Genetics');
-console.log(nurseOlynyk2._certifications);
+console.log(nurseOlynyk2.certifications);
