@@ -921,9 +921,37 @@ class Nurse extends HospitalEmployee {
   }
 }
 
+class Doctor extends HospitalEmployee {
+  constructor(name, insurance) {
+    super(name);
+    this._insurance = insurance;
+  }
+
+  get insurance() {
+    return this._insurance;
+  }
+}
+
 const nurseOlynyk3 = new Nurse('Olynyk', ['Trauma', 'Pediatrics']);
 nurseOlynyk.takeVacationDays(5);
 console.log(nurseOlynyk.remainingVacationDays);
 nurseOlynyk.addCertification('Genetics');
 console.log(nurseOlynyk.certifications);
 console.log(HospitalEmployee.generatePassword());
+
+/*
+***************
+Review: Classes
+***************
+Way to go! Let’s review what you learned.
+
+    1. Classes are templates for objects.
+    2. Javascript calls a constructor method when we create a new instance of a class.
+    3. Inheritance is when we create a parent class with properties and methods that we can extend to child classes.
+    4. We use the extends keyword to create a subclass.
+    5. The super keyword calls the constructor() of a parent class.
+    6. Static methods are called on the class, but not on instances of the class.
+
+In completing this lesson, you’ve taken one step closer to writing efficient, production-level JavaScript. Good luck as you continue to develop your skills and move into intermediate-level concepts.
+
+*/
