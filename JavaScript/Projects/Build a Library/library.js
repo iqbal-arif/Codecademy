@@ -158,10 +158,11 @@ class CD extends Media {
   }
 
   shuffle() {
-    return Math.random() * this._songs.length;
+    return Math.floor(Math.random() * this._songs.length);
   }
 }
 
+console.log(cdList.shuffle());
 // Instance of CD
 
 const cdList = new CD('Creativity', 'John Doe');
