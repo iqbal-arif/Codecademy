@@ -51,3 +51,46 @@ class Media {
     }, 0);
   }
 }
+
+class Book extends Media {
+  constructor(title, author) {
+    super(title);
+    this._author = author;
+  }
+
+  get author() {
+    return this._author;
+  }
+}
+
+class Movie extends Media {
+  constructor(title, director) {
+    super(title);
+    this._director = director;
+    this._runTime = 8;
+  }
+
+  get director() {
+    return this._director;
+  }
+
+  get runTime() {
+    return this._runTime;
+  }
+}
+
+class CD extends Media {
+  constructor(title, artist) {
+    super(title);
+    this._artist = artist;
+    this._runTime = 8;
+  }
+
+  get artist() {
+    return this._artist;
+  }
+
+  get runTime() {
+    return this._runTime;
+  }
+}
