@@ -50,18 +50,18 @@ class Media {
       : (isCheckedOut = false);
   }
 
+  getAverageRating(avgRating) {
+    avgRating = this._ratings.reduce((accumulator, currentValue) => {
+      return (accumulator + currentValue) / this._ratings.length;
+    }, 0);
+  }
+
   set isCheckOut(checkOut) {
     return (this._isCheckOut = checkOut);
   }
 
-  //   addRating(rating) {
-  //     return this._ratings.push(rating);
-  //   }
-
-  getAverageRating(avgRating) {
-    avgRating = this._ratings.reduce((accumulator, currentValue) => {
-      return accumulator + currentValue;
-    }, 0);
+  addRating(rating) {
+    return this._ratings.push(rating);
   }
 }
 
