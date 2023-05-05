@@ -37,13 +37,20 @@ class Media {
     return this._title;
   }
 
-  toggleCheckOutStatus(isCheckedOut) {
-    return (this._isCheckOut = isCheckedOut);
+  get _isCheckOut() {
+    return this._isCheckOut;
+  }
+  get ratings() {
+    return this.ratings;
   }
 
-  addRating(rating) {
-    return this._ratings.push(rating);
-  }
+  //   toggleCheckOutStatus(isCheckedOut) {
+  //     return (this._isCheckOut = isCheckedOut);
+  //   }
+
+  //   addRating(rating) {
+  //     return this._ratings.push(rating);
+  //   }
 
   getAverageRating(avgRating) {
     avgRating = this._ratings.reduce((accumulator, currentValue) => {
