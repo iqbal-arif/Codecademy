@@ -65,10 +65,13 @@ class Media {
   }
 }
 
+// Book Sub-Class
+
 class Book extends Media {
-  constructor(title, author) {
+  constructor(title, author, pages) {
     super(title);
     this._author = author;
+    this._pages = pages;
   }
 
   get author() {
