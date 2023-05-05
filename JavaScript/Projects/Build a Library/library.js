@@ -156,6 +156,10 @@ class CD extends Media {
   get songs() {
     return this._songs;
   }
+
+  shuffle() {
+    return Math.random() * this._songs.length;
+  }
 }
 
 // Instance of CD
