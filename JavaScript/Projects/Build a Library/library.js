@@ -126,18 +126,55 @@ console.log(historyOfEverything.getAverageRating());
 
 const speed = new Movie('Speed', 'Jan de Bont', 116);
 
+// Calling toggleCheckOutStatus() and logging isCheckedOut value
+
+console.log(speed.toggleCheckOutStatus());
+
+// Calling addRating Thrice
+
+speed.addRating(1);
+speed.addRating(1);
+speed.addRating(5);
+
+// Calling getAverageRating() and logging results
+
+console.log(speed.getAverageRating());
+
+// CD Sub-Class
+
 class CD extends Media {
-  constructor(title, artist) {
+  constructor(title, artist, songs) {
     super(title);
     this._artist = artist;
-    this._runTime = 8;
+    this._songs = ['Strick', 'Runner'];
   }
 
   get artist() {
     return this._artist;
   }
 
-  get runTime() {
-    return this._runTime;
+  get songs() {
+    return this._songs;
   }
 }
+
+// Instance of CD
+
+const cdList = new Movie('Creativity', 'John Doe');
+
+// Logging CD lists
+console.log(cdList.songs);
+
+// Calling toggleCheckOutStatus() and logging isCheckedOut value
+
+console.log(cdList.toggleCheckOutStatus());
+
+// Calling addRating Thrice
+
+cdList.addRating(3);
+cdList.addRating(4);
+cdList.addRating(7);
+
+// Calling getAverageRating() and logging results
+
+console.log(cdList.getAverageRating());
