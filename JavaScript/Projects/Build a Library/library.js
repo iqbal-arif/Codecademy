@@ -44,12 +44,15 @@ class Media {
     return this.ratings;
   }
 
+  toggleCheckOutStatus(isCheckedOut) {
+    return this._isCheckOut === true
+      ? (isCheckedOut = true)
+      : (isCheckedOut = false);
+  }
+
   set isCheckOut(checkOut) {
     return (this._isCheckOut = checkOut);
   }
-  //   toggleCheckOutStatus(isCheckedOut) {
-  //     return (this._isCheckOut = isCheckedOut);
-  //   }
 
   //   addRating(rating) {
   //     return this._ratings.push(rating);
