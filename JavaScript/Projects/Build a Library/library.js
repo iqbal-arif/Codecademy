@@ -160,7 +160,7 @@ class CD extends Media {
 
 // Instance of CD
 
-const cdList = new Movie('Creativity', 'John Doe');
+const cdList = new CD('Creativity', 'John Doe');
 
 // Logging CD lists
 console.log(cdList.songs);
@@ -171,9 +171,8 @@ console.log(cdList.toggleCheckOutStatus());
 
 // Calling addRating Thrice
 
-cdList.addRating(3);
-cdList.addRating(4);
-cdList.addRating(7);
+cdList.addRating(1);
+cdList.addRating(5);
 
 // Calling getAverageRating() and logging results
 
