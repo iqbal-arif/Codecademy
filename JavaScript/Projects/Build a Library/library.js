@@ -30,22 +30,22 @@ class Media {
   constructor(title) {
     this._title = title;
     this._ratings = [];
-    this._isCheckOut = false;
+    this._isCheckedOut = false;
   }
 
   get title() {
     return this._title;
   }
 
-  get _isCheckOut() {
-    return this._isCheckOut;
+  get isCheckedOut() {
+    return this._isCheckedOut;
   }
   get ratings() {
     return this.ratings;
   }
 
   toggleCheckOutStatus(isCheckedOut) {
-    return this._isCheckOut === true
+    return this._isCheckedOut === true
       ? (isCheckedOut = true)
       : (isCheckedOut = false);
   }
@@ -56,8 +56,8 @@ class Media {
     }, 0);
   }
 
-  set isCheckOut(checkOut) {
-    return (this._isCheckOut = checkOut);
+  set isCheckedOut(checkOut) {
+    return (this._isCheckedOut = checkOut);
   }
 
   addRating(rating) {
