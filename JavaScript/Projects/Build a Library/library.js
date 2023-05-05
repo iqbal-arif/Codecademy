@@ -51,9 +51,9 @@ class Media {
   }
 
   getAverageRating(avgRating) {
-    avgRating = this._ratings.reduce((accumulator, currentValue) => {
-      return (accumulator + currentValue) / this._ratings.length;
-    }, 0);
+    return (avgRating = this._ratings.reduce((accumulator, currentValue) => {
+      return Math.floor((accumulator + currentValue) / this._ratings.length);
+    }, 0));
   }
 
   set isCheckedOut(checkOut) {
@@ -117,6 +117,10 @@ console.log(historyOfEverything.toggleCheckOutStatus());
 historyOfEverything.addRating(4);
 historyOfEverything.addRating(5);
 historyOfEverything.addRating(5);
+
+// Calling getAverageRating() and logging results
+
+console.log(historyOfEverything.getAverageRating());
 
 class CD extends Media {
   constructor(title, artist) {
