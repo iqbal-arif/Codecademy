@@ -122,6 +122,10 @@ historyOfEverything.addRating(5);
 
 console.log(historyOfEverything.getAverageRating());
 
+// Instance of Movie
+
+const speed = new Movie('Speed', 'Jan de Bont', 116);
+
 class CD extends Media {
   constructor(title, artist) {
     super(title);
