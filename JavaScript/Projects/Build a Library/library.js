@@ -29,7 +29,7 @@ CD
 class Media {
   constructor(title) {
     this._title = title;
-    this._rating = [];
+    this._ratings = [];
     this._isCheckOut = false;
   }
 
@@ -42,10 +42,12 @@ class Media {
   }
 
   addRating(rating) {
-    return this._rating.push(rating);
+    return this._ratings.push(rating);
   }
 
   getAverageRating(avgRating) {
-    return this._rating.filter();
+    avgRating = this._ratings.reduce((accumulator, currentValue) => {
+      return accumulator + currentValue;
+    }, 0);
   }
 }
