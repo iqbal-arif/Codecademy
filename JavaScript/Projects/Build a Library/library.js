@@ -146,7 +146,7 @@ class CD extends Media {
   constructor(title, artist, songs) {
     super(title);
     this._artist = artist;
-    this._songs = ['Strick', 'Runner'];
+    this._songs = ['Stricker', 'Runner', 'Sprinter'];
   }
 
   get artist() {
@@ -158,11 +158,10 @@ class CD extends Media {
   }
 
   shuffle() {
-    return Math.floor(Math.random() * this._songs.length);
+    return this._songs[Math.floor(Math.random() * this._songs.length)];
   }
 }
 
-console.log(cdList.shuffle());
 // Instance of CD
 
 const cdList = new CD('Creativity', 'John Doe');
@@ -182,3 +181,6 @@ cdList.addRating(5);
 // Calling getAverageRating() and logging results
 
 console.log(cdList.getAverageRating());
+
+// Calling Songs Randomly
+console.log(cdList.shuffle());
