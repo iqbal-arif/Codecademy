@@ -112,6 +112,12 @@ const historyOfEverything = new Book(
 
 console.log(historyOfEverything.toggleCheckOutStatus());
 
+// Calling addRating Thrice
+
+historyOfEverything.addRating(4);
+historyOfEverything.addRating(5);
+historyOfEverything.addRating(5);
+
 class CD extends Media {
   constructor(title, artist) {
     super(title);
