@@ -100,11 +100,17 @@ class Movie extends Media {
   }
 }
 
+// Instance of Book
+
 const historyOfEverything = new Book(
   'A Short History of Nearly Everything',
   'Bill Bryson',
   544
 );
+
+// Calling toggleCheckOutStatus() and logging isCheckedOut value
+
+console.log(historyOfEverything.toggleCheckOutStatus());
 
 class CD extends Media {
   constructor(title, artist) {
