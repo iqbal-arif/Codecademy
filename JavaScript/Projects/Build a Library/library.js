@@ -184,3 +184,24 @@ console.log(cdList.getAverageRating());
 
 // Calling Songs Randomly
 console.log(cdList.shuffle());
+
+// Catalog Sub-class
+
+class Catalog {
+  constructor(books, movies, cds) {
+    this._books = books;
+    this._movies = movies;
+    this._cds = cds;
+  }
+
+  catalogListing() {
+    return [this._books, this_movies, this._cds];
+  }
+}
+
+// Instance of Catalog
+
+const catalog = new Catalog(historyOfEverything, speed, cdList);
+
+// Listing Catalog Items
+console.log(catalog);
