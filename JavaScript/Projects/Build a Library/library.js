@@ -77,13 +77,18 @@ class Book extends Media {
   get author() {
     return this._author;
   }
+  get pages() {
+    return this._pages;
+  }
 }
 
+//  Movie Sub-class
+
 class Movie extends Media {
-  constructor(title, director) {
+  constructor(title, director, runTime) {
     super(title);
     this._director = director;
-    this._runTime = 8;
+    this._runTime = runTime;
   }
 
   get director() {
@@ -94,6 +99,12 @@ class Movie extends Media {
     return this._runTime;
   }
 }
+
+const historyOfEverything = new Book(
+  'A Short History of Nearly Everything',
+  'Bill Bryson',
+  544
+);
 
 class CD extends Media {
   constructor(title, artist) {
