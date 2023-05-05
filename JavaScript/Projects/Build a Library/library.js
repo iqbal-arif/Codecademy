@@ -44,6 +44,9 @@ class Media {
     return this.ratings;
   }
 
+  set isCheckOut(checkOut) {
+    return (this._isCheckOut = checkOut);
+  }
   //   toggleCheckOutStatus(isCheckedOut) {
   //     return (this._isCheckOut = isCheckedOut);
   //   }
