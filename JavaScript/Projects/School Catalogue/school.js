@@ -50,6 +50,10 @@ class School {
   set numberOfStudents(newNumberOfStudent) {
     return (this._numberOfStudents = newNumberOfStudent);
   }
+
+  quickFacts() {}
+
+  static pickSubstituteTeacher() {}
 }
 
 //
