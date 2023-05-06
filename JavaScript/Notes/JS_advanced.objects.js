@@ -215,9 +215,9 @@ Notice that in the example above:
 
 Then to use the setter method:
 */
-person.age = 40;
-console.log(person._age); // Logs: 40
-person.age = '40'; // Logs: You must assign a number to age
+person2.age = 40;
+console.log(person2._age); // Logs: 40
+person2.age = '40'; // Logs: You must assign a number to age
 /*
 Setter methods like age do not need to be called with a set of parentheses. Syntactically, it looks like we’re reassigning the value of a property.
 
