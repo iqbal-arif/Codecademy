@@ -50,7 +50,11 @@ class School {
     return `${this._name} educates ${this._numberOfStudents} students at the ${this._level} school level.`;
   }
 
-  static pickSubstituteTeacher() {}
+  static pickSubstituteTeacher(substituteTeachers) {
+    return substituteTeachers[
+      Math.floor(Math.random() * (substituteTeachers.length - 1))
+    ];
+  }
 
   set numberOfStudents(newNumberOfStudent) {
     typeof this._numberOfStudents === 'number'
