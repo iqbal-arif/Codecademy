@@ -56,4 +56,11 @@ class School {
   static pickSubstituteTeacher() {}
 }
 
-//
+// Primary Sub-Class
+
+class Primary extends School {
+  constructor(name, level, numberOfStudents) {
+    super(name, level, numberOfStudents);
+    this._pickupPolicy = pickupPolicy;
+  }
+}
