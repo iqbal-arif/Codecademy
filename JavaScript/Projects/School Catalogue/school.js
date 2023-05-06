@@ -29,6 +29,8 @@ High
 If you’re looking for a challenge, create the constructor() and getters for the four classes above. Then, use the setter and methods specifications in steps five, six, and seven to finish the project.
 */
 
+// School Class
+
 class School {
   constructor(name, level, numberOfStudents) {
     this._name = name;
@@ -44,4 +46,10 @@ class School {
   get numberOfStudents() {
     return this._numberOfStudents;
   }
+
+  set numberOfStudents(newNumberOfStudent) {
+    return (this._numberOfStudents = newNumberOfStudent);
+  }
 }
+
+//
