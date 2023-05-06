@@ -103,4 +103,8 @@ class HighSchool extends School {
 
 // PrimarySchool And HighSchool Instances
 
-const lorraineHansbury = new PrimarySchool('Lorraine Hansbury', 514);
+const lorraineHansbury = new PrimarySchool(
+  'Lorraine Hansbury',
+  514,
+  'Students must be picked up by a parent, guardian, or a family member over the age of 13.'
+);
