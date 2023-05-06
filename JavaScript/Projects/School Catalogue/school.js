@@ -46,14 +46,19 @@ class School {
   get numberOfStudents() {
     return this._numberOfStudents;
   }
-
-  set numberOfStudents(newNumberOfStudent) {
-    return (this._numberOfStudents = newNumberOfStudent);
+  quickFacts() {
+    return `${this._name} educates ${this._numberOfStudents} students at the ${this._level} school level.`;
   }
 
-  quickFacts() {}
-
   static pickSubstituteTeacher() {}
+
+  set numberOfStudents(newNumberOfStudent) {
+    typeof this._numberOfStudents === 'number'
+      ? (this._numberOfStudents = newNumberOfStudent)
+      : 'Invalid input: numberOfStudents must be set to a Number.';
+
+    return (this._numberOfStudents = newNumberOfStudent);
+  }
 }
 
 // Primary Sub-Class
