@@ -64,3 +64,20 @@ class Primary extends School {
     this._pickupPolicy = pickupPolicy;
   }
 }
+
+// Middle Sub-Class
+
+class Middle extends School {
+  constructor(name, level, numberOfStudents) {
+    super(name, level, numberOfStudents);
+  }
+}
+
+//  High
+
+class High extends School {
+  constructor(name, level, numberOfStudents) {
+    super(name, level, numberOfStudents);
+    this._sportsTeams = sportsTeams;
+  }
+}
