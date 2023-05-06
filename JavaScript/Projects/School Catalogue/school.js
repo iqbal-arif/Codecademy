@@ -81,7 +81,7 @@ class PrimarySchool extends School {
 // Middle Sub-Class
 
 class Middle extends School {
-  constructor(name, level, numberOfStudents) {
+  constructor(name, numberOfStudents) {
     super(name, level, numberOfStudents);
   }
 }
