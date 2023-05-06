@@ -88,9 +88,15 @@ class Middle extends School {
 
 //  High
 
-class High extends School {
-  constructor(name, level, numberOfStudents) {
-    super(name, level, numberOfStudents);
+class HighSchool extends School {
+  constructor(name, numberOfStudents, sportsTeams) {
+    super(name, high, numberOfStudents);
     this._sportsTeams = sportsTeams;
+  }
+
+  get sportsTeams() {
+    this._sportsTeams.forEach((player) => {
+      return player;
+    });
   }
 }
