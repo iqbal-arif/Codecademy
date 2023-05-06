@@ -67,9 +67,9 @@ class School {
 
 // Primary Sub-Class
 
-class Primary extends School {
-  constructor(name, primary, numberOfStudents) {
-    super(name, numberOfStudents);
+class PrimarySchool extends School {
+  constructor(name, numberOfStudents, pickupPolicy) {
+    super(name, primary, numberOfStudents);
     this._pickupPolicy = pickupPolicy;
   }
 
@@ -100,3 +100,7 @@ class HighSchool extends School {
     });
   }
 }
+
+// PrimarySchool And HighSchool Instances
+
+const lorraineHansbury = new PrimarySchool('Lorraine Hansbury', 514);
