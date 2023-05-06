@@ -108,3 +108,16 @@ const lorraineHansbury = new PrimarySchool(
   514,
   'Students must be picked up by a parent, guardian, or a family member over the age of 13.'
 );
+
+// Calling Quick Facts for PrimarySchool Instance
+
+lorraineHansbury.quickFacts();
+
+School.pickSubstituteTeacher([
+  'Jamal Crawford',
+  'Lou Williams',
+  'J. R. Smith',
+  'James Harden',
+  'Jason Terry',
+  'Manu Ginobli',
+]);
