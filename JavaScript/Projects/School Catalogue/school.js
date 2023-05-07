@@ -101,7 +101,7 @@ class HighSchool extends School {
   }
 }
 
-// PrimarySchool And HighSchool Instances
+// PrimarySchool Instances
 
 const lorraineHansbury = new PrimarySchool(
   'Lorraine Hansbury',
@@ -113,11 +113,24 @@ const lorraineHansbury = new PrimarySchool(
 
 lorraineHansbury.quickFacts();
 
-School.pickSubstituteTeacher([
-  'Jamal Crawford',
-  'Lou Williams',
-  'J. R. Smith',
-  'James Harden',
-  'Jason Terry',
-  'Manu Ginobli',
+// Calling School Substitute Teachers list
+
+console.log(
+  School.pickSubstituteTeacher([
+    'Jamal Crawford',
+    'Lou Williams',
+    'J. R. Smith',
+    'James Harden',
+    'Jason Terry',
+    'Manu Ginobli',
+  ])
+);
+
+// HighSchool Instances
+
+const alSmith = new HighSchool('Al E. Smith', 415, [
+  'Baseball',
+  'Basketball',
+  'Volleyball',
+  'Track and Field',
 ]);
