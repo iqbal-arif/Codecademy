@@ -131,3 +131,9 @@ class Car {
     this._year = year;
   }
 }
+
+/*
+Q6: What is the purpose of the constructor() method?
+A6: The constructor() is called when yo create a new instance of a class. It sets the property values for each instance.
+Nice work! If the class inherits properties from a parent class, then it will call super to pass arguments to the parent’s constructor().
+*/
