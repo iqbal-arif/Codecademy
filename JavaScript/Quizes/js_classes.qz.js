@@ -250,3 +250,45 @@ class Apartment extends RentalUnit {
 A10: Apartment
 Nice work! The Apartment class extends the methods and properties in the RentalUnit class.
 */
+
+/*
+Q11: Which line of code is incorrect?
+*/
+class Calculator {
+  constructor(model) {
+    this._model = model;
+  }
+
+  static add(x, y) {
+    return x + y;
+  }
+}
+
+const myCalculator = new Calculator('basic');
+myCalculator.add(2, 5);
+
+/*
+A11: myCalculator.add(2, 5);
+Well done! .add() is a static method and is called on the class itself, not an instance of the class.
+*/
+
+/*
+Q12: Spot the error in this code.
+*/
+class Animal {
+  constructor(name, weight, family) {
+    this._name = name;
+    this._weight = weight;
+    this._family = family;
+    this._canMove = true;
+  },
+  get name() {
+    return this._name;
+  },
+  set name(newName) {
+    this._name = newName;
+  },
+  get weight() {
+    return this._weight;  
+  }
+}
