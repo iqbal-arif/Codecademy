@@ -349,3 +349,48 @@ class RentalUnit {
 A14: calculateMonthly()
 Nice! Including .calculateMonthly(), there are technically four methods in this example: the constructor(), the two getters, and .calculateMonthly(). 
 */
+
+/*
+Q15: What is the purpose of the super keyword?
+A15: The super keyword is used in subclasses to call parent constructor().
+*/
+
+/*
+Q16: Why will the code below throw an error?
+*/
+class RentalUnit {
+  constructor(address, costPerYear) {
+    this._address = address;
+    this._costPerYear = costPerYear;
+  }
+ 
+  get address() {
+    return this._address;
+  }
+ 
+  get costPerYear() {
+    return this._costPerYear;
+  }
+ 
+  calculateMonthly() {
+    return this._costPerYear / 12; 
+  }
+}
+ 
+class Apartment extends RentalUnit {
+  constructor(address, costPerYear, numberOfBedrooms) {
+    this._numberOfBedrooms = numberOfBedrooms;
+    super(address, costPerYear);
+  }
+ 
+  get numberOfBedrooms() {
+    return this._numberOfBedrooms;
+  }
+}
+ 
+const myApartment2 = new Apartment('1234 W 54th', 22000, 3);
+
+/*
+A16: In Apartment "s" constructor(), the super keyword must be called before this is used.
+Nice job! If you use this before super, JavaScript will throw an error.
+*/
