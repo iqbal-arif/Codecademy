@@ -45,3 +45,8 @@ class Apartment extends RentalUnit {
 const myApartment = new Apartment('1234 W 54th', 22000, 3);
 
 console.log(Apartment.randomBorough());
+/*
+A1: console.log(Apartment.randomBorough());
+ 
+Nice job! You must access static methods from the class. You cannot call them on an instance of the class.
+*/
