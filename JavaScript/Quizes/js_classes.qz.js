@@ -190,3 +190,18 @@ console.log(hanes);
 /*
 Q7: Declare a class Book that has a constructor setting the _title, _author, and _year properties to the constructor’s parameter values. Then, add a getter and setter method for the _title property named title. 
 */
+class Book {
+  constructor(title, author, year) {
+    this._title = title;
+    this._author = author;
+    this._year = year;
+  }
+
+  get title() {
+    return this._title;
+  }
+
+  set title(newTitle) {
+    this._title = newTitle;
+  }
+}
