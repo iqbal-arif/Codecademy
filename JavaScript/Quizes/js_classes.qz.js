@@ -322,3 +322,30 @@ const myRental = new RentalUnit("111 33rd St NE", 19000)
 /*
 A13: const myRental = new RentalUnit("111 33rd St NE", 19000)
 */
+
+
+/*
+Q14: Which of the following is a method of the RentalUnit class?
+*/
+class RentalUnit {
+  constructor(address, cost) {
+    this._address = address;
+    this._cost = cost;
+  }
+ 
+  get address() {
+    return this._address;
+  }
+ 
+  get cost() {
+    return this._cost;
+  }
+ 
+  calculateMonthly() {
+    return this.cost / 12; 
+  }
+}
+/*
+A14: calculateMonthly()
+Nice! Including .calculateMonthly(), there are technically four methods in this example: the constructor(), the two getters, and .calculateMonthly(). 
+*/
