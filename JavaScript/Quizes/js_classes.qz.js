@@ -99,3 +99,23 @@ class Dog {
     console.log('Woof!');
   }
 }
+
+/*
+Q4: Create a child class of the Rectangle class named Square, and call the parent class’s constructor inside the Square class’s constructor. 
+*/
+
+class Rectangle {
+  constructor(length, width) {
+    this._length = length;
+    this._width = width;
+  }
+  getArea() {
+    return this._length * this._width;
+  }
+}
+
+class Square extends Rectangle {
+  constructor(side) {
+    super(side, side);
+  }
+}
