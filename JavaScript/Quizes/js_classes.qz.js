@@ -153,6 +153,14 @@ class Employee {
     this._hourlyWage = hourlyWage;
     this._hoursWorked = 0;
   }
+  get name() {
+    return this._name;
+  }
+
+  get hourlyWage() {
+    return this._hourlyWage;
+  }
+
   logHours(hoursWorked) {
     return (this._hoursWorked = hoursWorked);
   }
@@ -164,7 +172,7 @@ class Employee {
 
 const hanes = new Employee('hanes', 65);
 
-hanes.name;
+console.log(hanes.name);
 
 console.log(hanes.logHours(10));
 
