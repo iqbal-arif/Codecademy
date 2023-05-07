@@ -119,3 +119,15 @@ class Square extends Rectangle {
     super(side, side);
   }
 }
+
+/*
+Q5: Inside the Car class, complete the constructor method so that it assigns its 3 parameters to properties of the class instance. 
+*/
+
+class Car {
+  constructor(make, model, year) {
+    this._make = make;
+    this._model = model;
+    this._year = year;
+  }
+}
