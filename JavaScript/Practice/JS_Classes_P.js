@@ -93,7 +93,7 @@ class Song extends Media {
   }
 }
 
-const mySong = new Song({
+const mySong2 = new Song({
   artist: 'Queen',
   name: 'Bohemian Rhapsody',
   publishDate: 1975,
@@ -102,4 +102,22 @@ const mySong = new Song({
 JavaScript classes support the concept of inheritance — a child class can extend a parent class. This is accomplished by using the extends keyword as part of the class definition.
 
 Child classes have access to all of the instance properties and methods of the parent class. They can add their own properties and methods in addition to those. A child class constructor calls the parent class constructor using the super() method
+*/
+
+/*
+********************
+5. Class Constructor
+********************
+*/
+class Song {
+  constructor(title, artist) {
+    this.title = title;
+    this.artist = artist;
+  }
+}
+
+const mySong3 = new Song('Bohemian Rhapsody', 'Queen');
+console.log(mySong.title);
+/*
+Classes can have a constructor method. This is a special method that is called when the object is created (instantiated). Constructor methods are usually used to set initial values for the object.
 */
