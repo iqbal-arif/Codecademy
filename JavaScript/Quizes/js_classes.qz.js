@@ -188,7 +188,7 @@ hanes.generatePaycheck();
 console.log(hanes);
 
 /*
-Q7: Declare a class Book that has a constructor setting the _title, _author, and _year properties to the constructor’s parameter values. Then, add a getter and setter method for the _title property named title. 
+Q8: Declare a class Book that has a constructor setting the _title, _author, and _year properties to the constructor’s parameter values. Then, add a getter and setter method for the _title property named title. 
 */
 class Book {
   constructor(title, author, year) {
@@ -205,3 +205,10 @@ class Book {
     this._title = newTitle;
   }
 }
+
+/*
+Q9: When you create a subclass using the extends keyword, what will the class inherit from its parent?
+A9: The subclass inherits all of the parent's getters, setters, and methods. You can also use the super keyword to set properties in the parent class.
+
+Nice! Although the subclass automatically inherits the parent methods, you need to use the super keyword to set the parent properties
+*/
