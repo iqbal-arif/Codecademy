@@ -134,3 +134,7 @@ const alSmith = new HighSchool('Al E. Smith', 415, [
   'Volleyball',
   'Track and Field',
 ]);
+
+// Listing the Sports Teams
+
+console.log(alSmith.sportsTeams);
