@@ -164,4 +164,8 @@ class Employee {
 
 const hanes = new Employee('hanes', 65);
 
-cons;
+console.log(hanes);
+
+console.log(hanes.logHours(10));
+
+console.log(hanes.generatePaycheck);
