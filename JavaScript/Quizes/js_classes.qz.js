@@ -157,7 +157,7 @@ class Employee {
     return (this._hoursWorked = hoursWorked);
   }
   generatePaycheck() {
-    console.log(this._hoursWorked * this._hourlyWage);
+    return this._hoursWorked * this._hourlyWage;
     this._hoursWorked = 0;
   }
 }
@@ -168,4 +168,4 @@ console.log(hanes);
 
 console.log(hanes.logHours(10));
 
-console.log(hanes.generatePaycheck);
+console.log(hanes.generatePaycheck());
