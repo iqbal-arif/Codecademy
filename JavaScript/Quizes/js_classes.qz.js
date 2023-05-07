@@ -174,6 +174,8 @@ const hanes = new Employee('hanes', 65);
 
 console.log(hanes.name);
 
+console.log(hanes.hourlyWage);
+
 console.log(hanes.logHours(10));
 
 hanes.generatePaycheck();
