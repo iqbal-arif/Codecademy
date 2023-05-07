@@ -50,3 +50,15 @@ A1: console.log(Apartment.randomBorough());
  
 Nice job! You must access static methods from the class. You cannot call them on an instance of the class.
 */
+
+/*
+Q2: Define a class named Shape, and store a new instance of that class in a variable named triangle.
+*/
+
+class Shape {
+  constructor(type) {
+    this._type = type;
+  }
+}
+
+const triangle = new Shape('triangle');
