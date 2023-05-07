@@ -53,3 +53,21 @@ When an object is created based on the class, the new object is referred to as a
 
 The code sample shows a class that represents a Song. A new object called mySong is created underneath and the .play() method on the class is called. The result would be the text Song playing! printed in the console.
 */
+
+/*
+****************
+3. Class Methods
+****************
+*/
+class Song {
+  play() {
+    console.log('Playing!');
+  }
+
+  stop() {
+    console.log('Stopping!');
+  }
+}
+/*
+Properties in objects are separated using commas. This is not the case when using the class syntax. Methods in classes do not have any separators between them.
+*/
