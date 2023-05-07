@@ -137,3 +137,31 @@ Q6: What is the purpose of the constructor() method?
 A6: The constructor() is called when yo create a new instance of a class. It sets the property values for each instance.
 Nice work! If the class inherits properties from a parent class, then it will call super to pass arguments to the parent’s constructor().
 */
+
+/*
+Q7: Define a class named Employee.
+
+Your class should have a constructor function that takes in an employee’s name and hourlyWage and sets them as properties with those names. An hoursWorked property should be initialized to 0.
+
+The Employee class should have a logHours() function that takes in a number of hours worked and increments the hoursWorked property by that amount.
+
+The Employee class should have a generatePaycheck() function that logs to the console the hoursWorked multiplied by the hourlyWage. It should then set the hoursWorked to 0.
+*/
+class Employee {
+  constructor(name, hourlyWage) {
+    this._name = name;
+    this._hourlyWage = hourlyWage;
+    this._hoursWorked = 0;
+  }
+  logHours(hoursWorked) {
+    return (this._hoursWorked = hoursWorked);
+  }
+  generatePaycheck() {
+    console.log(this._hoursWorked * this._hourlyWage);
+    this._hoursWorked = 0;
+  }
+}
+
+const hanes = new Employee('hanes', 65);
+
+cons;
