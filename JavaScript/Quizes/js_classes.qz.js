@@ -212,3 +212,41 @@ A9: The subclass inherits all of the parent's getters, setters, and methods. You
 
 Nice! Although the subclass automatically inherits the parent methods, you need to use the super keyword to set the parent properties
 */
+
+/*
+Q10: Which of the following is the subclass in the example below?
+*/
+class RentalUnit {
+  constructor(address, costPerYear) {
+    this._address = address;
+    this._costPerYear = costPerYear;
+  }
+
+  get address() {
+    return this._address;
+  }
+
+  get costPerYear() {
+    return this._costPerYear;
+  }
+
+  calculateMonthly() {
+    return this.costPerYear / 12;
+  }
+}
+
+class Apartment extends RentalUnit {
+  constructor(address, costPerYear, numberOfBedrooms) {
+    super(address, costPerYear);
+    this._numberOfBedrooms = numberOfBedrooms;
+  }
+
+  get numberOfBedrooms() {
+    return this._numberOfBedrooms;
+  }
+}
+
+/*
+A10: Apartment
+Nice work! The Apartment class extends the methods and properties in the RentalUnit class.
+*/
