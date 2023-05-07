@@ -157,15 +157,14 @@ class Employee {
     return (this._hoursWorked = hoursWorked);
   }
   generatePaycheck() {
-    return this._hoursWorked * this._hourlyWage;
+    this._hoursWorked * this._hourlyWage;
     this._hoursWorked = 0;
   }
 }
 
 const hanes = new Employee('hanes', 65);
 
-console.log(hanes);
-
 console.log(hanes.logHours(10));
 
 console.log(hanes.generatePaycheck());
+console.log(hanes);
