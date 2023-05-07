@@ -292,3 +292,33 @@ class Animal {
     return this._weight;  
   }
 }
+/*
+A12: In JavaScript class, commas between methods must be omitted.
+*/
+
+/*
+Q13: Which of the following will create an instance of the RentalUnit class, and save it to a variable called myRental?
+*/
+class RentalUnit {
+  constructor(address, cost) {
+    this._address = address;
+    this._cost = cost;
+  }
+ 
+  get address() {
+    return this._address;
+  }
+ 
+  get cost() {
+    return this._cost;
+  }
+ 
+  calculateMonthly() {
+    return this.cost / 12; 
+  }
+}
+
+const myRental = new RentalUnit("111 33rd St NE", 19000)
+/*
+A13: const myRental = new RentalUnit("111 33rd St NE", 19000)
+*/
