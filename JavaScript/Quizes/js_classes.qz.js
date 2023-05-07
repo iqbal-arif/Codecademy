@@ -62,3 +62,40 @@ class Shape {
 }
 
 const triangle = new Shape('triangle');
+
+/*
+Q3: Complete the Javascript object and class by using the appropriate syntax for completing and separating their properties and methods.
+*/
+
+let myDog = {
+  _name: 'Spot',
+
+  _age: 5,
+
+  _breed: 'Beagle',
+
+  get name() {
+    return this._name;
+  },
+
+  bark() {
+    console.log('Woof!');
+  },
+};
+
+class Dog {
+  constructor(name, age, breed) {
+    this._name = name;
+
+    this._age = age;
+
+    this._breed = breed;
+  }
+  get name() {
+    return this._name;
+  }
+
+  bark() {
+    console.log('Woof!');
+  }
+}
