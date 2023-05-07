@@ -80,13 +80,13 @@ class PrimarySchool extends School {
 
 // Middle Sub-Class
 
-class Middle extends School {
+class MiddleSchool extends School {
   constructor(name, numberOfStudents) {
-    super(name, level, numberOfStudents);
+    super(name, 'middle', numberOfStudents);
   }
 }
 
-//  High
+//  HighSchool Sub-class
 
 class HighSchool extends School {
   constructor(name, numberOfStudents, sportsTeams) {
@@ -95,9 +95,7 @@ class HighSchool extends School {
   }
 
   get sportsTeams() {
-    this._sportsTeams.forEach((player) => {
-      return player;
-    });
+    this._sportsTeams.forEach((player) => console.log(player));
   }
 }
 
@@ -138,3 +136,9 @@ const alSmith = new HighSchool('Al E. Smith', 415, [
 // Listing the Sports Teams
 
 console.log(alSmith.sportsTeams);
+
+// Middle Instances
+
+const johnDoe = new MiddleSchool('john Doe', 575);
+
+console.log(johnDoe);
