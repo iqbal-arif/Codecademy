@@ -394,3 +394,12 @@ const myApartment2 = new Apartment('1234 W 54th', 22000, 3);
 A16: In Apartment "s" constructor(), the super keyword must be called before this is used.
 Nice job! If you use this before super, JavaScript will throw an error.
 */
+
+/*
+Q17: What is the purpose of inheritance?
+A17: To share data and methods beteen objects.
+*/
+
+/*
+Q18: Which of the following problems do classes alleviate?
+A18: 
