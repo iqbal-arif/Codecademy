@@ -402,4 +402,6 @@ A17: To share data and methods beteen objects.
 
 /*
 Q18: Which of the following problems do classes alleviate?
-A18: 
+A18: Classes make it easy to crate multiple objects that share property names and methods.
+Each instance of a class has the same properties, getters, setters, and methods. Only the property values change.
+*/
