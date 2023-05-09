@@ -153,8 +153,9 @@ The require() function accepts a string as an argument. That string provides the
 Let’s update water-limits.js such that it uses require() to import the .celsiusToFahrenheit() method from the module.exports object within converters.js:
 
 /* water-limits.js */
-const converters = require('./converters.js');
-
+/*
+const converters = require('./converters.js');*/
+/*
 const freezingPointC2 = 0;
 const boilingPointC2 = 100;
 
@@ -163,6 +164,7 @@ const boilingPointF2 = converters.celsiusToFahrenheit(boilingPointC);
 
 console.log(`The freezing point of water in Fahrenheit is ${freezingPointF}`);
 console.log(`The boiling point of water in Fahrenheit is ${boilingPointF}`);
+*/
 /*
 In this case, ./ is a relative path indicating that converters.js is stored in the same folder as water-limits.js. When you use require(), the entire module.exports object is returned and stored in the variable converters. This means that both the .celsiusToFahrenheit() and .fahrenheitToCelsius() methods can be used in this program!
 
@@ -174,14 +176,92 @@ In many cases, modules will export a large number of functions but only one or t
 Let’s update celsius-to-fahrenheit.js and only extract the .celsiusToFahrenheit() method, leaving .fahrenheitToCelsius() behind:
 
 /* celsius-to-fahrenheit.js */
-const { celsiusToFahrenheit } = require('./converters.js');
+/*const { celsiusToFahrenheit2 } = require('./converters.js');
 
 const celsiusInput2 = process.argv[2];
-const fahrenheitValue2 = celsiusToFahrenheit(celsiusInput);
+const fahrenheitValue2 = celsiusToFahrenheit2(celsiusInput);
 
 console.log(
   `${celsiusInput} degrees Celsius = ${fahrenheitValue} degrees Fahrenheit`
-);
+);*/
 /*
 With this approach, the remainder of the program works the same way but the program avoids importing a function it does not need.
+*/
+
+/*
+Code Challenges
+Coding question
+
+Complete the shape-area.js module. Your module must declare and export two functions with the following signatures:
+
+    circleArea(radiusLength).
+    squareArea(sideLength).
+
+You may create these as either named functions or anonymous function expressions.
+*/
+/* shape-area.js */
+const PI = Math.PI;
+
+// Define and export circleArea() and squareArea() below
+
+function circleArea(radiusLength) {
+  return radiusLength * radiusLength * PI;
+}
+
+module.exports.circleArea = circleArea;
+
+module.exports.squareArea = function (sideLength) {
+  return sideLength * sideLength;
+};
+
+/*
+Coding question
+
+Complete the program, app.js.
+
+    1. First, import the shape-area.js module using the require() function (shape-area.js is in the same folder as app.js). Choose one of the two options below for storing the returned module.exports object:
+        A) Store the entire module.exports object in the variable areaFunctions.
+        B) Use object destructuring to extract the .circleArea() and .squareArea() methods into their own variables, circleArea and squareArea.
+
+    2. Next, call the circleArea() function with the provided variable radius as an input. Assign the returned value to the variable areaOfCircle.
+
+    3. Then, call the squareArea() function with the provided variable sideLength as an input. Assign the returned value to the variable areaOfSquare.
+
+You may print the values of areaOfCircle and areaOfSquare to the console to see your code work!
+*/
+
+/* app.js */
+
+const radius = 5;
+const sideLength = 10;
+
+// Option 1: import the entire shape-area.js module here.
+
+const areaFunctions = require('./shape-area.js');
+
+// Option 2: import circleArea and squareArea with object destructuring
+
+const { circleArea, squareArea } = require('./shape-area.js');
+
+// use the imported .circleArea() and .squareArea() methods here
+
+const areaOfCircle = circleArea(radius);
+
+const areaOfSquare = squareArea(sideLength);
+
+console.log(areaOfCircle);
+console.log(areaOfSquare);
+
+/*
+******
+Review
+******
+In this article, you have learned the following:
+
+    The benefits of implementing modular programs.
+    How to use the Node.js module.exports object to export code from a file - meaning its functions and/or data can be used by other files/modules.
+    How to use the Node.js require() function to import the functions and/or data from another module.
+    How to use object destructuring to only import the desired components of a module.
+
+Congratulations on reaching this milestone! With a little more practice, you will soon be able to handle Node.js modules with ease.
 */
