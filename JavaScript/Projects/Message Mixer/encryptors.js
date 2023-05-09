@@ -1,8 +1,8 @@
-module.exports.caesarConversion = caesarConversion;
-module.exports.symbolConversion = symbolConversion;
-module.exports.reverseConversion = reverseConversion;
+// Declare and export the functions here.
 
-const caesarCipher = (str, amount = 0) => {
+// Encryption Functions
+/////////////////////////////////////////////
+module.exports.caesarCipher = caesarCipher = (str, amount = 0) => {
   if (amount < 0) {
     return caesarCipher(str, amount + 26);
   }
@@ -22,7 +22,7 @@ const caesarCipher = (str, amount = 0) => {
   return output;
 };
 
-const symbolCipher = (str) => {
+module.exports.symbolCipher = symbolCipher = (str) => {
   const symbols = {
     i: '!',
     '!': 'i',
@@ -53,7 +53,7 @@ const symbolCipher = (str) => {
   return output;
 };
 
-const reverseCipher = (sentence) => {
+module.exports.reverseCipher = reverseCipher = (sentence) => {
   let words = sentence.split(' ');
   for (let i = 0; i < words.length; i++) {
     words[i] = words[i].split('').reverse().join('');

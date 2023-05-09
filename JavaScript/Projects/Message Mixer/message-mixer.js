@@ -62,6 +62,13 @@
 //   return words.join(' ');
 // };
 
+// Importing Encryptors
+
+const encryptors = require('./encryptors');
+
+const caesarCipher = encryptors.caesarConversion;
+const symbolCipher = encryptors.symbolConversion;
+const reverseCipher = encryptors.reverseConversion;
 // User Input / Output Logic
 /////////////////////////////////////////////
 
