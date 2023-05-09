@@ -64,11 +64,12 @@
 
 // Importing Encryptors
 
-const encryptors = require('./encryptors');
+const encryptors = require('./encryptors.js');
 
-const caesarCipher = encryptors.caesarConversion;
-const symbolCipher = encryptors.symbolConversion;
-const reverseCipher = encryptors.reverseConversion;
+const caesarCipher = encryptors.caesarCipher;
+const symbolCipher = encryptors.symbolCipher;
+const reverseCipher = encryptors.reverseCipher;
+
 // User Input / Output Logic
 /////////////////////////////////////////////
 
