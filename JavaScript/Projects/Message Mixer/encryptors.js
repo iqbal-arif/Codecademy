@@ -1,3 +1,7 @@
+module.exports.caesarConversion = caesarConversion;
+module.exports.symbolConversion = symbolConversion;
+module.exports.reverseConversion = reverseConversion;
+
 const caesarCipher = (str, amount = 0) => {
   if (amount < 0) {
     return caesarCipher(str, amount + 26);
