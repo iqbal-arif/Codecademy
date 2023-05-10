@@ -524,4 +524,6 @@ export default resources;
 /*
 Which of the following is NOT a valid statement for importing this data?
 import {articleTitle, numberOfChallenges, minutesToComplete} from "./article-data.js"
+
+Correct! This syntax suggests that the listed values are named exports of ./article-data.js. Though the default object may contain these values, they are not exported with named export syntax
 */
