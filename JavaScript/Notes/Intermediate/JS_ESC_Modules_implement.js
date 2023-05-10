@@ -253,5 +253,55 @@ Uncaught SyntaxError: Cannot use import statement outside a module (es6-error.pi
 And those are the basics of exporting and importing using the ES6 export and import syntax! If you have been following along with these code examples, see if you can update the secret-image project to use the exported functions from the module dom-functions.js before continuing on to the challenges below.
 */
 /*
-ES6 Modules Challenge #1
+***************************
+I. ES6 Modules Challenge #1
+***************************
+In this module you will find two functions which have been declared for you, changeText() and changeToFunkyColor() but currently, they aren’t being exported.
+
+Using the named export syntax, export changeText() and changeToFunkyColor() from this module.
 */
+
+function changeText(domElement, newText) {
+  domElement.innerHTML = newText;
+}
+ 
+function changeToFunkyColor(domElement) {
+  const r = Math.random() * 255;
+  const g = Math.random() * 255;
+  const b = Math.random() * 255;
+ 
+  domElement.style.color = `rgb(${r}, ${g}, ${b})`;
+}
+ 
+// export the functions here
+export {changeText, changeToFunkyColor}
+/*
+***************************
+I. ES6 Modules Challenge #2
+***************************
+You are building a simple webpage that makes use of the module module.js. This module declares and exports two functions whose signatures are listed below:
+
+    changeText(domElement, newText): changes the text of the provided domElement to the provided newText.
+    changeToFunkyColor(domElement): changes the color of the provided domElement to a random color.
+
+You will be editing the file main.js. Complete the tasks below:
+
+    Import changeText and changeToFunkyColor from ./module.js using the named import syntax.
+    Call changeText() to change the text of the element stored in the header variable to "I did it!".
+    Within the callback passed to setInterval, call changeToFunkyColor() passing in the element stored in the header variable.
+
+Note: Upon completing this challenge, the text will change to “I did it!” and will be set to change color every 0.2 seconds.
+*/
+/* main.js */
+
+// import the functions here, then uncomment the code below
+
+const header = document.getElementById("header");
+
+// call changeText here
+
+setInterval(()=> {
+  
+  // call changeToFunkyColor() here
+
+}, 200);
