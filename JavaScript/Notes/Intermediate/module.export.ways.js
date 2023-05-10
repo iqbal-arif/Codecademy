@@ -68,3 +68,9 @@ These exported functions are now available to be imported and used by other file
 /************************NAME EXPORT SYNTAX*******************************/
 /******export { toggleHiddenElement3, changeToFunkyColor3 };******/
 /************************NAME EXPORT SYNTAX*******************************/
+
+
+/************************************ES6 IMPORT SYNTAX**************************************/
+/***import { toggleHiddenElement, changeToFunkyColor } from '../modules/dom-functions.js'***/
+/************************************ES6 IMPORT SYNTAX**************************************/
+
