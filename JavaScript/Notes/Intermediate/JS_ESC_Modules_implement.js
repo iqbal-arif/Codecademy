@@ -472,3 +472,56 @@ import { default as domFunctions } from '../modules/dom-functions.js';
 /*
 Continue on to the challenges below before the final review at the end of the article.
 */
+/*
+****************************
+V. ES6 Modules Challenge #5
+****************************
+/*
+Coding question
+
+In this module you will find two functions which have been declared for you, changeText() and changeToFunkyColor(). The website being rendered wants to make use of these functions but currently, they aren’t being exported.
+
+Using the default export syntax, export an object representing the module and containing the changeText() and changeToFunkyColor() functions.
+
+Note: Upon completing this challenge, the text will change to "You did it" and will be set to change color every 0.2 seconds.
+*/
+function changeText(domElement, newText) {
+  domElement.innerHTML = newText;
+}
+
+function changeToFunkyColor(domElement) {
+  const r = Math.random() * 255;
+  const g = Math.random() * 255;
+  const b = Math.random() * 255;
+
+  domElement.style.color = `rgb(${r}, ${g}, ${b})`;
+}
+
+// use default export syntax below here
+
+const resources = { 
+  changeText, 
+  changeToFunkyColor
+}
+export default resources;
+
+
+/*
+****************************
+VI. ES6 Modules Challenge #6
+****************************
+Multiple choice
+
+Consider the module below which exports a few values using the default export syntax:
+
+/* article-data.js */
+const resources = {
+  articleTitle: "Implementing Modules using ES6 Syntax",
+  numberOfChallenges: 6,
+  minutesToComplete: 45
+}
+export default resources;
+/*
+Which of the following is NOT a valid statement for importing this data?
+import {articleTitle, numberOfChallenges, minutesToComplete} from "./article-data.js"
+*/
