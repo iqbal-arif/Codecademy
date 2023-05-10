@@ -53,6 +53,7 @@ Though libraries for implementing modules have existed for some time, syntax for
 Let’s take a look at implementing modules in the browser through an example. Suppose you wanted to build a simple web application with some hidden text that is revealed when a button is pressed.
 
 A demo of a simple website. There is a button that says "Press me... if you dare". Clicking on the button reveals a hidden message that says "Modules are fancy!"
+See ESModules.gif
 
 To create this website, you could create two files, secret-messages.html and secret-messages.js, and store them together in a folder called secret-messages:
 
@@ -122,10 +123,10 @@ The HTML might look like this:
 … and the JavaScript might look like this:
 */
 /* secret-image.js */
-const buttonElement = document.getElementById('secret-button');
+const buttonElement2 = document.getElementById('secret-button');
 const imgElement = document.getElementById('secret-img');
  
-const toggleHiddenElement = (domElement) => {
+const toggleHiddenElement2 = (domElement) => {
     if (domElement.style.display === 'none') {
       domElement.style.display = 'block';
     } else {
@@ -134,7 +135,7 @@ const toggleHiddenElement = (domElement) => {
 }
  
 buttonElement.addEventListener('click', () => {
-  toggleHiddenElement(imgElement);
+  toggleHiddenElement2(imgElement);
 });
 /*
 Given that much of the code in these two programs is similar, creating this second website was fairly straightforward. In particular, notice that the toggleHiddenElement() function is copied line for line from secret-messages.js.
@@ -164,7 +165,7 @@ export { resourceToExportA, resourceToExportB, ...}
 Using this syntax, the name of each exported resource is listed between curly braces and separated by commas. Below, you can see how this is implemented in the new module file dom-functions.js:
 */
 /* dom-functions.js */
-const toggleHiddenElement = (domElement) => {
+const toggleHiddenElement3 = (domElement) => {
     if (domElement.style.display === 'none') {
       domElement.style.display = 'block';
     } else {
@@ -172,7 +173,7 @@ const toggleHiddenElement = (domElement) => {
     }
 }
  
-const changeToFunkyColor2 = (domElement) => {
+const changeToFunkyColor3 = (domElement) => {
   const r = Math.random() * 255;
   const g = Math.random() * 255;
   const b = Math.random() * 255;
@@ -180,7 +181,7 @@ const changeToFunkyColor2 = (domElement) => {
   domElement.style.background = `rgb(${r}, ${g}, ${b})`;
 }
  
-export { toggleHiddenElement, changeToFunkyColor };
+export { toggleHiddenElement3, changeToFunkyColor3 };
 /*
 Let’s briefly break down how this module works:
 
@@ -195,7 +196,7 @@ These exported functions are now available to be imported and used by other file
 In addition to the syntax above, in which all named exports are listed together, individual values may be exported as named exports by simply placing the export keyword in front of the variable’s declaration. Here is the same example using this syntax:
 */
 /* dom-functions.js */
-export const toggleHiddenElement2 = (domElement) => {
+export const toggleHiddenElement4 = (domElement) => {
   // logic omitted...
 }
  
@@ -217,12 +218,12 @@ Let’s update the secret-messages program such that it now imports functionalit
 
 import { toggleHiddenElement, changeToFunkyColor } from '../modules/dom-functions.js';
  
-const buttonElement2 = document.getElementById('secret-button');
+const buttonElement3 = document.getElementById('secret-button');
 const pElement2 = document.getElementById('secret-p');
  
 buttonElement.addEventListener('click', () => {
   toggleHiddenElement(pElement2);
-  changeToFunkyColor(buttonElement2);
+  changeToFunkyColor(buttonElement3);
 });
 /*
 Let’s break down these changes:
@@ -247,7 +248,7 @@ Now, you must also update secret-messages.html:
 /*
 The change here is subtle, can you spot it? In secret-messages.html, the only thing that changes is the addition of the attribute type='module' to the <script> element. Failure to do so can cause some browsers to throw an error. For example, in Chrome you might see this error:
 
-Uncaught SyntaxError: Cannot use import statement outside a module
+Uncaught SyntaxError: Cannot use import statement outside a module (es6-error.picture)
 
 And those are the basics of exporting and importing using the ES6 export and import syntax! If you have been following along with these code examples, see if you can update the secret-image project to use the exported functions from the module dom-functions.js before continuing on to the challenges below.
 */
