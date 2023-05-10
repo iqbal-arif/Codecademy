@@ -160,6 +160,9 @@ modules/
 
 Inside dom-functions.js, the functions you wish to reuse can be exported using the named export syntax below:
 */
+/**************************************************
+**************NAME EXPORT**************************
+**************************************************/
 export { resourceToExportA, resourceToExportB, ...}
 /*
 Using this syntax, the name of each exported resource is listed between curly braces and separated by commas. Below, you can see how this is implemented in the new module file dom-functions.js:
