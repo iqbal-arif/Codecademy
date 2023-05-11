@@ -398,7 +398,7 @@ const resources2 = {
   valueA, 
   valueB 
 }
-export { resources as default2 };
+export { resources2 as default2 };
 /*
 With this syntax, the object containing the module’s resources is first declared and then is exported on the next line. At first glance, it looks like the resources object is being exported as a named export. However, the clause as default renames the exported object to default, a reserved identifier that can only be given to a single exported value.
 
