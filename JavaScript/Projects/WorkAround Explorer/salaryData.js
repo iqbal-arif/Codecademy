@@ -33,3 +33,7 @@ const getDataByRole = (role) => {
 const getDataByCompany = (company) => {
   return salaryData.filter((obj) => obj.company === company);
 };
+
+export { getRoles, getCompanies, getDataByRole, getDataByCompany };
+
+export default salaryData;
