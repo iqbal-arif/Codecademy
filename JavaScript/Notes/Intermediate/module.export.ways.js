@@ -92,3 +92,19 @@ Let’s break down these changes:
 ********import { area as circleArea } from 'circle-area.js';
 /***<script type="module" src="./secret-messages.js"> </script>'***/
 /***********************RENAMING IMPORT TO AVOID NAMING COLLISIONS**************************/
+
+
+/******************************DEFAULT EXPORTS AND IMPORTS *********************************/
+const resources = {
+  valueA,
+  valueB
+}
+export default resources;
+// This will work...
+import resources from 'module.js'
+
+const { valueA, valueB } = resources;
+ 
+// This will not work...
+import { valueA, valueB } from 'module.js'
+/******************************DEFAULT EXPORTS AND IMPORTS *********************************/
