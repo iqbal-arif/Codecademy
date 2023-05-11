@@ -100,6 +100,7 @@ const resources = {
   valueB
 }
 export default resources;
+
 // This will work...
 import resources from 'module.js'
 
@@ -108,3 +109,46 @@ const { valueA, valueB } = resources;
 // This will not work...
 import { valueA, valueB } from 'module.js'
 /******************************DEFAULT EXPORTS AND IMPORTS *********************************/
+
+/* dom-functions.js */
+const toggleHiddenElement4 = (domElement) => {
+    if (domElement.style.display === 'none') {
+      domElement.style.display = 'block';
+    } else {
+      domElement.style.display = 'none';
+    }
+}
+ 
+const changeToFunkyColor = (domElement) => {
+  const r = Math.random() * 255;
+  const g = Math.random() * 255;
+  const b = Math.random() * 255;
+ 
+  domElement.style.background = `rgb(${r}, ${g}, ${b})`;
+}
+ 
+const cssProperty = { 
+  toggleHiddenElement, 
+  changeToFunkyColor
+}
+export default cssProperty;
+
+/*
+This default exports object can now be used within secret-messages.js like so:
+*/
+
+import domFunctions from '../modules/dom-functions.js';
+ 
+const { toggleHiddenElement, changeToFunkyColor2 } = domFunctions;
+ 
+const buttonElement2 = document.getElementById('secret-button');
+const pElement = document.getElementById('secret-p');
+ 
+buttonElement.addEventListener('click', () => {
+  toggleHiddenElement(pElement);
+  changeToFunkyColor2(buttonElement2);
+});
+/*
+If you recall, the syntax used in the snippet above is shorthand for:
+*/
+import { default as domFunctions } from '../modules/dom-functions.js';
