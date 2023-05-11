@@ -70,7 +70,19 @@ These exported functions are now available to be imported and used by other file
 /************************NAME EXPORT SYNTAX*******************************/
 
 
+/************************NAME EXPORT SYNTAX*******************************/
+
+/*
+Let’s break down these changes:
+
+    1. In secret-messages.js, the functions toggleHiddenElement() and changeToFunkyColor() are imported from the module ../modules/dom-functions.js. The ../ indicates that the modules/ folder is in the same folder as the parent folder, secret-messages/.
+    2. When the button is clicked, the now imported toggleHiddenElement() function is called with pElement as an argument.
+    3. In addition, changeToFunkyColor() is called with buttonElement as an argument, changing its background color to a random one!
+
+    The change here is subtle, can you spot it? In secret-messages.html, the only thing that changes is the addition of the attribute type='module' to the <script> element. Failure to do so can cause some browsers to throw an error. For example, in Chrome you might see this error:
+
 /************************************ES6 IMPORT SYNTAX**************************************/
 /***import { toggleHiddenElement, changeToFunkyColor } from '../modules/dom-functions.js'***/
+/***<script type="module" src="./secret-messages.js"> </script>'***/
 /************************************ES6 IMPORT SYNTAX**************************************/
 
