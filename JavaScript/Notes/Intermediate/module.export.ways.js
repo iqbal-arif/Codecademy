@@ -70,7 +70,7 @@ These exported functions are now available to be imported and used by other file
 /************************NAME EXPORT SYNTAX*******************************/
 
 
-/************************NAME EXPORT SYNTAX*******************************/
+/************************NAME IMPORT SYNTAX*******************************/
 
 /*
 Let’s break down these changes:
@@ -86,3 +86,9 @@ Let’s break down these changes:
 /***<script type="module" src="./secret-messages.js"> </script>'***/
 /************************************ES6 IMPORT SYNTAX**************************************/
 
+
+/***********************RENAMING IMPORT TO AVOID NAMING COLLISIONS**************************/
+/*******import { area as squareArea } from 'square-area.js';
+********import { area as circleArea } from 'circle-area.js';
+/***<script type="module" src="./secret-messages.js"> </script>'***/
+/***********************RENAMING IMPORT TO AVOID NAMING COLLISIONS**************************/
