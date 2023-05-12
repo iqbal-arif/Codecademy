@@ -8,7 +8,7 @@ import {
 
 import salaryData from './modules/salaryData.js';
 const salary = salaryData;
-console.log(salary);
+import formatNumber from './modules/utilities.js';
 
 import {
   getAverageSalaryByRole,
@@ -83,14 +83,22 @@ function updateResults() {
   // Render them to the screen.
   document.getElementById(
     'salarySelected'
-  ).innerText = `The salary for ${role}s at ${company} is \$${salary}`;
+  ).innerText = `The salary for ${role}s at ${company} is \$${formatNumber(
+    salary
+  )}`;
   document.getElementById(
     'salaryAverageByRole'
-  ).innerText = `The industry average salary for ${role} positions is \$${averageSalaryByRole}`;
+  ).innerText = `The industry average salary for ${role} positions is \$${formatNumber(
+    averageSalaryByRole
+  )}`;
   document.getElementById(
     'salaryAverageByCompany'
-  ).innerText = `The average salary at ${company} is \$${averageSalaryByCompany}`;
+  ).innerText = `The average salary at ${company} is \$${formatNumber(
+    averageSalaryByCompany
+  )}`;
   document.getElementById(
     'salaryAverageIndustry'
-  ).innerText = `The average salary in the Tech industry is \$${industryAverageSalary}`;
+  ).innerText = `The average salary in the Tech industry is \$${formatNumber(
+    industryAverageSalary
+  )}`;
 }
