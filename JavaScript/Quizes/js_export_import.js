@@ -26,3 +26,10 @@ import utilities from './utilities.js';
 
 /*A3:*/
 const Robot = require('./robot.js');
+
+/*Q4: Which of the following is NOT true of JavaScript modules?*/
+/*A4: Creating modules makes it harder to find relevant code and makes debugging harder.*/
+/*True
+1. Creating modules and only importing the necessary modules for each file prevents namespace pollution.
+2. Creating modules makes it easier to keep sensitive information private from other modules.
+3. Creating modules makes it easier to reuse logic in multiple parts of an application.*/
