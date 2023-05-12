@@ -21,3 +21,8 @@ Q2: Import the default export from utilities.js which is in the same folder as t
 */
 /* A2:*/
 import utilities from './utilities.js';
+
+/*Q3: Which of the following is the valid syntax in Node to import a module called robot.js from the same directory? */
+
+/*A3:*/
+const Robot = require('./robot.js');
