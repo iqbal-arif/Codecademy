@@ -43,3 +43,27 @@ Planets.calculateVolume = (radius) => {
 };
 /*A5*/
 export default Planets;
+
+/*Q6 Which of the following demonstrates the valid ES6 syntax for exporting named variables inline?*/
+
+/* geometry.js */
+export const rectangleArea = (h, w) => {
+  return h * w;
+};
+export const circleArea = (radius) => {
+  return Math.pi * radius * radius;
+};
+/*A6:Added export before the function
+  Not quite, if exporting multiple named values at once, you must surround the values with curly braces {}. */
+
+/*Q7: How would one export the following variables using named exports?*/
+
+/* geometry.js */
+const rectangleArea = (h, w) => {
+  return h * w;
+};
+const circleArea = (radius) => {
+  return Math.pi * radius * radius;
+};
+/*A7*/
+export { rectangleArea, circleArea };
