@@ -75,3 +75,6 @@ Robot.name = 'Johnny';
 Robot.sayName = (name) => {
   console.log(`My name is ${name}`);
 };
+
+/*A8: Not quite. module.exports should be assigned a value with =.*/
+module.exports = Robot;
