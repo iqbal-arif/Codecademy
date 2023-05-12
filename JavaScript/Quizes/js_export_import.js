@@ -67,3 +67,11 @@ const circleArea = (radius) => {
 };
 /*A7*/
 export { rectangleArea, circleArea };
+
+/*Q8:Which of the following is the valid syntax to export this module in Node?*/
+
+let Robot = {};
+Robot.name = 'Johnny';
+Robot.sayName = (name) => {
+  console.log(`My name is ${name}`);
+};
