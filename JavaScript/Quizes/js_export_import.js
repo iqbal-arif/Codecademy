@@ -33,3 +33,13 @@ const Robot = require('./robot.js');
 1. Creating modules and only importing the necessary modules for each file prevents namespace pollution.
 2. Creating modules makes it easier to keep sensitive information private from other modules.
 3. Creating modules makes it easier to reuse logic in multiple parts of an application.*/
+
+/*Q5: Which of the following is the valid syntax to export the Planets module using the ES6 default export syntax?*/
+
+let Planets = {};
+Planets.calculateVolume = (radius) => {
+  let volume = (4 / 3) * Math.pi * Math.pow(radius, 3);
+  return volume;
+};
+/*A5*/
+export default Planets;
