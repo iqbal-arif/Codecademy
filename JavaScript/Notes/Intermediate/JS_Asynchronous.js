@@ -98,7 +98,9 @@ const inventory = {
 
 // Write your code below:
 const myExecutor3 = (resolve, reject) => {
-  sunglasses > 0 ? 'Sunglasses order processed.' : 'That item is sold out.';
+  inventory.sunglasses > 0
+    ? resolve('Sunglasses order processed.')
+    : reject('That item is sold out.');
 };
 
 const myFirstPromise3 = new Promise(myExecutor3);
