@@ -133,6 +133,8 @@ const orderPromise = orderSunglasses();
 
 console.log(orderPromise);
 
+/*****************************************************/
+/*****************************************************/
 /*
 **********************************
 4. The Node setTimeout() Function
@@ -187,3 +189,34 @@ Be sure to click “Check Work” after running the command to pass this checkpo
 
 
 */
+/*****************************************************/
+/**********************PRACTICE***********************/
+/*****************************************************
+1.
+
+Create a function, usingSTO(). Your usingSTO() function should have no parameters. Inside the function body, it should print a string to the console. This can be any string you want (as long as it’s not either “This is the first line of synchronous code.” or “This is the last line of synchronous code.”).
+
+Check your work to move on to the next step.
+2.
+
+Now, let’s invoke the setTimeout() function. Remember, setTimeout() has two parameters. Invoke setTimeout() with your usingSTO() function as the first argument and a number between 0 and 3000 as the second argument.
+3.
+
+Take a moment to predict the output of this program.
+
+Whenever you’re ready, type node app.js in the terminal and hit enter.
+
+See if the program’s output in the terminal lines up with what you expected.
+
+Be sure to click “Check Work” after running the command to pass this checkpoint and move on to the next exercise.
+*/
+console.log('This is the first line of code in app.js.');
+// Keep the line above as the first line of code
+// Write your code here:
+
+const usingSTO = () => {
+  console.log('This is the first line of synchronous code.');
+};
+
+// Keep the line below as the last line of code:
+console.log('This is the last line of code in app.js.');
