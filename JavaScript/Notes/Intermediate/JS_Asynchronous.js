@@ -103,4 +103,6 @@ const myExecutor3 = (resolve, reject) => {
     : reject('That item is sold out.');
 };
 
-const myFirstPromise3 = new Promise(myExecutor3);
+const orderSunglasses = () => {
+  return new Promise(myExecutor);
+};
