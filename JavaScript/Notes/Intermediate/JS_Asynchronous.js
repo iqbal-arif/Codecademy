@@ -507,7 +507,7 @@ const store = {
   },
 };
 
-const checkInventory = (order) => {
+const checkInventory2 = (order) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       const itemsArr = order.items;
@@ -576,4 +576,29 @@ function generateRandomDelay() {
   return Math.floor(Math.random() * 2000);
 }
 
-module.exports = { checkInventory, processPayment, shipOrder };
+module.exports = { checkInventory2, processPayment, shipOrder };
+
+/*app.js*/
+const { checkInventory3, processPayment, shipOrder } = require('./library.js');
+
+const order2 = {
+  items: [
+    ['sunglasses', 1],
+    ['bags', 2],
+  ],
+  giftcardBalance: 79.82,
+};
+
+checkInventory3(order2)
+  .then((resolvedValueArray) => {
+    // Write the correct return statement here:
+  })
+  .then((resolvedValueArray) => {
+    // Write the correct return statement here:
+  })
+  .then((successMessage) => {
+    console.log(successMessage);
+  })
+  .catch((errorMessage) => {
+    console.log(errorMessage);
+  });
