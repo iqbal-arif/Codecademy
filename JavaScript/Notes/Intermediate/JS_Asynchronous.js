@@ -592,9 +592,11 @@ const order2 = {
 checkInventory3(order2)
   .then((resolvedValueArray) => {
     // Write the correct return statement here:
+    return processPayment(resolvedValueArray);
   })
   .then((resolvedValueArray) => {
     // Write the correct return statement here:
+    return shipOrder(resolvedValueArray);
   })
   .then((successMessage) => {
     console.log(successMessage);
