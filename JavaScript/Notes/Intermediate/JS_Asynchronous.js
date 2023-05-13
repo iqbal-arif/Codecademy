@@ -671,10 +671,13 @@ Type node app.js in the terminal and hit enter to make sure your program is stil
 
 When you are ready to move on, press the “Check Work” button.
 */
-checkInventory(order).then((resolvedValueArray) => {
-  return processPayment(resolvedValueArray).then((resolvedValueArray) => {
-    return shipOrder(resolvedValueArray).then((successMessage) => {
-      console.log(successMessage);
-    });
+checkInventory(order)
+  .then((resolvedValueArray) => {
+    return processPayment(resolvedValueArray);
+  })
+  .then((resolvedValueArray) => {
+    return shipOrder(resolvedValueArray);
+  })
+  .then((successMessage) => {
+    console.log(successMessage);
   });
-});
