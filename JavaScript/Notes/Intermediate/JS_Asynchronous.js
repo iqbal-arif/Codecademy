@@ -215,8 +215,9 @@ console.log('This is the first line of code in app.js.');
 // Write your code here:
 
 const usingSTO = () => {
-  console.log('This is the first line of synchronous code.');
+  console.log('This is the drill for promise code.');
 };
+setTimeout(usingSTO, 1000);
 
 // Keep the line below as the last line of code:
 console.log('This is the last line of code in app.js.');
