@@ -128,3 +128,16 @@ promise.then(
 promise.catch((err) => {
   alert(err);
 });
+
+/*
+Q3: Complete the JavaScript code block that imitates the use of a Promise object and prints the data when it is available.
+*/
+const promiseSample = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve('Resolving data after 2 seconds.');
+  }, 2000);
+});
+
+promiseSample.then((asyncMessage) => {
+  console.log(asyncMessage);
+});
