@@ -278,3 +278,29 @@ winter= 'Clara';
 }, 5000
 
 );
+
+/*
+Q10: What will be printed to the console after running the code provided?
+*/
+let link = state => {
+  return new Promise(function(resolve, reject) {
+    if (state) { 
+      resolve('success'); 
+    } else { 
+      reject('error');
+    }
+  });
+}
+ 
+let promiseChain = link(true);
+ 
+promiseChain
+.then( data => {  
+   console.log(data + " 1");
+   return link(true);
+})
+.then( data => {
+   console.log(data+ " 2");
+   return link(true);
+})
+
