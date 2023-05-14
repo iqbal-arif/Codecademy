@@ -236,3 +236,26 @@ Q7: Write a function resolveWithValue() that has two parameters:
 
 When called, resolveWithValue() should invoke the function argument with the string argument and then log the resultant promise’s resolve value or reject reason to the console.
 */
+
+// Define your function below:
+
+// Define your function below:
+
+const resolveWithValue = () =>{
+    return new Promise((resolve,reject) =>{
+      resolve("It is resolved")
+    })
+  }
+  
+   
+  
+  // Consider testing your function yourself:
+  
+  // testerFunc() takes in a string and returns a promise
+  let testerFunc = (str) => {
+    if (Math.random() < .5){
+      return Promise.resolve(`Resolved with: ${str}`)
+    } else {
+      return Promise.reject(`Rejected with: ${str}`)
+    }
+  }
