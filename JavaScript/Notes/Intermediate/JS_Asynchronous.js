@@ -704,7 +704,7 @@ Promise.all() accepts an array of promises as its argument and returns a single 
 Let’s look at a code example:
 
 let myPromises = Promise.all([returnsPromOne(), returnsPromTwo(), returnsPromThree()]);
-*/ 
+*/
 myPromises
   .then((arrayOfValues) => {
     console.log(arrayOfValues);
@@ -763,26 +763,45 @@ Be sure to click “Check Work” after the terminal is finished loading.
 
 /*library.js*/
 const checkAvailability = (itemName, distributorName) => {
-    console.log(`Checking availability of ${itemName} at ${distributorName}...`);
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            if (restockSuccess()) {
-                console.log(`${itemName} are in stock at ${distributorName}`)
-                resolve(itemName);
-            } else {
-                reject(`Error: ${itemName} is unavailable from ${distributorName} at this time.`);
-            }
-        }, 1000);
-    });
+  console.log(`Checking availability of ${itemName} at ${distributorName}...`);
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (restockSuccess()) {
+        console.log(`${itemName} are in stock at ${distributorName}`);
+        resolve(itemName);
+      } else {
+        reject(
+          `Error: ${itemName} is unavailable from ${distributorName} at this time.`
+        );
+      }
+    }, 1000);
+  });
 };
 
 module.exports = { checkAvailability };
 
-
 // This is a function that returns true 80% of the time
 // We're using it to simulate a request to the distributor being successful this often
 function restockSuccess() {
-    return (Math.random() > .2);
+  return Math.random() > 0.2;
 }
 
-/*
+/*app.js*/
+const { checkAvailability } = require('./library.js');
+
+const onFulfill = (itemsArray) => {
+  console.log(`Items checked: ${itemsArray}`);
+  console.log(
+    `Every item was available from the distributor. Placing order now.`
+  );
+};
+
+const onReject = (rejectionReason) => {
+  console.log(rejectionReason);
+};
+
+// Write your code below:
+
+const checkSunglasses = checkAvailability('sunglasses', 'Favorite Supply Co.');
+const checkPants = checkAvailability('pants', 'Favorite Supply Co.');
+const checkBags = checkAvailability('bags', 'Favorite Supply Co.');
