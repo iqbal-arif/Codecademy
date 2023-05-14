@@ -94,3 +94,15 @@ The constructor of the Promise object takes a function, known as the executor fu
 /*************************************************/
 /********************Practice*********************/
 /*************************************************/
+
+/*
+Q1:Select the correct option that creates an instance of the JavaScript Promise object.*/
+
+const promise = new Promise((resolve, reject) => {
+  const num = 5;
+  if (num > 10) {
+    resolve('Success!');
+  } else {
+    reject(Error('Failed'));
+  }
+});
