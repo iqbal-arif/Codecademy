@@ -157,3 +157,15 @@ promise.then((val) => {
 });
 
 console.log(`The number is even: $:{bool}`);
+
+/*
+Q5: Select the correct signature for the executor function of a JavaScript Promise object.*/
+
+(resolve,reject) =>{
+    //Some async operation
+    if (response.result){
+        resolve(response.result);
+    }else{
+        reject(Error("Failed!");)
+    }
+}
