@@ -806,6 +806,6 @@ const checkSunglasses = checkAvailability('sunglasses', 'Favorite Supply Co.');
 const checkPants = checkAvailability('pants', 'Favorite Supply Co.');
 const checkBags = checkAvailability('bags', 'Favorite Supply Co.');
 
-const availabilityPromise = [checkSunglasses, checkPants, checkBags];
+const promiseArray = [checkSunglasses, checkPants, checkBags];
 
-Promise.all(availabilityPromise);
+Promise.all(promiseArray).then(onFulfill).catch(onReject);
