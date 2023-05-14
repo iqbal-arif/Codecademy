@@ -259,3 +259,10 @@ const resolveWithValue = () =>{
       return Promise.reject(`Rejected with: ${str}`)
     }
   }
+
+  /*
+  Q8: Which of the following is NOT a state of a Promise?
+  A8: Returned
+  */
+
+  
