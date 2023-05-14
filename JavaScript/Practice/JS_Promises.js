@@ -220,3 +220,19 @@ Q5: Select the correct signature for the executor function of a JavaScript Promi
     }
 }
 /*Precisely! The function has two parameters that can be used to resolve or reject the promise.*/
+
+/*
+Q6: What is the fulfilled value of Promise.all()?
+A6: An array
+Correct! The Promise.all() method runs many promises in parallel, waits for all of them to resolve, and returns an array of results as its fulfilled value.
+*/
+
+
+/*
+Q7: Write a function resolveWithValue() that has two parameters:
+
+    The first parameter is a function that returns a promise.
+    The second parameter is a string value.
+
+When called, resolveWithValue() should invoke the function argument with the string argument and then log the resultant promise’s resolve value or reject reason to the console.
+*/
