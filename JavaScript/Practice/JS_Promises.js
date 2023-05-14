@@ -265,4 +265,16 @@ const resolveWithValue = () =>{
   A8: Returned
   */
 
+  /*
+  Q9: Complete the JavaScript code block that will change the value of the variable winner after 5 seconds.*/
+
+let winner = 'John';
+console.log(winner);
+
+setTimeout(() => {
   
+winter= 'Clara';
+  console.log(winner);
+}, 5000
+
+);
