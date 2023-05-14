@@ -106,3 +106,25 @@ const promise = new Promise((resolve, reject) => {
     reject(Error('Failed'));
   }
 });
+
+/*
+Q2: Which option can be used in place of the handler for the rejected promise in the .then() method?*/
+
+const promise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    reject(Error('Promise Rejected'));
+  }, 1000);
+});
+
+promise.then(
+  (res) => {
+    console.log(value);
+  },
+  (err) => {
+    alert(err);
+  }
+);
+
+promise.catch((err) => {
+  alert(err);
+});
