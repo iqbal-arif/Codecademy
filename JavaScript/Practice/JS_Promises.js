@@ -91,6 +91,56 @@ An instance of a JavaScript Promise object is created using the new keyword.
 The constructor of the Promise object takes a function, known as the executor function, as the argument. This function is responsible for resolving or rejecting the promise.
 */
 
+/**********************************************
+5..then() method of a JavaScript Promise object
+**********************************************/
+const promise = new Promise((resolve, reject) => {    
+  setTimeout(() => {
+    resolve('Result');
+  }, 200);
+});
+ 
+promise.then((res) => {
+  console.log(res);
+}, (err) => {
+  alert(err);
+});
+/*
+The .then() method of a JavaScript Promise object can be used to get the eventual result (or error) of the asynchronous operation.
+
+.then() accepts two function arguments. The first handler supplied to it will be called if the promise is resolved. The second one will be called if the promise is rejected.
+*/
+
+/**************
+6.setTimeout()
+***************/
+const loginAlert = () =>{
+  alert('Login');
+};
+ 
+setTimeout(loginAlert, 6000);
+/*
+setTimeout() is an asynchronous JavaScript function that executes a code block or evaluates an expression through a callback function after a delay set in milliseconds.
+*/
+
+/***********************************
+7. Chaining multiple .then() methods
+************************************/
+const promise = new Promise(resolve => setTimeout(() => resolve('dAlan'), 100));
+ 
+promise.then(res => {
+  return res === 'Alan' ? Promise.resolve('Hey Alan!') : Promise.reject('Who are you?')
+}).then((res) => {
+  console.log(res)
+}, (err) => {
+  alert(err)
+});
+/*
+The .then() method returns a Promise, even if one or both of the handler functions are absent. Because of this, multiple .then() methods can be chained together. This is known as composition.
+
+In the code block, a couple of .then() methods are chained together. Each method deals with the resolved value of their respective promises.
+ * /
+
 /*************************************************/
 /********************Practice*********************/
 /*************************************************/
@@ -128,7 +178,7 @@ promise.then(
 promise.catch((err) => {
   alert(err);
 });
-
+/*Precisely! The JavaScript .catch() method can be used to handle a rejected promise.*/
 /*
 Q3: Complete the JavaScript code block that imitates the use of a Promise object and prints the data when it is available.
 */
@@ -169,3 +219,4 @@ Q5: Select the correct signature for the executor function of a JavaScript Promi
         reject(Error("Failed!");)
     }
 }
+/*Precisely! The function has two parameters that can be used to resolve or reject the promise.*/
