@@ -141,3 +141,19 @@ const promiseSample = new Promise((resolve, reject) => {
 promiseSample.then((asyncMessage) => {
   console.log(asyncMessage);
 });
+
+/*
+Q4: Fill in the blanks to compose a JavaScript promise with a couple of then() methods for evaluating the type of a number, and printing it to the console.*/
+
+const promise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve(47);
+  }, 1000);
+});
+
+promise.then((val) => {
+  // checks if the number is even.
+  return val % 2 == 0 ? true : false;
+});
+
+console.log(`The number is even: $:{bool}`);
