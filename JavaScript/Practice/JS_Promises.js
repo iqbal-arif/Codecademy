@@ -413,7 +413,7 @@ const promise =  new Promise( (resolve, reject) => {
 promise.then(onFulfill, onReject);
 /*
 A15: undefined
-Incorrect. reason is that name of the parameter for onReject().
+Correct. Because no argument is passed in when reject() is called, the value defaults to undefined. 
 /*
 Q16: Which one of the following is NOT a state that a Promise resolves to?
 A16: Undefined*/
