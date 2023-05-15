@@ -171,23 +171,23 @@ We’re going to explore this using the following function, which returns a prom
 let myPromise = () => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve('Yay, I resolved!')
+      resolve('Yay, I resolved!');
     }, 1000);
   });
-}
+};
 /*
 Now we’ll write two async functions which invoke myPromise():
 */
 async function noAwait() {
- let value = myPromise();
- console.log(value);
+  let value = myPromise();
+  console.log(value);
 }
- 
+
 async function yesAwait() {
- let value = await myPromise();
- console.log(value);
+  let value = await myPromise();
+  console.log(value);
 }
- 
+
 noAwait(); // Prints: Promise { <pending> }
 yesAwait(); // Prints: Yay, I resolved!
 /*
@@ -217,3 +217,18 @@ Uh oh, getBeans() is logging '3. Great! I'm making [object Promise] beans for di
 3.
 
 To test that the code is now functioning properly, execute app.js in the terminal again.
+Code files also available in separate app_2.js & library_2.js
+*/
+/***app_3.js */
+const shopForBeans = require('./library.js');
+
+async function getBeans() {
+  console.log(`1. Heading to the store to buy beans...`);
+  let value = await shopForBeans();
+  console.log(`3. Great! I'm making ${value} beans for dinner tonight!`);
+}
+
+getBeans();
+
+/*****************************************************/
+/*****************************************************/
