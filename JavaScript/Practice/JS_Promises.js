@@ -393,8 +393,9 @@ const examplePromise = () => {
   });
 };
 /*
-A14: Pending */
-
+A14: Pending 
+👏
+Correct! After 0 seconds, the Promise will still be in its initial state, which is pending. 
 /*
 Q15: What is the value of the argument that is passed to the onReject()?
 */
@@ -411,7 +412,8 @@ const promise =  new Promise( (resolve, reject) => {
  
 promise.then(onFulfill, onReject);
 /*
-A15: reason
+A15: undefined
+Incorrect. reason is that name of the parameter for onReject().
 /*
 Q16: Which one of the following is NOT a state that a Promise resolves to?
 A16: Undefined*/
