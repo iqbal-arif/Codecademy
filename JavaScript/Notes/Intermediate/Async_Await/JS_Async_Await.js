@@ -205,10 +205,10 @@ Take a look at the provided code. We required in the shopForBeans() function fro
 
 Next, we declared the getBeans() function. Let’s summarize its intended functionality:
 
-    Log '1. Heading to the store to buy beans...' to the console.
-    Capture the resolved value of the promise returned when we invoke shopForBeans().
-    The promise returned from shopForBeans() prints a string in the format '2. I bought [the resolved type of beans] beans because they were on sale.'
-    Finally, the function prints a string in the format '3. Great! I'm making [the bean type] beans for dinner tonight!' to the console.
+    1. Log '1. Heading to the store to buy beans...' to the console.
+    2. Capture the resolved value of the promise returned when we invoke shopForBeans().
+    3. The promise returned from shopForBeans() prints a string in the format '2. I bought [the resolved type of beans] beans because they were on sale.'
+    4. Finally, the function prints a string in the format '3. Great! I'm making [the bean type] beans for dinner tonight!' to the console.
 
 Execute app.js in the terminal to see if getBeans() is working as intended.
 2.
