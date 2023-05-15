@@ -141,6 +141,32 @@ The .then() method returns a Promise, even if one or both of the handler functio
 In the code block, a couple of .then() methods are chained together. Each method deals with the resolved value of their respective promises.
  * /
 
+/*
+*************************************************
+8. Executor function of JavaScript Promise object
+*************************************************
+*/
+const executorFn = (resolve, reject) => {
+  resolve('Resolved!');
+};
+ 
+const promise = new Promise(executorFn);
+/*
+A JavaScript promise’s executor function takes two functions as its arguments. The first parameter represents the function that should be called to resolve the promise and the other one is used when the promise should be rejected. A Promise object may use any one or both of them inside its executor function.
+
+In the given example, the promise is always resolved unconditionally by the resolve function. The reject function could be used for a rejection.
+
+*/
+
+/*
+*********************
+9. The Promise Object
+*********************
+A Promise is an object that can be used to get the outcome of an asynchronous operation when that result is not instantly available.
+
+Since JavaScript code runs in a non-blocking manner, promises become essential when we have to wait for some asynchronous operation without holding back the execution of the rest of the code.
+*/
+
 /*************************************************/
 /********************Practice*********************/
 /*************************************************/
@@ -304,3 +330,8 @@ promiseChain
    return link(true);
 })
 
+/*
+success 1
+success 2
+Correct. Asynchronous operations are chained by explicitly returning promises within .then()‘s executed in the correct order. 
+*/
