@@ -354,3 +354,21 @@ const promise = new Promise ((resolve, reject) => {
 }, (err) => {
   alert('Operation Failed!');
 })
+
+/*
+Q12: Fill in the blanks in order to display a concatenated string of the values resolved from the two provided promises in JavaScript.
+*/
+const promise1 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve('Sunny');
+  }, 100);
+});
+const promise2 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve('Day');
+  }, 100);
+});
+ 
+Promise.all([ promise1, promise2]).then((values) => {
+  console.log(`${values[0]} ${values[1]}`);
+});
