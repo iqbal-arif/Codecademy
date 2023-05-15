@@ -335,3 +335,22 @@ success 1
 success 2
 Correct. Asynchronous operations are chained by explicitly returning promises within .then()‘s executed in the correct order. 
 */
+
+/*
+Q11: Complete the JavaScript code block that will show an alert message if the Promise is rejected.
+*/
+const promise = new Promise ((resolve, reject) => {    
+  setTimeout(() => {
+    const resultOfAnAsyncOperation = true;
+    if(resultOfAnAsyncOperation) {
+      resolve('Operation Successful!');
+    } else {
+      reject(Error('Promise Rejected'));
+    }    
+  }, 1000);
+});
+ promise.then((res) => {
+  console.log(res);
+}, (err) => {
+  alert('Operation Failed!');
+})
