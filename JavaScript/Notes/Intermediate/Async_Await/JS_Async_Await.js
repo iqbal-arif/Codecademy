@@ -137,7 +137,8 @@ At the bottom of app.js, beneath the function declaration, invoke the announceDi
 
 In the terminal type node app.js and press enter to execute your code.
 */
-const brainstormDinner = require('./library.js');
+/***app_2.js***/
+const brainstormDinner = require('./library_2.js');
 
 // Native promise version:
 function nativePromiseDinner() {
@@ -149,4 +150,8 @@ function nativePromiseDinner() {
 // async/await version:
 async function announceDinner() {
   // Write your code below:
+  let meal = await brainstormDinner();
+  console.log(`I'm going to make ${meal} for dinner.`);
 }
+
+announceDinner();
