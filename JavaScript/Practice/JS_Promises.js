@@ -394,3 +394,33 @@ const examplePromise = () => {
 };
 /*
 A14: Pending */
+
+/*
+Q15: What is the value of the argument that is passed to the onReject()?
+*/
+let onFulfill = value => {console.log(value)};
+let onReject = reason => {console.log(reason)};
+ 
+const promise =  new Promise( (resolve, reject) => {
+  if (false) {
+    resolve('success value');
+  } else {
+    reject();
+  }
+});
+ 
+promise.then(onFulfill, onReject);
+/*
+A15: reason
+/*
+Q16: Which one of the following is NOT a state that a Promise resolves to?
+A16: Undefined*/
+
+/*
+Q17: How many parameters does a Promise constructor take?
+
+const example = new Promise( ? ? ? );
+
+A17: 1
+A Promise’s constructor has a single parameter, called the “executor function.” The executor function has two parameters – resolve and reject.
+*/
