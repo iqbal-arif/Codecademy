@@ -217,7 +217,7 @@ Uh oh, getBeans() is logging '3. Great! I'm making [object Promise] beans for di
 3.
 
 To test that the code is now functioning properly, execute app.js in the terminal again.
-Code files also available in separate app_2.js & library_2.js
+Code files also available in separate app_3.js & library_3.js
 */
 /***app_3.js */
 const shopForBeans = require('./library.js');
