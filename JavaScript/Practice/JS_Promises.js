@@ -424,3 +424,20 @@ const example = new Promise( ? ? ? );
 A17: 1
 A Promise’s constructor has a single parameter, called the “executor function.” The executor function has two parameters – resolve and reject.
 */
+
+/*
+Q18: True or False: The .then() method returns a Promise.
+A18: True
+Incorrect. The .then() method returns a Promise.*/
+
+/*
+Q19: What value is printed to the console?
+*/
+const asyncHello = new Promise((resolve, reject) => { 
+    setTimeout(resolve, 1000, 'Hello!'); 
+}); 
+ 
+console.log(typeof asyncHello);
+/*
+A19: Object
+Correct! A Promise is an object representing the eventual completion or failure of an asynchronous operation.*/
