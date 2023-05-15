@@ -372,3 +372,25 @@ const promise2 = new Promise((resolve, reject) => {
 Promise.all([ promise1, promise2]).then((values) => {
   console.log(`${values[0]} ${values[1]}`);
 });
+
+/*
+Q13: Which of the executor function’s parameters is called if the asynchronous task completes successfully?
+A13: function1
+Correct! The first of these functions (function1) is called when the asynchronous task completes successfully.
+*/
+const example = new Promise( (function1, function2) => { . . . } );
+
+/*
+Q14: What state will this promise be in after 0 seconds?
+*/
+const examplePromise = () => {
+  return new Promise((resolve, reject) => {
+    if (true) {
+      setTimeout( () => resolve('success'), 3000);
+    } else {
+      setTimeout( () => resolve('failed'), 5000);
+    }
+  });
+};
+/*
+A14: Pending */
