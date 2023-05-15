@@ -314,8 +314,20 @@ Beneath your function declaration, invoke the makeBeans() function.
 8.
 
 Let’s see your async function in action! In the terminal, type node app.js and press enter to execute the code. (Press “Check Work” when complete to continue)
-Code files also available in separate app_3.js & library_3.js
+Code files also available in separate app_4.js & library_4.js
 */
+const { shopForBeans, soakTheBeans, cookTheBeans } = require('./library.js');
 
+// Write your code below:
+
+async function makeBeans() {
+  let type = await shopForBeans();
+  // console.log(beanType)
+  let isSoft = await soakTheBeans(type);
+  let dinner = await cookTheBeans(isSoft);
+  console.log(dinner);
+}
+
+makeBeans();
 /*****************************************************/
 /*****************************************************/
