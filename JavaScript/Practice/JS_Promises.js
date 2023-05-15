@@ -455,5 +455,6 @@ const promise1 = examplePromise1.then(onFulfill, onReject);
  
 const promise2 = examplePromise2.then(onFulfill).catch(onReject);
 /*
-A20:
+A20: True
+Correct! .catch(onReject) is syntactic sugar for .then(undefined, onReject). 
 */
