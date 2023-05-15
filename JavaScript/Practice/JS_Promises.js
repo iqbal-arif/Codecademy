@@ -460,3 +460,13 @@ const promise2 = examplePromise2.then(onFulfill).catch(onReject);
 A20: True
 Correct! .catch(onReject) is syntactic sugar for .then(undefined, onReject). 
 */
+
+/*
+Q21: Which of the executor function’s parameters is called if the asynchronous task completes successfully?
+*/
+const example = new Promise( (function1, function2) => { . . . } );
+/*
+A21: funciton1
+👏
+Correct! The first of these functions (function1) is called when the asynchronous task completes successfully.
+*/
