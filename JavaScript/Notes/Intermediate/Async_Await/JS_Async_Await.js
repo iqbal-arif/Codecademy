@@ -136,6 +136,7 @@ At the bottom of app.js, beneath the function declaration, invoke the announceDi
 4.
 
 In the terminal type node app.js and press enter to execute your code.
+Code files also available in separate app_2.js & library_2.js
 */
 /***app_2.js***/
 const brainstormDinner = require('./library_2.js');
