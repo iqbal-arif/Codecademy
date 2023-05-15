@@ -441,3 +441,19 @@ console.log(typeof asyncHello);
 /*
 A19: Object
 Correct! A Promise is an object representing the eventual completion or failure of an asynchronous operation.*/
+
+/*
+Q20: True or False: promise1 and promise2 both produce the same output.
+*/
+const examplePromise1 = new Promise((resolve, reject) => { reject('Uh-oh!') });
+const examplePromise2 = new Promise((resolve, reject) => { reject('Uh-oh!') });
+ 
+const onFulfill = value => {console.log(value)};
+const onReject = reason => {console.log(reason)};
+ 
+const promise1 = examplePromise1.then(onFulfill, onReject);
+ 
+const promise2 = examplePromise2.then(onFulfill).catch(onReject);
+/*
+A20:
+*/
