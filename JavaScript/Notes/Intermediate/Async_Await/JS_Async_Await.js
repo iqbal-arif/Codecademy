@@ -232,3 +232,90 @@ getBeans();
 
 /*****************************************************/
 /*****************************************************/
+
+/*
+******************************
+5. Handling Dependent Promises
+******************************
+
+The true beauty of async...await is when we have a series of asynchronous actions which depend on one another. For example, we may make a network request based on a query to a database. In that case, we would need to wait to make the network request until we had the results from the database. With native promise syntax, we use a chain of .then() functions making sure to return correctly each one:
+*/
+function nativePromiseVersion() {
+  returnsFirstPromise()
+    .then((firstValue) => {
+      console.log(firstValue);
+      return returnsSecondPromise(firstValue);
+    })
+    .then((secondValue) => {
+      console.log(secondValue);
+    });
+}
+/*
+Let’s break down what’s happening in the nativePromiseVersion() function:
+
+    1. Within our function we use two functions which return promises: returnsFirstPromise() and returnsSecondPromise().
+    2. We invoke returnsFirstPromise() and ensure that the first promise resolved by using .then().
+    3. In the callback of our first .then(), we log the resolved value of the first promise, firstValue, and then return returnsSecondPromise(firstValue).
+    4. We use another .then() to print the second promise’s resolved value to the console.
+
+Here’s how we’d write an async function to accomplish the same thing:
+*/
+async function asyncAwaitVersion() {
+  let firstValue = await returnsFirstPromise();
+  console.log(firstValue);
+  let secondValue = await returnsSecondPromise(firstValue);
+  console.log(secondValue);
+}
+/*
+Let’s break down what’s happening in our asyncAwaitVersion() function:
+
+    1. We mark our function as async.
+    2. Inside our function, we create a variable firstValue assigned await returnsFirstPromise(). This means firstValue is assigned the resolved value of the awaited promise.
+    3. Next, we log firstValue to the console.
+    4. Then, we create a variable secondValue assigned to await returnsSecondPromise(firstValue). Therefore, secondValue is assigned this promise’s resolved value.
+    5. Finally, we log secondValue to the console.
+
+Though using the async...await syntax can save us some typing, the length reduction isn’t the main point. Given the two versions of the function, the async...await version more closely resembles synchronous code, which helps developers maintain and debug their code. The async...await syntax also makes it easy to store and refer to resolved values from promises further back in our chain which is a much more difficult task with native promise syntax. Let’s create some async functions with multiple await statements!
+
+/*****************************************************/
+/**********************PRACTICE***********************/
+/*****************************************************
+
+Instructions
+1.
+
+Take a look at the provided code. We require in three functions: shopForBeans(), soakTheBeans(), and cookTheBeans(). These functions each return a promise.
+
+    shopForBeans() expects no arguments and returns a promise which will resolve to a string of a bean type.
+    soakTheBeans() expects a bean type string as an argument and returns a promise which resolves to a boolean indicating whether or not the beans are softened.
+    cookTheBeans() expects a boolean as an argument and, if that value is true, returns a promise which will resolve to a string announcing that dinner is ready.
+
+If you’d like, look at the library.js file to see how these functions work. Press “Check Work” to move on to the next step.
+2.
+
+In the following checkpoints, you’ll create an async function that handles the three dependent promises we just walked through. It will simulate shopping for, soaking, and then cooking the beans. To get started, declare an async function, makeBeans(). You can leave the function body blank for now.
+
+Check your work to move on to the next step.
+3.
+
+Inside your function, declare a variable, type, assigned to the resolved value of shopForBeans(). This must be accomplished in one statement.
+4.
+
+Next inside your function, declare a variable, isSoft, assigned to the resolved value of soakTheBeans(). Don’t forget: the soakTheBeans() function expects an argument. Make sure to pass the expected value into soakTheBeans().
+5.
+
+Next inside your function, declare a variable, dinner, assigned to the resolved of cookTheBeans(). Don’t forget: the cookTheBeans() function also expects an argument. Make sure to pass the expected value into cookTheBeans().
+6.
+
+Next inside your function, log your dinner variable to the console.
+7.
+
+Beneath your function declaration, invoke the makeBeans() function.
+8.
+
+Let’s see your async function in action! In the terminal, type node app.js and press enter to execute the code. (Press “Check Work” when complete to continue)
+Code files also available in separate app_3.js & library_3.js
+*/
+
+/*****************************************************/
+/*****************************************************/
