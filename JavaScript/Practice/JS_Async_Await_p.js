@@ -167,7 +167,10 @@ Right! The async/await syntax is syntactic sugar - it does not introduce new fun
 
 /*
 Q6: The async function can return each of the following except:
-A6: A promise with a resolved value of undefined.
+A promise with a resolved value of undefined.
+A promise with a resolved value that is not a promise.
+A promise.
+A6: A promise with a value of await.
 */
 
 /*
