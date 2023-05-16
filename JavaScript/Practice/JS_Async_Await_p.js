@@ -212,3 +212,67 @@ async function msg() {
 }
 
 msg(); // Message: Hello World! <-- after 2 seconds
+
+/*
+Q10: Q1. Write an async function, matchPromises(). Your function should have two parameters—both functions that take no arguments and return promises. When invoked, matchPromises() should invoke the two function arguments and compare the two promises:
+
+    If the promises have the same resolved value, matchPromises() should return the string "match".
+    If the promises have different resolved values, matchPromises() should return the string "no match".
+    If either promise rejects, matchPromises() should return the string "error".
+*/
+/*Codecademy Solution*/
+
+async function matchPromises(pendingPromise1, pendingPromise2) {
+  try {
+    let resolvedPromise1 = await pendingPromise1();
+    let resolvedPromise2 = await pendingPromise2();
+    if (resolvedPromise1 === resolvedPromise2) {
+      return 'match';
+    } else if (resolvedPromise1 !== resolvedPromise2) {
+      return 'no match';
+    }
+  } catch (error) {
+    console.log(error);
+    return 'error';
+  }
+}
+
+// This code isn't necessary to pass the assessment, but provided to help you check the output of your function
+const promiseOne = () => {
+  return new Promise((resolve, reject) => {
+    resolve('done');
+  });
+};
+const promiseTwo = () => {
+  return new Promise((resolve, reject) => {
+    resolve('done');
+  });
+};
+
+matchPromises(promiseOne, promiseTwo).then((result) => console.log(result));
+/******My Solution*****/
+
+// Define your function below:
+function asyncTask() {
+  return new Promise((resolve) => {
+    resolve('Task Done');
+  });
+}
+
+const taskOne = async () => {
+  const task = await asyncTask();
+  console.log('Task:', task);
+};
+const taskTwo = async () => {
+  const task = await asyncTask();
+  console.log('Task:', task);
+};
+async function matchPromises(taskOne, taskTwo) {
+  try {
+    taskOne === taskTwo ? console.log('match') : console.log('no match');
+  } catch (error) {
+    console.log('error');
+  }
+}
+
+matchPromises(taskOne, taskTwo).then((result) => console.log(result));
