@@ -11,3 +11,32 @@ const promisifiedReadfile = (file, encoding) =>
   });
 
 module.exports = promisifiedReadfile;
+
+function asyncTask() {
+  return new Promise((resolve) => {
+    resolve('Task Done');
+  });
+}
+
+const taskOne = async () => {
+  const task = await asyncTask();
+  console.log(task);
+};
+const taskTwo = async () => {
+  const task = await asyncTask();
+  console.log(task);
+};
+async function matchPromises() {
+  try {
+    if (taskOne === taskTwo) {
+      console.log('match');
+    } else {
+      return 'no match';
+    }
+    //  ? console.log (true):console.log ;
+  } catch (error) {
+    console.log('error');
+  }
+}
+
+matchPromises();

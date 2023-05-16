@@ -183,3 +183,29 @@ Promise.all([promise1, promise2, promise3]).then(function (values) {
   console.log(values);
 });
 // expected output: Array [5, 44, "foo"]
+
+/*
+Q8: Confirm if the statement is true or false:
+
+Constructing one or more promises or calls without await can allow multiple async functions to execute simultaneously. Each async function can be awaited once its value is required by program logic.
+
+A8: True.
+*/
+
+/*
+Q9: Complete the async...await function to print the Hello World! message.
+*/
+function helloWorld() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve('Hello World!');
+    }, 2000);
+  });
+}
+
+async function msg() {
+  const msg = await helloWorld();
+  console.log('Message:', msg);
+}
+
+msg(); // Message: Hello World! <-- after 2 seconds
