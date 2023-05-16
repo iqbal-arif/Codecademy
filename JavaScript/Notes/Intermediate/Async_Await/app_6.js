@@ -6,3 +6,10 @@ let {
 } = require('./library.js');
 
 // Write your code below:
+
+async function serveDinner() {
+  let vegetablePromise = steamBroccoli();
+  let starchPromise = cookRice();
+  let proteinPromise = bakeChicken();
+  let sidePromise = cookBeans();
+}
