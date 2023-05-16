@@ -578,7 +578,7 @@ async function serveDinnerAgain() {
   // let meat = foodArray[2];
   // let beans = foodArray[3];
 
-  // cconsole.log(`Dinner is served. We're having ${vege}, ${grain}, ${meat}, and ${beans}.`);
+  // console.log(`Dinner is served. We're having ${vege}, ${grain}, ${meat}, and ${beans}.`);
   let vege = foodArray[0];
   let grain = foodArray[1];
   let meat = foodArray[2];
@@ -607,3 +607,24 @@ Awesome work getting the hang of the async...await syntax! Let’s review what y
     6. We use try...catch statements within our async functions for error handling.
     7. We should still take advantage of concurrency by writing async functions that allow asynchronous actions to happen in concurrently whenever possible.
 */
+
+/*****************************************************/
+/**********************PRACTICE***********************/
+/*****************************************************
+ * 
+ /*
+ Q1. Write an async function, matchPromises(). Your function should have two parameters—both functions that take no arguments and return promises. When invoked, matchPromises() should invoke the two function arguments and compare the two promises:
+
+    If the promises have the same resolved value, matchPromises() should return the string "match".
+    If the promises have different resolved values, matchPromises() should return the string "no match".
+    If either promise rejects, matchPromises() should return the string "error".
+*/
+
+async function matchPromises() {
+  const resultArray = await Promise.all([
+    asyncTask1(),
+    asyncTask2(),
+    asyncTask3(),
+    asyncTask4(),
+  ]);
+}
