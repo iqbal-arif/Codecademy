@@ -438,6 +438,9 @@ With our concurrent() function both promises’ asynchronous operations can be r
 
 Note: if we have multiple truly independent promises that we would like to execute fully in parallel, we must use individual .then() functions and avoid halting our execution with await.
 
+/*****************************************************/
+/**********************PRACTICE***********************/
+/*****************************************************
 Instructions
 1.
 
@@ -469,5 +472,5 @@ Awesome! Let’s see your function in action. Beneath your function declaration,
 5.
 
 In the terminal type node app.js and press enter to run the code.
-
+Code files also available in separate app_5.js & library_5.js
 */
