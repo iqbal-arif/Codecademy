@@ -92,3 +92,27 @@ An asynchronous JavaScript function can be created with the async keyword before
 ***************************
 Constructing one or more promises or calls without await can allow multiple async functions to execute simultaneously. Through this approach, a program can take advantage of concurrency, and asynchronous actions can be initiated within an async function. Since using the await keyword halts the execution of an async function, each async function can be awaited once its value is required by program logic.
 */
+
+/*****************************************************/
+/**********************PRACTICE***********************/
+/*****************************************************
+ 
+Q1: What purpose does the await keyword serve?
+A1: It's an operator used only inside an async function that halts the execution of a function until a given promise is no longer pending and returns the resolved value of the promise.
+
+Q2: The following code contains the handling of multiple independent tasks concurrently as promises without blocking using the async and await keywords. Fill in the code with the correct syntax where these keywords are used. The expected output should display:
+*/
+// Tasks Results: [dryLaundry result], [matchSocks result], [foldLaundry result].
+
+let { dryLaundry, matchSocks, foldLaundry } = require('./tasks.js');
+
+async function multiTask() {
+  const dryLaundryResult = dryLaundry();
+  const matchSocksResult = matchSocks();
+  const foldLaundryResult = foldLaundry();
+  console.log(
+    `Tasks Results: ${await dryLaundryResult}, ${await matchSocksResult}, ${await foldLaundryResult}.`
+  );
+}
+
+multiTask();
