@@ -164,3 +164,22 @@ Q5: True or False: the async...await syntax has functionality that cannot be acc
 A5: False.
 Right! The async/await syntax is syntactic sugar - it does not introduce new functionality into the language. 
 */
+
+/*
+Q6: The async function can return each of the following except:
+A6: A promise with a resolved value of undefined.
+*/
+
+/*
+Q7: Complete the code block for multiple asynchronous operations.
+*/
+var promise1 = Promise.resolve(5);
+var promise2 = 44;
+var promise3 = new Promise(function (resolve, reject) {
+  setTimeout(resolve, 100, 'foo');
+});
+
+Promise.all([promise1, promise2, promise3]).then(function (values) {
+  console.log(values);
+});
+// expected output: Array [5, 44, "foo"]
