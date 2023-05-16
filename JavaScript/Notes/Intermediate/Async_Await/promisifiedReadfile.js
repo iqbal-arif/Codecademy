@@ -1,3 +1,4 @@
+const { Console } = require('console');
 const fs = require('fs');
 // Below we create a function for reading files that returns a promise. We converted the fs.readfile() function which uses callbacks. Many of the asynchronous functions you'll encounter already return promises, so this extra step is seldom necessary.
 const promisifiedReadfile = (file, encoding) =>
@@ -17,21 +18,26 @@ function asyncTask() {
     resolve('Task Done');
   });
 }
-
+console.log(asyncTask());
 const taskOne = async () => {
   const task = await asyncTask();
-  console.log('Task:', task);
+  return 'Task:', task;
 };
+console.log(taskOne);
 const taskTwo = async () => {
   const task = await asyncTask();
   console.log('Task:', task);
 };
+console.log(taskTwo);
 async function matchPromises(taskOne, taskTwo) {
+  console.log(taskOne);
+  console.log(taskTwo);
   try {
+    // taskOne !== taskTwo ? console.log('match') : console.log('no match');
     if (taskOne === taskTwo) {
       console.log('match');
     } else {
-      return 'no match';
+      console.log('no match');
     }
     //  ? console.log (true):console.log ;
   } catch (error) {
@@ -39,4 +45,4 @@ async function matchPromises(taskOne, taskTwo) {
   }
 }
 
-matchPromises();
+matchPromises(taskOne, taskTwo).then((result) => console.log(result));
