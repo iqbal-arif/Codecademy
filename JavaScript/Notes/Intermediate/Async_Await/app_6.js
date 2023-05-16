@@ -14,6 +14,6 @@ async function serveDinner() {
   let sidePromise = cookBeans();
 
   console.log(
-    `Dinner is served. We’re having ${await vegetablePromise}, ${await starchPromise}, ${await proteinPromise}, and ${await sidePromise}`
+    `Dinner is served. We're having ${await vegetablePromise}, ${await starchPromise}, ${await proteinPromise}, and ${await sidePromise}.`
   );
 }
