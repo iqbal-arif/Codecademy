@@ -17,3 +17,5 @@ async function serveDinner() {
     `Dinner is served. We're having ${await vegetablePromise}, ${await starchPromise}, ${await proteinPromise}, and ${await sidePromise}.`
   );
 }
+
+serveDinner();
