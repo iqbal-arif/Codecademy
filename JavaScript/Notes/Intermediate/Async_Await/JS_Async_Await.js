@@ -474,3 +474,27 @@ Awesome! Let’s see your function in action. Beneath your function declaration,
 In the terminal type node app.js and press enter to run the code.
 Code files also available in separate app_5.js & library_5.js
 */
+let {
+  cookBeans,
+  steamBroccoli,
+  cookRice,
+  bakeChicken,
+} = require('./library.js');
+
+// Write your code below:
+
+async function serveDinner() {
+  let vegetablePromise = steamBroccoli();
+  let starchPromise = cookRice();
+  let proteinPromise = bakeChicken();
+  let sidePromise = cookBeans();
+
+  console.log(
+    `Dinner is served. We're having ${await vegetablePromise}, ${await starchPromise}, ${await proteinPromise}, and ${await sidePromise}.`
+  );
+}
+
+serveDinner();
+
+/*****************************************************/
+/*****************************************************/
