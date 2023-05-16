@@ -12,3 +12,16 @@ Q2: What does the function example() return?
 async function example() { }
 A2: A promise
 */
+
+/*
+Q3: What will this code print to the console?
+*/
+async function myFunction() {
+  return 'hello world';
+}
+
+myFunction().then((resolvedValue) => {
+  console.log(resolvedValue);
+});
+
+/*A3:  hello world */
