@@ -11,6 +11,7 @@ Q2: What does the function example() return?
 
 async function example() { }
 A2: A promise
+Correct! An async function returns a promise.
 */
 
 /*
@@ -55,4 +56,12 @@ Right! The async/await syntax is syntactic sugar - it does not introduce new fun
 Q7: Which of the following is useful for awaiting multiple promises where all are required but none depend on each other to execute? 
 A7: Promise.all()
 Right! Promise.all() is a good choice for taking advantage of concurrency. 
+*/
+
+/*
+Q8: What purpose does the await keyword serve?
+A8: It's an operator used only inside an async function that halts the execution of a function until a given promise is no longer pending and returns the resolved value of the promise.
+1. It's a JavaScript object which represents the eventual outcome fo an asynchronous operation.
+2. It's a function passed into another function as a parameter which is invoked during the execution of that functions.
+3. It's a keyword which indicates an asynchronous functions.
 */
