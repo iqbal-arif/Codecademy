@@ -281,3 +281,8 @@ async function matchPromises(taskOne, taskTwo) {
 }
 
 matchPromises(taskOne, taskTwo).then((result) => console.log(result));
+/*
+Q11: Select a statement that is NOT true about the async...await syntax.
+A11: This syntax introduces new functionality into the Javascript language writing promises a breeze.
+This is not true, as it is only syntactic sugar. Hence, this is the correct answer.
+*/
