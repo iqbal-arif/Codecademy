@@ -48,3 +48,11 @@ A5: It's a keyword which indicates an asynchronous function.
 */
 /*
 Q6: True or False: the async...await syntax has functionality that cannot be accomplished by native promises. 
+A6: False.
+Right! The async/await syntax is syntactic sugar - it does not introduce new functionality into the language. */
+
+/*
+Q7: Which of the following is useful for awaiting multiple promises where all are required but none depend on each other to execute? 
+A7: Promise.all()
+Right! Promise.all() is a good choice for taking advantage of concurrency. 
+*/
