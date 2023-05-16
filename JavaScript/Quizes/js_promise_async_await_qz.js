@@ -25,3 +25,26 @@ myFunction().then((resolvedValue) => {
 });
 
 /*A3:  hello world */
+
+/*
+Q4: Given that firstPromise(), secondPromise(), and thirdPromise() do not depend on each other to execute, what isn’t ideal about the provided code?
+*/
+async function threePromises() {
+  let first = await firstPromise();
+  let second = await secondPromise();
+  let third = await thirdPromise();
+  console.log(first, second, third);
+}
+/*
+Using await halts the execution of the function which means consecutive promises would wait to execute until the pervious promise resolved. Instead, we should allow for concurrency whenever possible.
+*/
+
+/*
+Q5: What purpose does the async keyword serve?
+A5: It's a keyword which indicates an asynchronous function.
+1. it's an operator that halts the execution of a function until a promise is no longer pending.
+2. it's a built-in function which a callback function and number of milliseconds as parameters and delays the execution of the callback function that number of milliseconds.
+3. it's a function that returns a function and/or accepts a function as a parameter.
+*/
+/*
+Q6: True or False: the async...await syntax has functionality that cannot be accomplished by native promises. 
