@@ -193,6 +193,7 @@ Q8: Confirm if the statement is true or false:
 Constructing one or more promises or calls without await can allow multiple async functions to execute simultaneously. Each async function can be awaited once its value is required by program logic.
 
 A8: True.
+Well done! Through this approach, a program can take advantage of concurrency.
 */
 
 /*
