@@ -116,3 +116,19 @@ async function multiTask() {
 }
 
 multiTask();
+/*
+Q3: What does the async keyword do? 
+A3: It creates a function that returns a Promise.
+*/
+
+/*
+Q4: Complete the try...catch statement within the JavaScript code.
+*/
+let json = '{ "age": 30 }';
+
+try {
+  let user = JSON.parse(json);
+  alert(user.age);
+} catch (error) {
+  alert('Invalid JSON data!');
+}
