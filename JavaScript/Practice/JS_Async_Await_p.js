@@ -85,3 +85,10 @@ msg1(); // Message: Hello World! <-- after 2 seconds
 /*
 An asynchronous JavaScript function can be created with the async keyword before the function name, or before () when using the arrow function syntax. An async function returns a promise.
 */
+
+/*
+***************************
+5. Using async await syntax
+***************************
+Constructing one or more promises or calls without await can allow multiple async functions to execute simultaneously. Through this approach, a program can take advantage of concurrency, and asynchronous actions can be initiated within an async function. Since using the await keyword halts the execution of an async function, each async function can be awaited once its value is required by program logic.
+*/
