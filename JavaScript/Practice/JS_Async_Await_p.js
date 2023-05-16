@@ -270,7 +270,11 @@ const taskTwo = async () => {
 };
 async function matchPromises(taskOne, taskTwo) {
   try {
-    taskOne === taskTwo ? console.log('match') : console.log('no match');
+    if (taskOne === taskTwo) {
+      return 'match';
+    } else if (taskOne !== taskTwo) {
+      return 'no match';
+    }
   } catch (error) {
     console.log('error');
   }
