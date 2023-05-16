@@ -20,13 +20,13 @@ function asyncTask() {
 
 const taskOne = async () => {
   const task = await asyncTask();
-  console.log(task);
+  console.log('Task:', task);
 };
 const taskTwo = async () => {
   const task = await asyncTask();
-  console.log(task);
+  console.log('Task:', task);
 };
-async function matchPromises() {
+async function matchPromises(taskOne, taskTwo) {
   try {
     if (taskOne === taskTwo) {
       console.log('match');
