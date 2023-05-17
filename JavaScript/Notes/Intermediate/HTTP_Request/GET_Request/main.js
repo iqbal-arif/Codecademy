@@ -7,8 +7,25 @@ const submit = document.querySelector('#submit');
 const responseField = document.querySelector('#responseField');
 
 // Asynchronous function
-const getSuggestions = () => {};
-
+const getSuggestions = (wordQuery) => {
+  const wordQuery = inputField.value;
+  const endpoint = url + wordQuery;
+  fetch(endpoint, { cache: 'no-cache' })
+    .then(
+      (response) => {
+        if (response.ok) {
+          return response.json();
+        }
+        throw new Error('Request failed!');
+      },
+      (networkError) => {
+        console.log(networkError.message);
+      }
+    )
+    .then((jsonResponse) => {
+      console.log(jsonResponse);
+    });
+};
 // Clears previous results and display results to webpage
 const displaySuggestions = (event) => {
   event.preventDefault();
