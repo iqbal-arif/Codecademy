@@ -1,6 +1,8 @@
 /*
 Q1: Which of the following is NOT a benefit of the async...await syntax?
-A1: It causes promises to resolve faster.
+A1: It causes promises to resolve faster. 👏
+The async...await syntax does not cause promises to resolve faster.
+
 it reads more similarly to synchronous code.
 it lets us catch rejected promise errors with the exact same syntax we use to catch other types of errors.
 it lets us easily store and refer back to the resolved values of earlier promises in a promise chain.
@@ -42,7 +44,8 @@ Using await halts the execution of the function which means consecutive promises
 
 /*
 Q5: What purpose does the async keyword serve?
-A5: It's a keyword which indicates an asynchronous function.
+A5: It's a keyword which indicates an asynchronous function. 👏
+That’s right! 
 1. it's an operator that halts the execution of a function until a promise is no longer pending.
 2. it's a built-in function which a callback function and number of milliseconds as parameters and delays the execution of the callback function that number of milliseconds.
 3. it's a function that returns a function and/or accepts a function as a parameter.
