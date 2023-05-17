@@ -21,7 +21,10 @@ Making an async GET Request
 In the previous exercise, we walked through the boilerplate code for making a GET request using async and await.
 
 In this exercise, we’re going to apply the code to get nouns that describe the inputted word using the Datamuse API.
-Instructions
+
+**********************************
+***********Instructions***********
+**********************************
 1.
 
 Under the comment “Asynchronous function”, create a const variable called getSuggestions and set it to a new arrow function using the async keyword.
