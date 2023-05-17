@@ -1,6 +1,7 @@
 /*
-Making a GET Request
-
+***********************
+1. Making a GET Request
+***********************
 In the previous exercise, we went over the boilerplate code for a GET request using fetch() and .then(). In this exercise, we’re going to apply that code to access the Datamuse API and render the fetched information in the browser.
 
 The Datamuse API is a word-finding query engine for developers. It can be used in apps to find words that match a given set of constraints that are likely in a given context.
@@ -8,7 +9,10 @@ The Datamuse API is a word-finding query engine for developers. It can be used i
 If the request is successful, we’ll get back an array of words that sound like the word we typed into the input field.
 
 We may get some errors as we complete each step. This is because sometimes we’ve split a single step into one or more steps to make it easier to follow. By the end, we should be getting no errors.
-Instructions
+
+**********************************
+***********Instructions***********
+**********************************
 1.
 
 At the top of main.js, create a const variable called url. Assign url to the following URL as a string:
@@ -48,5 +52,41 @@ Next, we will add a second argument to the .then() method to add another callbac
 In the code block of the arrow function, log networkError.message to the console.
 
 Note that we will continue to add to this code in the next exercise to manipulate the webpage to see the word suggestions from Datamuse. The submit button will not return anything yet.
+
+*************************
+2. Handling a GET Request
+*************************
+Great job making it this far!
+
+In the previous exercise, we called the fetch() function to make a GET request to the Datamuse API endpoint. Then, you chained a .then() method and passed two callback functions as arguments — one to handle the promise if it resolves, and one to handle network errors if the promise is rejected.
+
+In this exercise, we will chain another .then() method, which will allow us to take the information that was returned with the promise and manipulate the webpage! Note that if there is an error returned in the first .then() method, the second .then() method will not execute.
+
+**********************************
+***********Instructions***********
+**********************************
+1.
+
+At the end of the .then() method, chain another .then() method.
+
+As the first argument of our second .then() method, pass an anonymous arrow callback function that takes jsonResponse as its single parameter.
+2.
+
+Inside the callback function we just created, call the renderRawResponse() function and pass in jsonResponse as its argument. Run the code.
+
+In the input field, type in a word and click the submit button.
+
+If all went well, we should see an array of words that the Datamuse API responded with!
+
+Note that you can find the renderRawResponse() function declaration in public/helperFunctions.js.
+3.
+
+Let’s format our response from the Datamuse API to look presentable on the webpage. To do this, we will use the renderResponse() function that’s been defined in public/helperFunctions.js.
+
+Comment out renderRawResponse(jsonResponse). Then below, call renderResponse(jsonResponse).
+
+Run your code.
+
+Try the webpage again with another word!
 
 */

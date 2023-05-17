@@ -1,5 +1,5 @@
 // Information to reach API
-const url = fetch('https://api.datamuse.com/words?sl=');
+const url = 'https://api.datamuse.com/words?sl=';
 
 // Selects page elements
 const inputField = document.querySelector('#input');
@@ -7,9 +7,10 @@ const submit = document.querySelector('#submit');
 const responseField = document.querySelector('#responseField');
 
 // Asynchronous function
-const getSuggestions = (wordQuery) => {
+const getSuggestions = () => {
   const wordQuery = inputField.value;
-  const endpoint = url + wordQuery;
+  const endpoint = `${url}${wordQuery}`;
+
   fetch(endpoint, { cache: 'no-cache' })
     .then(
       (response) => {
@@ -23,9 +24,12 @@ const getSuggestions = (wordQuery) => {
       }
     )
     .then((jsonResponse) => {
-      console.log(jsonResponse);
+      // renderRawResponse(jsonResponse)
+      renderResponse(jsonResponse);
+      // console.log(jsonResponse)
     });
 };
+
 // Clears previous results and display results to webpage
 const displaySuggestions = (event) => {
   event.preventDefault();
