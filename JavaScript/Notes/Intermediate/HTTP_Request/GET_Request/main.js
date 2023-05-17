@@ -1,4 +1,5 @@
 // Information to reach API
+const url = fetch('https://api.datamuse.com/words?sl=');
 
 // Selects page elements
 const inputField = document.querySelector('#input');
