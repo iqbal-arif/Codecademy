@@ -12,9 +12,9 @@ Instructions
 1.
 
 At the top of main.js, create a const variable called url. Assign url to the following URL as a string:
-
+*/
 https://api.datamuse.com/words?sl=
-
+/*
 The ?sl= portion of the string will be the start of your query string, which will be used to pass parameters to the Datamuse API. The query string will be used by the engine to narrow the search to words that sound like your word.
 2.
 
