@@ -9,7 +9,20 @@ const responseField = document.querySelector('#responseField');
 
 // Asynchronous function
 // Code goes here
-
+const getSuggestions = async () => {
+  const wordQuery = inputField.value;
+  const endpoint = `${url}${queryParams}${wordQuery}`;
+  try {
+    const response = await fetch(endpoint, { cache: 'no-cache' });
+    if (response.ok) {
+      const jsonResponse = await response.json();
+      renderResponse(jsonResponse);
+      // return response.json();
+    }
+  } catch (error) {
+    console.log(error);
+  }
+};
 // Clear previous results and display results to webpage
 const displaySuggestions = (event) => {
   event.preventDefault();
