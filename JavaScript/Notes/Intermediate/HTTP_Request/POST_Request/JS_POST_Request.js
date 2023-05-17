@@ -15,7 +15,10 @@ The object passed to the fetch() function as its second argument contains two pr
 A successful POST request will return a response body, which will vary depending on how the API is set up.
 
 The rest of the request is identical to the GET request. A .then() method is chained to the fetch() function to check and return the response as well as throw an exception when a network error is encountered. A second .then() method is added on so that we can use the response however we may choose.
-Instructions
+
+**********************************
+***********Instructions***********
+**********************************
 
 Move on to the next exercise when you’re ready!
 
@@ -28,7 +31,10 @@ In the previous exercise, we walked through the boilerplate code for making a PO
 We will need a Rebrandly API key. To do this, read through the Rebrandly sign up guide to set up your API.
 
 Keep in mind, while it’s ok to use your API key in these exercises, you should not share your key with anyone (not even to ask a question in the forums)! Also, if you reset the exercise at any point, you will have to paste in your API key again at the top.
-Instructions
+
+**********************************
+***********Instructions***********
+**********************************
 1.
 
 Set the value of the apiKey variable to your Rebrandly API key as a string.
@@ -65,5 +71,54 @@ We will use this to connect to the API.
 In that same object that has the properties method and headers, add another property. The key is named body and the value will be data.
 
 We’ve now created an object containing all the information we need for our POST request!
+
+**************************
+3. Handling a POST Request
+**************************
+In the previous exercise, we set up the POST request by providing the endpoint and the object containing all the necessary information. In this exercise, we’ll handle the response.
+
+The request returns a Promise which will either be resolved or rejected. If the promise resolves, we can check and return that response. We will chain another .then() method and handle the returned JSON object and display the information to our webpage.
+
+Let’s implement this knowledge into our code!
+
+Remember that if you reset the exercise at any point, you will have to paste in your API key again at the top!
+
+**********************************
+***********Instructions***********
+**********************************
+1.
+
+Chain a .then() method at the end of the fetch() function we wrote in the previous exercise. As its first argument, pass an arrow function as a callback that takes response as its single parameter.
+2.
+
+Inside the callback function of the .then() method, use a conditional statement to check the value of the ok property of response. If it evaluates to a truthy value, return response.json().
+
+Run the code.
+3.
+
+Below the curly braces of the conditional statement, throw a new Error in case response.ok is falsy.
+
+The error message should be 'Request failed!'.
+4.
+
+As the second argument of the .then() method, add another arrow callback function that takes networkError as a single parameter.
+
+Log the networkError.message inside of the callback function.
+
+By adding this second callback, you’re safeguarding yourself in the rare event that the network returns an error!
+5.
+
+Chain another .then() method to the end of the previous .then() method.
+6.
+
+Pass in an anonymous arrow function as an argument for our second .then(). This callback function will take jsonResponse as its single parameter.
+
+Inside the callback function, call renderResponse() and pass in jsonResponse.
+
+The renderResponse() helper function can be viewed at public/helperFunctions.js.
+
+Run the code.
+
+Put in any URL in the text field, and then click the shorten button on the webpage. Make sure you include the entire link, including 'http://' or 'https://'.
 
 */
