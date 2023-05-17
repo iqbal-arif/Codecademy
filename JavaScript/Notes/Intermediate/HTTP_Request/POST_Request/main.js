@@ -1,5 +1,5 @@
 // Information to reach API
-const apiKey = 'c2753093c136450ba7db8d72dd29fcee';
+const apiKey = '<Your API Key>';
 const url = 'https://api.rebrandly.com/v1/links';
 
 // Some page elements
@@ -11,6 +11,7 @@ const responseField = document.querySelector('#responseField');
 const shortenUrl = () => {
   const urlToShorten = inputField.value;
   const data = JSON.stringify({ destination: urlToShorten });
+
   fetch(url, {
     method: 'POST',
     headers: {
@@ -18,7 +19,21 @@ const shortenUrl = () => {
       apikey: apiKey,
     },
     body: data,
-  });
+  })
+    .then(
+      (response) => {
+        if (response.ok) {
+          return response.json();
+        }
+        throw new Error('Request failed!');
+      },
+      (networkError) => {
+        console.log(networkError.message);
+      }
+    )
+    .then((jsonResponse) => {
+      renderResponse(jsonResponse);
+    });
 };
 
 // Clear page and call Asynchronous functions
