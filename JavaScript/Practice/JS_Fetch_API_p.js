@@ -78,6 +78,23 @@ The async…await syntax is used with the Fetch API to handle promises.
 
 In the example code, the async keyword is used to make the getSuggestions() function an async function. This means that the function will return a promise. The await keyword used before the fetch() call makes the code wait until the promise is resolved.
 
+*******************************
+6. JSON-Formatted Response Body
+*******************************
+*/
+fetch('url')
+  .then((response) => response.json())
+  .then((jsonResponse) => {
+    console.log(jsonResponse);
+  });
+/*
+The .json() method will resolve a returned promise to a JSON object, parsing the body text as JSON.
+
+In the example code, the .json() method is used on the response object which returns a promise to a JSON-formatted response body as jsonResponse.
+ 
+
+
+
 **********************************
 ***********Instructions***********
 **********************************
@@ -127,7 +144,7 @@ const shortenUrl = () => {
 
 /*
 Q3: What is one major difference between GET and POST requests? 
-A3: 
+A3: GET requests only request data from other websites whereas POST requests submit data to other sites.
 Not quite. Both GET and POST requests send and receive objects.
 
 Q4: Which of the following is the correct HTTP request method that can be used to retrieve information from a server?
@@ -150,3 +167,29 @@ const getData = async () => {
 /*
 A5: const response = await fetch('https://api-to-call.com/endpoint');
 */
+/*
+Q6: Complete the code to handle the success and failure of the Fetch request. If successful, return the response parsed as a JSON object and if failed, log the error message to the console.
+*/
+fetch('url').then(
+  (response) => {
+    return response.json();
+  },
+  (networkError) => console.log(networkError.message)
+);
+
+/*
+Q7: Complete the code to construct a POST request that contains an endpoint and information needed.
+*/
+fetch('https://api-to-call.com/endpoint', {
+  method:"POST",
+  body: JSON.stringify({id: "200"})
+}).then(response => {
+  if(response.ok)~__{
+    return response.json(); 
+  }
+    throw new Error('Request failed!');
+}, networkError => {
+  console.log(networkError.message);
+}).then(jsonResponse => {
+  console.log(jsonResponse);
+})
