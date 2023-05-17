@@ -78,5 +78,46 @@ The async…await syntax is used with the Fetch API to handle promises.
 
 In the example code, the async keyword is used to make the getSuggestions() function an async function. This means that the function will return a promise. The await keyword used before the fetch() call makes the code wait until the promise is resolved.
 
+**********************************
+***********Instructions***********
+**********************************
 
+Q1: Choose the answer that best describes the below code block.
+*/
+fetch('url')
+.then(
+  response => {
+    console.log(response);
+  },
+  rejection => {
+    console.error(rejection.message);
+  }
+);
+/*
+This code shows a basic fetch() request that contains a success and failure promise handler function.
+
+Q2: Complete the code to construct a Fetch API that specifies the following properties: method, headers, and body.
+*/
+const shortenUrl = () => {
+  const urlToShorten = inputField.value;
+  const data = JSON.stringify({destination: urlToShorten});
+  
+  fetch(url, {
+   method:'POST',
+   headers: {
+      'Content-type': 'application/json',
+      'apikey': apiKey
+    },
+    body: data
+  }).then(response => {
+    if (response.ok) {
+      return response.json();
+    }
+    throw new Error('Request failed!');
+  }, networkError => {
+    console.log(networkError.message)
+  }).then(jsonResponse => {
+    renderResponse(jsonResponse);
+  })
+}
 */
