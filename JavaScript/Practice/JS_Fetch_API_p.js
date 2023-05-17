@@ -84,12 +84,11 @@ In the example code, the async keyword is used to make the getSuggestions() func
 
 Q1: Choose the answer that best describes the below code block.
 */
-fetch('url')
-.then(
-  response => {
+fetch('url').then(
+  (response) => {
     console.log(response);
   },
-  rejection => {
+  (rejection) => {
     console.error(rejection.message);
   }
 );
@@ -100,24 +99,54 @@ Q2: Complete the code to construct a Fetch API that specifies the following prop
 */
 const shortenUrl = () => {
   const urlToShorten = inputField.value;
-  const data = JSON.stringify({destination: urlToShorten});
-  
+  const data = JSON.stringify({ destination: urlToShorten });
+
   fetch(url, {
-   method:'POST',
-   headers: {
+    method: 'POST',
+    headers: {
       'Content-type': 'application/json',
-      'apikey': apiKey
+      apikey: apiKey,
     },
-    body: data
-  }).then(response => {
+    body: data,
+  })
+    .then(
+      (response) => {
+        if (response.ok) {
+          return response.json();
+        }
+        throw new Error('Request failed!');
+      },
+      (networkError) => {
+        console.log(networkError.message);
+      }
+    )
+    .then((jsonResponse) => {
+      renderResponse(jsonResponse);
+    });
+};
+
+/*
+Q3: What is one major difference between GET and POST requests? 
+A3: 
+Not quite. Both GET and POST requests send and receive objects.
+
+Q4: Which of the following is the correct HTTP request method that can be used to retrieve information from a server?
+A4: GET
+
+Q5: What part of the program sends the fetch request?
+*/
+const getData = async () => {
+  try {
+    const response = await fetch('https://api-to-call.com/endpoint');
     if (response.ok) {
-      return response.json();
+      const jsonResponse = await response.json();
+      return jsonResponse;
     }
     throw new Error('Request failed!');
-  }, networkError => {
-    console.log(networkError.message)
-  }).then(jsonResponse => {
-    renderResponse(jsonResponse);
-  })
-}
+  } catch (error) {
+    console.log(error);
+  }
+};
+/*
+A5: const response = await fetch('https://api-to-call.com/endpoint');
 */
