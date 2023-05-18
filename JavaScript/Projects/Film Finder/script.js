@@ -10,6 +10,7 @@ const getGenres = async () => {
   const urlToFetch = tmdBaseUrl;
 
   const response = await fetch(urlToFetch.json());
+  console.log(response);
 };
 
 const getMovies = () => {
