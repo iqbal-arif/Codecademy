@@ -1,16 +1,27 @@
 const tmdbKey = 'e5c07e42c2ab928b4482636c59e352a3';
-const tmdbBaseUrl = 'https://api.themoviedb.org/3/movie/157336?';
+const tmdbBaseUrl = 'https://api.themoviedb.org/3';
 const playBtn = document.getElementById('playBtn');
 
 const getGenres = async () => {
-  const genreRequestEndpoint =
-    'https://api.themoviedb.org/3/genre/movie/list?language=en';
+  const genreRequestEndpoint = 'genre/movie/list';
+  const queryString = `?key=value`;
+  const requestParams = queryString;
+  const urlToFetch = `${tmdbBaseUrl}${genreRequestEndpoint}${requestParams}`;
 
-  const requestParams = tmdbKey;
-  const urlToFetch = tmdBaseUrl;
-
-  const response = await fetch(urlToFetch.json());
-  console.log(response);
+  try {
+  } catch (error) {
+    console.log(error);
+  }
+  const response = await fetch(urlToFetch)
+    .then(
+      (response) => {
+        return response.json();
+      },
+      (networkError) => console.log(networkError.message)
+    )
+    .then((jsonResponse) => {
+      console.log(jsonResponse);
+    });
 };
 
 const getMovies = () => {
