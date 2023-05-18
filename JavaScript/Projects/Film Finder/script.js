@@ -1,8 +1,16 @@
-const tmdbKey = '';
-const tmdbBaseUrl = '';
+const tmdbKey = 'e5c07e42c2ab928b4482636c59e352a3';
+const tmdbBaseUrl = 'https://api.themoviedb.org/3/movie/157336?';
 const playBtn = document.getElementById('playBtn');
 
-const getGenres = () => {};
+const getGenres = async () => {
+  const genreRequestEndpoint =
+    'https://api.themoviedb.org/3/genre/movie/list?language=en';
+
+  const requestParams = tmdbKey;
+  const urlToFetch = tmdBaseUrl;
+
+  const response = await fetch(urlToFetch.json());
+};
 
 const getMovies = () => {
   const selectedGenre = getSelectedGenre();
