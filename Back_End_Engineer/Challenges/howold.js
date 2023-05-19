@@ -27,19 +27,22 @@ const howOld = (year = 0, age = 0) => {
   // let calculatedYear = currentYear - year;
   // let calculatedAge;
   let calculatedYear = year - currentYear;
-  console.log(calculatedYear);
+  console.log(year);
   let calculatedAge = age + calculatedYear;
   console.log(calculatedAge);
-  if (currentYear < calculatedYear) {
-    console.log(calculatedYear);
-    console.log(calculatedAge);
 
-    console.log(`You will be ${calculatedAge} in the year ${calculatedYear}`);
-  } else if (calculatedAge < 0) {
-    return `The ${year} was ${calculatedAge} years before you were born`;
-  } else if (year < currentYear && age > 0) {
-    return `You were ${calculatedAge} in the giveYear ${year}`;
-  }
+  year > calculatedYear
+    ? console.log(`You will be ${calculatedAge} in the year ${calculatedYear}`)
+    : console.log('This is working');
+
+  // if (currentYear < calculatedYear) {
+  //   console.log(calculatedYear);
+  //   console.log(calculatedAge);
+  // } else if (calculatedAge < 0) {
+  //   return `The ${year} was ${calculatedAge} years before you were born`;
+  // } else if (year < currentYear && age > 0) {
+  //   return `You were ${calculatedAge} in the giveYear ${year}`;
+  // }
   // return;
   // console.log(calculatedYear);
   // console.log(currentYear);
@@ -47,4 +50,4 @@ const howOld = (year = 0, age = 0) => {
 };
 
 // console.log(howOld(2050, 17));
-howOld(2050, 17);
+howOld(2050, 1);
