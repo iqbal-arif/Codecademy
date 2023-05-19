@@ -1,6 +1,6 @@
 const tmdbKey = 'e5c07e42c2ab928b4482636c59e352a3';
 const tmdbBaseUrl = 'https://api.themoviedb.org/3';
-const playBtn = document.getElementById('playBtn');
+// const playBtn = document.getElementById('playBtn');
 
 const getGenres = async () => {
   const genreRequestEndpoint = 'genre/movie/list';
@@ -38,5 +38,6 @@ const showRandomMovie = () => {
   }
 };
 
-getGenres().then(populateGenreDropdown);
-playBtn.onclick = showRandomMovie;
+getGenres();
+// getGenres().then(populateGenreDropdown);
+// playBtn.onclick = showRandomMovie;
