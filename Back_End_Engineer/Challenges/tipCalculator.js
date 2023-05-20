@@ -42,7 +42,7 @@ const tipCalculator = (quality, total) => {
 console.log(tipCalculator('good', 100)); //should return 20
 
 // We encourage you to add more function calls of your own to test your code!
-console.log(tipCalculator('excellent', 100)); //should return 20
-console.log(tipCalculator('ok', 100)); //should return 20
-console.log(tipCalculator('bad', 100)); //should return 20
-console.log(tipCalculator('excellent', 100)); //should return 20
+console.log(tipCalculator('excellent', 200));
+console.log(tipCalculator('ok', 250));
+console.log(tipCalculator('bad', 1000));
+console.log(tipCalculator('maybe', 70));
