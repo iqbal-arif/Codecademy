@@ -34,13 +34,17 @@ const howOld = (year = 0, age = 0) => {
   // year is future
   age > newAge
     ? console.log(`You will be ${calculatedAge} in the year ${calculatedYear}`)
-    : console.log(c);
+    : console.log('Try again');
 
   // year is before they were born
-  age < newAge
+  age <= 0
     ? console.log(
         `The year ${calculatedAge} was ${calculatedYear} years before you were born`
       )
+    : console.log('Try again');
+  // year is NOT before they were born
+  age < newAge
+    ? console.log(`You were ${calculatedAge} in the year ${calculatedYear}`)
     : console.log('Try again');
 
   // if (currentYear < calculatedYear) {
