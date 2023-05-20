@@ -16,3 +16,10 @@ Any other value of x, including negative numbers, return the string 'The number 
 Feel free to test out your code below the function definition.
 
 */
+const numberDigits = (x) => {};
+y = -235;
+newNum = y.toString();
+const r = newNum.includes('-');
+const numArray = [];
+numArray.push(y);
+console.log(r);
