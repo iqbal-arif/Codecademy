@@ -44,6 +44,6 @@ console.log(toEmoticon('whatever'));
 // We encourage you to add more function calls of your own to test your code!
 console.log(toEmoticon('shrug'));
 console.log(toEmoticon('smiley face'));
-console.log(toEmoticon('smiley face'));
+console.log(toEmoticon('frowny face'));
 console.log(toEmoticon('winky face'));
 console.log(toEmoticon('heart'));
