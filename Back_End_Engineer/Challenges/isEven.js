@@ -6,4 +6,4 @@ const isEven = (num) => {
   return Number.isInteger(num / 2) ? true : false;
 };
 
-console.log(isEven(2));
+console.log(isEven(206));
