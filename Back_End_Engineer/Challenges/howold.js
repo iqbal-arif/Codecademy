@@ -37,29 +37,29 @@ const howOld = (year = 0, age = 0) => {
     : console.log(`You were ${calculatedAge} in the year ${calculatedYear}`);
 
   // year is before they were born
-  calculatedAge <= 0
-    ? console.log(
-        `The year ${calculatedAge} was ${calculatedYear} years before you were born`
-      )
-    : console.log('Try again');
-  // year is NOT before they were born
-  // calculatedAge < age
-  //   ? console.log(`You were ${calculatedAge} in the year ${calculatedYear}`)
-  //   : console.log('Try again');
+  if (calculatedAge <= 0) {
+    console.log(
+      `The year ${calculatedAge} was ${calculatedYear} years before you were born`
+    );
 
-  // if (currentYear < calculatedYear) {
-  //   console.log(calculatedYear);
-  //   console.log(calculatedAge);
-  // } else if (calculatedAge < 0) {
-  //   return `The ${year} was ${calculatedAge} years before you were born`;
-  // } else if (year < currentYear && age > 0) {
-  //   return `You were ${calculatedAge} in the giveYear ${year}`;
-  // }
-  // return;
-  // console.log(calculatedYear);
-  // console.log(currentYear);
-  // console.log(calculatedAge);
+    // year is NOT before they were born
+    // calculatedAge < age
+    //   ? console.log(`You were ${calculatedAge} in the year ${calculatedYear}`)
+    //   : console.log('Try again');
+
+    // if (currentYear < calculatedYear) {
+    //   console.log(calculatedYear);
+    //   console.log(calculatedAge);
+    // } else if (calculatedAge < 0) {
+    //   return `The ${year} was ${calculatedAge} years before you were born`;
+    // } else if (year < currentYear && age > 0) {
+    //   return `You were ${calculatedAge} in the giveYear ${year}`;
+    // }
+    // return;
+    // console.log(calculatedYear);
+    // console.log(currentYear);
+    // console.log(calculatedAge);
+  }
 };
-
 // console.log(howOld(2050, 17));
 howOld(2050, 47);
