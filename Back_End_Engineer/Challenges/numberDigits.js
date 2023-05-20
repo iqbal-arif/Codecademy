@@ -24,15 +24,15 @@ const numberDigits = (num) => {
     return `One digit: ${num}`;
   } else if (digitCount.length === 2) {
     return `Two digits: ${num}`;
-  } else if (numIncludes) {
+  } else if (numIncludes === true) {
     return `The number is : ${num}`;
   }
 };
-// y = -235;
-// newNum = y.toString();
-// const r = newNum.includes('-');
+y = -235;
+newNum = y.toString();
+const r = newNum.includes('-');
 // const numArray = [];
 // numArray.push(y);
-// console.log(r);
+console.log(r);
 
-console.log(numberDigits(2));
+console.log(numberDigits(-2));
