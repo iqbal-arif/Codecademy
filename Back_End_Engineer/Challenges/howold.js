@@ -35,8 +35,8 @@ const howOld = (age, year) => {
     const priorAge = ageYear - year;
     return `The year ${year} was ${priorAge} years before you were born`;
   } else if (newAge < age) {
-    const yearDifference = currentYear - year;
-    return `You were ${newAge} in the year ${yearDifference}`;
+    // const yearDifference = currentYear - year;
+    return `You were ${newAge} in the year ${year}`;
   }
 };
 console.log(howOld(47, 2000));
