@@ -16,7 +16,18 @@ Any other value of x, including negative numbers, return the string 'The number 
 Feel free to test out your code below the function definition.
 
 */
-const numberDigits = (x) => {};
+const numberDigits = (num) => {
+  const digitCount = num.toString().length;
+  const numIncludes = digitCount.includes('-');
+
+  if (digitCount === 1) {
+    return `One digit: ${num}`;
+  } else if (digitCount === 2) {
+    return `Two digits: ${num}`;
+  } else if (numIncludes) {
+    return `The number is : ${num}`;
+  }
+};
 y = -235;
 newNum = y.toString();
 const r = newNum.includes('-');
