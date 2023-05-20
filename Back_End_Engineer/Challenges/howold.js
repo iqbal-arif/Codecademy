@@ -18,52 +18,7 @@ Write a function, howOld(), that has two number parameters, age and giveYear, an
     'You were [calculated age] in the year [year passed in]'
 */
 
-//Current Year & Month
-const currentDate = new Date(2023, 02);
-const currentYear = currentDate.getFullYear();
-// console.log(currentYear);
-// console.log(currentYear)
-const howOld = (year = 0, age = 0) => {
-  // let calculatedYear = currentYear - year;
-  // let calculatedAge;
-  let calculatedYear = year - currentYear;
-  console.log(year);
-  let calculatedAge = age + calculatedYear;
-  console.log(calculatedAge);
-  const newAge = age + currentYear;
-  // year is future
-  if (calculatedAge > age) {
-    return `You will be ${calculatedAge} in the year ${calculatedYear}`;
-  } else if (calculatedAge < age) {
-    return `You were ${calculatedAge} in the year ${calculatedYear}`;
-  } else if (calculatedAge <= 0) {
-    return `The year ${calculatedAge} was ${calculatedYear} years before you were born`;
-  }
-};
-
-// year is before they were born
-
-// year is NOT before they were born
-// calculatedAge < age
-//   ? console.log(`You were ${calculatedAge} in the year ${calculatedYear}`)
-//   : console.log('Try again');
-
-// if (currentYear < calculatedYear) {
-//   console.log(calculatedYear);
-//   console.log(calculatedAge);
-// } else if (calculatedAge < 0) {
-//   return `The ${year} was ${calculatedAge} years before you were born`;
-// } else if (year < currentYear && age > 0) {
-//   return `You were ${calculatedAge} in the giveYear ${year}`;
-// }
-// return;
-// console.log(calculatedYear);
-// console.log(currentYear);
-// console.log(calculatedAge);
-// console.log(howOld(2050, 17));
-console.log(howOld(2050, 47));
-
-// Write your function here:
+/// Write your function here:
 //Current Year & Month
 
 const howOld = (age, year) => {
@@ -75,10 +30,13 @@ const howOld = (age, year) => {
   if (newAge >= age) {
     return `You will be ${newAge} in the year ${year}`;
   } else if (newAge < 0) {
-    let yearDifference = currentYear - year;
-    return `The year ${year} was ${yearDifference} years before you were born`;
+    const yearDifference = currentYear - year;
+    const ageYear = currentYear - age;
+    const priorAge = ageYear - year;
+    return `The year ${year} was ${priorAge} years before you were born`;
   } else if (newAge < age) {
+    const yearDifference = currentYear - year;
     return `You were ${newAge} in the year ${yearDifference}`;
   }
 };
-console.log(howOld(47, 1969));
+console.log(howOld(47, 2000));
