@@ -17,20 +17,22 @@ Feel free to test out your code below the function definition.
 
 */
 const numberDigits = (num) => {
-  const digitCount = num.toString().length;
+  const digitCount = num.toString();
   const numIncludes = digitCount.includes('-');
 
-  if (digitCount === 1) {
+  if (digitCount.length === 1) {
     return `One digit: ${num}`;
-  } else if (digitCount === 2) {
+  } else if (digitCount.length === 2) {
     return `Two digits: ${num}`;
   } else if (numIncludes) {
     return `The number is : ${num}`;
   }
 };
-y = -235;
-newNum = y.toString();
-const r = newNum.includes('-');
-const numArray = [];
-numArray.push(y);
-console.log(r);
+// y = -235;
+// newNum = y.toString();
+// const r = newNum.includes('-');
+// const numArray = [];
+// numArray.push(y);
+// console.log(r);
+
+console.log(numberDigits(2));
