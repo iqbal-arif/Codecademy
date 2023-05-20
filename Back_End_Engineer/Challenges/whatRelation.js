@@ -42,13 +42,13 @@ const whatRelation = (percentSharedDNA) => {
   if (percentSharedDNA >= 34) {
     return 'You are likely grandparent and grandchild, aunt/uncle and niece/nephew, or half siblings.';
   }
-  if (percentSharedDNA >= 13) {
+  if (percentSharedDNA >= 6) {
     return 'You are likely 1st cousins.';
   }
-  if (percentSharedDNA >= 5) {
+  if (percentSharedDNA >= 3) {
     return 'You are likely 2nd cousins.';
   }
-  if (percentSharedDNA >= 2) {
+  if (percentSharedDNA >= 1) {
     return 'You are likely 3rd cousins';
   }
   if (percentSharedDNA >= 0) {
