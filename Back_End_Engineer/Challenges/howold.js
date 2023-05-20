@@ -62,4 +62,4 @@ const howOld = (year = 0, age = 0) => {
   }
 };
 // console.log(howOld(2050, 17));
-howOld(1950, 47);
+howOld(2050, 47);
