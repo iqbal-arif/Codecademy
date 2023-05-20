@@ -62,3 +62,23 @@ const howOld = (year = 0, age = 0) => {
 // console.log(calculatedAge);
 // console.log(howOld(2050, 17));
 console.log(howOld(2050, 47));
+
+// Write your function here:
+//Current Year & Month
+
+const howOld = (age, year) => {
+  const currentDate = new Date(2023, 02);
+  let currentYear = currentDate.getFullYear();
+  let yearDifference = year - currentYear;
+  let newAge = age + yearDifference;
+  // year is future
+  if (newAge >= age) {
+    return `You will be ${newAge} in the year ${year}`;
+  } else if (newAge < 0) {
+    let yearDifference = currentYear - year;
+    return `The year ${year} was ${yearDifference} years before you were born`;
+  } else if (newAge < age) {
+    return `You were ${newAge} in the year ${yearDifference}`;
+  }
+};
+console.log(howOld(47, 1969));
