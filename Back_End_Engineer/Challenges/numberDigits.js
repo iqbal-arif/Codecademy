@@ -20,19 +20,19 @@ const numberDigits = (num) => {
   const digitCount = num.toString();
   const numIncludes = digitCount.includes('-');
 
-  if (numIncludes === true || digitCount === 3) {
-    return `The number is : ${num}`;
+  if (numIncludes === true) {
+    return `The number is: ${num}`;
   } else if (digitCount.length === 1) {
     return `One digit: ${num}`;
   } else if (digitCount.length === 2) {
     return `Two digits: ${num}`;
+  } else if (digitCount.length === 3) {
+    return `The number is: ${num}`;
   }
 };
 y = -235;
 newNum = y.toString();
 const r = newNum.includes('-');
-// const numArray = [];
-// numArray.push(y);
 console.log(r);
 
-console.log(numberDigits(1));
+console.log(numberDigits(100));
