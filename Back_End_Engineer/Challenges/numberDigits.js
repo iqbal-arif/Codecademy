@@ -20,12 +20,12 @@ const numberDigits = (num) => {
   const digitCount = num.toString();
   const numIncludes = digitCount.includes('-');
 
-  if (digitCount.length === 1) {
+  if (numIncludes === true) {
+    return `The number is : ${num}`;
+  } else if (digitCount.length === 1) {
     return `One digit: ${num}`;
   } else if (digitCount.length === 2) {
     return `Two digits: ${num}`;
-  } else if (numIncludes === true) {
-    return `The number is : ${num}`;
   }
 };
 y = -235;
@@ -35,4 +35,4 @@ const r = newNum.includes('-');
 // numArray.push(y);
 console.log(r);
 
-console.log(numberDigits(-2));
+console.log(numberDigits(1));
