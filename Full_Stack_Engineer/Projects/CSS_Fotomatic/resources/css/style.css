@@ -1,5 +1,9 @@
 /* Universal Styles */
 
+/* * {
+  color: #4a4a;
+} */
+
 html {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -28,6 +32,10 @@ html {
   display: block;
 }
 
+.banner {
+  border-radius: 14px;
+}
+
 @media only screen and (max-width: 760px) {
   .main-content {
     top: 2.5625rem;
@@ -49,13 +57,22 @@ header .content {
   align-items: center;
   padding: 1.875rem;
 }
-
+/* Logo */
 header .logo {
   flex: 1;
+  font-size: 24px;
+  margin: 0px 30px;
+  font-family: 'Roboto-Mono-Regular', sans-serif;
+
+  /* align-content: space-between; */
 }
 
 header nav ul {
   display: flex;
+  color: #4a4a4a;
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: 'Roboto-Mono-Regular', sans-serif;
 }
 
 nav li {
