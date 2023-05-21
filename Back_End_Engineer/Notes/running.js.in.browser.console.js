@@ -74,25 +74,34 @@ Because the function declaration itself does not evaluate to any value, undefine
 
 When we call the addTwo() function, Evaluating... is first outputted to the console from our console.log() call. Then, the function’s return value—which is what the function call evaluates to—will get printed after the < arrow:
 */
-calling_function
+function addTwo(n){
+    console.log("Evaluting....")
+    return n+2;
+}
+addTwo(3)
 /*
 2.3 Example #3: Interacting with the page’s DOM
 
 As we’ve seen so far, we can run JS in the console completely independent of the page we have opened in the browser. But what makes the console particularly useful is that we could also directly inspect and modify the page’s DOM if we wanted to. Let’s look at a simple example using a blank webpage.
 
 To bring up a blank page, we can enter about:blank into the browser’s address bar. We can confirm that there is no HTML inside the <body> element of the page by checking document.body.innerHTML in the console:
-
-inspecting_body
-
+*/
+console.log(document.body.innerHTML)
+/*
 We can also write JS code to modify the page’s DOM, such as adding a heading element inside the body, as seen below. Once we run the following code, the change will immediately be reflected on the page opened in the browser:
+*/
 
-manipulating_body
+console.log(document.body.innerHTML=<h1>Adding a heading using JS</h1>)
 
+/*
 The console also recognizes $() as an alias for document.querySelector() to select an element. This shorthand resembles jQuery syntax and helps make manipulating the DOM through the console even more efficient:
+*/
+console.log(document.body.innerHTML=<h1>Adding a heading using JS</h1>)
+$("body").style.color = "blue"
 
-aliasing_dom_selector
-
+/*
 In the code above, we used the shorthand $() syntax to select the <body> element and set the color property to "blue". This statement returns the value "blue" to the console, and the color change is immediately reflected on the webpage.
-Conclusion
+
+2.4 Conclusion
 
 As we can see, the console provides a quick and convenient way of running any JS code in the browser, whether independent of or directly related to the page content. If any edits are made to the page, the changes are temporary and will be gone upon refreshing, which works great for testing purposes when you don’t want to modify the actual code. Combined with the other developer tools offered by browsers, we can see how the console can quickly become an essential part of a developer’s toolbox!
