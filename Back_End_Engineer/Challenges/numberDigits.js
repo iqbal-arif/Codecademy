@@ -20,7 +20,7 @@ const numberDigits = (num) => {
   const digitCount = num.toString();
   const numIncludes = digitCount.includes('-');
 
-  if (numIncludes === true) {
+  if (numIncludes === true || digitCount === 3) {
     return `The number is : ${num}`;
   } else if (digitCount.length === 1) {
     return `One digit: ${num}`;
