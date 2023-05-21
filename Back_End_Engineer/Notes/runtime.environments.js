@@ -16,7 +16,7 @@ A runtime environment is where your program will be executed. It determines what
 ***********************************
 The most common place where JavaScript code is executed is in a browser. For example, using any text editor, you could create a file on your own computer called my_website.html and put the following HTML code inside:
 */
-<!-- my_website.html -->
+/*<!-- my_website.html -->*/
 <html>
   <body>
     <h1> My Website </h1>
@@ -52,7 +52,7 @@ process is an object containing data relating to the JavaScript file being execu
 
 To execute the JavaScript code in this file, first make sure that you have set up Node on your computer. Then, open up a terminal and run the following command:
 */
-$ node my-app.js
+/*$node my-app.js*/
 /path/to/working/directory
 /*
 The node command tells your computer to execute the my-app.js file in the Node environment. You can also use the node command without a file argument to open up the Node Read-Eval-Print-Loop (REPL):
