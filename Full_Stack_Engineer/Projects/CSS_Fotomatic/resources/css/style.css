@@ -22,8 +22,9 @@ html {
   border-radius: 4px;
   background-color: #4a4a4a;
   color: white;
-  margin: 0px, 80px;
-  margin-bottom: 56px;
+  /* padding-top: 120px; */
+  /* margin: 0px, 100px; */
+  /* margin-top: 20px; */
 }
 
 .image-container {
