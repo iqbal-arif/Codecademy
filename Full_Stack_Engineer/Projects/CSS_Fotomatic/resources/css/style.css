@@ -172,9 +172,13 @@ header .mobile {
 }
 
 #sign-up-cta .striking {
+  font-size: 50px;
   font-family: 'Rubik', sans-serif;
   padding-bottom: 0.75rem;
 }
+/* #sign-up-cta .email {
+  font-size: 20px;
+} */
 
 #sign-up-cta .button {
   margin-top: 1.625rem;
