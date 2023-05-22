@@ -171,7 +171,6 @@ header .mobile {
 
 #sign-up-cta .cursive {
   font-family: 'Damion', cursive;
-  /* margin-top: 2rem; */
 }
 
 #sign-up-cta .striking {
@@ -179,9 +178,6 @@ header .mobile {
   font-family: 'Rubik', sans-serif;
   padding-bottom: 0.75rem;
 }
-/* #sign-up-cta .email {
-  font-size: 20px;
-} */
 
 #sign-up-cta .button {
   margin-top: 1.625rem;
@@ -239,6 +235,7 @@ header .mobile {
 
 #features-section {
   display: flex;
+  height: 635px;
   justify-content: space-between;
   padding: 4rem 5%;
   background-color: #f3f3f3;
