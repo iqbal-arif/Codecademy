@@ -69,3 +69,33 @@ Try out a prompt like the following:
 Write an email to a prospective customer for the Hyperlux 3000.
 
 ChatGPT has the benefits of being able to handle many simultaneous interactions, 24/7 availability, and decreased cost compared to human calls. These benefits have the potential to help businesses quickly scale their sales efforts without a large team.
+
+5. Programming
+
+---
+
+ChatGPT can also be utilized in programming tasks such as writing code snippets, explaining code, and debugging.
+
+While ChatGPT isn’t an expert software engineer, it can handle basic coding tasks. This allows it to be useful in quickly generating simple code. Consider a prompt like the following:
+
+Write a code snippet in JavaScript that validates a form input for a valid email address.
+
+ChatGPT can also often explain what code is doing. Throwing existing code into ChatGPT can help clarify uncertainties or even generate documentation. Try a prompt like:
+
+Explain:
+
+<Insert Code Here>
+
+ChatGPT also works as a debugger. Providing exceptions, error messages, or faulty code can result in ChatGPT explaining a problem or providing a solution. Use a prompt such as:
+
+This function:
+
+<Insert Code Here>
+ 
+Is generating this error message:
+ 
+<Insert error message>
+ 
+Explain why and fix the problem.
+
+It’s important to keep in mind that ChatGPT isn’t always correct, but it can be a useful tool to point us in the right direction. It’s always important to validate ChatGPT’s outputs before integrating them into a product.
