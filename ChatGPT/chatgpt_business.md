@@ -99,3 +99,17 @@ Is generating this error message:
 Explain why and fix the problem.
 
 It’s important to keep in mind that ChatGPT isn’t always correct, but it can be a useful tool to point us in the right direction. It’s always important to validate ChatGPT’s outputs before integrating them into a product.
+
+6. Review
+
+---
+
+In this lesson, we discussed ways in which ChatGPT could be integrated into business operations. Specifically, we addressed four primary fields where ChatGPT can help:
+
+    Customer Service: Answer common customer service questions
+    Content Generation: Create content such as blog and social media posts
+    Data Analysis: ChatGPT can analyze the sentiment and summarize incoming customer data
+    Sales: ChatGPT can reach out and generate leads in a sales funnel
+    Programming: ChatGPT can write useful code snippets and provide code explanations
+
+While these are powerful uses, they are not the only ways ChatGPT can be used. ChatGPT is still new, and people and businesses are still discovering new ways to integrate this technology into their work. Over the next several years, the uses for ChatGPT will continue to be developed.
