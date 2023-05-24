@@ -46,3 +46,17 @@ Review
 In this lesson, we’ve discussed what ChatGPT is and how it can be used. ChatGPT is a powerful AI language model that has a wide range of potential applications. It was created using a complex form of machine learning and trained using hundreds of billions of words.
 
 Through this training, it is able to generate realistic responses to questions and conversations. These responses are able to serve useful purposes in both business and everyday life such as content creation and customer service. Though they often need some editing to get to a final state, ChatGPT responses can help people and businesses alike.
+
+## Review Using ChatGPT in EveryDay Life
+
+---
+
+In this lesson, we’ve covered some of the ways that ChatGPT can be used in everyday life. Let’s recap:
+
+    ChatGPT can be useful for casual conversation (it is a chatbot, after all).
+    ChatGPT can answer questions on a variety of topics.
+    ChatGPT is able to process, summarize, and answer questions about custom text.
+    ChatGPT can assist in writing, including story, setting, prompt, and character generation.
+    ChatGPT can be used for fun!
+
+ChatGPT is a versatile tool that can be used in many different ways beyond what was covered here. Don’t be afraid to try out prompts and see what it can do! Just remember, it is just an AI generating answers based on probabilities, which means you should always proofread and double-check the answer it gives you.
