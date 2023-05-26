@@ -23,3 +23,19 @@ ChatGPT can assist programmers with tasks such as:
     Providing code snippets
     Identifying errors
     Providing code explanations.
+
+4. ChatGPT for Social Media
+
+---
+
+ChatGPT’s content generation capabilities can be used to generate blogs or social media posts.
+
+5. ChatGPT for Data Analysis
+
+ChatGPT is able to provide insights and summaries on large amounts of customer information.
+
+Consider a prompt like:
+
+What are some main takeaways from the following reviews:
+
+<Insert Reviews Here>
