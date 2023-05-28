@@ -51,6 +51,8 @@ The use of AI and automation in business is a complex topic that has caused deba
 
 3. Art
 
+---
+
 In recent years, AI-powered products have been able to generate artwork that can match the skills of many digital artists. However, do these products match other artists too closely?
 
 Consider the following scenario:
@@ -68,3 +70,29 @@ Stories like this are popping up within the digital art world. While AI tools ar
 AI-generated art can also take work away from human artists. Prompts can generate in seconds what might take an artist days to produce. Artists are finding their work taken away by machines that trained on their own art.
 
 These machines allow widespread cheap access to the generation of custom digital art. Anyone is able to quickly produce beautiful images of whatever they can put into words. Do these benefits outweigh the costs?
+
+4. Resume Screening and Discrimination
+
+---
+
+People tend to have biases that impact the decisions they make. With a machine in charge, will all decisions be fair?
+
+Unfortunately, AI systems are subject to many of the same biases that humans are. The primary issue is that AIs are trained and programmed by biased humans.
+
+One notable case of AI discrimination occurred in 2018 when Amazon developed an AI-powered hiring tool that used machine learning algorithms to screen resumes and identify the best candidates. The tool was designed to analyze resumes, score them, and identify the top candidates for open positions.
+
+As a part of its training, the tool looked at resumes of people who were hired at Amazon over a ten-year period. Its job was to find the characteristics of people who get hired and recommend people like that to Amazon’s recruiters.
+
+Tech companies often hire a lot more men than women. Because of this, the AI learned that a successful resume was most often one of a man.
+
+As a result, the tool learned to prefer male candidates. It downgraded resumes that contained words or phrases more common to women, such as “women’s” or “female”. Candidates who went to all-female colleges were penalized as well.
+
+Amazon discovered the bias during a test of the tool and subsequently scrapped the project.
+
+This case illustrates the way in which historical bias in data can influence a new AI system. Similar problems have been found in loan systems, other resume screeners, and insurance programs.
+
+AI will perpetuate bias and discrimination when the data used to train the algorithms is not diverse and representative of the population as a whole.
+
+These biases can be difficult to detect because the AI systems do not explain their decision-making process, and they simply assign a score. This raises questions about how to ensure that AI systems are transparent and explainable, and how to ensure that they are not perpetuating bias and discrimination.
+
+Creating AIs that avoid bias is an unsolved and difficult problem. Many of our datasets, such as the internet and literature, contain many harmful biases when broad patterns are applied to groups of people. Researchers continue to find ways to try and account for bias through practices such as using diverse datasets and thorough testing.
