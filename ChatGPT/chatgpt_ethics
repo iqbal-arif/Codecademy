@@ -96,3 +96,23 @@ AI will perpetuate bias and discrimination when the data used to train the algor
 These biases can be difficult to detect because the AI systems do not explain their decision-making process, and they simply assign a score. This raises questions about how to ensure that AI systems are transparent and explainable, and how to ensure that they are not perpetuating bias and discrimination.
 
 Creating AIs that avoid bias is an unsolved and difficult problem. Many of our datasets, such as the internet and literature, contain many harmful biases when broad patterns are applied to groups of people. Researchers continue to find ways to try and account for bias through practices such as using diverse datasets and thorough testing.
+
+5. Autonomous Driving
+
+---
+
+We are living in a world where fully autonomous cars are being tested on the road. Not having to drive ourselves has the potential to be very convenient and safe, saving us time and attention. However, self-driving cars have their own set of complex ethical problems. Let’s explore some of the issues that self-driving car manufacturers and consumers need to consider.
+
+The first issue is accountability: when something goes wrong in an autonomous system and someone gets hurt, who is held accountable? Autonomous cars rely on machine learning algorithms to make decisions and operate on the road. However, in the event of an accident, it can be difficult to assign responsibility to the car or its manufacturer. Do laws punishing dangerous drivers still apply to an artificial system?
+
+Imagine the following situation:
+
+    An autonomous car is driving down the road when suddenly, some pedestrians cross the road in front of it. The car’s sensors detect the pedestrians, but due to the speed of the car and the proximity of the pedestrians, it is unable to stop in time. The car’s algorithm must make a decision: should it continue straight and hit the group of pedestrians, or should it swerve to avoid them, potentially causing harm to the car’s passengers or other people in the vicinity?
+
+Should the car prioritize the passengers, who own and pay for the vehicle? Or should it more heavily weigh the lives of pedestrians? Should the number of pedestrians matter? What if they are children? How should the AI choose, and how will it bear responsibility for that choice? These kinds of questions should be asked when designing systems that operate cars.
+
+Those who drive for a living will also be affected by autonomous cars. Truck drivers, delivery drivers, taxi drivers, and more could see their careers disrupted by the use of autonomous vehicles. Like other forms of automation, self-driving cars could eliminate jobs and make smaller companies unable to compete.
+
+Autonomous cars also raise concerns about privacy. Autonomous cars generate large amounts of data, including location data, driving behavior, and personal information about passengers. It is important to ensure that this data is collected, used, and shared in an ethical and responsible manner.
+
+While self-driving cars may seem like a futuristic luxury, their development raise ethical considerations related to accountability, safety, and social impact. It is important for policymakers, industry leaders, and researchers to prioritize these ethical considerations and to work together to ensure that the deployment of autonomous cars is ethical, responsible, and beneficial to society.
