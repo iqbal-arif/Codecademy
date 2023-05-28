@@ -116,3 +116,31 @@ Those who drive for a living will also be affected by autonomous cars. Truck dri
 Autonomous cars also raise concerns about privacy. Autonomous cars generate large amounts of data, including location data, driving behavior, and personal information about passengers. It is important to ensure that this data is collected, used, and shared in an ethical and responsible manner.
 
 While self-driving cars may seem like a futuristic luxury, their development raise ethical considerations related to accountability, safety, and social impact. It is important for policymakers, industry leaders, and researchers to prioritize these ethical considerations and to work together to ensure that the deployment of autonomous cars is ethical, responsible, and beneficial to society.
+
+6. Autonomous Weapons
+
+---
+
+Many technical advancements start from, or make their way to, the military. This is the case with artificial intelligence. Over the last few decades, the issue of autonomous weapons has developed.
+
+Autonomous weapons use artificial intelligence to identify and engage targets without human control. Drones in combat today typically have a remote pilot controlling it. An autonomous version of this would have no human pilot, controlled solely by the AI. Completely autonomous weapons are in development but not confirmed to be in use yet (though there have been reports of their use).
+
+Supporters of AI-powered weapon systems feel that they will be able to more accurately identify and kill a combatant than a human. They believe the use of these weapons could actually lower casualties of war.
+
+However, having completely AI-controlled weapons is deeply controversial due to issues such as:
+
+    Legality
+    Accountability
+    Safety
+
+There are some legal issues involving the use of autonomous weapons. For example, it is a war crime to deploy autonomous weapons that cannot distinguish between civilians and combatants. An AI system would therefore need to be able to consistently identify who is a combatant. Given that modern wars often take place in urban areas, this is no easy task.
+
+Consider the following scenario:
+
+    A defense company has released a completely AI-powered drone for use in the military. In 99.9% of situations, it is able to correctly identify, engage, and kill combatants in urban environments without civilian casualties. This is far more accurate than using human soldiers. The US government deploys the drones in many different battles. However, after 100 battles, the drone misidentifies a target and kills a civilian.
+
+Who is accountable when an autonomous weapon makes a mistake and kills a civilian? Is it the company, the government, or the engineer who wrote the code? Without a person making the decision to fire, accountability becomes more complicated. Who should be held responsible, and what should the consequences be?
+
+The issue of accountability applies to wider AI as well. When third-party AI system makes a costly mistake, it is difficult to assign blame. It is also much more difficult to find out why the mistake happened. It is hard to examine an AI system and determine why a particular decision was made. These issues need to be carefully considered when creating AI systems, especially those that are responsible for human life.
+
+It’s important to remember that AI aren’t human, and they make decisions based on their code and training - it can be difficult for them to understand nuance, human emotion, and international relations. It’s difficult to create laws to protect us from the dangers of AI.
