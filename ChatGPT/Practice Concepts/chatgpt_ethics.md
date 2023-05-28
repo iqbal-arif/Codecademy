@@ -24,3 +24,16 @@ AI has improved its ability to create art by training on art produced by humans.
 ---
 
 AI often replicates harmful biases found in its training data. Biases in AI can often be difficult to detect and eliminate.
+
+/**\*\*\*\***Practice****\*\*****/
+
+1. Replacing labor with machines or software is known as what?
+   A. Automation
+
+2. Using artificial intelligence to identify and attack a target is an example of what?
+   A. Autonomous weapons
+
+3. Match the term to its possible consequence:
+   A. Factory Automation : Workforce reductions
+   Autonomous Weapons : Unclear accountability for loss of human life.
+   Generative Art : Issues surrounding copyright and ownership concerns.
