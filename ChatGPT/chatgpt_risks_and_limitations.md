@@ -39,3 +39,17 @@ By placing overwhelming amounts of content all saying the same thing, people usi
 They can take advantage of people who may believe that ChatGPT is smarter than people because, after all, ChatGPT knows the whole internet.
 
 Researchers are trying to correct these problems within ChatGPT. Over time, ChatGPT has been programmed to limit its ability to generate false or misleading information. However, this remains an unsolved problem.
+
+4. ChatGPT and Bias
+
+---
+
+Another issue stemming from ChatGPT being trained on human information is bias. The internet and literature, which ChatGPT is trained on, contain many harmful biases. By being trained on this information, ChatGPT can replicate these biases in its output.
+
+There are many situations in which these biases can show in ChatGPT responses. Asking ChatGPT to produce descriptions of people in certain fields, or with certain traits can result in stereotypical responses. Many people have found different ways to get ChatGPT to produce biased responses towards certain demographics, including racist, sexist, and bigoted statements.
+
+People have found ways to get ChatGPT to produce content with sentiments like Black people being inferior to white people, as well as women being subservient to men. ChatGPT updates have closed many of the ways to do this, but people continue to find new prompts that get past its safeguards.
+
+ChatGPT producing these kinds of statements is a problem for several reasons. It perpetuates false harmful stereotypes, and, as mentioned in the last exercise, ChatGPT can act as a propaganda machine for bad actors.
+
+Subsequent updates to ChatGPT may reduce these problems, but they will continue to show up in subtle ways. Removing all bias from information is an open problem in creating large language models. Hopefully, new and improved algorithms will continue to reduce the impact of bias in AI systems
