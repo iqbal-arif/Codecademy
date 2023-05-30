@@ -63,3 +63,16 @@ As people use ChatGPT, it collects information from the prompts being used and t
 Like any data-heavy application, ChatGPT is at risk for data breaches or misuse of user data. As more and more companies and individuals use ChatGPT, there is a greater need to make sure user data is protected and not misused.
 
 When individuals and business input sensitive information into ChatGPT, they are trusting that ChatGPT is securing their data in a safe and anonymized way. Data breaches of the past have shown us this is not always the case, so it is important to be careful when uploading sensitive information.
+
+Review
+
+---
+
+While ChatGPT has shown tremendous potential for changing the way we work, there are potential risks associated with its use. As with any technology, there is a need for caution and awareness when using ChatGPT or any language model. Some of the potential issues we discussed in this lesson are:
+
+    1. Misinformation: The tendency for ChatGPT to produce incorrect information
+    2. Disinformation: The ability for ChatGPT to be used to produce information intended to mislead people
+    3. Bias: ChatGPT presenting biases based on the training data it has received
+    4. Data Security: The security and privacy issues stemming from the data ChatGPT is collecting
+
+It is important to understand these limitations and to use ChatGPT responsibly to avoid spreading misinformation or causing harm. Encountering these issues with ChatGPT can be a significant liability for a person or company integrating it into their content. There is a need for ongoing development and improvement of ChatGPT to address these risks and limitations.
