@@ -53,3 +53,13 @@ People have found ways to get ChatGPT to produce content with sentiments like Bl
 ChatGPT producing these kinds of statements is a problem for several reasons. It perpetuates false harmful stereotypes, and, as mentioned in the last exercise, ChatGPT can act as a propaganda machine for bad actors.
 
 Subsequent updates to ChatGPT may reduce these problems, but they will continue to show up in subtle ways. Removing all bias from information is an open problem in creating large language models. Hopefully, new and improved algorithms will continue to reduce the impact of bias in AI systems
+
+5. ChatGPT and Data Security
+
+---
+
+As people use ChatGPT, it collects information from the prompts being used and the people that write them. Where is this data going, how is it being used, and is it secure?
+
+Like any data-heavy application, ChatGPT is at risk for data breaches or misuse of user data. As more and more companies and individuals use ChatGPT, there is a greater need to make sure user data is protected and not misused.
+
+When individuals and business input sensitive information into ChatGPT, they are trusting that ChatGPT is securing their data in a safe and anonymized way. Data breaches of the past have shown us this is not always the case, so it is important to be careful when uploading sensitive information.
