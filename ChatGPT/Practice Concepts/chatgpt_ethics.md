@@ -25,7 +25,7 @@ AI has improved its ability to create art by training on art produced by humans.
 
 AI often replicates harmful biases found in its training data. Biases in AI can often be difficult to detect and eliminate.
 
-/**\*\*\*\***Practice****\*\*****/
+/**\*\*\*\***Practice\***\*\*\*\*\***/
 
 1. Replacing labor with machines or software is known as what?
    A. Automation
@@ -37,3 +37,8 @@ AI often replicates harmful biases found in its training data. Biases in AI can 
    A. Factory Automation : Workforce reductions
    Autonomous Weapons : Unclear accountability for loss of human life.
    Generative Art : Issues surrounding copyright and ownership concerns.
+
+4. Which of the following is true about AI and bias?
+   A. AIs have the potential to reroduce harmful found in its training content.
+
+5.
