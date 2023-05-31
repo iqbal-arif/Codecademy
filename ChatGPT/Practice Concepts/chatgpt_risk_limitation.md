@@ -42,10 +42,13 @@ ChatGPT has the potential to produce disinformation, or information meant to dec
    A. ChatGPT has the potential to reproduce harmful biases found in its training content.
 
 3. Which of the following is true about ChatGPT and bias?
-   A.
+   A. ChatGPT doesn't actually understand the content it is producing.
 
 4. Which of the following defines the term “AI Hallucination”?
    A. The tendency for AIs to make up false facts not found in its training data
 
 5. Misinformation: Information that is wrong
    Disinformation: Information meant to deceive
+
+6. Which of the following is true about ChatGPT and its knowledge?
+   A. ChatGPT doesn't actually understand the content it is producing.
