@@ -20,6 +20,38 @@ a {
 }
 
 .company_header{
-  display: flexbox;
-  flex:1fr 2fr;
+  display: flex;
+  flex-direction: column;
+  border: 1px salmon solid;
+  height: max-content;
+}
+.company{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1.5rem;
+  border: 1px greenyellow solid;
+  height: max-content;
+  margin: 0.5rem 0rem;
+}
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items:center;
+  border: 1px blueviolet solid;
+  margin: 0rem 0rem 0.5rem 0rem;
+  }
+
+.main-container{
+  background-image: url("../images/pexels-roberto-nickson-2559941.jpg");
+  background-repeat: no-repeat;
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:flex-start;
+  object-fit:contain;
 }
