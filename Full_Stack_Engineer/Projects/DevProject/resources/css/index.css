@@ -18,3 +18,8 @@ li {
 a {
   text-decoration: none;
 }
+
+.company_header{
+  display: flexbox;
+  flex:1fr 2fr;
+}
