@@ -20,7 +20,9 @@ a {
 }
 
 .main-background{
-  aspect-ratio: 1 / 1;
+  /* aspect-ratio: 1 / 1; */
+  /* aspect-ratio: 16 / 9; */
+  aspect-ratio: 4 / 3;
   background-image: url("../images/pexels-roberto-nickson-2559941.jpg"), linear-gradient(#433b72, #5c5a77);
   background-blend-mode: overlay;
   background-position: center center;
