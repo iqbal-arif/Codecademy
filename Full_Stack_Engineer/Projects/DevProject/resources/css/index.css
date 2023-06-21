@@ -1,3 +1,4 @@
+
 * {
   font-family: Helvetica, Arial, sans-serif;
   box-sizing: border-box;
@@ -5,48 +6,56 @@
   padding: 0;
 
 }
-
-h1 {
-  color: SeaGreen;
-}
-
-p,
-li {
-  font-size: 18px;
-}
-
-a {
-  text-decoration: none;
-}
-
-.main-background{
-  /* aspect-ratio: 1 / 1; */
-  /* aspect-ratio: 16 / 9; */
-  aspect-ratio: 4 / 3;
-  background-image: url("../images/pexels-roberto-nickson-2559941.jpg"), linear-gradient(#433b72, #5c5a77);
+/* Body with class main-container */
+.main-container{
+  background-image: url("../images/pexels-roberto-nickson-2559941.jpg"), linear-gradient(#aca5d3, #5c5a77);
   background-blend-mode: overlay;
-  background-position: center center;
   background-repeat: no-repeat;
-  background-size: contain;
-  height: 100vh;
-}
-.company_header{
+  background-position: center center;
+  background-size:cover;
+  height: 80vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
-  border: 1px salmon solid;
-  height: max-content;
-}
-.company{
-  display: flex;
-  flex-direction: row;
   justify-content: center;
-  gap: 1.5rem;
-  border: 1px greenyellow solid;
-  height: max-content;
-  margin: 0.5rem 0rem;
+  align-items:center;
+  color: antiquewhite;
+  font-size: 2.5rem;
 }
 
-.navbar{
+button{
+  height: 2rem;
+  width: 6rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+  text-emphasis: bold;
+}
+/* Header with Logo, Company Name and Navbar */
+.company_header{
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient */
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    display: flex;
+    flex-direction: column;
+    border: 1px salmon solid;
+    height: max-content;
+    position:sticky;
+    position: -webkit-sticky;
+    top:0;
+  }
+/* Logo with Company Name */
+  .company{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 1.5rem;
+      border: 1px greenyellow solid;
+      height: max-content;
+      margin: 0.5rem 0rem;
+  }
+  
+  /* Navbar */
+  .navbar{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -55,14 +64,3 @@ a {
   margin: 0rem 0rem 0.5rem 0rem;
   }
 
-.main-container{
-  height: 1200px;
-  width: 100vw;
-  /* height: 700px;
-  width: 900px; */
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items:flex-start;
-}
