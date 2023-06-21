@@ -4,8 +4,9 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
 }
+
+
 /* Body with class main-container */
 .main-container{
   background-image: url("../images/pexels-roberto-nickson-2559941.jpg"), linear-gradient(#aca5d3, #5c5a77);
@@ -13,7 +14,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size:cover;
-  height: 80vh;
+  height: 70vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -25,7 +26,7 @@
 
 button{
   height: 2rem;
-  width: 6rem;
+  width: 7rem;
   border-radius: 1rem;
   margin-top: 2rem;
   background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
