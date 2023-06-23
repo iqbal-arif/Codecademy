@@ -67,5 +67,9 @@ button{
   align-items:center;
   border: 1px blueviolet solid;
   margin: 0rem 0rem 0.5rem 0rem;
-  }
+}
 
+.navbar a{
+    text-decoration: none;
+
+  }
