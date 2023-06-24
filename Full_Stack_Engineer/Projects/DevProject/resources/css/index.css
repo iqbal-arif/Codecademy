@@ -6,7 +6,6 @@
   padding: 0;
 }
 
-
 /* Body with class main-container */
 .main-container{
   background-image: url("../images/pexels-roberto-nickson-2559941.jpg"), linear-gradient(#746c9c, #3f3e4d);
@@ -73,3 +72,16 @@ button{
     text-decoration: none;
 
   }
+
+  /* FontSize */
+.hero,.action{
+  font-size: 2.5vmax;
+}
+
+.action{
+  font-size: 1.85vmax;
+}
+
+.navbar{
+  font-size: 2vmax;
+}
