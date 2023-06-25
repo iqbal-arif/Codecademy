@@ -74,6 +74,9 @@ button{
   }
 
   /* FontSize */
+ .company{
+  font-size: 2.65vmax;
+ } 
 .hero,.action{
   font-size: 2.5vmax;
 }
