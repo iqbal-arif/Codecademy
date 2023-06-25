@@ -23,7 +23,8 @@
 }
 .main-container h2{
   margin: 0 5rem;
-  line-height: 2.25rem;
+  /* line-height: 2.25rem; */
+  line-height: 3vmax;
 }
 button{
   color:rgb(59, 58, 57);
@@ -79,6 +80,7 @@ button{
  } 
 .hero,.action{
   font-size: 2.5vmax;
+  line-height: 2.75vmax;
 }
 
 .action{
