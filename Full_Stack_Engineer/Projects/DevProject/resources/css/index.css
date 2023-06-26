@@ -28,11 +28,11 @@
 }
 button{
   color:rgb(59, 58, 57);
-  font-size: 1.25rem;
-  height: 2.5rem;
-  width: 8rem;
-  border-radius: 1.25rem;
-  margin-top: 2rem;
+  /* font-size: 1.25rem; */
+  height: 2.75vmax;
+  width: 10vmax;
+  border-radius: 1.375vmax;
+  margin-top: 1.5vmax;
   background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
   /* text-emphasis: bold; */
 }
