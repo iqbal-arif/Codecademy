@@ -78,9 +78,9 @@ button{
  .company{
   font-size: 2.65vmax;
  } 
-.hero,.action{
+.hero{
   font-weight: 200;
-  font-size: 2.5vmax;
+  font-size: 2.25vmax;
   line-height: 2.75vmax;
 }
 
