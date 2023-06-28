@@ -20,9 +20,8 @@ This is because JSX gets translated into JavaScript, and class is a reserved wor
 
 When JSX is rendered, JSX className attributes are automatically rendered as class attributes.
 Instructions
-1.
 
-On line 7, declare a new constant named myDiv. Set myDiv equal to a JSX <div> element.
+1. On line 7, declare a new constant named myDiv. Set myDiv equal to a JSX <div> element.
 
 In between the <div></div> tags, write the text I AM A BIG DIV.
 
@@ -31,9 +30,8 @@ Give your <div> element the following attribute:
 className="big"
 
 Checkpoint 2 Passed
-2.
 
-Underneath your <div> element, call root.render() with myDiv as an argument.
+2. Underneath your <div> element, call root.render() with myDiv as an argument.
 
 If your rendered <div> element has a class of "big", then it should look big in the browser!
 */
