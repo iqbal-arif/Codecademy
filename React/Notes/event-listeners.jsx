@@ -19,16 +19,32 @@ function clickAlert() {
 
 Note that in HTML, event listener names are written in all lowercase, such as onclick or onmouseover. In JSX, event listener names are written in camelCase, such as onClick or onMouseOver.
 Instructions
-1.
-
-Take a look at line 19. root.render() is being passed a null argument.
+1. Take a look at line 19. root.render() is being passed a null argument.
 
 Render kitty by replacing the null with kitty.
-2.
-
-Add an onClick attribute to the <img /> element. Set onClick‘s value equal to the makeDoggy function.
+2. Add an onClick attribute to the <img /> element. Set onClick‘s value equal to the makeDoggy function.
 
 Remember, since attributes are a part of JSX expressions, you will need to inject JavaScript in order to use makeDoggy.
 
 Click Run, and then click on the browser image to change the kitty into a doggy.
 */
+
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+
+const container = document.getElementById('app');
+const root = createRoot(container);
+function makeDoggy(e) {
+  // Call this extremely useful function on an <img>.
+  // The <img> will become a picture of a doggy.
+  e.target.setAttribute('src', 'https://content.codecademy.com/courses/React/react_photo-puppy.jpeg');
+  e.target.setAttribute('alt', 'doggy');
+}
+
+const kitty = (
+	<img onClick={makeDoggy}
+		src="https://content.codecademy.com/courses/React/react_photo-kitty.jpg" 
+		alt="kitty" />
+);
+
+root.render(kitty);
