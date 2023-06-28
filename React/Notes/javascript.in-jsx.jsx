@@ -54,3 +54,32 @@ ReactDOM.render(
 	pi,
 	document.getElementById('app')
 );
+
+/*
+Instructions:
+1. Open app.js.
+
+Declare a new variable named math. Set math equal to a JSX <h1> element.
+
+Put the following expression inside of the <h1>:
+
+2 + 3 = 2 + 3
+
+2. At the bottom of the file, call root.render().
+
+For root.render()‘s argument, pass in math.
+Checkpoint 3 Passed
+
+3. As you probably expected, the equation was displayed as a string.
+
+Insert a pair of curly braces inside the <h1></h1> tags, so that the browser displays 2 + 3 = 5.
+*/
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+
+const container2 = document.getElementById('app');
+const root2 = createRoot(container2);
+// Write code here:
+const math = (<h1>2+3={2+3}</h1>);
+
+root2.render(math);
