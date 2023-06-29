@@ -57,3 +57,24 @@ if (user.age >= drinkingAge) {
 }
 
 root.render(message);
+
+/***********/
+/*  app.js  */
+
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+
+const container2 = document.getElementById('app');
+const root2 = createRoot(container2);
+function coinToss() {
+  // This function will randomly return either 'heads' or 'tails'.
+  return Math.random() < 0.5 ? 'heads' : 'tails';
+}
+
+const pics = {
+  kitty: 'https://content.codecademy.com/courses/React/react_photo-kitty.jpg',
+  doggy: 'https://content.codecademy.com/courses/React/react_photo-puppy.jpeg'
+};
+let img;
+
+// if/else statement begins here:
