@@ -78,3 +78,13 @@ const pics = {
 let img;
 
 // if/else statement begins here:
+
+// if/else statement begins here:
+
+if (coinToss() === "heads") {
+    img = <img src={pics.kitty} />
+  } else {
+    img = <img src={pics.doggy} />
+  }
+  
+  root.render(img);
