@@ -30,3 +30,8 @@ const greatestDivEver = <div>i am div</div>;
 In app.js, create the above element without using JSX.
 
 */
+const greatestDivEver = React.createElement(
+    "div",
+    null,
+    "i am div"
+  );
