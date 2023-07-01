@@ -38,3 +38,18 @@ Now, you can get a unique key on each loop by adding the following attribute to 
 
 key={'person_' + i}
 */
+
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+
+const container = document.getElementById('app');
+const root = createRoot(container);
+const people = ['Rowe', 'Prevost', 'Gare'];
+
+const peopleList = people.map((person,i) =>
+  // expression goes here:
+  <li key={"person_"+i}>{person}</li>
+);
+// <ul>{peopleList}</ul>
+// root.render goes here:
+root.render(<ul>{peopleList}</ul>)
