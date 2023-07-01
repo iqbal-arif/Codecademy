@@ -50,7 +50,8 @@ const people = ['Rowe', 'Prevost', 'Gare'];
 
 const peopleList = people.map((person,i) =>
   // expression goes here:
-  
+  <li>{person}</li>
 );
-
+// <ul>{peopleList}</ul>
 // root.render goes here:
+root.render(<ul>{peopleList}</ul>)
