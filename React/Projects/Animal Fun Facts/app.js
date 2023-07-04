@@ -11,8 +11,9 @@ const background = (
   <img className="background" src="./images/ocean.jpg" alt="ocean" />
 );
 const animalFacts = (
-  <h1>{title === " " ? "Click an animal for a fun fact !" : title}</h1>;
-  <div>{background}</div>
+  <div>
+    <h1>{title === " " ? "Click an animal for a fun fact !" : title}</h1>;
+    <div>{background}</div>
+  </div>
 );
-
 root.render(animalFacts);
