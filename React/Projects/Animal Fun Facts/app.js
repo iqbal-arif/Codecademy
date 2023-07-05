@@ -27,9 +27,10 @@ for (const animal in animals) {
 }
 
 const animalFacts = (
-  <div>
-    <h1>{title === " " ? "Click an animal for a fun fact !" : title}</h1>;
-    <div>{background}</div>
-  </div>
-);
+    <div>
+      <h1>{title === " " ? "Click an animal for a fun fact !" : title}</h1>;
+      <div>{background}</div>
+      <div className="animals">{images}</div>
+    </div>
+  );
 root.render(animalFacts);
