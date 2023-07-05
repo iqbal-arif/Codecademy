@@ -26,11 +26,17 @@ for (const animal in animals) {
   );
 }
 
+const displayFact = (e) => {
+    const clickedAnimal = e.target.alt
+    return randomFacts = Math.floor(Math.random()*clickedAnimal.fact.length)
+  }
+
 const animalFacts = (
     <div>
       <h1>{title === " " ? "Click an animal for a fun fact !" : title}</h1>;
       <div>{background}</div>
       <div className="animals">{images}</div>
+      <p id="fact">{displayFact}</p>
     </div>
   );
 root.render(animalFacts);
