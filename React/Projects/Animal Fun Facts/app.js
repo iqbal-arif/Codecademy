@@ -26,6 +26,9 @@ for (const animal in animals) {
 }
 
 const displayFact = (e) => {
+    if (animals === "dolphin"){
+        e.target.alt="dolphin"
+    }
   const clickedAnimal = e.target.alt;
   const randomFacts = Math.floor(Math.random() * clickedAnimal.fact.length);
   const p = document.getElementById("fact")
