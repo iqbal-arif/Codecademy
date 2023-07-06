@@ -10,12 +10,11 @@ const title = " ";
 const background = (
   <img className="background" src="./images/ocean.jpg" alt="ocean" />
 );
-
-const image = animals.forEach(animal => console.log(animal))
 const images = [];
 for (const animal in animals) {
   images.push(
     <img
+      onClick={displayFact}
       key={animal}
       className="animal"
       src={animals[animal].image}
@@ -27,16 +26,20 @@ for (const animal in animals) {
 }
 
 const displayFact = (e) => {
-    const clickedAnimal = e.target.alt
-    return randomFacts = Math.floor(Math.random()*clickedAnimal.fact.length)
-  }
+  const clickedAnimal = e.target.alt;
+  const randomFacts = Math.floor(Math.random() * clickedAnimal.fact.length);
+  const p = document.getElementById("fact")
+  return p.innerHTML=(randomFacts);
+};
 
 const animalFacts = (
     <div>
-      <h1>{title === " " ? "Click an animal for a fun fact !" : title}</h1>;
-      <div>{background}</div>
+      <div>
+        <h1>{title === " " ? "Click an animal for a fun fact !" : title}</h1>;
+        <img className="background" alt="ocean" src="/images/ocean.jpg" />
+      </div>
       <div className="animals">{images}</div>
-      <p id="fact">{displayFact}</p>
+      <p id="fact"></p>
     </div>
   );
-root.render(animalFacts);
+  root.render(animalFacts);
