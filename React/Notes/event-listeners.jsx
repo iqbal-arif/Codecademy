@@ -39,6 +39,7 @@ function makeDoggy(e) {
   // The <img> will become a picture of a doggy.
   e.target.setAttribute('src', 'https://content.codecademy.com/courses/React/react_photo-puppy.jpeg');
   e.target.setAttribute('alt', 'doggy');
+  
 }
 
 const kitty = (
