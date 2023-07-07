@@ -35,6 +35,17 @@ const displayFact = (e) => {
   return p.innerHTML=(randomFacts);
 };
 
+const randomFacts = Math.floor(Math.random() * (10));
+console.log(randomFacts)
+const displayFact = (e) => {
+    if (animals === "dolphin"){
+        e.target.alt="dolphin"
+    }
+}
+console.log(animals.dolphin.facts.length)
+
+console.log(animals.dolphin.image)
+
 const animalFacts = (
     <div>
       <div>
