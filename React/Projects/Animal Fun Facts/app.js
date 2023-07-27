@@ -37,9 +37,11 @@ for (const animal in animals) {
   );
 }
 
+const showBackground = " ";
+
 const animalFacts = (
   <div>
-    <h1>{title === " " ? "Click an animal for a fun fact !" : title}</h1>;
+    <h1>{title === " " ? "Click an animal for a fun fact !" : title}</h1>
     {background}
     <p id="fact"></p>
     <div className="animals">{images}</div>
