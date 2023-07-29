@@ -70,32 +70,35 @@ function QuoteMaker() {
 export default QuoteMaker;
 
 /***MyQuote****/
-function MyQuote() {
-    return (
-      <blockquote>
-        <p>What is important now is to recover our senses.</p>
-        <cite>
-          <a target="_blank" href="https://en.wikipedia.org/wiki/Susan_Sontag">
-            Susan Sontag
-          </a>
-        </cite>
-      </blockquote>
+function MyQuote(){
+    return(
+  <blockquote>
+    <p>
+      What is important now is to recover our senses.
+    </p>
+    <cite>
+      <a target="_blank" 
+        href="https://en.wikipedia.org/wiki/Susan_Sontag">
+        Susan Sontag
+      </a>
+    </cite>
+  </blockquote>
     );
-  }
+  };
   export default MyQuote;
 
   /***App.js***/
-import React from "react";
-import MyQuote from "./MyQuote";
-import QuoteMaker from "./QuoteMaker";
-
-function App() {
-  return (
-    <div>
-      <MyQuote />
-      <QouteMaker />
-    </div>
-  );
-}
-
-export default App;
+  import React from 'react';
+  import MyQuote from './MyQuote';
+  import QuoteMaker from './QuoteMaker';
+  
+  function App() {
+      return (
+        <div>
+        <MyQuote />
+        <QuoteMaker/>
+        </div>
+      );
+  };
+  
+  export default App;
