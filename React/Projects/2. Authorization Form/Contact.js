@@ -11,11 +11,11 @@ function Contact() {
     const auth = enteredPassword == password;
     setAuthorized(auth);
   }
-  !authorized ?(h1Text = <h1>Contact</h1>)
-    : (h1Text = <h1>Enter the Password</h1>);
+  
   return (
     <div id="authorization">
-      <h1>{h1Text}</h1>
+      !authorized ?(h1Text = <h1>Contact</h1>)
+    : (h1Text = <h1>Enter the Password</h1>);
       <ul>
         <li>client@example.com</li>
         <li>555.555.5555</li>
