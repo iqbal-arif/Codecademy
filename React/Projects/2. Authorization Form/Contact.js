@@ -14,7 +14,7 @@ function Contact() {
   
   return (
     <div id="authorization">
-      !authorized ?(h1Text = <h1>Contact</h1>)
+      !{authorized} ?(h1Text = <h1>Contact</h1>)
     : (h1Text = <h1>Enter the Password</h1>);
       <ul>
         <li>client@example.com</li>
@@ -25,3 +25,6 @@ function Contact() {
 }
 
 export default Contact;
+
+
+const [authorized, setAuthorized] = useState(false);
