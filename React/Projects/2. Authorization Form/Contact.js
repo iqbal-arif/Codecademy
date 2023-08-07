@@ -23,6 +23,14 @@ function Contact() {
       <li>555.555.5555</li>
     </ul>
   );
+
+  // In ternary operator  define the full HTML element insied div, such as
+  /*
+  <div id="authorization">
+          <h1>Contact</h1>
+          {contactInfo}
+        </div>)
+  */
  return authorized ? (
         <div id="authorization">
           <h1>Contact</h1>
