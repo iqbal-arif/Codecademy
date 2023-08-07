@@ -1,3 +1,10 @@
+/*
+1. The code editor has two files: ProfilePage.js and NavBar.js.
+
+Complete the <ProfilePage /> component by having it return a <NavBar /> component above <h1>All About Me!</h1>.
+
+Don’t forget to import the necessary component!
+*/
 /* Profile.js*/
 import React from 'react';
 
@@ -5,8 +12,8 @@ import React from 'react';
 function ProfilePage() {
   return (
     <div>
-        
-      <h1>All About Me!</h1>
+       <NavBar />
+        <h1>All About Me!</h1>
       <p>I like movies and blah blah blah blah blah</p>
       <img src="https://content.codecademy.com/courses/React/react_photo-monkeyselfie.jpg" />
     </div>
