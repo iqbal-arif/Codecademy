@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 function Contact() {
   const password = "swordfish";
-  const [authorized, setAuthorized] = useState(true);
+  const [authorized, setAuthorized] = useState(false);
 
   function handleSubmit(e) {
     const enteredPassword = e.target.querySelector(
@@ -11,9 +11,8 @@ function Contact() {
     const auth = enteredPassword == password;
     setAuthorized(auth);
   }
-  
   const login = (
-    <form action="#">
+    <form action="#" onSubmit={handleSubmit} >
       <input type="password" placeholder="Password" />
       <input type="submit" />
     </form>
@@ -24,22 +23,14 @@ function Contact() {
       <li>555.555.5555</li>
     </ul>
   );
-  return (
-    <div id="authorization">
-       <div id="authorization">
-        <h1>
-        {
-        authorized ? 'Contact' : 'Enter the Password'
-        }
-        </h1>
-        {
-        authorized ? contactInfo : login
-        }
-      </div>
-  );
-};
+ return authorized ? (
+        <div id="authorization">
+          <h1>Contact</h1>
+          {contactInfo}
+        </div>) : ( <div id="authorization">
+          <h1>Enter the Password</h1>
+          {login}
+        </div>)
+}
 
 export default Contact;
-
-
-const [authorized, setAuthorized] = useState(false);
