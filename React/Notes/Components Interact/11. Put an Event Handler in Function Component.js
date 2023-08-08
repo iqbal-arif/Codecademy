@@ -53,3 +53,149 @@ function App() {
 }
 
 export default App;
+
+/* Talker.js */
+import React from "react";
+import Button from "./Button";
+
+function Talker() {
+  function talk() {
+    let speech = "";
+    for (let i = 0; i < 10000; i++) {
+      speech += "blah ";
+    }
+    alert(speech);
+  }
+  return <Button />;
+}
+
+export default Talker;
+
+/* index.js */
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+import App from './App';
+
+ReactDOM.createRoot(
+  document.getElementById('app')
+).render(<App />);
+
+
+/* index.html */
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="app">
+  </main>
+	<script src="https://content.codecademy.com/courses/React/react-18-course-bundle.min.js"></script>
+  <script src="/index.compiled.js"></script>
+</body>
+</html>
+
+/* style.css */
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+#app {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding-top: 10px;
+}
+
+#app div {
+  width: 100%;
+}
+
+#app div div {
+  height: 100%;
+}
+
+#app div div div {
+  position: relative;
+  height: auto;
+}
+
+h1, h2 {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+label {
+  display: block;
+  margin: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+nav a {
+  margin:12px;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+button {
+  -webkit-transition-duration: 0.1s; /* Safari */
+  transition-duration: 0.1s;
+  background-color: #F4595B;
+  border-radius: 8px;
+  border-bottom: 4px solid #C24648;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Oxygen', sans-serif;
+  letter-spacing: 2px;
+}
+
+button:hover {
+  background-color: #FF7375;
+  border: none;
+  border-radius: 8px;
+  border-bottom: 4px solid #C24648;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Oxygen', sans-serif;
+  letter-spacing: 2px;
+}
+
+button:active {
+  background-color: #C24648;
+  border: none;
+  border-radius: 8px;
+  border-bottom: 4px solid #C24648;
+  color: #CCC;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Oxygen', sans-serif;
+  letter-spacing: 2px;
+}
