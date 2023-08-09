@@ -69,3 +69,22 @@ The reason for this is that <Button /> is not an HTML-like JSX element; it’s a
 Names like onClick only create event listeners if they’re used on HTML-like JSX elements. Otherwise, they’re just ordinary prop names.
 
 Run your program to ensure your button is working as intended.
+
+/* Talker.js */
+import React from "react";
+
+function Button(props) {
+  return <button onClick={props.onClick}>Click me!</button>;
+}
+
+export default Button;
+
+
+/* Button.js */
+import React from "react";
+
+function Button(props) {
+  return <button onClick={props.onClick}>Click me!</button>;
+}
+
+export default Button;
