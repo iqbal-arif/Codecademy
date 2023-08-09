@@ -98,17 +98,17 @@ function App() {
 export default App;
 
 /* List.js */
-import React from 'react';
+import React from "react";
 
 function List(props) {
   let titleText = `Favorite ${props.type}`;
   if (props.children instanceof Array) {
-    titleText += 's';
+    titleText += "s";
   }
   return (
     <div>
       <h1>{titleText}</h1>
-      <ul></ul>
+      <ul>{props.children}</ul>
     </div>
   );
 }
