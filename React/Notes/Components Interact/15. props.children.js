@@ -102,7 +102,7 @@ import React from "react";
 
 function List(props) {
   let titleText = `Favorite ${props.type}`;
-  if (props.children instanceof Array) {
+  if (props.children instanceof Array && props.children > 1) {
     titleText += "s";
   }
   return (
@@ -114,3 +114,4 @@ function List(props) {
 }
 
 export default List;
+
