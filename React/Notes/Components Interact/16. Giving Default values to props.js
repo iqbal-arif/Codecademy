@@ -52,3 +52,26 @@ Run your code. The button’s appearance should change!
 Your new prop should override the default, making the <button> element empty once again.
 
 */
+/* Button.js */
+
+import React from "react";
+
+function Button(props) {
+  const { text = "Default Text of Big Button" } = props;
+  return <button>{text}</button>;
+}
+
+export default Button;
+
+
+/* App.js */
+
+import React from "react";
+import Button from "./Button.js";
+
+function App() {
+  return <Button text="" />;
+}
+
+export default App;
+
