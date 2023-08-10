@@ -76,6 +76,18 @@ export default BigButton;
 // Example 3
 <BigButton />
 
+/* Index.js */
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+import App from './App';
+
+ReactDOM.createRoot(
+  document.getElementById('app')
+).render(<App />);
+
+
 /* App */
 
 import React from 'react';
@@ -115,3 +127,118 @@ function List(props) {
 
 export default List;
 
+/* Index.html */
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="app">
+  </main>
+	<script src="https://content.codecademy.com/courses/React/react-18-course-bundle.min.js"></script>
+  <script src="/index.compiled.js"></script>
+</body>
+</html>
+
+
+/* style.css */
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+#app {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding-top: 15px;
+}
+
+#app div {
+  width: 100%;
+}
+
+#app div div {
+  height: 100%;
+}
+
+#app div div div {
+  position: relative;
+  height: auto;
+}
+
+h1 {
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+img {
+  max-width: 90%;
+  max-height: 390px;
+  top: 5%;
+  left: 5%;
+}
+
+/* button */
+button {
+    -webkit-transition-duration: 0.1s; /* Safari */
+    transition-duration: 0.1s;
+    background-color: #F4595B;
+
+    border-radius: 8px;
+    border-bottom: 4px solid #C24648;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Oxygen', sans-serif;
+    letter-spacing: 2px;
+}
+
+button:hover {
+  background-color: #FF7375;
+  border: none;
+  border-radius: 8px;
+  border-bottom: 4px solid #C24648;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Oxygen', sans-serif;
+  letter-spacing: 2px;
+}
+
+button:active {
+  background-color: #C24648;
+  border: none;
+  border-radius: 8px;
+  border-bottom: 4px solid #C24648;
+  color: #CCC;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Oxygen', sans-serif;
+  letter-spacing: 2px;
+}
