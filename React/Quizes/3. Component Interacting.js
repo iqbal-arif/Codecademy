@@ -35,4 +35,17 @@ A4: Everything between a component's opening and closing tags.
 
 Q5: In React, which of the following is true about component props?
 A5: Props are accessible in a component via the props object, where prop names are keys and their values are the values passed in via JSX.
+
+Q6: Which of the following is a valid example of a function component in React?
+A6: Nice job! This function component returns a mixture of HTML and custom React component.
 */
+
+function MyApp(){
+  return(
+    <div>
+      <h1> Hello World</h1>
+      <p>This is a paragraph</p>
+      <MyComponent />
+    </div>
+  )
+}
