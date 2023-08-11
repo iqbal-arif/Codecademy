@@ -11,3 +11,22 @@ function Baptiste(props){
     }
 }
 Baptiste.defaultProps = {text: 'Welcome'}
+
+/*
+Q3: True or False: Every component’s props object has a property named children.
+A3: True; Congrats! If it’s a component, then it has a children property. 
+
+Q4: How would you get an <Animal /> to render <h1>cat</h1>?
+*/
+
+function Animal(props) {
+  if (props.type == 'cat') {
+    return <h1>Meow Meow</h1>;
+  } else if (props.type == 'dog') {
+    return <h1>Arf Arf</h1>;
+  }
+}
+/*
+A4:You can't
+
+*/
