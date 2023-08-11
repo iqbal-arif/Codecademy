@@ -49,3 +49,32 @@ function MyApp(){
     </div>
   )
 }
+
+/*
+Q7: Based on the following code snippet, what is the resulting HTML when App is rendered?
+A7: 
+<div>
+  <div>
+    <h1>Hello</h1>
+    <p><span>This is some text</span></p>
+  </div>
+</div>
+*/
+function MyComponent(props) {
+  return (
+    <div>
+      <h1>{props.title}</h1>
+      <p>{props.children}</p>
+    </div>
+  );
+}
+ 
+function App() {
+  return (
+    <div>
+      <MyComponent title="Hello">
+        <span>This is some text!</span>
+      </MyComponent>
+    </div>
+  );
+}
