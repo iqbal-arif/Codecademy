@@ -78,3 +78,9 @@ function App() {
     </div>
   );
 }
+
+/*
+Q8: Which is the correct way to pass a prop?
+A8:
+*/
+<Headline text="Hello world" />
