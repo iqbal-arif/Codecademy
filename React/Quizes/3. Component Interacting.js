@@ -25,3 +25,12 @@ function Animal(props) {
     return <h1>Arf Arf</h1>;
   }
 }
+
+/*
+Q3: In React, what happens if there are no props passed to a component?
+A3: The component will use default values for any missing props.
+
+Q4: What does props.children return?
+A4: Everything between a component's opening and closing tags.
+
+*/
