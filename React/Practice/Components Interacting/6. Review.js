@@ -32,7 +32,7 @@ A4:You can't
 In the following code snippet, the component’s function will receive information from a component prop and render it. One major object is missing in order to complete the operation. Analyze and complete the code snippet.
 */
 function Callabas(props) {
-  return <h1>Today is, {props.thisProps}!</h1>;
+  return <h1>Today is, {props.todaysDay}!</h1>;
 }
  
 ReactDOM.createRoot(
