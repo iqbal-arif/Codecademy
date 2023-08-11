@@ -33,4 +33,6 @@ A3: The component will use default values for any missing props.
 Q4: What does props.children return?
 A4: Everything between a component's opening and closing tags.
 
+Q5: In React, which of the following is true about component props?
+A5: Props are accessible in a component via the props object, where prop names are keys and their values are the values passed in via JSX.
 */
