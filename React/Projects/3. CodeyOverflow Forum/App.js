@@ -2,8 +2,21 @@ import React from "react";
 import { comments } from "./commentData";
 import Card from "./Card";
 
-// import ReactDOM from 'react-dom';
-  const commentList = comments.map((comment) => {comment}.comment);
+const images = [];
+for (const animal in animals) {
+  images.push(
+    <img
+      key={animal}
+      className="animal"
+      src={animals[animal].image}
+      alt={animal}
+      aria-label={animal}
+      role="button"
+      onClick={displayFact}
+    />
+  );
+}
+  const commentList = comments.map((comment) => comment[comment].comment);
 function App(props) {
   return(
   <Card {commnetList}/>
