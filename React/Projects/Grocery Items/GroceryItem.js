@@ -1,4 +1,9 @@
-function HelloWorld() {
-    return <h1>Hello World!</h1>;
+import React from "react";
+
+function GroceryItem({ item }) {
+  function handleClick() {
+    alert(`${item} added to the cart!`);
   }
-  export default HelloWorld;
+  return <button onClick={handleClick}>{item}</button>;
+}
+export default GroceryItem;
