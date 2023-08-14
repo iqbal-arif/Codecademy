@@ -1,27 +1,35 @@
 import React from "react";
-import { comments } from "./commentData";
 import Card from "./Card";
+import { comments } from "./commentData";
 
-const images = [];
-for (const animal in animals) {
-  images.push(
-    <img
-      key={animal}
-      className="animal"
-      src={animals[animal].image}
-      alt={animal}
-      aria-label={animal}
-      role="button"
-      onClick={displayFact}
-    />
-  );
+// const images = [];
+// for (const animal in animals) {
+//   images.push(
+//     <img
+//       key={animal}
+//       className="animal"
+//       src={animals[animal].image}
+//       alt={animal}
+//       aria-label={animal}
+//       role="button"
+//       onClick={displayFact}
+//     />
+//   );
+// }
+function App() {
+  return comments.map((comment) => <Card commnetObject={comment} />);
 }
-  const commentList = comments.map((comment) => comment[comment].comment);
-function App(props) {
-  return(
-  <Card {commnetList}/>
-  <p>This is Card</p>
-  )
-}
+
+// import React from 'react';
+// import {comments} from './commentData';
+
+// import Card from './Card';
+
+// function App () {
+//   return (
+//     comments.map(comment => <Card commentObject={comment} />)
+//   )
+// }
+// export default App;
 
 export default App;
