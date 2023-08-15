@@ -37,6 +37,9 @@ In the code above, we created three variables (car1, car2, car3) that correspond
 
 Let’s practice:
 
+Coding Excercise:
+*****************
+
 Destructure the items from the colors array into new variables color1, color2, and color3. If done correctly, the colors should be printed in this order: ‘blue’, ‘red’, ‘purple’.
 */
 let colors = ["blue", "red", "purple"];
@@ -46,7 +49,7 @@ let colors = ["blue", "red", "purple"];
 let [color1, color2, color3] = colors;
 
 console.log(color1, color2, color3);
-
+//Results: blue red purple
 /*
 
 4. Destructuring Objects
@@ -83,6 +86,7 @@ let { x, y, z } = planets;
 
 console.log(x, y, z);
 
+// Result Output: Saturn Mars Neptune
 /*
 
 5. Destructuring Function Parameters
@@ -133,6 +137,7 @@ const printPlantInfo = ({ name, scientificName, kingdom }) => {
 
 printPlantInfo(prairieRose);
 
+//Result The Prairie Rose, or Rosa arkansana, is in the kingdom Plantae.
 /*
 Conclusion
 
