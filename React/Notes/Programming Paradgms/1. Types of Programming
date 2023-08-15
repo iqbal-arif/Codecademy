@@ -1,6 +1,6 @@
 Three programming paradigms (styles):
 
-1. Imperative.
-2. Object oriented
-3. Functional, and
-4. Declarative paradigm.
+1. Imperative: based on the “turing machine”
+2. Object oriented : based on the “turing machine”
+3. Functional, and : based on “lambda calculus”
+4. Declarative paradigm: based on “first order logic”
