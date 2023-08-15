@@ -7,3 +7,13 @@ Three programming paradigms (styles):
 
 Detail Of Above in the followig link
 https://medium.com/functional-javascript/introduction-to-functional-javascript-45a9dca6c64a
+
+1. First Class Functions
+*****
+
+```
+function greet(name) { 
+ console.log('Hello ' + name) 
+}greet(“John”) // “Hello John”var sayHello = greet 
+sayHello(“Alex”) // “Hello Alex”
+```
