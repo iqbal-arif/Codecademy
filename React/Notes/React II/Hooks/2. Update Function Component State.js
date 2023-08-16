@@ -3,7 +3,7 @@ Update Function Component State
 ********************************
 Let’s get started with the State Hook, the most common Hook used for building React components. The State Hook is a named export from the React library, so we import with object destructuring like the following:
 */
-import React, { useState } from 'react';
+import React, { useState } from "react";
 /*
 When we call the useState() function, it returns an array with two values:
 
@@ -42,3 +42,32 @@ Instructions
 2. Use const to declare and assign the return values from calling useState() to color and setColor.
 3. In the JSX, use onClick event listeners to call the setColor() state setter function with the appropriate color when the user clicks on each of these buttons.
 4. Update the divStyle object so that the backgroundColor property is set to our current state value instead of always showing purple.
+
+/* index.js */
+
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+import App from "./App.js";
+
+ReactDOM.createRoot(document.querySelector("#app")).render(<App />);
+
+/* ColorPicker.js */
+
+// import the default export and the named export `useState` from the 'react' library
+import React, { useState } from "react";
+export default function ColorPicker() {
+  // call useState and assign its return values to `color` and `setColor`
+  const [color, setColor] = useState();
+  const divStyle = { backgroundColor: color };
+
+  return (
+    <div style={divStyle}>
+      <p>The color is {color}</p>
+      <button onClick={() => setColor("Aquamarine")}>Aquamarine</button>
+      <button onClick={() => setColor("BlueViolet")}>BlueViolet</button>
+      <button onClick={() => setColor("Chartreuse")}>Chartreuse</button>
+      <button onClick={() => setColor("CornflowerBlue")}>CornflowerBlue</button>
+    </div>
+  );
+}
