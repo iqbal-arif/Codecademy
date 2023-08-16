@@ -52,6 +52,16 @@ import App from "./App.js";
 
 ReactDOM.createRoot(document.querySelector("#app")).render(<App />);
 
+/* App.js */
+
+import ColorPicker from "./ColorPicker";
+
+export default function App() {
+  return (
+    <ColorPicker />
+  );
+}
+
 /* ColorPicker.js */
 
 // import the default export and the named export `useState` from the 'react' library
