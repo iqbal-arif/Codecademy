@@ -5,20 +5,16 @@ Like how you used the State Hook to manage a variable with string values, we can
 
 Have a look at the following function component. What data type does this state variable hold?
 */
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function ToggleLoading() {
   const [isLoading, setIsLoading] = useState();
 
   return (
     <div>
-      <p>The data is {isLoading ? 'Loading' : 'Not Loading'}</p>
-      <button onClick={() => setIsLoading(true)}>
-        Turn Loading On
-      </button>
-      <button onClick={() => setIsLoading(false)}>
-        Turn Loading Off
-      </button>
+      <p>The data is {isLoading ? "Loading" : "Not Loading"}</p>
+      <button onClick={() => setIsLoading(true)}>Turn Loading On</button>
+      <button onClick={() => setIsLoading(false)}>Turn Loading Off</button>
     </div>
   );
 }
@@ -38,9 +34,25 @@ There are three ways in which this code affects our component:
     3. When the component re-renders for any other reason, React continues to use the same value from the previous render.
 
 If we don’t pass an initial value when calling useState(), the current value of the state during the first render will be undefined. Often, this is perfectly fine for the computers running the code, but it can be unclear to the humans reading our code. So, we prefer to explicitly initialize our state. If we don’t have the value needed during the first render, we can explicitly pass null instead of passively leaving the value as undefined.
-Instructions
-1.
-
-Professional web development is a team sport. Thankfully, a coworker was able to help refactor the code from your ColorPicker() component to support more colors. Now, our product owner wants the app to start off with the color “Tomato” when it first shows up on the screen.
+/******************/
+/***Instructions***/
+/******************/
+/*
+1. Professional web development is a team sport. Thankfully, a coworker was able to help refactor the code from your ColorPicker() component to support more colors. Now, our product owner wants the app to start off with the color “Tomato” when it first shows up on the screen.
 
 Modify our current ColorPicker() component to initialize the state so that “Tomato” is the selected color for our component’s first render.
+*/
+/*Index.jsx*/
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+
+ReactDOM.createRoot(document.querySelector("#app")).render(<App />);
+
+/*App.jsx*/
+
+import ColorPicker from "./ColorPicker";
+
+export default function App() {
+  return <ColorPicker />;
+}
