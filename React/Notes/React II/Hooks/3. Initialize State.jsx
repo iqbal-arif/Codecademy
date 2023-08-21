@@ -42,6 +42,34 @@ If we don’t pass an initial value when calling useState(), the current value o
 
 Modify our current ColorPicker() component to initialize the state so that “Tomato” is the selected color for our component’s first render.
 */
+/* ColorPickter.jsx*/
+
+import React, { useState } from 'react';
+
+const colorNames = ['Aquamarine', 'BlueViolet', 'Chartreuse', 'CornflowerBlue', 'Thistle', 'SpringGreen', 'SaddleBrown', 'PapayaWhip', 'MistyRose'];
+
+export default function ColorPicker() {
+  const [color, setColor] = useState();
+
+ const divStyle = {backgroundColor: color};
+
+  return (
+    <div style={divStyle}>
+      <p>Selected color: {color}</p>
+      {colorNames.map((colorName)=>(
+        <button 
+          onClick={() => setColor(colorName)} 
+          key={colorName}>
+       	     {colorName}
+      	</button>
+      ))}
+    </div>
+  );
+}
+
+
+
+
 /*Index.jsx*/
 import React from "react";
 import ReactDOM from "react-dom/client";
@@ -56,3 +84,5 @@ import ColorPicker from "./ColorPicker";
 export default function App() {
   return <ColorPicker />;
 }
+
+
