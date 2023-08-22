@@ -159,3 +159,28 @@ ReactDOM.createRoot(
 </body>
 
 </html>
+
+/*style.css*/
+html, body {
+	height: 100%;
+  background-color: #ffffff;
+  text-align: center;
+  margin: 0;
+}
+
+* {
+	font-family: Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+#app {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	padding: 8px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
