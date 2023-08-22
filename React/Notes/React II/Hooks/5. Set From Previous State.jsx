@@ -56,3 +56,31 @@ Define a goToNext() event handler. Because our next value of state depends on th
 
 5. Lastly, add an onFirstQuestion variable with a boolean value, then use that value to toggle the disabled attribute of the “Go Back” button on and off.
 */
+
+/*QuizNavBar.js*/
+
+import React, { useState } from 'react';
+
+export default function QuizNavBar({ questions }) {
+  const [questionIndex, setQuestionIndex] = useState(0);
+
+  // define event handlers 
+
+  // determine if on the first question or not 
+
+  const onLastQuestion = questionIndex === questions.length - 1;
+
+  return (
+    <nav>
+      <span>Question #{questionIndex + 1}</span>
+      <div>
+        <button>
+          Go Back
+        </button>
+        <button disabled={onLastQuestion}>
+          Next Question
+        </button>
+      </div>
+    </nav>
+  );
+}
