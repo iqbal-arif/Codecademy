@@ -139,3 +139,23 @@ import App from "./App";
 ReactDOM.createRoot(
   document.querySelector("#app")
 ).render(<App />)
+
+
+/*index.html*/
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="./styles.css">
+	<title>Learn ReactJS</title>
+</head>
+
+<body>
+  <main id="app">
+  </main>
+<script src="https://content.codecademy.com/courses/React/react-18-course-bundle.min.js"></script>
+  <script src="/index.compiled.js"></script>
+</body>
+
+</html>
