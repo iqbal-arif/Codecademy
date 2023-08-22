@@ -129,3 +129,13 @@ import { questions } from "./dataModel";
 export default function App() {
   return <QuizNavBar questions={questions} />;
 }
+
+/*index.js*/
+
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+
+ReactDOM.createRoot(
+  document.querySelector("#app")
+).render(<App />)
