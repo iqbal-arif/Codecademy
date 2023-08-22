@@ -84,3 +84,15 @@ export default function QuizNavBar({ questions }) {
     </nav>
   );
 }
+
+
+
+/*App.js*/
+
+import React from "react";
+import QuizNavBar from "./QuizNavBar";
+import { questions } from "./dataModel";
+
+export default function App() {
+  return <QuizNavBar questions={questions} />;
+}
