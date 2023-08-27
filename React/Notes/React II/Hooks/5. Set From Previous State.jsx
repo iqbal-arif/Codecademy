@@ -65,7 +65,7 @@ export default function QuizNavBar({ questions }) {
   const [questionIndex, setQuestionIndex] = useState(0);
 
   // define event handlers 
-
+    const goBack = () => setCount((currentCount) => currentCount + 1)
   // determine if on the first question or not 
 
   const onLastQuestion = questionIndex === questions.length - 1;
