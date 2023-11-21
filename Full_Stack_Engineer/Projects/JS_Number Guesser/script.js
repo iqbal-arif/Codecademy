@@ -9,3 +9,10 @@ function generateTarget() {
 }
 
 console.log(generateTarget());
+
+const secretTarget = generateTarget();
+const userGuess = humanGuessInput;
+
+function compareGuesses(userGuess, computerGuess, secretTarget) {
+  secretTarget ? userGuess : computerGuess;
+}
