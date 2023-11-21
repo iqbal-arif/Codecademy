@@ -8,6 +8,7 @@ function generateTarget() {
   return Math.floor(Math.random() * 10);
 }
 
+const humanGuessInput = document.querySelector('#human-guess');
 console.log(generateTarget());
 
 const secretTarget = generateTarget();
