@@ -18,10 +18,7 @@ function generateTarget() {
 function compareGuesses(userGuess, computerGuess, target) {
   absoluteUserScore = Math.abs(userGuess - target); //6
   absoluteComputerScore = Math.abs(computerGuess - target); //3
-  if (
-    absoluteUserScore > absoluteComputerScore ||
-    absoluteUserScore === absoluteComputerScore
-  ) {
+  if (absoluteUserScore >= absoluteComputerScore) {
     return true;
   } else {
     return false;
