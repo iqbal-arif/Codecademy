@@ -1,16 +1,93 @@
+
 * {
   font-family: Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
-  color: SeaGreen;
+/* Body with class main-container */
+.main-container{
+  background-image: url("../images/pexels-roberto-nickson-2559941.jpg"), linear-gradient(#746c9c, #3f3e4d);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size:cover;
+  height: 70vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  color: antiquewhite;
+}
+.main-container h2{
+  margin: 0 5rem;
+  /* line-height: 2.25rem; */
+  line-height: 3vmax;
+}
+button{
+  color:rgb(59, 58, 57);
+  /* font-size: 1.25rem; */
+  height: 3vmax;
+  width: 12vmax;
+  border-radius: 1.5vmax;
+  margin-top: 1.5vmax;
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+  /* text-emphasis: bold; */
+}
+/* Header with Logo, Company Name and Navbar */
+.company_header{
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient */
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    display: flex;
+    flex-direction: column;
+    border: 1px salmon solid;
+    height: max-content;
+    position:sticky;
+    position: -webkit-sticky;
+    top:0;
+  }
+/* Logo with Company Name */
+  .company{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 1.5rem;
+      border: 1px greenyellow solid;
+      height: max-content;
+      margin: 0.5rem 0rem;
+  }
+  
+  /* Navbar */
+  .navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items:center;
+  border: 1px blueviolet solid;
+  margin: 0rem 0rem 0.5rem 0rem;
 }
 
-p,
-li {
-  font-size: 18px;
+.navbar a{
+    text-decoration: none;
+
+  }
+
+  /* FontSize */
+ .company{
+  font-size: 2.65vmax;
+ } 
+.hero{
+  font-weight: 200;
+  font-size: 2.25vmax;
+  line-height: 2.75vmax;
 }
 
-a {
-  text-decoration: none;
+.action{
+  font-size: 1.25vmax;
+}
+
+.navbar{
+  font-size: 2vmax;
 }

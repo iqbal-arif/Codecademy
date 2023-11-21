@@ -1,0 +1,19 @@
+Three programming paradigms (styles):
+
+1. Imperative: based on the “turing machine”
+2. Object oriented : based on the “turing machine”
+3. Functional, and : based on “lambda calculus”
+4. Declarative paradigm: based on “first order logic”
+
+Detail Of Above in the followig link
+https://medium.com/functional-javascript/introduction-to-functional-javascript-45a9dca6c64a
+
+1. First Class Functions
+*****
+
+```
+function greet(name) { 
+ console.log('Hello ' + name) 
+}greet(“John”) // “Hello John”var sayHello = greet 
+sayHello(“Alex”) // “Hello Alex”
+```

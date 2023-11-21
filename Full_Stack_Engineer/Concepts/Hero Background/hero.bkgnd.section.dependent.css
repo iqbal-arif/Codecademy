@@ -1,0 +1,53 @@
+
+* {
+    font-family: Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  
+  }
+/* Body with class main-container */
+.main-container{
+    background-image: url("pexels-roberto-nickson-2559941.jpg"), linear-gradient(#aca5d3, #5c5a77);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover;
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    color: antiquewhite;
+    font-size: 2.5rem;
+  }
+/* Header with Logo, Company Name and Navbar */
+  .company_header{
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient */
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+      display: flex;
+      flex-direction: column;
+      border: 1px salmon solid;
+      height: max-content;
+    }
+/* Logo with Company Name */
+    .company{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1.5rem;
+        border: 1px greenyellow solid;
+        height: max-content;
+        margin: 0.5rem 0rem;
+    }
+    
+    /* Navbar */
+    .navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+    border: 1px blueviolet solid;
+    margin: 0rem 0rem 0.5rem 0rem;
+    }
