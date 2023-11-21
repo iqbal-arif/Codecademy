@@ -16,9 +16,16 @@ function generateTarget() {
 // console.log(userGuess);
 
 function compareGuesses(userGuess, computerGuess, target) {
-  absoluteUserScore = Math.abs(userGuess - target);
-  absoluteComputerScore = Math.abs(computerGuess - target);
-  return absoluteUserScore !== absoluteComputerScore ? true : false;
+  absoluteUserScore = Math.abs(userGuess - target); //6
+  absoluteComputerScore = Math.abs(computerGuess - target); //3
+  if (
+    absoluteUserScore > absoluteComputerScore ||
+    absoluteUserScore === absoluteComputerScore
+  ) {
+    return true;
+  } else {
+    return false;
+  }
 }
 console.log(compareGuesses());
 
