@@ -15,10 +15,11 @@ function generateTarget() {
 // const userGuess = humanGuessInput;
 // console.log(userGuess);
 
-function compareGuesses(userGuess, computerGuess, secretTarget) {
-  absoluteUserScore = Math.abs(userGuess - secretTarget);
-  absoluteComputerScore = Math.abs(computerGuess - secretTarget);
-  return absoluteUserScore > absoluteComputerScore ? true : false;
+function compareGuesses(userGuess, computerGuess, target) {
+  absoluteUserScore = Math.abs(userGuess - target);
+  absoluteComputerScore = Math.abs(computerGuess - target);
+  return absoluteUserScore !== absoluteComputerScore ? true : false;
 }
-
 console.log(compareGuesses());
+
+function updateScore(gameResult) {}
