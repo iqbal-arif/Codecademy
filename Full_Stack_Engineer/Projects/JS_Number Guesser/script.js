@@ -50,12 +50,15 @@ function compareGuesses(userInput, computerInput, target) {
   console.log(absoluteUserScore);
   console.log(absoluteComputerScore);
 
-  if (absoluteUserScore > absoluteComputerScore) {
+  if (absoluteUserScore < target && absoluteUserScore < absoluteComputerScore) {
     return true;
-  } else if (absoluteUserScore === absoluteComputerScore) {
-    return true;
-  } else {
+  } else if (
+    absoluteComputerScore < target &&
+    absoluteComputerScore > absoluteUserScore
+  ) {
     return false;
+  } else {
+    return true;
   }
 }
 console.log(compareGuesses());
