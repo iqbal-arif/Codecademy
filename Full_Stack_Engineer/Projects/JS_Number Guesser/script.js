@@ -26,3 +26,9 @@ console.log(compareGuesses(2, 2, 1));
 function updateScore(gameResult) {
   gameResult === 'human' ? (humanScore = +1) : (computerScore = +1);
 }
+
+function advanceRound() {
+  return (currentRoundNumber = +1);
+}
+
+console.log(advanceRound());
