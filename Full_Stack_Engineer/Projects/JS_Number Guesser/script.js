@@ -23,4 +23,6 @@ function compareGuesses(userGuess, computerGuess, target) {
 }
 console.log(compareGuesses(2, 2, 1));
 
-function updateScore(gameResult) {}
+function updateScore(gameResult) {
+  gameResult === 'human' ? (humanScore = +1) : (computerScore = +1);
+}
