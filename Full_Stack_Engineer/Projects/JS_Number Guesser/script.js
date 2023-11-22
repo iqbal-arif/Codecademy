@@ -2,10 +2,10 @@ let humanScore = 0;
 let computerScore = 0;
 let currentRoundNumber = 1;
 
-let userInput = 1;
-let computerInput = 7;
+let userInput = 4;
+let computerInput = 2;
 // let target = generateTarget();
-let target = 6;
+let target = 9;
 
 console.log('Variable Target  ' + target);
 // console.log('UserInput  ' + userInput);
@@ -50,7 +50,13 @@ function compareGuesses(userInput, computerInput, target) {
   console.log(absoluteUserScore);
   console.log(absoluteComputerScore);
 
-  return absoluteUserScore >= absoluteComputerScore ? true : false;
+  if (absoluteUserScore > absoluteComputerScore) {
+    return true;
+  } else if (absoluteUserScore === absoluteComputerScore) {
+    return true;
+  } else {
+    return false;
+  }
 }
 console.log(compareGuesses());
 
