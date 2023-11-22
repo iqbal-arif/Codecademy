@@ -28,7 +28,5 @@ function updateScore(gameResult) {
 }
 
 function advanceRound() {
-  return (currentRoundNumber = +1);
+  currentRoundNumber = currentRoundNumber + 1;
 }
-
-console.log(advanceRound());
