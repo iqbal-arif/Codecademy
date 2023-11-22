@@ -2,6 +2,14 @@ let humanScore = 0;
 let computerScore = 0;
 let currentRoundNumber = 1;
 
+let userInput = 1;
+let computerInput = 7;
+// let target = generateTarget();
+let target = 6;
+
+console.log('Variable Target  ' + target);
+// console.log('UserInput  ' + userInput);
+// console.log('ComputerInput  ' + computerInput);
 // Write your code below:
 
 function generateTarget() {
@@ -9,33 +17,42 @@ function generateTarget() {
 }
 
 function guessAlter(guessRange) {
-  if (guessRange <= 0 || guessRange >= 10) {
+  if (guessRange <= 0 || guessRange >= 9) {
     alert('Your number is out of Range!!!. Please enter between 0 & 9');
   } else {
     compareGuesses();
   }
 }
 
-console.log(guessAlter(15));
+// console.log(guessAlter(15));
 
-function getAbsoluteDistance(userGuess, computerGuess) {
-  let guess;
-  let target;
-  guessAlter(userGuess);
-  if (guess === userGuess) {
-    return Math.abs(userGuess - target);
-  } else if (guess === computerGuess) {
-    return Math.abs(computerGuess - target); //3
+function getAbsoluteDistance(user, computer, guesser) {
+  //   console.log(target);
+  //   console.log('UserInputABS  ' + userInput);
+  //   console.log('ComputerInputABS  ' + computerInput);
+  //   let guesser;
+  //   let guess;
+  if (guesser === 'user') {
+    return Math.abs(userInput - target);
+  } else if (guesser === 'computer') {
+    return Math.abs(computerInput - target); //3
   }
 }
 
-function compareGuesses(userGuess, computerGuess, target) {
-  const absoluteUserScore = getAbsoluteDistance(userGuess); //6
-  const absoluteComputerScore = getAbsoluteDistance(computerGuess); //3
+function compareGuesses(userInput, computerInput, target) {
+  //   guessAlter(userGuess);
+  const absoluteUserScore = getAbsoluteDistance(userInput, target, 'user'); //6
+  const absoluteComputerScore = getAbsoluteDistance(
+    computerInput,
+    target,
+    'computer'
+  ); //3
+  console.log(absoluteUserScore);
+  console.log(absoluteComputerScore);
 
   return absoluteUserScore >= absoluteComputerScore ? true : false;
 }
-// console.log(compareGuesses(2, 2, 1));
+console.log(compareGuesses());
 
 function updateScore(gameResult) {
   gameResult === 'human' ? (humanScore = +1) : (computerScore = +1);
