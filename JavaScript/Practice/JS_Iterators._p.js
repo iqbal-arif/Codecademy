@@ -290,3 +290,26 @@ animals.some((animal) => animal.length < 5);
 /*
 A13: true  Correct
 */
+
+/*Q14: What will the following code return?
+ */
+const animals = ['bears', 'cats', 'dogs', 'elephants', 'giraffes'];
+
+animals.every((animal) => animal.length < 5);
+/*
+A14: false  Correct
+*/
+
+/*Q15: What is the correct way to refactor .forEach()‘s callback function below to use arrow function syntax?
+ */
+namesArray.forEach(function (name) {
+  console.log('Welcome, ' + name + '!');
+});
+
+//A15: Refactoring  Correct
+
+namesArray.forEach((name) => console.log('Welcome, ' + name + '!'));
+
+/*Q16: Which of the following methods returns a new array? 
+A16: .filter()  Correct
+*/
