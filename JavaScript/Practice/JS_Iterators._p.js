@@ -268,3 +268,25 @@ orderCopy('Lemon', 5);
 Q10: Which of the following is true about the .map() method?
 A10: The .map() method returns a new array made up of the return values from its callback function.
 */
+
+/*
+Q11: Which of the following methods returns a boolean value?
+A11: .some()
+👏
+Correct! Calling .some() on an array returns a boolean value based on the condition in the callback function. 
+*/
+
+/*
+Q12: Which of the following iterator methods returns undefined? 
+A12: .forEach()
+Correct! Calling .forEach() on an array returns undefined.
+*/
+
+/*Q13:What will the following code return?
+ */
+const animals = ['bears', 'cats', 'dogs', 'elephants', 'giraffes'];
+
+animals.some((animal) => animal.length < 5);
+/*
+A13: true  Correct
+*/
