@@ -21,6 +21,6 @@ function compareGuesses(userGuess, computerGuess, target) {
 
   return absoluteUserScore >= absoluteComputerScore ? true : false;
 }
-console.log(compareGuesses(4, 9, 3));
+console.log(compareGuesses(2, 2, 1));
 
 function updateScore(gameResult) {}
