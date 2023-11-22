@@ -313,3 +313,20 @@ namesArray.forEach((name) => console.log('Welcome, ' + name + '!'));
 /*Q16: Which of the following methods returns a new array? 
 A16: .filter()  Correct
 */
+
+/*Q17: Which of the following methods returns an array with values that evaluate to truthy based on the condition in the method’s block? 
+A17: .filter() 
+👏
+Correct! Calling .filter() returns a new array based on the condition in the callback function.
+*/
+
+/*Q18: What is the value of foundElement after the code runs?
+ */
+const randomNums = [1, 123, 25, 90, 3543, 42];
+
+const foundElement = randomNums.findIndex((num) => num > 200);
+/*
+A18: 4
+👏
+Correct! The index of the element that satisfies the condition in the callback function is 4
+*/
