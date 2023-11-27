@@ -92,3 +92,29 @@ console.log(
     process.memoryUsage().heapUsed - initialMemory
   } more bytes of memory.`
 );
+
+/*** 2. OS Module ***/
+/*
+When developing or debugging an app, it can be helpful to have information about the computer, operating system, and network on which the program is running
+
+Unlike process and console, the os module is not global and needs to be included into the file in order to gain access to its methods. You can include the os module into your file by typing:
+*/
+const os = require('os');
+/*
+With the os module saved to the os variable, you can call methods like:
+
+    os.type() — to return the computer’s operating system.
+    os.arch() — to return the operating system CPU architecture.
+    os.networkInterfaces() — to return information about the network interfaces of the computer, such as IP and MAC address.
+    os.homedir() — to return the current user’s home directory.
+    os.hostname() — to return the hostname of the operating system.
+    os.uptime() — to return the system uptime, in seconds.
+Example
+*/
+const os = require('os');
+
+const local = {
+  'Home Directory': os.homedir(),
+  'Operating System': os.type(),
+  'Last Reboot': os.uptime(),
+};
