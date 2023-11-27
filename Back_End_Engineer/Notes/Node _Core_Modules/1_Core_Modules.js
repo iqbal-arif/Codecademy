@@ -182,3 +182,55 @@ getUserPromise(id)
 
 getUser(1); // -> `User not found`
 getUser(5); // -> `User found! Their nickname is: Teddy`
+
+// Example 2 :  Callback to Promise conversion
+/*
+In app.js we’ve required in an object containing long distance hiking trails in the US. You can view that object by opening the trails.js file from the navigator.
+
+Below that is a callback function, getTrailDistance, that’s ready to be converted using util.promisify().
+
+Start by requiring the util module at the top of the app.js, and saving it to a util variable.
+
+*/
+// Require in trails module from trails.js
+const trails = require('./trails.js');
+// Require in util module here
+const util = require('util');
+// Simulate database call to search trails module for specified trail
+const getTrailDistance = (trail, callback) => {
+  return setTimeout(() => {
+    if (trails.hasOwnProperty(trail)) {
+      const foundTrail = trails[trail];
+      callback(null, foundTrail);
+    } else {
+      callback(new Error('Trail not found!'));
+    }
+  }, 1000);
+};
+
+// Callback function to send an error in the case of an error, or to handle trail data if a trail was found successfully.
+function callback(error, trailData) {
+  if (error) {
+    console.error(error.message);
+    process.exit(1);
+  } else {
+    const mi = trailData.miles;
+    const nickname = trailData.nickname;
+    console.log(`The ${nickname} is ${mi} miles long!`);
+  }
+}
+
+getTrailDistance('North Country', callback);
+
+// Promisfy below!
+const getTrailDistancePromise = util.promisify(getTrailDistance);
+
+getTrailDistancePromise('North Country')
+  .then((trailData) => {
+    const mi = trailData.miles;
+    const nickname = trailData.nickname;
+    console.log(`The ${nickname} is ${mi} miles long!`);
+  })
+  .catch((error) => {
+    console.log('Trail not found!');
+  });
