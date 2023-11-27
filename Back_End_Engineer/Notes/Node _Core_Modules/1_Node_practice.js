@@ -87,3 +87,18 @@ $ node
 //'white'
 > console.log(global.color)
 //white
+
+
+/*Q15: Why will the following code not add flower as a property to the global object?
+
+> global.flower = "roses"
+
+> console.log(global.flower)
+A15: REPL is not running, node needs to be entered in the terminal before anything.
+Perfect! REPL needs to be running in order for us to do anything with the global object. 
+*/
+
+/*Q116: True/False: The first element in a command-line array is the path to the file that’s running.
+A16: False
+👏
+Good Job! The first element is always the absolute path to the Node.
