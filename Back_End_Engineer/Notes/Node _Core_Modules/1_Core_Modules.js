@@ -93,7 +93,7 @@ console.log(
   } more bytes of memory.`
 );
 
-/*** 2. OS Module ***/
+/*** 3. OS Module ***/
 /*
 When developing or debugging an app, it can be helpful to have information about the computer, operating system, and network on which the program is running
 
@@ -118,3 +118,67 @@ const local = {
   'Operating System': os.type(),
   'Last Reboot': os.uptime(),
 };
+
+/*** 4. Util Module ***/
+/*
+Utility functions don’t necessarily create new functionality in a program, but you can think of them as internal tools used to maintain and debug your code. The Node.js util core module contains methods specifically designed for these purposes. The util module can be required into the file using:
+
+const util = require('util');
+*/
+/*** i. Util Type checking ***/
+const util = require('util');
+
+const today = new Date();
+const earthDay = 'April 22, 2022';
+
+console.log(util.types.isDate(today));
+console.log(util.types.isDate(earthDay));
+/*
+The types.isDate() method checks for Date objects and returns a boolean value, giving us:
+
+true
+false
+
+Since today is a Date object, it returns true, and since earthDay is a string, it returns false!
+*/
+/*** ii. Util Promisify ***/
+/*
+Another important util method is .promisify(), which turns callback functions into promises.
+*/
+//User ID Check with callback function
+function getUser(id, callback) {
+  return setTimeout(() => {
+    if (id === 5) {
+      callback(null, { nickname: 'Teddy' });
+    } else {
+      callback(new Error('User not found'));
+    }
+  }, 1000);
+}
+
+function callback(error, user) {
+  if (error) {
+    console.error(error.message);
+    process.exit(1);
+  }
+
+  console.log(`User found! Their nickname is: ${user.nickname}`);
+}
+
+getUser(1, callback); // -> `User not found`
+getUser(5, callback); // -> `User found! Their nickname is: Teddy`
+
+// User ID Check with Util Promisify method
+
+const getUserPromise = util.promisify(getUser);
+
+getUserPromise(id)
+  .then((user) => {
+    console.log(`User found! Their nickname is: ${user.nickname}`);
+  })
+  .catch((error) => {
+    console.log('User not found', error);
+  });
+
+getUser(1); // -> `User not found`
+getUser(5); // -> `User found! Their nickname is: Teddy`
