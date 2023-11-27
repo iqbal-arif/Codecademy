@@ -54,3 +54,25 @@ const array = [bufferA, bufferB];
 const bufferConcat = Buffer.concat(array);
 
 console.log(bufferConcat); // Output: [104, 101, 108, 108, 111, 119, 111, 114, 108, 100]
+
+/*Example*/
+
+// Allocate buffer of size 15 filled with 'b'
+const bufferAlloc = Buffer.alloc(15, 'b');
+
+// Create buffer1 with 'hello' and buffer2 with 'world'
+const bufferE1 = Buffer.from('hello');
+const bufferE2 = Buffer.from('world');
+
+// Combine buffer1 and buffer2
+
+const bufferArray = [bufferE1, bufferE2];
+const bufferConcatE = Buffer.concat(bufferArray);
+// Translate buffer to string
+
+const bufferString = bufferConcat.toString();
+// Uncomment the appropriate `console.log()` to ouput to console
+console.log(bufferAlloc);
+console.log('Buffer 1:', buffer1, 'Buffer 2:', buffer2);
+console.log(bufferConcatE);
+console.log(bufferString);
