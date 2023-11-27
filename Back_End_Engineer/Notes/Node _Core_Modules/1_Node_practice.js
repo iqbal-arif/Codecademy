@@ -65,3 +65,25 @@ A11: Utility functions are used to maintain and debug code.
 👏
 You got it!
 */
+
+/*Q12: Which of the following is NOT true of the console.log() method in Node.js?
+A12: It outputs messages to the browser condole.
+👏
+Correct! This statement is not true. Although console.log() in Node.js is functionally similar to its browser counterpart, it does NOT output to the browser console.
+*/
+
+/*Q13: Which array of command-line values is correctly being separated? 
+A13: node webApplication.js trial phase four
+👏
+Perfect! You’re getting the hang of Node.js. 
+*/
+
+/*Q14: Fill in the code so that a property named color with the value white is added to the global object.
+A14:
+*/
+$ node
+
+> global.color = 'white'
+//'white'
+> console.log(global.color)
+//white
