@@ -102,3 +102,23 @@ Perfect! REPL needs to be running in order for us to do anything with the global
 A16: False
 👏
 Good Job! The first element is always the absolute path to the Node.
+*/
+
+/*Q17: How can you access just the keys of the global object?
+👏A17: Object.keys(global)
+Good job! Accessing just the keys makes it easier to read list of the properties on the global object.
+*/
+
+/*Q18: True/False: In order to run a program using Node.js a file with the extension .js needs to hold the code.
+👏A18: True
+Good job! You’re getting a handle of things!
+
+/*Q19: What is the purpose of process.memoryUsage()? 
+A19: To return information on the CPU demands of the current process that's running.
+👏
+Good job! This method can be used to determine how demanding a process is and make adjust based on those numbers. 
+*/
+
+/*Q20: True/False: NODE_ENV is a property that holds a string with the directory in which the current process is located.
+A20: False
+Sorry, this is incorrect. PWD is the property that holds this information.
