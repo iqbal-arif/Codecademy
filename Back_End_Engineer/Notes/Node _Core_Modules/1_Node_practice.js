@@ -122,3 +122,62 @@ Good job! This method can be used to determine how demanding a process is and ma
 /*Q20: True/False: NODE_ENV is a property that holds a string with the directory in which the current process is located.
 A20: False
 Sorry, this is incorrect. PWD is the property that holds this information.
+*/
+
+
+/****QUIZ****/
+
+/*Q1: What do we call modules included within the Node.js environment to perform common tasks efficiently?
+A1: Core modules.
+👏
+Right!
+*/
+
+/*Q2: Which property of the module module is used to list all Node.js core modules in the REPL?
+A2: .builtinModules
+👏
+Correct!
+*/
+
+/*Q3:Which Node function allows us to bring modules into a process?
+A3: require()
+👏
+Right! We can require in core modules or modules of our own using require().
+*/
+
+/*Q4: What type is the value returned from invoking the process.memoryUsage() function?
+A4: An Object.
+👏
+Right! process.memoryUsage() returns an object with information on the CPU demands of the current process.
+*/
+
+/*Q5: If I run the file app.js with the terminal command node app.js sillyMode, how can I access the value sillyMode from within app.js?
+A5: process.argv[2]
+👏
+Right! sillyMode will be index 2, or the 3rd element, in the argv array which is a property of the process object.
+*/
+
+/*Q6: Which Node.js core module is used to get information about the computer and operating system on which a program is running?
+A6: The os module.
+👏
+Correct!
+*/
+
+/*Q7: The console module is a global module, meaning…
+A7: it does NOT need to be required into a file to use its methods.
+👏
+Correct! A global module can be used anywhere in Node.js without requiring it into the file.
+*/
+
+/*Q8: Which Node.js core module provides runtime type checking?
+A8: The util module.
+👏
+Right! util.types provides type checks for different kinds of built-in objects in Node.js.
+*/
+
+/*Q9: What does the acronym REPL stand for?
+A9: Read Eval Print Loop
+👏
+Right! A REPL is a program which reads input from a user, evaluates the user’s input, print out its evaluation to a console, and then loops through those states again.
+*/
+
