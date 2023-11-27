@@ -59,3 +59,9 @@ if (process.env.NODE_ENV === 'development') {
 } else if (process.env.NODE_ENV === 'prodution') {
   console.log('Release it to the public!');
 }
+
+/*Q11: The Node.js util module contains utility functions. What purpose does this type of function serve?
+A11: Utility functions are used to maintain and debug code.
+👏
+You got it!
+*/
