@@ -10,7 +10,10 @@ console.log(global);
 /*** 4. Node Global Properties */
 Object.keys(global);
 
-/*** 2. Node REPL */
-/*** 2. Node REPL */
+/*** 5. Node Adding Property to Global Object */
+global.cat = 'meow';
+console.log(global.cat);
+
+/*** 6. Node REPL */
 /*** 2. Node REPL */
 /*** 2. Node REPL */
