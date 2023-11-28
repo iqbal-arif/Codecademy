@@ -1,6 +1,6 @@
-Review
+/***Review***/
 
----
+/*
 
 Congratulations on making it to the end! Let’s take a moment to review the content covered in this lesson:
 
@@ -21,3 +21,14 @@ Congratulations on making it to the end! Let’s take a moment to review the con
     8. Streams allow us to read or write data piece by piece instead of all at once.
 
 ---
+As an optional challenge, in app.js, use the buffer and timer modules to create two buffers, join them together, convert them to a string, and log the result to the console after 3 seconds.
+*/
+
+setImmediate(() => {
+  const bufferAlloc = Buffer.alloc(5, 'Hello');
+  console.log(bufferAlloc.toString());
+  const bufferFrom = Buffer.from('World');
+  const bufferArray = [bufferAlloc, bufferFrom];
+  const bufferConcat = bufferArray;
+  console.log(bufferConcat.toString());
+}, 3000);
