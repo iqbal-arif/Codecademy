@@ -44,3 +44,17 @@ npm install nodemon --save-dev
 
 // Development dependencies are listed in the "devDependencies" field of the package.json file.
 
+/** 4. GLOBAL PACKAGES **/ 
+// Some packages can be installed globally meaning they are available system-wide,
+
+// One such example is the http-server package which allows you to spin up a zero-configuration server from anywhere in the command-line.
+
+// http-server is a good package to install globally since it is a general command-line utility and its purpose is not linked to any specific functionality within an app.
+
+// Unlike local package dependencies or development dependencies, packages installed globally will not be listed in a projects package.json file and they will be stored in a separate global node_modules/ folder.
+
+/** 5. NPM INSTALL **/
+
+// to leave out development dependencies, you can run the command with the --production flag.
+
+npm i --production
