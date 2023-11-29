@@ -31,3 +31,16 @@ npm  init -y
 /** 2. NODEMON **/
 npm i nodemon
 // tool used to automatically restart a program when a file changes, alleviating the need to do so manually each time you save a file.
+
+//The npm i <package name> command installs a package locally in a folder called node_modules/ which is created in the project directory that you ran the command from.
+
+/** 2. PACKAGE SCOPES **/
+// Generally, most npm packages should be installed locally—this way, among other reasons, each project can control which specific versions of its dependencies it uses. That being said, there are a few other ways you might install packages.
+
+/** 3. devDependencies **/
+// o install nodemon as a development dependency, we can add the flag --save-dev, or its -D alias.
+
+npm install nodemon --save-dev
+
+// Development dependencies are listed in the "devDependencies" field of the package.json file.
+
