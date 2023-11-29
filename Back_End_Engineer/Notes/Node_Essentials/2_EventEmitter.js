@@ -1,5 +1,5 @@
 /****************** /*/ //*/*/*/*/*/*///*/ *************/
-/*** 1. EventEmitter ***/
+/*** 1. EventEmitter ***  Require() ****/
 
 /*
 Node provides an EventEmitter class which we can access by requiring in the events core module:
