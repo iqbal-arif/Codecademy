@@ -73,4 +73,32 @@ A: False
 Amazing! You realized that PWD is the property that holds this information.
 */
 
-/*Q12: 
+/*Q12: What Node.js object has the event emitter stdin property?
+A12: The process Object.
+👏
+Correct!
+*/
+
+/*Q13: Which Node.js core module provides runtime type checking?
+A13: The util module.
+*/
+
+/*Q14: Use the appropriate function of the timers module to log 'Welcome learner!' once the current poll phase has been completed.
+👏
+You got it!
+*/
+setImmediate(() => {
+  console.log('Welcome learner!');
+});
+
+/*Q15: When are the functions of the timers module processed?
+A15: They are put into a queue that is processed at every iteration of the Node.js event loop.
+👏
+Correct!
+*/
+
+/*Q16: True/False: Core modules are located in the lib/ folder.
+A16: True.
+👏
+Amazing! The core modules are defined within Node.js’s source and are located in the lib/ folder.
+*/
