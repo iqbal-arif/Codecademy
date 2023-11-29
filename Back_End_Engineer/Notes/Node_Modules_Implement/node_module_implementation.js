@@ -12,7 +12,8 @@ By isolating code into separate files, called modules, you can:
     prevent pollution of the global namespace and potential naming collisions, by cautiously selecting variables and behavior we load into a program. 
 
 */
-/*** Temperature C/F Converter ***/
+/******** FIRST - PROGRAM ********/
+/*** Freezing & Boiling Point ***/
 /* water-limits.js */
 
 function celsiusToFahrenheit(celsius) {
@@ -40,6 +41,9 @@ $ node water-limits.js
 The freezing point of water in Fahrenheit is 32
 The boiling point of water in Fahrenheit is 212
 */
+/******** SECOND - PROGRAM ********/
+/*** Temperature C/F Converter ***/
+
 /*
 The user can input any temperature value in Celsius and the program responds by printing the input temperature converted to Fahrenheit.
 */
@@ -78,8 +82,9 @@ Notice anything similar between the two programs, water-limits.js and celsius-to
 Creating a module that exports a celsiusToFahrenheit() function that can be used by both of these programs would solve this repetitive code problem.
 
 */
+/******** THIRD - PROGRAM ********/
+/******** Module.exports ********/
 
-/*** Module.exports ***/
 /*To create a module, you simply have to create a new file where the functions can be declared. */
 
 /* converters.js */
@@ -106,7 +111,8 @@ module.exports.fahrenheitToCelsius = function (fahrenheit) {
 
 module.exports is an object that is built-in to the Node.js runtime environment. Other files can now import this object, and make use of these two functions, with another feature that is built-in to the Node.js runtime environment: the require() function. */
 
-/*** Require() ***/
+/******** FORTH - PROGRAM ********/
+/*********** Require() **********/
 /*The require() function accepts a string as an argument. That string provides the file path to the module you would like to import.
 
 Let’s update water-limits.js such that it uses require() to import the .celsiusToFahrenheit() method from the module.exports object within converters.js:
@@ -114,14 +120,18 @@ Let’s update water-limits.js such that it uses require() to import the .celsiu
 /* water-limits.js */
 const converters = require('./converters.js');
 
-const freezingPointC = 0;
-const boilingPointC = 100;
+const freezingPointC2 = 0;
+const boilingPointC2 = 100;
 
-const freezingPointF = converters.celsiusToFahrenheit(freezingPointC);
-const boilingPointF = converters.celsiusToFahrenheit(boilingPointC);
+const freezingPointF2 = converters.celsiusToFahrenheit(freezingPointC);
+const boilingPointF2 = converters.celsiusToFahrenheit(boilingPointC);
 
-console.log(`The freezing point of water in Fahrenheit is ${freezingPointF}`);
-console.log(`The boiling point of water in Fahrenheit is ${boilingPointF}`);
+console.log(`The freezing point of water in Fahrenheit is ${freezingPointF2}`);
+console.log(`The boiling point of water in Fahrenheit is ${boilingPointF2}`);
 
 /*
 In this case, ./ is a relative path indicating that converters.js is stored in the same folder as water-limits.js. When you use require(), the entire module.exports object is returned and stored in the variable converters. This means that both the .celsiusToFahrenheit() and .fahrenheitToCelsius() methods can be used in this program!*/
+
+/*************************************/
+/******** OBJECT DESTRUCTURING ********/
+/*************************************/
