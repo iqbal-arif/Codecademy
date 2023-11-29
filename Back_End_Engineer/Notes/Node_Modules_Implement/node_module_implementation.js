@@ -135,3 +135,17 @@ In this case, ./ is a relative path indicating that converters.js is stored in t
 /*************************************/
 /******** OBJECT DESTRUCTURING ********/
 /*************************************/
+/*
+In many cases, modules will export a large number of functions but only one or two of them are needed. You can use object destructuring to extract only the needed functions.
+
+Let’s update celsius-to-fahrenheit.js and only extract the .celsiusToFahrenheit() method, leaving .fahrenheitToCelsius() behind:
+*/
+/* celsius-to-fahrenheit.js */
+const { celsiusToFahrenheit } = require('./converters.js');
+
+const celsiusInput3 = process.argv[2];
+const fahrenheitValue3 = celsiusToFahrenheit(celsiusInput);
+
+console.log(
+  `${celsiusInput3} degrees Celsius = ${fahrenheitValue3} degrees Fahrenheit`
+);
