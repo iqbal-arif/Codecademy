@@ -1,6 +1,37 @@
-const prompt = require('prompt-sync')({sigint: true});
+const prompt = require('prompt-sync')({ sigint: true });
 
 const hat = '^';
 const hole = 'O';
 const fieldCharacter = '░';
 const pathCharacter = '*';
+
+class Field {
+  constructor() {
+    this._hat = hat;
+    this._hole = hole;
+    this._fieldCharacter = fieldCharacter;
+    this._pathCharacter = pathCharacter;
+  }
+
+  fieldConstructor() {
+    let gameField = [];
+    let i = 0;
+    while (i < 3) {
+      let fieldSection = [];
+      let j = 0;
+      while (j < 3) {
+        //   return [this._fieldCharacter];
+        fieldSection.push(this._fieldCharacter);
+        if (j === 4) break;
+        j++;
+      }
+      gameField.push(fieldSection);
+      if (j === 4) break;
+      i++;
+    }
+    console.log(gameField);
+  }
+}
+const myField = new Field(fieldCharacter);
+
+myField.fieldConstructor();
