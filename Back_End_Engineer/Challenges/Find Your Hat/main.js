@@ -6,7 +6,7 @@ const fieldCharacter = '░';
 const pathCharacter = '*';
 
 class Field {
-  constructor(pathCharacter) {
+  constructor() {
     this._hat = hat;
     this._hole = hole;
     this._fieldCharacter = fieldCharacter;
@@ -33,10 +33,10 @@ class Field {
   }
 
   get pathCharacter() {
-    console.log(pathCharacter);
+    return this._pathCharacter;
   }
 }
-const myField = new Field(fieldCharacter, pathCharacter);
+const myField = new Field();
 
 console.log(myField.fieldConstructor());
 console.log(myField.pathCharacter);
