@@ -35,8 +35,14 @@ class Field {
   get pathCharacter() {
     return this._pathCharacter;
   }
+
+  set pathCharacter(newPosition) {
+    console.log('this_.pathCharacter');
+  }
 }
 const myField = new Field();
 
 console.log(myField.fieldConstructor());
+console.log(gameField);
+// myField.pathCharacter = ()
 console.log(myField.pathCharacter);
