@@ -33,10 +33,7 @@ class Field {
   }
 
   get pathCharacter() {
-    console.log('initialPos');
-    // initialPos = this._pathCharacter;
-    // console.log((gameField[0][0] = initialPos));
-    console.log((gameField[0][0] = this._pathCharacter));
+    console.log(this._pathCharacter);
   }
 }
 const myField = new Field(fieldCharacter, pathCharacter);
