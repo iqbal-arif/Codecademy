@@ -29,7 +29,7 @@ class Field {
       if (j === 4) break;
       i++;
     }
-    console.log(gameField);
+    return gameField;
   }
 
   get pathCharacter() {
@@ -41,5 +41,5 @@ class Field {
 }
 const myField = new Field(fieldCharacter, pathCharacter);
 
-myField.fieldConstructor();
-pathCharacter();
+console.log(myField.fieldConstructor());
+console.log(myField.pathCharacter);
