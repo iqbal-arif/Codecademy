@@ -16,20 +16,20 @@ class Field {
   fieldConstructor() {
     let gameField = [];
     let i = 0;
-    while (i < 3) {
+    while (i < 10) {
       let fieldSection = [];
       let j = 0;
-      while (j < 3) {
+      while (j < 10) {
         //   return [this._fieldCharacter];
         fieldSection.push(this._fieldCharacter);
-        if (j === 4) break;
+        if (j === 11) break;
         j++;
       }
       gameField.push(fieldSection);
-      if (j === 4) break;
+      if (j === 11) break;
       i++;
     }
-    return gameField;
+    return gameField.join('\n');
   }
 
   get pathCharacter() {
