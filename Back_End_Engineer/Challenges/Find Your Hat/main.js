@@ -33,7 +33,7 @@ class Field {
   }
 
   get pathCharacter() {
-    console.log(this._pathCharacter);
+    console.log(pathCharacter);
   }
 }
 const myField = new Field(fieldCharacter, pathCharacter);
