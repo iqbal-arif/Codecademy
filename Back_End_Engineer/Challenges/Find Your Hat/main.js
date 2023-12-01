@@ -43,6 +43,6 @@ class Field {
 const myField = new Field();
 
 console.log(myField.fieldConstructor());
-console.log(gameField);
+// console.log(gameField[0][2]);
 // myField.pathCharacter = ()
 console.log(myField.pathCharacter);
