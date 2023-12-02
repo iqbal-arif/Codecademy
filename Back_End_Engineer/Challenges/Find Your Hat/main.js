@@ -29,12 +29,14 @@ class Field {
       if (j === 11) break;
       i++;
     }
-    let fieldLayout = gameField.join('\n');
-    return fieldLayout;
+    // let fieldLayout = gameField.join('\n');
+    // return fieldLayout;
+
+    return gameField.join('\n');
   }
 
   get fieldLocator() {
-    return fieldLayout[0];
+    return fieldConstructor[0];
   }
 
   get pathCharacter() {
@@ -53,4 +55,4 @@ const myField = new Field();
 console.log(myField.fieldConstructor());
 // myField.pathCharacter = ()
 console.log(myField.pathCharacter);
-console.log(myField.fieldConstructor[0]);
+// console.log(myField.fieldLocator);
