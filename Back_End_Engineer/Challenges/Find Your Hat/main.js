@@ -14,6 +14,7 @@ class Field {
   }
 
   fieldConstructor() {
+    let userPosition = this._pathCharacter;
     let gameField = [];
     let i = 0;
     while (i < 10) {
@@ -36,7 +37,7 @@ class Field {
   }
 
   get fieldLocator() {
-    return fieldConstructor[0];
+    console.log(gameField);
   }
 
   get pathCharacter() {
@@ -55,4 +56,4 @@ const myField = new Field();
 console.log(myField.fieldConstructor());
 // myField.pathCharacter = ()
 console.log(myField.pathCharacter);
-// console.log(myField.fieldLocator);
+console.log(myField.fieldLocator);
