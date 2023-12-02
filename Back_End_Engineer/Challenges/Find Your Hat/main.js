@@ -29,20 +29,28 @@ class Field {
       if (j === 11) break;
       i++;
     }
-    return gameField.join('\n');
+    let fieldLayout = gameField.join('\n');
+    return fieldLayout;
+  }
+
+  get fieldLocator() {
+    return fieldLayout[0];
   }
 
   get pathCharacter() {
     return this._pathCharacter;
   }
-
+  //User Input Indicator
   set pathCharacter(newPosition) {
     console.log('this_.pathCharacter');
   }
 }
+
+//Instantiating the fieldConstructor
 const myField = new Field();
 
+// Game Field generator
 console.log(myField.fieldConstructor());
-// console.log(gameField[0][2]);
 // myField.pathCharacter = ()
 console.log(myField.pathCharacter);
+console.log(myField.fieldConstructor[0]);
