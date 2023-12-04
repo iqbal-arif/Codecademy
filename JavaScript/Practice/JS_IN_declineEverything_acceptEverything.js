@@ -19,7 +19,7 @@ const politelyDecline = (veg) => {
 
 // Write your code here:
 function declineEverything(veggies) {
-  veggies.forEach((veg = (veg) => politelyDecline(veg)));
+  veggies.forEach(politelyDecline);
 }
 
 declineEverything(veggies);
