@@ -16,13 +16,38 @@ You can test your function when you’re ready by passing in the myStuff and coo
 
 // Write your code here:
 
+const coolStuff = [
+  'gameboys',
+  'skateboards',
+  'backwards hats',
+  'fruit-by-the-foot',
+  'pogs',
+  'my room',
+  'temporary tattoos',
+];
+
+const myStuff = [
+  'rules',
+  'fruit-by-the-foot',
+  'wedgies',
+  'sweaters',
+  'skateboards',
+  'family-night',
+  'my room',
+  'braces',
+  'the information superhighway',
+];
+
+const justCoolStuff = (myStuff, coolStuff) => {
+  const filterMyStuff = myStuff.filter((myStuffFilter) =>
+    myStuffFilter.every('fruit-by-the-foot', 'skateboards', 'my room')
+  );
+  return filterMyStuff;
+};
+
+console.log(justCoolStuff(myStuff, coolStuff));
 // Feel free to uncomment the code below to test your function
 /*
-const coolStuff = ['gameboys', 'skateboards', 'backwards hats', 'fruit-by-the-foot', 'pogs', 'my room', 'temporary tattoos'];
-
-const myStuff = [ 'rules', 'fruit-by-the-foot', 'wedgies', 'sweaters', 'skateboards', 'family-night', 'my room', 'braces', 'the information superhighway']; 
-
-console.log(justCoolStuff(myStuff, coolStuff))
 // Should print [ 'fruit-by-the-foot', 'skateboards', 'my room' ]
 
 */
