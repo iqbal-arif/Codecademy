@@ -23,3 +23,12 @@ function declineEverything(veggies) {
 }
 
 declineEverything(veggies);
+
+const grudginglyAccepting = (veg) => {
+  console.log(`Ok, I guess I will eat some ${veg}.`);
+};
+
+function acceptEverything(veggies) {
+  veggies.forEach(grudginglyAccepting);
+}
+grudginglyAccepting(veggies);
