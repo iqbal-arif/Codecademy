@@ -38,11 +38,30 @@ const myStuff = [
   'the information superhighway',
 ];
 
+const filterMethod = (arrayToBeFiltered) => {
+//   console.log(arrayToBeFiltered);
+  //   console.log(arrayToBeFiltered.toString());
+  let stringElement = arrayToBeFiltered.toString();
+  //   let matchedArray = ['fruit-by-the-foot', 'skateboards', 'my room'];
+  let matchedArray = [];
+
+  //   console.log(stringElement);
+    if (
+      stringElement === 'fruit-by-the-foot' 
+//   &&
+  //     stringElement === 'skateboards' &&
+  //     stringElement === 'my room'
+    ) {
+      console.log(stringElement);
+  //   }
+};
+
+// &&
+// stringElement === 'skateboards' &&
+// stringElement === 'my room'
 const justCoolStuff = (myStuff, coolStuff) => {
-  const filterMyStuff = myStuff.filter((myStuffFilter) =>
-    myStuffFilter.every('fruit-by-the-foot', 'skateboards', 'my room')
-  );
-  return filterMyStuff;
+  const filterMyStuff = myStuff.filter(filterMethod);
+  //   return filterMyStuff;
 };
 
 console.log(justCoolStuff(myStuff, coolStuff));
