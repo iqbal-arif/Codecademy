@@ -146,7 +146,6 @@ img {
 .footer-right {
   display: inline-block;
   float: right;
-  color: #0d1c32;
 }
 .site-header-right li,
 .footer-right li {
@@ -155,6 +154,7 @@ img {
 .site-header-right li a {
   text-decoration: none;
   margin-left: 20px;
+  color: #0d1c32;
 }
 
 /* Site Footer */
