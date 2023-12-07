@@ -152,3 +152,17 @@ Image of the color wheel selecting analogous colors: blue, light blue, and green
 Analogous color schemes create a visually pleasing and calming display. For instance, the color blue can pair nicely with both teal and green. However, analogous color schemes provide a low-contrast experience, since all colors fall in line with one another.
 
 They shouldn’t be used for content that needs the user’s direct attention, but they can be used to create backgrounds that do not compete with the main content of the site.
+
+11. Triadic Color Schemes
+
+---
+
+Triadic color schemes, much like complementary schemes, provide additional pops of color while allowing for some flexibility in the range you can use.
+
+These consist of three colors that are equidistant from each other on the color wheel.
+
+Image of the color wheel selecting triadic colors: dark blue, orange, and light green
+
+For instance, if we stick with blue being our main color, we would then select red-orange and yellow-green as the pairing combinations. This creates a triangle of colors within the color wheel and gives us a wider palette to choose from.
+
+Triadic color schemes are useful in that they create a sense of equality, vibrancy, and security in your designs.
