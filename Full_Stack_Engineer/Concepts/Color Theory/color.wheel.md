@@ -93,3 +93,20 @@ Understanding how to use tints and shades of a color can help in creating a wide
 Color contrast plays a major role in design as well. Colors opposite of each other on the color wheel tend to have a higher contrast. Colors that fall next to each other have a lower contrast to one another.
 
 When applying color to your designs, it’s vital to ensure contrast levels provide clarity to the users for the elements on your page.
+
+7. Color Schemes
+
+Now that you’ve learned some basic color theory, let’s explore how you can select and apply color to your designs.
+
+As a designer, it’s vital to understand how properly harmonizing colors will enable you to create elegant and usable designs. The color wheel comes in handy when deciding which colors might fit with one another, and using it can allow you to create a variety of color schemes.
+
+Color schemes (or color palettes) are the result of pairing two or more colors together. The colors you select can make or break your design, however, knowing your options will put you in a better place to determine what is best for moving forward.
+
+When deciding which colors to use in your design, there are four different color schemes to consider:
+
+    1. Monochromatic
+    2. Complementary
+    3. Analogous
+    4. Triadic
+
+Each of these can work to your advantage depending on how you want your designs to display.
