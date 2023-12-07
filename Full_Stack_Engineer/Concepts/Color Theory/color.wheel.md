@@ -124,3 +124,19 @@ Each color in the scheme is derived from the base color. While all elements with
 These monochromatic color schemes are beneficial in that they provide an organized impression when applied to your designs. The use of a single color can provide an immediate sense of harmony.
 
 Monochromatic schemes can also consist of black and white, with varying shades of gray, as you see in our current site.
+
+9. Complementary Designs
+
+---
+
+As depicted in the diagram before, a complementary color scheme utilizes colors opposite from each other on the color wheel. For instance, if you were to select blue as your main color, it would create maximum contrast and intensity with orange.
+
+Image of the color wheel selecting complementary colors: orange and blue
+
+Complementary color palettes are very common in logos and uniforms. For example, the Los Angeles Lakers and Minnesota Vikings feature purples and yellows; the Chicago Bears and New York Mets incorporate blues and oranges. These complementary schemes provide a dramatic display of color, which can be applied to websites as well.
+
+Lakers uniform showing contrast between purple and yellow
+
+Complementary color schemes are popular on the web as they have high contrast in the color pairing.
+
+They can seem clashing if complementary colors are used for large areas that are directly next to each other. However, when used strategically, they can draw attention to certain elements on the page that you want users to focus on
