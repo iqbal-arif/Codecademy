@@ -22,4 +22,16 @@ A5: We should avoid all of these combinations
 3. Bright on top of bright.
 
 Q6: Which of these are not a category of color schemes?
-A6:
+A6: Supplementary.
+
+Q7: What color should your text be if applied on a white background?
+A7: Dark Gray
+
+Q8: Which color is considered to be warm?
+A8: RED
+
+Q9: How is a tint of a color produced?
+A9: When white is added to the color, which increases the lightness.
+
+Q10: What is caused from pairing two high-saturated colors together, even while they may be complementary to one another?
+A10: Vibrating Colors
