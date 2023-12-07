@@ -1,4 +1,4 @@
-The Color Wheel
+1. The Color Wheel
 
 ---
 
@@ -19,7 +19,7 @@ The third and final group of colors are considered to be **Tertiary** and are fo
 5.  Blue-purple (Violet)
 6.  Red-purple (Magenta)
 
-The Color Wheel and HSLA
+7.  The Color Wheel and HSLA
 
 ---
 
@@ -56,7 +56,7 @@ Let’s review what each value means:
 
     4. A, or alpha, refers to the opacity. 0% is fully transparent, 100% is fully opaque.
 
-Warm Colors
+3. Warm Colors
 
 ---
 
@@ -64,10 +64,32 @@ All colors have a warmth value assigned to them, which can be classified as warm
 
 Warm colors range between red and yellow, which include various versions of those colors in addition to orange. This also comprises colors such as brown and tan. These are considered to be “warm” colors in that they evoke a sense of warmth. For instance, fire is associated with warmth, and it typically burns between the spectrum of reds and yellows. Warm colors can also promote a feeling of aggression and are considered bold
 
-Cool Colors
+4. Cool Colors
 
 ---
 
 On the other side of the color wheel in contrast to warm colors, there are colors that are considered to be “cool”. These colors range between blue, purple and green. Most gray colors fall into the cool category as well.
 
 Cool colors are given this designation because of their calming, soothing nature. They’re often associated with winter climates or water
+
+5. Tints and Shades
+
+---
+
+You can also increase and decrease the lightness of a color, resulting in tints and shades of a hue, respectively.
+
+Tints occur when white is applied to a color, adding or increasing the lightness of a hue.
+
+Shades are created when black is added to a color, which decreases the lightness of a hue.
+
+In HSLA, tints and shades are determined by the third number, which is L for lightness. This starts at 0% (black) and ranges to 100% (white).
+
+Understanding how to use tints and shades of a color can help in creating a wider range of colors you could apply to your websites.
+
+6. Color Contrast
+
+---
+
+Color contrast plays a major role in design as well. Colors opposite of each other on the color wheel tend to have a higher contrast. Colors that fall next to each other have a lower contrast to one another.
+
+When applying color to your designs, it’s vital to ensure contrast levels provide clarity to the users for the elements on your page.
