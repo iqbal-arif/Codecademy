@@ -166,3 +166,23 @@ Image of the color wheel selecting triadic colors: dark blue, orange, and light 
 For instance, if we stick with blue being our main color, we would then select red-orange and yellow-green as the pairing combinations. This creates a triangle of colors within the color wheel and gives us a wider palette to choose from.
 
 Triadic color schemes are useful in that they create a sense of equality, vibrancy, and security in your designs.
+
+12. Color Psychology
+
+Even though we’ve explored multiple possibilities in terms of selecting color schemes, when it comes down to choosing the right combinations, a designer must determine the “feel” of their website.
+
+Every color has a different context and meaning, and color psychology can impact how people perceive a design and relate to the colors used. Choosing the right colors can help nonverbally communicate the context and emotion of a product or service.
+
+Each color has a specific meaning (both positive and negative), which can evoke emotions from a user. For instance, here’s a list of words often associated with colors:
+
+1.  Red: Passionate, energetic, angry
+2.  Orange: Optimistic, playful, fun
+3.  Yellow: Welcoming, intellectual, impatient
+4.  Green: Prosperous, balanced, growing
+5.  Blue: Peaceful, loyal, cold
+6.  Purple: Imaginative, royal, spiritual
+7.  Gray: Unemotional, compromising
+8.  White: Innocent, pure
+9.  Black: Luxurious, powerful
+
+It’s also important to note that color associations may vary from other parts of the world as well. However, when selecting colors, be sure to choose ones that help reinforce the overall message and tone of the website!
