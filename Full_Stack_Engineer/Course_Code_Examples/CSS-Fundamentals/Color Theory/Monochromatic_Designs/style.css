@@ -229,7 +229,7 @@ input {
 /* 6. Page Styles
   ======================================== */
 .page-hero-header {
-  background-color: #bfbfbf;
+  background-color: #627fb0;
   background-image: url('images/saturn-background.svg');
   background-position: center;
   background-repeat: no-repeat;
@@ -249,7 +249,7 @@ input {
 }
 .main-content-benefits {
   padding: 80px 0;
-  background-color: #f3f3f3;
+  background-color: #f5f9ff;
 }
 .main-content-benefits h2 {
   color: #9b9b9b;
