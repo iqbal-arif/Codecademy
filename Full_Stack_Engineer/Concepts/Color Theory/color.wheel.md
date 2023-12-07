@@ -186,3 +186,44 @@ Each color has a specific meaning (both positive and negative), which can evoke 
 9.  Black: Luxurious, powerful
 
 It’s also important to note that color associations may vary from other parts of the world as well. However, when selecting colors, be sure to choose ones that help reinforce the overall message and tone of the website!
+
+13. Best Practices
+
+---
+
+Now that we’ve talked through how to choose the proper colors for your designs, there are some best practices to consider as well.
+
+Use neon colors sparingly. While the use of neon colors can feel hip, they are often hard on a user’s eyes.
+
+Avoid vibrating colors. Vibrating colors result from pairing two colors with high saturation together that may be complementary to one another. It creates a glowing or moving effect, which also can be hard on one’s eyes.
+
+For example, the red and green pairing that is common with Christmas cards is very glaring when presented on a screen. See the example to the right to notice how intense and distracting this pairing feels.
+
+Use backdrops to separate vibrating colors. In the example, the white backdrop behind the green card reduces the space where the contrasting colors (red and green) are directly next to each other, but the overall effect is still too intense for most websites.
+
+Avoid color combinations with insufficient contrast, including:
+
+    1. Bright colors on top of bright colors
+    2. Light colors on top of light colors
+    3. Dark colors on top of dark colors
+
+Even if there’s enough contrast in these pairings for the different colors to be legible, they likely won’t create enough contrast to attract the user’s attention.
+
+Remember that most users skim websites! They are not reading every word and checking every menu—you need to guide the user to the most important content with good color choices.
+
+14. Color Theory Review
+
+---
+
+Congratulations! You gained some knowledge on color theory and how to select colors to use within your websites.
+
+Remember, the keys to choosing the right colors for your projects are:
+
+    1. Using the color wheel as a basis for selecting colors
+    2. Using a color scheme approach that promotes harmony
+    3. Using colors that fit the context and emotion you are trying to display to users
+    4. Using contrast to enhance the legibility of elements on the page
+    5. Using shades and tints of a color to create flexibility
+    Avoiding combinations that can cause issues for users
+
+Following these guidelines allow you to create more elegant, engaging and beautiful websites!
