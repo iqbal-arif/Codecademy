@@ -110,3 +110,17 @@ When deciding which colors to use in your design, there are four different color
     4. Triadic
 
 Each of these can work to your advantage depending on how you want your designs to display.
+
+8. Monochromatic Designs
+
+---
+
+The most basic color scheme possible utilizes a single color with varying shades and tints to create a monochromatic palette.
+
+Image of the color wheel showing a monochromatic palatte
+
+Each color in the scheme is derived from the base color. While all elements within the design may feel similar, you can help eliminate the monotonous feeling with high contrast. This means when you are selecting a monochromatic color scheme, it’s important to select a much lighter and much darker shade of the main color.
+
+These monochromatic color schemes are beneficial in that they provide an organized impression when applied to your designs. The use of a single color can provide an immediate sense of harmony.
+
+Monochromatic schemes can also consist of black and white, with varying shades of gray, as you see in our current site.
