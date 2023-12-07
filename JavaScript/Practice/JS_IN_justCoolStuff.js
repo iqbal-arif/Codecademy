@@ -62,6 +62,7 @@ const filterMethod = (arrayToBeFiltered) => {
   switch (arrayToBeFiltered) {
     case 'fruit-by-the-foot':
       matchedArray.push(arrayToBeFiltered);
+      continue;
     case 'skateboards':
       matchedArray.push(arrayToBeFiltered);
     case 'my room':
