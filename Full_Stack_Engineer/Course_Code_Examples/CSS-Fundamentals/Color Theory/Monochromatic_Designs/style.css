@@ -159,7 +159,7 @@ img {
 
 /* Site Footer */
 .footer {
-  background-color: #e8e8e8;
+  background-color: #ecf3ff;
   padding: 30px;
 }
 .footer-navigation {
@@ -209,7 +209,7 @@ button:hover {
   opacity: 0.75;
 }
 .button-primary {
-  background-color: #a1a1a1;
+  background-color: #0d1c32;
   color: #ffffff;
 }
 .button-secondary {
