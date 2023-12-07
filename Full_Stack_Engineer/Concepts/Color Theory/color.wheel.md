@@ -140,3 +140,15 @@ Lakers uniform showing contrast between purple and yellow
 Complementary color schemes are popular on the web as they have high contrast in the color pairing.
 
 They can seem clashing if complementary colors are used for large areas that are directly next to each other. However, when used strategically, they can draw attention to certain elements on the page that you want users to focus on
+
+10. Analogous Color Schemes
+
+---
+
+Analogous color schemes apply three or more colors that are adjacent to each other on the color wheel. Typically, there is one dominant color (or hue), combined with a second to support, and a third to accent the color palette.
+
+Image of the color wheel selecting analogous colors: blue, light blue, and green
+
+Analogous color schemes create a visually pleasing and calming display. For instance, the color blue can pair nicely with both teal and green. However, analogous color schemes provide a low-contrast experience, since all colors fall in line with one another.
+
+They shouldn’t be used for content that needs the user’s direct attention, but they can be used to create backgrounds that do not compete with the main content of the site.
