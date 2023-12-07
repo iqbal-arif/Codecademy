@@ -146,6 +146,7 @@ img {
 .footer-right {
   display: inline-block;
   float: right;
+  color: #0d1c32;
 }
 .site-header-right li,
 .footer-right li {
