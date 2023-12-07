@@ -50,14 +50,28 @@ const filterMethod = (arrayToBeFiltered) => {
   */
 const filterMethod = (arrayToBeFiltered) => {
   let matchedArray = [];
-  // for (let i = 0; i < arrayToBeFiltered.length; i++) {
-  const includeStr = arrayToBeFiltered.includes('skateboards');
-  if (includeStr) {
-    matchedArray.push(arrayToBeFiltered);
-  }
+  // // for (let i = 0; i < arrayToBeFiltered.length; i++) {
+  // const includeStr = arrayToBeFiltered.includes('skateboards');
+  // if (includeStr) {
+  //   matchedArray.push(arrayToBeFiltered);
   // }
-  console.log(matchedArray);
-  return;
+  // // }
+  // console.log(matchedArray);
+  // return;
+  // console.log(arrayToBeFiltered);
+  switch (arrayToBeFiltered) {
+    case 'fruit-by-the-foot':
+      matchedArray.push(arrayToBeFiltered);
+    case 'skateboards':
+      matchedArray.push(arrayToBeFiltered);
+    case 'my room':
+      matchedArray.push(arrayToBeFiltered);
+      console.log(matchedArray);
+      break;
+    default:
+      console.log('Sorry nothing matched');
+      return;
+  }
 };
 //   console.log(arrayToBeFiltered.toString());
 // let stringElement = arrayToBeFiltered.toString();
