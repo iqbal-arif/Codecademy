@@ -238,7 +238,7 @@ small {
 .site-nav-left li:not(:last-child),
 .site-nav-right li:not(:last-child),
 .site-nav-mobile li:not(:last-child) {
-  margin-right: 5px;
+  margin-right: 45px;
 }
 
 .site-nav-left .logo {

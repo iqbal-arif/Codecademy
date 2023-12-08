@@ -121,3 +121,25 @@ For example, you will notice that Google embraces whitespace on its landing page
 Too much whitespace can negatively impact the flow of your site. By including too much spacing in-between elements, it can cause issues for users trying to navigate seamlessly through the content.
 
 As a designer, don’t fear using space to enhance the usability of your site and prioritize the most important content.
+
+11. Accessibility
+
+---
+
+Making sure that the colors you choose for your UI components are accessible is a really important aspect of visual design.
+
+Using contrasting colors will help users that need assistance understand and differentiate the content you have designed.
+
+However, many users can experience different types of color blindness:
+
+    1. red-green, where users have a difficult time differentiating between the red and green colors.
+    2. blue-yellow, where the blues tend to appear greener
+    3. monochromatic, when users can’t see color at all.
+
+To make your sites more accessible, try pairing another indicator along with color to convey information. Earlier, we mentioned using green as a success indicator and red as an error alert indicator. Consider using a label indicator such as a green check for success and a red “x” for error to ensure the user has a full understanding of the message.
+
+If you are having trouble deciding on an accessible color palette you can visit Color Safe which creates accessible color palettes for your site or app based on Web Content Accessibility Guidelines (WCAG).
+
+Already decided on colors? You can go to WebAIM Color Contrast Checker to test how your selected colors work with web usability.
+
+As you can see in our example, we placed an icon next to the alert message to provide an additional visual cue for the user.
