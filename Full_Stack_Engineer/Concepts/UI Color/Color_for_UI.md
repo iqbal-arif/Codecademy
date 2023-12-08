@@ -8,15 +8,15 @@ As you continue to grow as a designer, you’ll begin to look at a site holistic
 
 In this lesson, we’ll explore
 
-1.  How to use contrast to imply hierarchy on a page and draw a user’s attention
-2.  How to establish brand and accent colors and then how to properly apply them
-3.  What states are necessary for buttons and forms
-4.  How to properly provide feedback on error, success and warning messages
-5.  How to use neutral colors to effectively communicate your content
-6.  Why whitespace is important to the usability and aesthetic quality of your designs
-7.  How to ensure your website is usable for all individuals
+    1.  How to use contrast to imply hierarchy on a page and draw a user’s attention
+    2.  How to establish brand and accent colors and then how to properly apply them
+    3.  What states are necessary for buttons and forms
+    4.  How to properly provide feedback on error, success and warning messages
+    5.  How to use neutral colors to effectively communicate your content
+    6.  Why whitespace is important to the usability and aesthetic quality of your designs
+    7.  How to ensure your website is usable for all individuals
 
-8.  Contrast Constraints
+2.  Contrast Constraints
 
 ---
 
@@ -28,4 +28,32 @@ Having a neutral background (any color with low lightness or saturation) is a go
 
 Similarly, a dark background with light colored text can be a reasonable alternative, depending on the assets like image or video, that you are displaying on the site.
 
-3.
+3. Brand Color
+
+---
+
+Each company, whether it be an internet startup, a sports team, or a multinational clothing label, has a defined brand color. For instance, Facebook has its iconic blue, as does Twitter, while Coca-Cola features red as its primary color.
+
+Just think about all of the brands you know and love and colors you associate with them. There’s even a site, called BrandColors, dedicated to showing those for various companies.
+
+When working on a design, it’s essential to select and apply a brand color. This is a hue that should dominate your color palette. This brand color will account for roughly 60% of the color used on your site, and helps build a bridge between your product and the user’s recognition of it.
+
+4. Accent Colors
+
+---
+
+While brand colors typically dominate the makeup of a web site, accent colors are equally important. These supplementary hues provide small pops of color within your designs and can be used to draw the user’s attention.
+
+For instance, if you’ve selected a color scheme, one (or more) of the colors from your palette would be used as an accent color. This would allow you to apply these accent colors in various parts of your design to help the user decipher calls-to-action, which are an important part of guiding the user to achieve their goal.
+
+5. Buttons
+
+Buttons are one type of element where accent colors can be used effectively. As these provide ways for the user to navigate, submit a form, or move onto the next task, the color of a button can determine a lot in the user’s eyes.
+
+In addition to selecting the right color for your buttons, there are different states a button has as the user interacts with them. These different states provide a visible signal to the user that an interaction is or is not possible. Two common states used are the hover state and the disabled state.
+
+The hover state typically features a shade or tint of the accent color used for the buttons. This helps a user comprehend that something is happening as they scroll over top of an action.
+
+As a designer, you must also consider how to communicate to your users that a button has been disabled and is no longer actionable. The disabled state implies that the button cannot be clicked, either because it’s not an active button or the user must complete steps prior to the button activating.
+
+A good example is a user sign-in form. We can disable the button for signing in until the user has provided us a username or email and a valid password.

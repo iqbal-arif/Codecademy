@@ -251,7 +251,7 @@ small {
 }
 
 .site-nav-link-active {
-  color: #2a2a2a;
+  color: #ff6600;
   text-decoration: none;
 }
 
@@ -355,11 +355,11 @@ small {
 }
 
 .button-primary {
-  background-color: #959595;
+  background-color: #00cf63;
 }
 
 .button-secondary {
-  background-color: #2a2a2a;
+  background-color: #ffaa00;
 }
 
 .button-full {
