@@ -49,30 +49,40 @@ const filterMethod = (arrayToBeFiltered) => {
   }
   */
 const filterMethod = (arrayToBeFiltered) => {
+  let stringEle = arrayToBeFiltered.includes('skateboards');
+  stringEle = arrayToBeFiltered.includes('my room');
+  stringEle = arrayToBeFiltered.includes('skateboards');
   let matchedArray = [];
-  // // for (let i = 0; i < arrayToBeFiltered.length; i++) {
+  // ;
+
+  if (true) {
+    matchedArray.push(stringEle);
+  }
+  console.log(matchedArray);
+
+  // for (let i = 0; i < arrayToBeFiltered.length; i++) {
   // const includeStr = arrayToBeFiltered.includes('skateboards');
   // if (includeStr) {
   //   matchedArray.push(arrayToBeFiltered);
   // }
-  // // }
+  // }
   // console.log(matchedArray);
   // return;
   // console.log(arrayToBeFiltered);
-  switch (arrayToBeFiltered) {
-    case 'fruit-by-the-foot':
-      matchedArray.push(arrayToBeFiltered);
-      continue;
-    case 'skateboards':
-      matchedArray.push(arrayToBeFiltered);
-    case 'my room':
-      matchedArray.push(arrayToBeFiltered);
-      console.log(matchedArray);
-      break;
-    default:
-      console.log('Sorry nothing matched');
-      return;
-  }
+  // switch (arrayToBeFiltered) {
+  //   case 'fruit-by-the-foot':
+  //     matchedArray.push(arrayToBeFiltered);
+  //     continue;
+  //   case 'skateboards':
+  //     matchedArray.push(arrayToBeFiltered);
+  //   case 'my room':
+  //     matchedArray.push(arrayToBeFiltered);
+  //     console.log(matchedArray);
+  //     break;
+  //   default:
+  //     console.log('Sorry nothing matched');
+  //     return;
+  // }
 };
 //   console.log(arrayToBeFiltered.toString());
 // let stringElement = arrayToBeFiltered.toString();
