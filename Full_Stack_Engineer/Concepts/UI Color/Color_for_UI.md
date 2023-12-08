@@ -57,3 +57,17 @@ The hover state typically features a shade or tint of the accent color used for 
 As a designer, you must also consider how to communicate to your users that a button has been disabled and is no longer actionable. The disabled state implies that the button cannot be clicked, either because it’s not an active button or the user must complete steps prior to the button activating.
 
 A good example is a user sign-in form. We can disable the button for signing in until the user has provided us a username or email and a valid password.
+
+6. Forms
+
+---
+
+Form inputs are another type of component that use color to indicate an action to a user. Similar to buttons, form inputs have certain states.
+
+There is the default state, which is how the user views the inputs when they first arrive at a page.
+
+The second state is the selected, or active, state. These provide the user with a visual cue that they have highlighted the field and have the ability to type within it. This is typically achieved by using a border color or a box shadow effect.
+
+If the input field is unable to be edited or typed within, there should be a disabled state as well. This should render much like the disabled button, in that it is grayed out.
+
+Inputs also have other colors that indicate success and failure. These are called semantic colors.
