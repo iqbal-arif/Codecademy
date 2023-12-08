@@ -71,3 +71,19 @@ The second state is the selected, or active, state. These provide the user with 
 If the input field is unable to be edited or typed within, there should be a disabled state as well. This should render much like the disabled button, in that it is grayed out.
 
 Inputs also have other colors that indicate success and failure. These are called semantic colors.
+
+7. Semantic Colors
+
+---
+
+In addition to your brand and accent colors, you have to remember to provide additional indications to the user when something goes right or wrong.
+
+People make mistakes. We’re all human. So when designing user input elements, you must understand that errors will arise. When this happens, users should be alerted to understand where they went wrong. A common design pattern color used for this indicator is red.
+
+Red is also used to provide more emphasis for delete buttons. If the user wishes or is required to delete something, it should be abundantly clear that the delete action is different from a normal action.
+
+On the other hand, when a user achieves their goal without issue or does something right, you should reward them! A good way to do that is through the use of green as a success message. Green is also often used for actions that entice the user to submit, move forward, or go.
+
+Not all errors are caused by the user. Sometimes, the code just breaks! If an error occurs on the website and we need to notify the user, we should consider selecting a color that indicates the issue level and one that does not conflict with our action colors. A typical color for these warning situations is yellow.
+
+The visual feedback you provide users with when they interact with your interface is incredibly important. It can help alleviate pain points some users might experience.

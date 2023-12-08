@@ -320,7 +320,7 @@ small {
 }
 
 .alert-error {
-  background-color: #cccccc;
+  background-color: #fc472e;
 }
 
 .alert img {
@@ -437,7 +437,7 @@ textarea {
 }
 
 .input-error {
-  border-color: #f2f3f5;
+  border-color: #fc472e;
 }
 
 /* 6. Page Styles
