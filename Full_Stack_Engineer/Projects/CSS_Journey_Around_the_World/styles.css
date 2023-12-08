@@ -11,6 +11,7 @@
 ======================================== */
 * {
   box-sizing: border-box;
+  color: #3f4a03;
 }
 
 html {
@@ -26,7 +27,6 @@ body {
   width: 100%;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  color: #9b9b9b;
 }
 .clearfix::after {
   content: ' ';
@@ -35,7 +35,7 @@ body {
 }
 
 /* 2. Typography Styles
-  ======================================== */
+======================================== */
 h1,
 h2,
 h3,
@@ -83,6 +83,7 @@ a {
   font-family: 'Open Sans', Helvetica, sans-serif;
   font-size: 16px;
   color: #333333;
+  color: #b8d12a;
 }
 ul {
   padding: 0;
@@ -99,7 +100,7 @@ img {
 }
 
 /* 3. Structure Styles
-  ======================================== */
+======================================== */
 .container {
   margin: 0 auto;
   max-width: 1280px;
@@ -112,7 +113,7 @@ img {
   clear: both;
 }
 /* 4. Modules Styles
-  ======================================== */
+======================================== */
 
 /* Site Navigation */
 .site-navigation {
@@ -141,7 +142,8 @@ img {
 
 /* Site Footer */
 .footer {
-  background-color: #333333;
+  /* background-color: #333333; */
+  background-color: #b8d12a;
   color: #ffffff;
   padding: 30px;
   text-align: center;
@@ -152,7 +154,7 @@ img {
 }
 
 /* 5. Component Styles
-  ======================================== */
+======================================== */
 button {
   border: none;
 }
@@ -175,8 +177,10 @@ button:hover {
   opacity: 0.75;
 }
 .button-primary {
-  border: 1px solid #ffffff;
-  color: #ffffff;
+  /* border: 1px solid #ffffff; */
+  border: 1px solid #e9f799;
+  /* color: #ffffff; */
+  color: #e9f799;
   background-color: transparent;
   float: left;
 }
@@ -187,9 +191,12 @@ textarea {
   border: none;
   box-shadow: none;
   transition: border-color 0.5s ease;
-  background-color: #333333;
-  color: #ffffff;
+  /* background-color: #333333; */
+  background-color: hsl(69, 85%, 78%, 0.65);
+  /* color: #ffffff; */
+  color: #000;
   font-size: 16px;
+  font-weight: 300;
 }
 input {
   width: 100%;
@@ -200,9 +207,10 @@ textarea {
 }
 
 /* 6. Page Styles
-  ======================================== */
+======================================== */
 .photo-hero {
-  background-color: #888888;
+  /* background-color: #888888; */
+  background-color: #3f4a03;
   min-height: 700px;
 }
 .photo-hero-text {
@@ -213,7 +221,8 @@ textarea {
   margin: 1em 0 40px;
 }
 .photo-hero h1 span {
-  color: #333333;
+  /* color: #333333; */
+  color: #b8d12a;
 }
 .photo-hero p {
   color: #ffffff;
@@ -223,6 +232,7 @@ textarea {
 }
 .photo-grid {
   margin-top: -80px;
+  background-color: hsl(69, 85%, 78%, 0.2);
 }
 .image-box {
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
@@ -238,7 +248,8 @@ textarea {
   height: auto;
 }
 .photo-blockquote {
-  background-color: #999999;
+  /* background-color: #999999; */
+  background-color: #3f4a03;
   margin-top: -80px;
   padding-bottom: 80px;
 }
@@ -247,7 +258,8 @@ blockquote p {
   font-size: 24px;
   line-height: 1.4;
   text-align: center;
-  color: #ffffff;
+  /* color: #ffffff; */
+  color: #e9f799;
 }
 blockquote:before {
   content: '  ';
@@ -274,16 +286,19 @@ blockquote footer {
   padding: 80px 0;
 }
 .photo-about h2 {
-  color: #888888;
+  /* color: #888888; */
+  /* color: #b8d12a; */
   margin-bottom: 30px;
 }
 .photo-about p {
-  color: #888888;
+  /* color: #888888; */
+  color: #3f4a03;
   padding: 0 10%;
   text-align: left;
 }
 .photo-contact {
-  background-color: #555555;
+  /* background-color: #555555; */
+  background-color: #3f4a03;
 }
 .photo-contact h2 {
   color: #ffffff;
