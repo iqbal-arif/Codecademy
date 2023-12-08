@@ -143,3 +143,13 @@ If you are having trouble deciding on an accessible color palette you can visit 
 Already decided on colors? You can go to WebAIM Color Contrast Checker to test how your selected colors work with web usability.
 
 As you can see in our example, we placed an icon next to the alert message to provide an additional visual cue for the user.
+
+12. Iterations
+
+---
+
+As a Visual UI designer, aesthetics are important to the overall user experience. However, if usability and aesthetics conflict, it’s always best to err on the side of usability.
+
+Testing and iteration are essential parts of the user-centered design process. Test early and test often is the motto of designers! No amount of design knowledge can replace putting your designs in front of users to gain appropriate and helpful feedback.
+
+As some users are different from others, gaining a better understanding of who you are building for will help in ensuring the color choices work. So it’s important to understand that while you may fall in love with that shade of blue, you should be prepared to change your color choices based on the feedback you receive.
