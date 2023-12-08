@@ -87,3 +87,37 @@ On the other hand, when a user achieves their goal without issue or does somethi
 Not all errors are caused by the user. Sometimes, the code just breaks! If an error occurs on the website and we need to notify the user, we should consider selecting a color that indicates the issue level and one that does not conflict with our action colors. A typical color for these warning situations is yellow.
 
 The visual feedback you provide users with when they interact with your interface is incredibly important. It can help alleviate pain points some users might experience.
+
+8. Default Colors
+
+---
+
+Next, let’s discuss default or structural colors. Almost every site you design will incorporate black, white, and shades of gray in some way. These default colors are used often as the color for text within your designs, as they provide plenty of contrast for reading and can fit into many other different color schemes.
+
+When selecting the color of your text, it’s important to ensure the contrast is high enough for the text to be legible. However, too much contrast can also be an issue.
+
+Pure black on white can be hard on the user’s eyes because of the stark contrast. Using a darker gray for text on a white background, or white text on a dark gray background, helps soften the feel while still providing clear enough contrast to be legible without issue.
+
+9. Neutral Colors
+
+---
+
+It’s important to consider how contrast will also be affected when using different colors for backgrounds and text.
+
+Neutral colors, or hues with low lightness and/or saturation, make for good base colors as it allows you to add flourishes to the parts of the site where you want to direct the user’s attention.
+
+For example, similar to using a dark gray with white text, you can use a darker shade of a color with light colored text. Using a medium shade or tint of a color can be difficult to achieve the same result, as the contrast is lower.
+
+10. Whitespace
+
+---
+
+Space is an important aspect of creating balanced and harmonious layouts in web design. As a designer, it’s important to understand how space can enhance as well as hurt your designs.
+
+Whitespace, or negative space, refers to the emptiness between elements. It’s not necessarily white in color, even though, that is sometimes the case.
+
+For example, you will notice that Google embraces whitespace on its landing page. It focuses the user’s attention solely on the primary action, which is searching for content.
+
+Too much whitespace can negatively impact the flow of your site. By including too much spacing in-between elements, it can cause issues for users trying to navigate seamlessly through the content.
+
+As a designer, don’t fear using space to enhance the usability of your site and prioritize the most important content.
