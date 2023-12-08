@@ -153,3 +153,18 @@ As a Visual UI designer, aesthetics are important to the overall user experience
 Testing and iteration are essential parts of the user-centered design process. Test early and test often is the motto of designers! No amount of design knowledge can replace putting your designs in front of users to gain appropriate and helpful feedback.
 
 As some users are different from others, gaining a better understanding of who you are building for will help in ensuring the color choices work. So it’s important to understand that while you may fall in love with that shade of blue, you should be prepared to change your color choices based on the feedback you receive.
+
+13. Review
+
+Congratulations! You gained some knowledge on using color for UI design and how to ensure your websites are usable while remaining aesthetically pleasing.
+
+Remember, the keys to designing for UI:
+
+1.  Select a dominant brand color and supporting accent colors
+2.  Use contrast to define sections and differentiate actions
+3.  Use semantic colors for error and success messages
+4.  Incorporate default colors for text and backgrounds where needed
+5.  Neutral colors can provide good contrast
+6.  Keep users in mind when selecting color
+
+Following these guidelines allow you to create more elegant, engaging and beautiful websites!
