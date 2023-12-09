@@ -51,3 +51,49 @@ A good rule is that if you find yourself using more than three different fonts o
 The whitespace on your page is just as important to the text design of your site as the text itself. Without proper spacing and balance, your text can be rendered virtually illegible.
 
 A website is like a room, the user needs to be able to move through it easily. And just like a room, it is important to keep it tidy and free of clutter. This is the power of whitespace. Good whitespace allows you to increase the legibility of your text, helps prevent users from skimming over elements, and serves as an unintrusive boundary between different sections of the page, without actually being there.
+
+5. Text Readability
+
+---
+
+It should be a pleasant experience for users to read the text on your website. Here are some easy ways to accomplish this:
+
+    1. Make sure that your text is big enough (over 16px).
+    2. Have a strong contrast between the foreground and the background.
+    3. Make sure there is enough space between lines and letters (remember, whitespace is king!)
+
+How can we adjust whitespace within the text?
+
+Line Spacing
+
+---
+
+Line spacing, also known as Leading, refers to the distance between two lines of text. Adjusting this value has a huge impact on the legibility of your site.
+
+image showing 3 paragraphs, one with good leading, one with too much leading, and one with cramped leading
+
+Tracking
+
+---
+
+Similar to kerning, a way to make your text more readable is to adjust the tracking of the letters. Tracking is the space between the letters and the words. If you have too little tracking, the words will appear cramped, so by increasing tracking slightly, you make your text significantly more legible.
+
+image showing 3 paragraphs, one with normal tracking, one positive tracking, and one with negative tracking
+
+Kerning
+
+---
+
+Kerning is the space between two letters in the text. You typically will not need to worry about kerning because a well-designed typeface already has optimal kerning built in. It is most important when you want to adjust the kerning in a title or header to achieve the design you want.
+
+6. Text Navigability
+
+It’s also important for a user to immediately know how to navigate your text. It should be clear what they can click, and where it will take them.
+
+    Stick to conventions about showing what is clickable (generally, links should be blue and underlined). Underlining links is less common now than a few years ago. It’s optional, but a nice courtesy to colorblind users.
+    Never use blue as a general accent color for text, because your users will probably try to click on it no matter what.
+    Having text on navigation buttons is important. It removes all uncertainty about what each button does.
+
+Sticking to these simple rules will allow users to easily navigate your page and makes them more likely to stick around and experience the actual content of your site.
+
+Also, it is important to think about the ways the user’s eyes will travel across your text. This will impact the way they navigate the page. If you organize the text into columns, the user’s eyes will likely not travel across the entire screen, they will travel to the end of a column and then down. Similarly, if you have long line lengths, the user’s eyes will spend more time traveling from left to right. We’ll cover this further in the next exercise.
