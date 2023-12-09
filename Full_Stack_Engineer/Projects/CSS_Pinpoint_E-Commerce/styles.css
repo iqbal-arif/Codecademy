@@ -116,7 +116,7 @@ p {
 }
 
 a {
-  color: #000000;
+  color: #42a5f5;
   font-family: 'Roboto', Helvetica, sans-serif;
   font-size: 16px;
   line-height: 23px;
@@ -516,7 +516,7 @@ textarea {
   clear: both;
   display: block;
   margin: 30px 0;
-  padding: 0;
+  padding: 15px;
 }
 
 .help-box p {
