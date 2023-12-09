@@ -43,3 +43,11 @@ In addition to fonts and headers, you can contrast between different pieces of t
     color
 
 A good rule is that if you find yourself using more than three different fonts on one page, maybe it’s time to try fewer fonts but other sources of visual contrast with text
+
+4. Whitespace
+
+---
+
+The whitespace on your page is just as important to the text design of your site as the text itself. Without proper spacing and balance, your text can be rendered virtually illegible.
+
+A website is like a room, the user needs to be able to move through it easily. And just like a room, it is important to keep it tidy and free of clutter. This is the power of whitespace. Good whitespace allows you to increase the legibility of your text, helps prevent users from skimming over elements, and serves as an unintrusive boundary between different sections of the page, without actually being there.
