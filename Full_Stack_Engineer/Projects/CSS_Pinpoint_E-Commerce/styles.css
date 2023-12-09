@@ -367,11 +367,11 @@ small {
 }
 
 .button-primary {
-  background-color: #959595;
+  background-color: #00cf63;
 }
 
 .button-secondary {
-  background-color: #2a2a2a;
+  background-color: #ffaa00;
 }
 
 .button-full {
@@ -440,7 +440,7 @@ input:active,
 input:focus,
 textarea:active,
 textarea:focus {
-  border: 1px solid #cccccc;
+  border: 1px solid #fc472e;
   outline: none;
 }
 
@@ -511,11 +511,11 @@ textarea {
 }
 
 .help-box {
-  background-color: #ffffff;
+  background-color: #ffaa00;
   border-radius: 3px;
   clear: both;
   display: block;
-  margin-top: 0;
+  margin: 30px 0;
   padding: 0;
 }
 
