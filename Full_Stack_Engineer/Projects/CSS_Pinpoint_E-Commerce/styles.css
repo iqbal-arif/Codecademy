@@ -204,7 +204,7 @@ small {
 
 /* Site Navigation */
 .site-header {
-  background-color: #ebebeb;
+  background-color: #34474f;
   padding: 30px 15px 0;
 }
 
@@ -470,7 +470,7 @@ textarea {
 }
 
 .site-main-background {
-  background-color: #ebebeb;
+  background-color: #34474f;
   bottom: 0;
   display: block;
   height: 600px;
@@ -487,7 +487,7 @@ textarea {
 
 .site-main-header h1,
 .site-main-header p {
-  color: #2a2a2a;
+  color: #fff;
 }
 
 .section-header {
