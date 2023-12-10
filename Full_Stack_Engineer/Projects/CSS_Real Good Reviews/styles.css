@@ -149,9 +149,6 @@ small {
   width: 120px;
 }
 
-.featured-section-header {
-  color: #c25e5e;
-}
 /* Site Footer */
 .footer {
   background-color: #1b1b1b;
@@ -319,6 +316,10 @@ input:focus {
   background-image: url('https://content.codecademy.com/courses/learn-text-design/project%20images/get-out-background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+}
+.featured-section-header {
+  color: #c25e5e;
+  font-size: 25px;
 }
 
 .featured-movie-section h2,
