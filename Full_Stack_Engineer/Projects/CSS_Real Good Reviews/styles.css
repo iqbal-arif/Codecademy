@@ -356,11 +356,16 @@ input:focus {
 .movie-description-category {
   border-bottom: 1px solid #62a7b3;
   border-top: 1px solid #62a7b3;
-  letter-spacing: -1px;
+  letter-spacing: 1px;
   margin: 20px auto;
   padding: 10px;
   text-align: center;
   text-transform: uppercase;
+  line-height: 20px;
+}
+
+.movie-description a {
+  background-color: hsla(71, 80%, 71%, 0.85);
 }
 
 .review-header {
