@@ -80,12 +80,13 @@ a {
   line-height: 23px;
 }
 
-.stars-label {
+.section-header .stars-label {
   margin: 15px 0px;
   letter-spacing: 5px;
   font-size: 25px;
-  color: #f1eb58;
+  color: #42a5f5;
 }
+
 li {
   color: #414546;
   font-family: 'Roboto', Helvetica, sans-serif;
