@@ -306,10 +306,11 @@ input:focus {
 .section-header p {
   border-bottom: 1px solid #62a7b3;
   color: #1b1b1b;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 21px;
   padding-bottom: 5px;
+  text-transform: uppercase;
 }
 
 .featured-movie-section {
