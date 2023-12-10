@@ -318,8 +318,8 @@ input:focus {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.featured-section-header {
-  color: #c25e5e;
+.section-header .featured-section-header {
+  color: #eaf0b2;
   font-size: 25px;
 }
 
