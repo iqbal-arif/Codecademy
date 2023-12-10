@@ -149,3 +149,39 @@ Users eyes are easily drawn to images quicker than they are to text. You can uti
 This pairing can be accomplished by grouping with card designs (putting them in a div together with a shared background color). This is a great way of adding visual appeal to your text.
 
 It may be confusing to hear about images in a lesson on text design, but you cannot solely focus on text when you design your page. It is important to create a balance between the image and the text. You want the image to be able to draw the users eye to a section of the page, but you don’t want it to completely overshadow the text, which is ultimately what you want the user to consume.
+
+9. What Content will the Users Notice and Remember?
+
+---
+
+What do you want your users to take away from the text on your website? Would you rather they remember a description of where a product was built or would you rather they remember the benefits the product will give them if they buy it.
+
+Where do you want the user’s eyes to immediately focus when they open the page? Would you rather they be drawn to the navigation bar at the top, or do you want them to immediately focus on the articles that are featured on the homepage.
+
+As the designer, these are questions you will have to answer. There are several tools you can use to highlight the most important content.
+Primacy and Recency
+
+People will notice and remember the first and last elements of a list or a page better than anything in the middle of the list/page. This is known as Primacy and Recency effects. You can utilize this neurological behavior when organizing the text on your site to make sure that users remember what you want them to remember.
+Image Pairing
+
+Users eyes are easily drawn to images quicker than they are to text. You can utilize this by pairing important text with images whenever appropriate.
+
+This pairing can be accomplished by grouping with card designs (putting them in a div together with a shared background color). This is a great way of adding visual appeal to your text.
+
+It may be confusing to hear about images in a lesson on text design, but you cannot solely focus on text when you design your page. It is important to create a balance between the image and the text. You want the image to be able to draw the users eye to a section of the page, but you don’t want it to completely overshadow the text, which is ultimately what you want the user to consume.
+
+10. Review: Text Design Best Practices
+
+In this lesson, you have learned that the way you design your text can have a huge impact on a users experience when browsing your site. Poor text design can make your site incomprehensible, and good text design can engage a user, make them more likely to buy something, and make them want to come back to your site.
+
+You’ve learned that:
+
+1.  Differentiating text is essential, and there are several ways to do this:
+    a. Use <h1>, <h2>, and <h3> header elements
+    b. Use 2-3 well-paired fonts, but no more.
+    c. Adjust font style, size, weight, spacing, and color.
+2.  Whitespace plays a big part in readability. Make sure all of your text elements have enough whitespace.
+3.  Use standard convention for links and navigation buttons so users know what to expect.
+4.  Use columns when necessary to keep line length at around 50-75 characters.
+5.  Use colored cards to pair images with important text so users’ eyes are drawn towards it.
+6.  Have the elements you want users to notice at the top of the page, or down the left-hand side because those are the areas of the page users will notice when skimming.
