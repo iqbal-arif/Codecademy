@@ -57,6 +57,7 @@ h1 {
 
 h2 {
   font-size: 30px;
+  color: #92928c;
 }
 
 h3 {
@@ -79,10 +80,18 @@ a {
   line-height: 23px;
 }
 
+.stars-label {
+  margin: 15px 0px;
+  letter-spacing: 5px;
+  font-size: 25px;
+  color: #f1eb58;
+}
 li {
   color: #414546;
   font-family: 'Roboto', Helvetica, sans-serif;
   list-style: none;
+  font-size: 20px;
+  line-height: 20px;
 }
 
 label {
@@ -140,6 +149,9 @@ small {
   width: 120px;
 }
 
+.featured-section-header {
+  color: #c25e5e;
+}
 /* Site Footer */
 .footer {
   background-color: #1b1b1b;
