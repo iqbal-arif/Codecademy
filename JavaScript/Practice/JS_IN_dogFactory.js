@@ -15,22 +15,49 @@ dogFactory('Joe', 'Pug', 27)
 */
 // Write your code here:
 
+//Object Method
+
+const dogFactory = (name, breed, weight) => {
+  return {
+    name,
+    breed,
+    weight,
+    getName() {
+      console.log(name);
+    },
+  };
+};
+
+console.log(dogFactory('Joe', 'Pug', 27));
+dogFactory.getName;
+//Class Method
+/*
 class DogFactory {
   constructor(name, breed, weight) {
-    (this.name = name), (this.breed = breed), (this.weight = weight);
+    this.name = name;
+    this.breed = breed;
+    this.weight = weight;
   }
-  get newName() {
-    return (this._name = this.name);
+  get name() {
+    // return (this._name = this.name);
+    return this.name;
   }
-  get newBreed() {
-    return (this._breed = this.breed);
+  get breed() {
+    // return (this._breed = this.breed);
+    return this.breed;
   }
-  get newWeight() {
-    return (this._weight = this.weight);
+  get weight() {
+    // return (this._weight = this.weight);
+    return this.weight;
   }
+
+  set newName(){
+    return 
+  };
 }
 
 const dogFactory = new DogFactory('Joe', 'Pug', 27);
 console.log(dogFactory);
 
-console.log(dogFactory.newName);
+console.log(dogFactory.name);
+*/
