@@ -21,7 +21,7 @@ const speciesArray = [
 
 const sortSpeciesByTeeth = (speciesArray) => {
   return speciesArray.sort(
-    (firstItem, secondItem) => firstItem.numTeeth - secondItem.numTeeth
+    (firstValue, secondValue) => firstValue.numTeeth - secondValue.numTeeth
   );
 };
 
