@@ -39,8 +39,13 @@ const myStuff = [
 ];
 
 const filterMethod = (arrayToBeFiltered) => {
-  console.log(arrayToBeFiltered);
-
+  // console.log(arrayToBeFiltered);
+  const filteredArray = [];
+  const filterElement = arrayToBeFiltered.includes('fruit-by-the-foot', -100);
+  i;
+  return filterElement
+    ? filteredArray.push(arrayToBeFiltered.indexOf('fruit-by-the-foot'))
+    : console.log('sorry nothing matched');
   // for (let i = 0; i < arrayToBeFiltered.length; i++) {
   // const includeStr = arrayToBeFiltered.includes('skateboards');
   // if (includeStr) {
