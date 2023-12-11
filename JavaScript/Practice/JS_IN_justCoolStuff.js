@@ -37,28 +37,9 @@ const myStuff = [
   'braces',
   'the information superhighway',
 ];
-/*
-const filterMethod = (arrayToBeFiltered) => {
-  // console.log(arrayToBeFiltered);
-  // console.log(arrayToBeFiltered.includes('skateboards'));
-  let matchedArray = [];
-  const includeStr = arrayToBeFiltered.includes('skateboards');
-  if (includeStr) {
-    matchedArray.push(arrayToBeFiltered);
-    console.log(matchedArray);
-  }
-  */
-const filterMethod = (arrayToBeFiltered) => {
-  let stringEle = arrayToBeFiltered.includes('skateboards');
-  stringEle = arrayToBeFiltered.includes('my room');
-  stringEle = arrayToBeFiltered.includes('skateboards');
-  let matchedArray = [];
-  // ;
 
-  if (true) {
-    matchedArray.push(stringEle);
-  }
-  console.log(matchedArray);
+const filterMethod = (arrayToBeFiltered) => {
+  console.log(arrayToBeFiltered);
 
   // for (let i = 0; i < arrayToBeFiltered.length; i++) {
   // const includeStr = arrayToBeFiltered.includes('skateboards');
@@ -68,38 +49,10 @@ const filterMethod = (arrayToBeFiltered) => {
   // }
   // console.log(matchedArray);
   // return;
-  // console.log(arrayToBeFiltered);
-  // switch (arrayToBeFiltered) {
-  //   case 'fruit-by-the-foot':
-  //     matchedArray.push(arrayToBeFiltered);
-  //     continue;
-  //   case 'skateboards':
-  //     matchedArray.push(arrayToBeFiltered);
-  //   case 'my room':
-  //     matchedArray.push(arrayToBeFiltered);
-  //     console.log(matchedArray);
-  //     break;
-  //   default:
-  //     console.log('Sorry nothing matched');
-  //     return;
-  // }
 };
-//   console.log(arrayToBeFiltered.toString());
-// let stringElement = arrayToBeFiltered.toString();
-//   let matchedArray = ['fruit-by-the-foot', 'skateboards', 'my room'];
-// console.log(stringElement);
-// if (
-// stringElement === 'fruit-by-the-foot'
-//   &&
-//     stringElement === 'skateboards' &&
-//     stringElement === 'my room'
-// ) {
-//   }
-// }
 
-// &&
-// stringElement === 'skateboards' &&
-// stringElement === 'my room'
+//   let matchedArray = ['fruit-by-the-foot', 'skateboards', 'my room'];
+
 const justCoolStuff = (myStuff, coolStuff) => {
   const filterMyStuff = myStuff.filter(filterMethod);
   //   return filterMyStuff;
