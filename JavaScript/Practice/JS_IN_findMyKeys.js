@@ -12,3 +12,23 @@ You can use any technique you want to accomplish this task. Though, if you look,
 You can test your function when you’re ready by passing in the randomStuff array or by making your own array!
 
 */
+// Write your code here:
+
+const findMyKeys = (randomStuff) => {
+  return randomStuff.indexOf('keys');
+};
+
+// Feel free to comment out the code below to test your function
+
+const randomStuff = [
+  'credit card',
+  'screwdriver',
+  'receipt',
+  'gum',
+  'keys',
+  'used gum',
+  'plastic spoon',
+];
+
+console.log(findMyKeys(randomStuff));
+// Should print 4
