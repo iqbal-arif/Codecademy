@@ -40,17 +40,15 @@ const myStuff = [
 
 const filterMethod = (arrayToBeFiltered) => {
   let matchedArray = ['fruit-by-the-foot', 'skateboards', 'my room'];
-  const filteredArray = [];
   switch (arrayToBeFiltered) {
     case 'fruit-by-the-foot':
     case 'skateboards':
     case 'my room':
       return arrayToBeFiltered;
-      break;
   }
 };
 
-const justCoolStuff = (myStuff, coolStuff) => {
+const justCoolStuff = (coolStuff, myStuff) => {
   const filterMyStuff = myStuff.filter(filterMethod);
   const filterCoolStuff = coolStuff.filter(filterMethod);
   const comparedStuff = filterMyStuff.every((stuff) =>
