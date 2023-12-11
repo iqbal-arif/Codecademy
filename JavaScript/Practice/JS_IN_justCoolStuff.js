@@ -39,12 +39,14 @@ const myStuff = [
 ];
 
 const filterMethod = (arrayToBeFiltered) => {
+  let matchedArray = ['fruit-by-the-foot', 'skateboards', 'my room'];
   // console.log(arrayToBeFiltered);
   const filteredArray = [];
-  for (const arrayElement of arrayToBeFiltered) {
-    console.log(arrayElement);
-  }
-  // return filterElement
+  const allMatchedElements = matchedArray.every((i) =>
+    arrayToBeFiltered.includes(i)
+  );
+  console.log(allMatchedElements);
+
   //   ? filteredArray.push(arrayToBeFiltered.indexOf('fruit-by-the-foot'))
   //   : console.log('sorry nothing matched');
   // for (let i = 0; i < arrayToBeFiltered.length; i++) {
@@ -61,7 +63,7 @@ const filterMethod = (arrayToBeFiltered) => {
 
 const justCoolStuff = (myStuff, coolStuff) => {
   const filterMyStuff = myStuff.filter(filterMethod);
-  //   return filterMyStuff;
+  return filterMyStuff;
 };
 
 console.log(justCoolStuff(myStuff, coolStuff));
