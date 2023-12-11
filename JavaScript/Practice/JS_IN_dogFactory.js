@@ -14,3 +14,23 @@ dogFactory('Joe', 'Pug', 27)
 // Should return { name: 'Joe', breed: 'Pug', weight: 27 }
 */
 // Write your code here:
+
+class DogFactory {
+  constructor(name, breed, weight) {
+    (this.name = name), (this.breed = breed), (this.weight = weight);
+  }
+  get newName() {
+    return (this._name = this.name);
+  }
+  get newBreed() {
+    return (this._breed = this.breed);
+  }
+  get newWeight() {
+    return (this._weight = this.weight);
+  }
+}
+
+const dogFactory = new DogFactory('Joe', 'Pug', 27);
+console.log(dogFactory);
+
+console.log(dogFactory.newName);
