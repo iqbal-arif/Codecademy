@@ -42,23 +42,23 @@ const filterMethod = (arrayToBeFiltered) => {
   let matchedArray = ['fruit-by-the-foot', 'skateboards', 'my room'];
   // console.log(arrayToBeFiltered);
   const filteredArray = [];
-  // switch (arrayToBeFiltered) {
-  //   case 'fruit-by-the-foot':
-  //   case 'skateboards':
-  //   case 'my room':
-  //     filteredArray.push(arrayToBeFiltered);
-  //     // filteredArray.push(arrayToBeFiltered);
-  //     // filteredArray.push(arrayToBeFiltered);
-  //     console.log(filteredArray);
-  //     break;
-  // }
-
-  for (let i = 0; i <= arrayToBeFiltered.length; i++) {
-    if ((arrayToBeFiltered = 'fruit-by-the-foot')) {
-      console.log(arrayToBeFiltered);
-    }
-    // console.log(matchedArray[i]);
+  switch (arrayToBeFiltered) {
+    case 'fruit-by-the-foot':
+    case 'skateboards':
+    case 'my room':
+      // filteredArray.push(arrayToBeFiltered);
+      // filteredArray.push(arrayToBeFiltered);
+      // filteredArray.push(arrayToBeFiltered);
+      return arrayToBeFiltered;
+      break;
   }
+
+  // for (let i = 0; i <= arrayToBeFiltered.length; i++) {
+  //   if ((arrayToBeFiltered = 'fruit-by-the-foot')) {
+  //     console.log(arrayToBeFiltered);
+  //   }
+  // console.log(matchedArray[i]);
+  // }
 
   // console.log(allMatchedElements);
 
