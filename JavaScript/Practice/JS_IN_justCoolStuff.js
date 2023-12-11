@@ -42,10 +42,25 @@ const filterMethod = (arrayToBeFiltered) => {
   let matchedArray = ['fruit-by-the-foot', 'skateboards', 'my room'];
   // console.log(arrayToBeFiltered);
   const filteredArray = [];
-  const allMatchedElements = matchedArray.every((i) =>
-    arrayToBeFiltered.includes(i)
-  );
-  console.log(allMatchedElements);
+  // switch (arrayToBeFiltered) {
+  //   case 'fruit-by-the-foot':
+  //   case 'skateboards':
+  //   case 'my room':
+  //     filteredArray.push(arrayToBeFiltered);
+  //     // filteredArray.push(arrayToBeFiltered);
+  //     // filteredArray.push(arrayToBeFiltered);
+  //     console.log(filteredArray);
+  //     break;
+  // }
+
+  for (let i = 0; i <= arrayToBeFiltered.length; i++) {
+    if ((arrayToBeFiltered = 'fruit-by-the-foot')) {
+      console.log(arrayToBeFiltered);
+    }
+    // console.log(matchedArray[i]);
+  }
+
+  // console.log(allMatchedElements);
 
   //   ? filteredArray.push(arrayToBeFiltered.indexOf('fruit-by-the-foot'))
   //   : console.log('sorry nothing matched');
@@ -70,5 +85,24 @@ console.log(justCoolStuff(myStuff, coolStuff));
 // Feel free to uncomment the code below to test your function
 /*
 // Should print [ 'fruit-by-the-foot', 'skateboards', 'my room' ]
+
+*/
+
+/*
+const products = ['🍎 apple', '🥬 kale', '🍐 pear', '🌽 corn']
+    const fruits = ['🍐 pear', '🍎 apple']
+    const veggies = ['🥬 kale', '🧅 onion']
+
+    //1. checking if AT LEAST ONE value is in the array
+    const atLeastOneFruit = fruits.some(i => products.includes(i))
+    // console.log(atLeastOneFruit) // true
+    const atLeastOneVeggie = veggies.some(i => products.includes(i))
+    // console.log(atLeastOneVeggie) // true
+
+    //2. checking if ALL THE values are in the array
+    const allTheFruits = fruits.every(i => products.includes(i))
+    console.log(allTheFruits) // true
+    const allTheVeggies = veggies.every(i => products.includes(i))
+    // console.log(allTheVeggies) // false, the '🧅 onion' is missing
 
 */
