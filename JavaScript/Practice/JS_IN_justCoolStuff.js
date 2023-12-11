@@ -40,45 +40,26 @@ const myStuff = [
 
 const filterMethod = (arrayToBeFiltered) => {
   let matchedArray = ['fruit-by-the-foot', 'skateboards', 'my room'];
-  // console.log(arrayToBeFiltered);
   const filteredArray = [];
   switch (arrayToBeFiltered) {
     case 'fruit-by-the-foot':
     case 'skateboards':
     case 'my room':
-      // filteredArray.push(arrayToBeFiltered);
-      // filteredArray.push(arrayToBeFiltered);
-      // filteredArray.push(arrayToBeFiltered);
       return arrayToBeFiltered;
       break;
   }
-
-  // for (let i = 0; i <= arrayToBeFiltered.length; i++) {
-  //   if ((arrayToBeFiltered = 'fruit-by-the-foot')) {
-  //     console.log(arrayToBeFiltered);
-  //   }
-  // console.log(matchedArray[i]);
-  // }
-
-  // console.log(allMatchedElements);
-
-  //   ? filteredArray.push(arrayToBeFiltered.indexOf('fruit-by-the-foot'))
-  //   : console.log('sorry nothing matched');
-  // for (let i = 0; i < arrayToBeFiltered.length; i++) {
-  // const includeStr = arrayToBeFiltered.includes('skateboards');
-  // if (includeStr) {
-  //   matchedArray.push(arrayToBeFiltered);
-  // }
-  // }
-  // console.log(matchedArray);
-  // return;
 };
-
-//   let matchedArray = ['fruit-by-the-foot', 'skateboards', 'my room'];
 
 const justCoolStuff = (myStuff, coolStuff) => {
   const filterMyStuff = myStuff.filter(filterMethod);
-  return filterMyStuff;
+  const filterCoolStuff = coolStuff.filter(filterMethod);
+  const comparedStuff = filterMyStuff.every((stuff) =>
+    filterCoolStuff.includes(stuff)
+  );
+
+  return comparedStuff
+    ? filterCoolStuff
+    : console.log('Sorry, every stuff does not match.  Check your logic!');
 };
 
 console.log(justCoolStuff(myStuff, coolStuff));
