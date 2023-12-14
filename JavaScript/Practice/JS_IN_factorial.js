@@ -25,8 +25,12 @@ const factorial = (x) => {
   let absX = Math.abs(x);
   let fM1 = absX - 1;
 
-  absX = absX * factorialMinusNum(fM1);
-  return absX;
+  if (fM1 === 0) {
+    return 1;
+  } else {
+    absX = absX * factorialMinusNum(fM1);
+    return absX;
+  }
 };
 
 console.log(factorial(1));
