@@ -29,4 +29,4 @@ const factorial = (x) => {
   return absX;
 };
 
-console.log(factorial(4));
+console.log(factorial(1));
