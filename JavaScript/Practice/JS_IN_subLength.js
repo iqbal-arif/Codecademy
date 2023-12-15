@@ -16,4 +16,4 @@ const subLength = (aString, aChar) => {
   aString.every((a) => a.includes('a'));
 };
 
-console.log('Saturday', 'a');
+subLength('Saturday', 'a');
