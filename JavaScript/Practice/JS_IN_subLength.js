@@ -20,6 +20,7 @@ const subLength = (aString, aChar) => {
       const charCount = 0;
       const firstCharIndex = aString.indexOf(char);
       const lastCharIndex = aString.lastIndexOf(char);
+      const charSpan = lastCharIndex - firstCharIndex + 1;
       console.log(firstCharIndex, lastCharIndex);
     }
     // console.log(char);
