@@ -18,17 +18,16 @@ const subLength = (aString, aChar) => {
   let charCount = 0;
   for (let char of aString) {
     if (char === aChar) {
-      //   charCount = charCount + 1;
-      const firstCharIndex = aString.indexOf(char);
-      const lastCharIndex = aString.lastIndexOf(char);
-      const charSpan = lastCharIndex - firstCharIndex + 1;
-      charCount++;
-      return charSpan;
-    }
-    if (charCount === 1 || charCount < 3) {
-      return charSpan;
-    } else {
-      console.log('You got it');
+      if (charCount === 1 || charCount < 3) {
+        const firstCharIndex = aString.indexOf(char);
+        const lastCharIndex = aString.lastIndexOf(char);
+        const charSpan = lastCharIndex - firstCharIndex + 1;
+        charCount++;
+        //   return charSpan;
+        return charSpan;
+      } else {
+        console.log('You got it');
+      }
     }
   }
   //   return charCount;
