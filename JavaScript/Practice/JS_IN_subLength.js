@@ -15,18 +15,20 @@ const subLength = (aString, aChar) => {
   const strLength = aString.length;
   console.log(aString);
   const strIndex = aString.indexOf('a');
+  let charCount = 0;
   for (let char of aString) {
     if (char === aChar) {
-      const charCount = 0;
+      //   charCount = charCount + 1;
       const firstCharIndex = aString.indexOf(char);
       const lastCharIndex = aString.lastIndexOf(char);
       const charSpan = lastCharIndex - firstCharIndex + 1;
-      console.log(firstCharIndex, lastCharIndex);
+      charCount++;
+      console.log(charSpan);
     }
-    // console.log(char);
   }
+  console.log(charCount);
   //   console.log(strIndex);
   //   return aString.includes('a');
 };
 
-console.log(subLength('Saturday', 'a'));
+console.log(subLength('digitize', 'i'));
