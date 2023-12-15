@@ -23,10 +23,15 @@ const subLength = (aString, aChar) => {
       const lastCharIndex = aString.lastIndexOf(char);
       const charSpan = lastCharIndex - firstCharIndex + 1;
       charCount++;
-      console.log(charSpan);
+      return charSpan;
+    }
+    if (charCount === 1 || charCount < 3) {
+      return charSpan;
+    } else {
+      console.log('You got it');
     }
   }
-  console.log(charCount);
+  //   return charCount;
   //   console.log(strIndex);
   //   return aString.includes('a');
 };
