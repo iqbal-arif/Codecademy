@@ -11,7 +11,9 @@ subLength('cheesecake', 'k'); // returns 0
 */
 
 const subLength = (aString, aChar) => {
-  console.log(aString, aChar);
+  //   console.log(aString, aChar);
+
+  aString.every((a) => a.includes('a'));
 };
 
 console.log('Saturday', 'a');
