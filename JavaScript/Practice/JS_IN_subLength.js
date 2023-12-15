@@ -12,15 +12,20 @@ subLength('cheesecake', 'k'); // returns 0
 
 const subLength = (aString, aChar) => {
   //   console.log(aString, aChar);
+  const strLength = aString.length;
+  console.log(aString);
+  const strIndex = aString.indexOf('a');
   for (let char of aString) {
     if (char === aChar) {
+      const charCount = 0;
       const firstCharIndex = aString.indexOf(char);
-      console.log(firstCharIndex);
+      const lastCharIndex = aString.lastIndexOf(char);
+      console.log(firstCharIndex, lastCharIndex);
     }
     // console.log(char);
   }
-
-  return aString.includes('a');
+  //   console.log(strIndex);
+  //   return aString.includes('a');
 };
 
 console.log(subLength('Saturday', 'a'));
