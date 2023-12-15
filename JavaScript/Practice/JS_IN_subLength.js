@@ -14,25 +14,26 @@ const subLength = (aString, aChar) => {
   //   console.log(aString, aChar);
   const strLength = aString.length;
   console.log(aString);
-  const strIndex = aString.indexOf('a');
   let charCount = 0;
   for (let char of aString) {
     if (char === aChar) {
-      if (charCount === 1 || charCount < 3) {
-        const firstCharIndex = aString.indexOf(char);
-        const lastCharIndex = aString.lastIndexOf(char);
-        const charSpan = lastCharIndex - firstCharIndex + 1;
-        charCount++;
-        //   return charSpan;
-        return charSpan;
+      if (charCount === 1 || charCount === 0 || charCount > 3) {
+        return 0;
       } else {
-        console.log('You got it');
+        const firstCharIndex = aString.indexOf(char);
+        console.log(firstCharIndex);
+        const lastCharIndex = aString.lastIndexOf(char);
+        console.log(lastCharIndex);
+        const charSpan = lastCharIndex - firstCharIndex + 1;
+        console.log(charSpan);
+        charCount++;
+        // return charSpan;
       }
     }
   }
-  //   return charCount;
-  //   console.log(strIndex);
-  //   return aString.includes('a');
 };
+//   return charCount;
+//   console.log(strIndex);
+//   return aString.includes('a');
 
-console.log(subLength('digitize', 'i'));
+console.log(subLength('summer', 'm'));
