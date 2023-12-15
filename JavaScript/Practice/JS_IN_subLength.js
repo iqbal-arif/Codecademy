@@ -13,7 +13,11 @@ subLength('cheesecake', 'k'); // returns 0
 const subLength = (aString, aChar) => {
   //   console.log(aString, aChar);
   for (let char of aString) {
-    console.log(char);
+    if (char === aChar) {
+      const firstCharIndex = aString.indexOf(char);
+      console.log(firstCharIndex);
+    }
+    // console.log(char);
   }
 
   return aString.includes('a');
