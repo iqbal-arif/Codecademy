@@ -16,24 +16,28 @@ const subLength = (aString, aChar) => {
   console.log(aString);
   let charCount = 0;
   for (let char of aString) {
-    if (char === aChar) {
-      if (charCount === 1 || charCount === 0 || charCount > 3) {
-        return 0;
-      } else {
+    if (char !== aChar) {
+      return 0;
+    } else {
+      charCount++;
+      if (charCount > 2 || charCount < 2) {
         const firstCharIndex = aString.indexOf(char);
-        console.log(firstCharIndex);
         const lastCharIndex = aString.lastIndexOf(char);
+        const charSpan = lastCharIndex - firstCharIndex;
+        //   if (charCount === 1 || charCount > 3) {
+        //   charSpan === 0 || charSpan === 1 ? charSpan : charSpan + 1;
+        // }
+        //   return;
+        // } else {
+        //   // return charSpan;
+        // }
+        console.log(firstCharIndex);
         console.log(lastCharIndex);
-        const charSpan = lastCharIndex - firstCharIndex + 1;
         console.log(charSpan);
-        charCount++;
-        // return charSpan;
+        console.log(charCount);
       }
     }
   }
 };
-//   return charCount;
-//   console.log(strIndex);
-//   return aString.includes('a');
 
 console.log(subLength('summer', 'm'));
