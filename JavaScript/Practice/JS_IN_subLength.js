@@ -26,8 +26,11 @@ const subLength = (aString, aChar) => {
   } else {
     console.log(aString);
     for (let char of aString) {
-      console.log(char);
+      //   if (char !== aChar) {
+      //     return 0;
+      //   }
       if (char === aChar) {
+        console.log('block', char);
         const firstCharIndex = aString.indexOf(char);
         const lastCharIndex = aString.lastIndexOf(char);
         const charSpan = lastCharIndex - firstCharIndex;
@@ -42,7 +45,7 @@ const subLength = (aString, aChar) => {
   }
   return;
 };
-console.log(subLength('writer', 'r'));
+console.log(subLength('funny', 'k'));
 
 // subLength('Saturday', 'a'); // returns 6
 // subLength('summer', 'm'); // returns 2
