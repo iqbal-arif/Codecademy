@@ -20,11 +20,13 @@ const subLength = (aString, aChar) => {
       const firstCharIndex = aString.indexOf(char);
       const lastCharIndex = aString.lastIndexOf(char);
       const charSpan = lastCharIndex - firstCharIndex;
+      charCount++;
+      console.log(charCount);
       if (charSpan === 0) {
         return 0;
       }
-      console.log(firstCharIndex);
-      console.log(lastCharIndex);
+      //   console.log(firstCharIndex);
+      //   console.log(lastCharIndex);
       if (charSpan === 1 || charSpan > 2) {
         return charSpan + 1;
       }
@@ -36,16 +38,14 @@ const subLength = (aString, aChar) => {
       //   return charSpan;
     }
     // if (charSpan >= 3 || charCount < 2) {
-    //   //   charCount++;
     // } else {
     //   return;
     // }
     // return charSpan;
     // }
     //   console.log(charSpan);
-    //   console.log(charCount);
   }
 };
 
-console.log(subLength('digitize', 'i'));
+console.log(subLength('Saturday', 'a'));
 // subLength('summer', 'm');
