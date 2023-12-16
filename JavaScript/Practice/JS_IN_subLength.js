@@ -11,41 +11,38 @@ subLength('cheesecake', 'k'); // returns 0
 */
 
 const subLength = (aString, aChar) => {
-  //   console.log(aString, aChar);
-  //   const strLength = aString.length;
   console.log(aString);
-  let charCount = 0;
-  for (let char of aString) {
-    if (char === aChar) {
-      const firstCharIndex = aString.indexOf(char);
-      const lastCharIndex = aString.lastIndexOf(char);
-      const charSpan = lastCharIndex - firstCharIndex;
+  charIdentified = aChar;
+  charCount = 0;
+  for (let i = 0; i < aString.length; i++) {
+    if (aString.charAt(i) === charIdentified) {
       charCount++;
-      console.log(charCount);
-      if (charSpan === 0) {
-        return 0;
-      }
-      //   console.log(firstCharIndex);
-      //   console.log(lastCharIndex);
-      if (charSpan === 1 || charSpan > 2) {
-        return charSpan + 1;
-      }
-      //   if (charSpan) {
-      //   }
-      //   return charSpan === 0 || charSpan === 1
-      //     ? charSpan
-      //     : (charSpan = charSpan + 1);
-      //   return charSpan;
     }
-    // if (charSpan >= 3 || charCount < 2) {
-    // } else {
-    //   return;
-    // }
-    // return charSpan;
-    // }
-    //   console.log(charSpan);
+  }
+  console.log('charCount End', charCount);
+  if (charCount >= 3) {
+    return 0;
+  } else {
+    for (let char of aString) {
+      if (char === aChar) {
+        const firstCharIndex = aString.indexOf(char);
+        const lastCharIndex = aString.lastIndexOf(char);
+        const charSpan = lastCharIndex - firstCharIndex;
+        if (charSpan === 0) {
+          return 0;
+        }
+
+        if (charSpan === 1 || charSpan > 2) {
+          return charSpan + 1;
+        }
+      }
+    }
   }
 };
-
-console.log(subLength('Saturday', 'a'));
-// subLength('summer', 'm');
+console.log(subLength('cheesecake', 'k'));
+/*
+subLength(); // returns 6
+subLength(); // returns 2
+subLength(); // returns 0
+subLength(); // returns 0
+*/
