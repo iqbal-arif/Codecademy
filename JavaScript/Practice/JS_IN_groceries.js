@@ -24,14 +24,27 @@ const groceries = (groceryList) => {
   //   for (let i = 0; i < itemString.length; i++) {
   for (let i = itemString.length - 1; i >= 0; i--) {
     // console.log(i);
-    // console.log(itemString.charAt(i));
-    const commaChar = itemString.charAt(i);
-    console.log(commaChar);
+    const charIdentified = ',';
+    // console.log(itemString.charAt(i).replace(',', ' and '));
+    charCount = 0;
+    if (itemString.charAt(i) === charIdentified) {
+      console.log('charCount', charCount, itemString.charAt(i));
+      charCount++;
+    }
+    // }
+    console.log('charCount start', charCount);
+    // if (charCount >= 3) {
+    //   return 0;
+    // } else {
+    // const commaChar = itemString.charAt(i);
+    // console.log(commaChar);
+    /*
     if (commaChar === ',') {
       itemString = itemString.charAt(i).replace(',', ' and ');
       //   return itemString;
       //   console.log(itemString);
     }
+    */
   }
 };
 
