@@ -22,16 +22,22 @@ const groceries = (groceryList) => {
   console.log(comaList);
   //   console.log(itemList.length);
   //   for (let i = 0; i < itemString.length; i++) {
+  charCount = 0;
   for (let i = itemString.length - 1; i >= 0; i--) {
     // console.log(i);
     const charIdentified = ',';
-    // console.log(itemString.charAt(i).replace(',', ' and '));
-    charCount = 0;
     if (itemString.charAt(i) === charIdentified) {
-      console.log('charCount', charCount, itemString.charAt(i));
+      console.log(i);
+      //   console.log('charCount', charCount, itemString.charAt(i));
       charCount++;
+      if (charCount === 1) {
+        let newStr = itemString.charAt(i).replace(',', ' and ');
+        console.log(newStr);
+        // console.log(itemString.charAt(i).replace(',', ' and '));
+      }
       console.log('charCount block', charCount);
     }
+    console.log(itemString);
     // }
     // if (charCount >= 3) {
     //   return 0;
