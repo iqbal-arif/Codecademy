@@ -16,30 +16,23 @@ groceries( [{item: 'Cheese Balls'}] );
 
 const groceries = (groceryList) => {
   let itemList = groceryList.map((item) => item.item);
-  const itemString = itemList.toString();
+  let itemString = itemList.toString();
   console.log(itemString);
   const comaList = itemString.includes(',');
   console.log(comaList);
   //   console.log(itemList.length);
   //   for (let i = 0; i < itemString.length; i++) {
   for (let i = itemString.length - 1; i >= 0; i--) {
-    console.log(i);
-    console.log(itemString.charAt(i));
+    // console.log(i);
+    // console.log(itemString.charAt(i));
     const commaChar = itemString.charAt(i);
+    console.log(commaChar);
     if (commaChar === ',') {
-      const itemConj = itemString.replaceAll(',', ' and ');
-      return itemConj;
+      itemString = itemString.charAt(i).replace(',', ' and ');
+      //   return itemString;
+      //   console.log(itemString);
     }
   }
-  /*
-    if (comaList) {
-      //   const itemConj = itemString.replace(',', ' and ');
-      const itemConj = itemString.charAt(i);
-      return itemConj;
-    }
-  }
-  */
-  //   for (let i = 0; i>)
 };
 
 console.log(
