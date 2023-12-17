@@ -30,9 +30,9 @@ const groceries = (groceryList) => {
     if (itemString.charAt(i) === charIdentified) {
       console.log('charCount', charCount, itemString.charAt(i));
       charCount++;
+      console.log('charCount block', charCount);
     }
     // }
-    console.log('charCount start', charCount);
     // if (charCount >= 3) {
     //   return 0;
     // } else {
