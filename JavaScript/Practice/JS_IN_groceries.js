@@ -27,8 +27,8 @@ const groceries = (groceryList) => {
     console.log(itemString.charAt(i));
     const commaChar = itemString.charAt(i);
     if (commaChar === ',') {
-      const itemConj = itemString.replace(',', ' and ');
-      console.log(itemConj);
+      const itemConj = itemString.replaceAll(',', ' and ');
+      return itemConj;
     }
   }
   /*
