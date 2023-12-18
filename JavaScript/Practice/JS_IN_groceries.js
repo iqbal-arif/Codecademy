@@ -16,6 +16,7 @@ groceries( [{item: 'Cheese Balls'}] );
 
 const groceries = (groceryList) => {
   let itemList = groceryList.map((item) => item.item);
+  console.log(itemList);
   let itemString = itemList.toString();
   console.log(itemString);
   const comaList = itemString.includes(',');
