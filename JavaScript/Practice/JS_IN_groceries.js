@@ -30,14 +30,15 @@ const groceries = (groceryList) => {
       console.log(i);
       //   console.log('charCount', charCount, itemString.charAt(i));
       charCount++;
+      let newStr = [];
       if (charCount === 1) {
-        let newStr = itemString.charAt(i).replace(',', ' and ');
-        console.log(newStr);
+        let newItem = itemString.charAt(i).replace(',', ' and ');
+        newStr.push(newItem);
         // console.log(itemString.charAt(i).replace(',', ' and '));
       }
+      console.log(newStr);
       console.log('charCount block', charCount);
     }
-    console.log(itemString);
     // }
     // if (charCount >= 3) {
     //   return 0;
