@@ -19,6 +19,8 @@ const groceries = (groceryList) => {
   //   console.log(groceryItem);
   let itemList = groceryList.map((item) => item.item);
   console.log(itemList);
+  for (let i = itemList.length - 1; i >= 0; i--) {
+      console.log(i);
 };
 
 /*
