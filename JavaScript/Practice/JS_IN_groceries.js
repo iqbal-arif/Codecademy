@@ -23,8 +23,8 @@ const groceries = (groceryList) => {
     console.log(i);
     if (i === 3) {
       //   return itemList[i];
-      const itemComma = itemList.includes[i];
-      return itemComma;
+      const itemComma = itemList[i].includes(',');
+      console.log(itemComma);
     }
   }
 };
