@@ -18,6 +18,8 @@ const groceries = (groceryList) => {
 
   //   console.log(groceryItem);
   let itemList = groceryList.map((item) => item.item);
+  //   Add AND with push
+  // Use splice and push to add and
   console.log(itemList.toString());
   for (let i = itemList.length - 1; i >= 0; i--) {
     console.log(i);
@@ -28,6 +30,7 @@ const groceries = (groceryList) => {
     }
   }
 };
+//
 /*
 const groceries = (groceryList) => {
   let itemList = groceryList.map((item) => item.item);
