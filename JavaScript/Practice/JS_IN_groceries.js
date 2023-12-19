@@ -52,14 +52,7 @@ const groceries = (groceryList) => {
 };
 //
 console.log(
-  groceries([
-    { item: 'Carrots' },
-    { item: 'Hummus' },
-    { item: 'Pesto' },
-    { item: 'Rigatoni' },
-    { item: 'Bread' },
-    { item: 'Cheese Balls' },
-  ])
+  groceries([{ item: 'Carrots' }, { item: 'Hummus' }, { item: 'Pesto' }])
 );
 
 /*
