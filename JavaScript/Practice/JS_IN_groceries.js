@@ -16,7 +16,9 @@ groceries( [{item: 'Cheese Balls'}] );
 const groceries = (groceryList) => {
   const groceryItem = Object.values(groceryList);
 
-  console.log(groceryItem);
+  //   console.log(groceryItem);
+  let itemList = groceryList.map((item) => item.item);
+  console.log(itemList);
 };
 
 /*
