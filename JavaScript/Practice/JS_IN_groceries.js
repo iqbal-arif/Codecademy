@@ -20,15 +20,13 @@ const groceries = (groceryList) => {
   let itemList = groceryList.map((item) => item.item);
   //   Add AND with push
   // Use splice and push to add and
-
+  console.log('itemList', itemList);
   if (itemList.length === 1) {
-    return itemList.toString();
+    itemList = itemList.toString();
+    return 'List to String', itemList;
   }
   //   console.log(itemList.toString());
   //Reverse loop (looping backward)
-  let itemListStr = itemList.toString();
-  let itemStrReplace = itemListStr.replace(/[,]/g, ', ');
-  console.log(itemStrReplace);
   //   for (let i = itemList.length - 1; i >= 0; i--) {
   //   }
   for (let j = itemList.length - 1; j >= 0; j--) {
@@ -44,63 +42,67 @@ const groceries = (groceryList) => {
     }
     console.log('Outside If-block', itemStr);
   }
+  let itemListStr = itemList.toString();
+  let itemStrReplace = itemListStr.replace(/[,]/g, ', ');
+  console.log(itemStrReplace);
   // console.log(itemStr);
   //   if (j === itemList.length - 1) {
   //   }
 };
 //
-/*
-const groceries = (groceryList) => {
-  let itemList = groceryList.map((item) => item.item);
-  const itemArray = [];
-  console.log(itemArray.push(itemList));
-  let itemString = itemList.toString();
-  console.log(itemString);
-  const comaList = itemString.includes(',');
-  console.log(comaList);
-  //   console.log(itemList.length);
-  //   for (let i = 0; i < itemString.length; i++) {
-  charCount = 0;
-  for (let i = itemString.length - 1; i >= 0; i--) {
-    // console.log(i);
-    const charIdentified = ',';
-    if (itemString.charAt(i) === charIdentified) {
-      console.log(i);
-      //   console.log('charCount', charCount, itemString.charAt(i));
-      charCount++;
-      let newStr = [];
-      if (charCount === 1) {
-        let newItem = itemString.charAt(i).replace(',', ' and ');
-        newStr.push(newItem);
-        // console.log(itemString.charAt(i).replace(',', ' and '));
-      }
-      console.log(newStr);
-      console.log('charCount block', charCount);
-    }
-    // }
-    // if (charCount >= 3) {
-    //   return 0;
-    // } else {
-    // const commaChar = itemString.charAt(i);
-    // console.log(commaChar);
-    /*
-    if (commaChar === ',') {
-      itemString = itemString.charAt(i).replace(',', ' and ');
-      //   return itemString;
-      //   console.log(itemString);
-    }
-    */
-/*
-  }
-};
-*/
 console.log(
   groceries([
-    { item: 'Bread' },
-    { item: 'Butter' },
     { item: 'Carrots' },
     { item: 'Hummus' },
     { item: 'Pesto' },
     { item: 'Rigatoni' },
+    { item: 'Bread' },
+    { item: 'Cheese Balls' },
   ])
 );
+
+/*
+    const groceries = (groceryList) => {
+      let itemList = groceryList.map((item) => item.item);
+      const itemArray = [];
+      console.log(itemArray.push(itemList));
+      let itemString = itemList.toString();
+      console.log(itemString);
+      const comaList = itemString.includes(',');
+      console.log(comaList);
+      //   console.log(itemList.length);
+      //   for (let i = 0; i < itemString.length; i++) {
+      charCount = 0;
+      for (let i = itemString.length - 1; i >= 0; i--) {
+        // console.log(i);
+        const charIdentified = ',';
+        if (itemString.charAt(i) === charIdentified) {
+          console.log(i);
+          //   console.log('charCount', charCount, itemString.charAt(i));
+          charCount++;
+          let newStr = [];
+          if (charCount === 1) {
+            let newItem = itemString.charAt(i).replace(',', ' and ');
+            newStr.push(newItem);
+            // console.log(itemString.charAt(i).replace(',', ' and '));
+          }
+          console.log(newStr);
+          console.log('charCount block', charCount);
+        }
+        // }
+        // if (charCount >= 3) {
+        //   return 0;
+        // } else {
+        // const commaChar = itemString.charAt(i);
+        // console.log(commaChar);
+        /*
+        if (commaChar === ',') {
+          itemString = itemString.charAt(i).replace(',', ' and ');
+          //   return itemString;
+          //   console.log(itemString);
+        }
+        */
+/*
+      }
+    };
+    */
