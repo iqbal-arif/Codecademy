@@ -13,10 +13,17 @@ groceries( [{item: 'Cheese Balls'}] );
 // returns 'Cheese Balls'
 
 */
+const groceries = (groceryList) => {
+  const groceryItem = Object.values(groceryList);
 
+  console.log(groceryItem);
+};
+
+/*
 const groceries = (groceryList) => {
   let itemList = groceryList.map((item) => item.item);
-  console.log(itemList);
+  const itemArray = [];
+  console.log(itemArray.push(itemList));
   let itemString = itemList.toString();
   console.log(itemString);
   const comaList = itemString.includes(',');
@@ -53,9 +60,10 @@ const groceries = (groceryList) => {
       //   console.log(itemString);
     }
     */
+/*
   }
 };
-
+*/
 console.log(
   groceries([
     { item: 'Carrots' },
