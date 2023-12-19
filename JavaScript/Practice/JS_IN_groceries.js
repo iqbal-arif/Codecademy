@@ -21,12 +21,14 @@ const groceries = (groceryList) => {
   //   Add AND with push
   // Use splice and push to add and
   console.log(itemList.toString());
+  //Reverse loop (looping backward)
   for (let i = itemList.length - 1; i >= 0; i--) {
-    console.log(i);
-    if (i === 3) {
-      //   return itemList[i];
-      const itemComma = itemList.includes(',');
-      console.log(itemComma);
+    // Froward Loop (Looping Forward)
+    //   for (let i = 0; i < itemList.length; i++) {
+    let itemIndex;
+    if (i === itemList.length - 1) {
+      itemList.splice(itemList.length - 1, 0, 'and');
+      console.log(itemList.toString());
     }
   }
 };
