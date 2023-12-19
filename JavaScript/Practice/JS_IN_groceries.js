@@ -37,14 +37,15 @@ const groceries = (groceryList) => {
     if (j === itemList.length - 1) {
       itemList.splice(itemList.length - 1, 0, 'and');
       let itemStr = itemList.toString();
-      itemStr = itemStr.replace(',and,', ' and ');
-      return 'Inside block', itemStr;
+      itemStr = itemStr.replace(/[,]/g, ', ');
+      itemStr = itemStr.replace(', and,', ' and ');
+      //   return 'Inside block', itemStr;
+      console.log('Inside block', itemStr);
     }
-    console.log('Outside If-block', itemStr);
+    // console.log('Outside If-block', itemStr);
   }
   let itemListStr = itemList.toString();
-  let itemStrReplace = itemListStr.replace(/[,]/g, ', ');
-  console.log(itemStrReplace);
+  //   console.log(itemStrReplace);
   // console.log(itemStr);
   //   if (j === itemList.length - 1) {
   //   }
