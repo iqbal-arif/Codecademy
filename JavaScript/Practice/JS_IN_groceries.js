@@ -31,9 +31,14 @@ const groceries = (groceryList) => {
     let itemIndex;
     if (i === itemList.length - 1) {
       itemList.splice(itemList.length - 1, 0, 'and');
-      console.log(itemList.toString());
     }
   }
+  let itemStr = itemList.toString();
+  console.log('Inside block', itemStr);
+  //   if (j === itemList.length - 1) {
+  //     itemStr = itemStr.replace(',', ' ');
+  //     console.log(itemStr);
+  //   }
 };
 //
 /*
