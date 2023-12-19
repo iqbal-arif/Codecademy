@@ -20,24 +20,32 @@ const groceries = (groceryList) => {
   let itemList = groceryList.map((item) => item.item);
   //   Add AND with push
   // Use splice and push to add and
+
   if (itemList.length === 1) {
     return itemList.toString();
   }
-  console.log(itemList.toString());
+  //   console.log(itemList.toString());
   //Reverse loop (looping backward)
-  for (let i = itemList.length - 1; i >= 0; i--) {
+  let itemListStr = itemList.toString();
+  let itemStrReplace = itemListStr.replace(/[,]/g, ', ');
+  console.log(itemStrReplace);
+  //   for (let i = itemList.length - 1; i >= 0; i--) {
+  //   }
+  for (let j = itemList.length - 1; j >= 0; j--) {
     // Froward Loop (Looping Forward)
     //   for (let i = 0; i < itemList.length; i++) {
-    let itemIndex;
-    if (i === itemList.length - 1) {
+    // itemList = itemList[i].replaceAll(',', ', ');
+    // console.log(itemList[i]);
+    if (j === itemList.length - 1) {
       itemList.splice(itemList.length - 1, 0, 'and');
+      let itemStr = itemList.toString();
+      itemStr = itemStr.replace(',and,', ' and ');
+      return 'Inside block', itemStr;
     }
+    console.log('Outside If-block', itemStr);
   }
-  let itemStr = itemList.toString();
-  console.log('Inside block', itemStr);
+  // console.log(itemStr);
   //   if (j === itemList.length - 1) {
-  //     itemStr = itemStr.replace(',', ' ');
-  //     console.log(itemStr);
   //   }
 };
 //
@@ -86,4 +94,13 @@ const groceries = (groceryList) => {
   }
 };
 */
-console.log(groceries([{ item: 'Bread' }, { item: 'Butter' }]));
+console.log(
+  groceries([
+    { item: 'Bread' },
+    { item: 'Butter' },
+    { item: 'Carrots' },
+    { item: 'Hummus' },
+    { item: 'Pesto' },
+    { item: 'Rigatoni' },
+  ])
+);
