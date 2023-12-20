@@ -40,7 +40,7 @@ const groceries = (groceryList) => {
       itemStr = itemStr.replace(/[,]/g, ', ');
       itemStr = itemStr.replace(', and,', ' and ');
       //   return 'Inside block', itemStr;
-      console.log('Inside block', itemStr);
+      console.log('Inside block', `'${itemStr}'.`);
     }
     // console.log('Outside If-block', itemStr);
   }
@@ -52,7 +52,7 @@ const groceries = (groceryList) => {
 };
 //
 console.log(
-  groceries([{ item: 'Carrots' }, { item: 'Hummus' }, { item: 'Pesto' }])
+  groceries([{ item: 'Lettuce' }, { item: 'Onions' }, { item: 'Tomatoes' }])
 );
 
 /*
