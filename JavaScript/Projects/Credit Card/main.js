@@ -39,3 +39,15 @@ const batch = [
 ];
 
 // Add your functions below:
+// const valid1 = [4, 5, 3, 9, 6, 7, 7, 9, 0, 8, 0, 1, 6, 8, 0, 8];
+//
+const validateCred = (cardNum) => {
+  console.log(cardNum);
+  for (let i = cardNum.length - 1; i >= 0; i--) {
+    // console.log('Array Length', cardNum.length - 1);
+    let otherIndex = i - 2;
+    console.log(otherIndex, cardNum[otherIndex]);
+    // const doubleNum = [].push()
+  }
+};
+console.log(validateCred(valid1));
