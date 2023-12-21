@@ -51,5 +51,7 @@ const validateCred = (cardNum) => {
     doubleDigit.push(cardNum[otherIndex] * 2);
   }
   console.log(doubleDigit);
+
+  //   cardNum.filter(otherDigit=>)
 };
 console.log(validateCred(valid1));
