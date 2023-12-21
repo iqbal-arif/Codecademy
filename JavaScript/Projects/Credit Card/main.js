@@ -75,4 +75,4 @@ const validateCred = (cardNum) => {
 
   //   cardNum.filter(otherDigit=>)
 };
-console.log(validateCred(valid1));
+console.log(validateCred(valid2));
