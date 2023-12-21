@@ -47,8 +47,13 @@ const validateCred = (cardNum) => {
   for (let i = cardNum.length - 1; i >= 0; i -= 2) {
     // console.log('Array Length', cardNum.length - 1);
     let otherIndex = i - 1;
+    let otherDigit = cardNum[otherIndex] * 2;
     // console.log(otherIndex, cardNum[otherIndex]);
-    doubleDigit.push(cardNum[otherIndex] * 2);
+    if (otherDigit > 9) {
+      doubleDigit.push(otherDigit - 9);
+    } else {
+      doubleDigit.push(otherDigit);
+    }
   }
   console.log(doubleDigit);
 
