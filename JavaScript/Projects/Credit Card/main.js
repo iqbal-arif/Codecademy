@@ -43,6 +43,14 @@ const batch = [
 //
 const validateCred = (cardNum) => {
   console.log(cardNum);
+  let evenIndexNum = [];
+  for (let e = 1; e < cardNum.length + 1; e += 2) {
+    // cardNum[e - 1] === -1 ? evenIndexNum.push(cardNum[e]) : 0;
+    let evenIndex = cardNum[e];
+    evenIndexNum.push(evenIndex);
+  }
+  console.log(evenIndexNum);
+  //   console.log(evenIndex);
   let doubleDigit = [];
   for (let i = cardNum.length - 1; i >= 0; i -= 2) {
     // console.log('Array Length', cardNum.length - 1);
@@ -56,6 +64,14 @@ const validateCred = (cardNum) => {
     }
   }
   console.log(doubleDigit);
+  const modifiedArray = evenIndexNum.concat(doubleDigit);
+  console.log(modifiedArray);
+  const reducedArray = modifiedArray.reduce(
+    (finalNum, num) => (finalNum += num)
+  );
+  console.log(reducedArray);
+  const ccValidity = reducedArray % 10 ? true : false;
+  return ccValidity;
 
   //   cardNum.filter(otherDigit=>)
 };
