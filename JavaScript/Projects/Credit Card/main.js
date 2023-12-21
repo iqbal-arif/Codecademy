@@ -43,11 +43,13 @@ const batch = [
 //
 const validateCred = (cardNum) => {
   console.log(cardNum);
-  for (let i = cardNum.length - 1; i >= 0; i--) {
+  let doubleDigit = [];
+  for (let i = cardNum.length - 1; i >= 0; i -= 2) {
     // console.log('Array Length', cardNum.length - 1);
-    let otherIndex = i - 2;
-    console.log(otherIndex, cardNum[otherIndex]);
-    // const doubleNum = [].push()
+    let otherIndex = i - 1;
+    // console.log(otherIndex, cardNum[otherIndex]);
+    doubleDigit.push(cardNum[otherIndex] * 2);
   }
+  console.log(doubleDigit);
 };
 console.log(validateCred(valid1));
