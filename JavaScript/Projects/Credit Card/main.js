@@ -71,8 +71,16 @@ const validateCred = (cardNum) => {
   );
   console.log(reducedArray);
   const ccValidity = reducedArray % 10 ? true : false;
+  // return ccValidity;
+  // console.log(reducedArray);
+  // const ccValidity = reducedArray % 10;
+  console.log(ccValidity);
+  return ccValidity ? true : false;
   return ccValidity;
 
   //   cardNum.filter(otherDigit=>)
 };
-console.log(validateCred(valid2));
+// console.log(validateCred(valid1));
+
+const findInvalidCards = validateCred(valid5);
+console.log(findInvalidCards);
