@@ -70,17 +70,17 @@ const validateCred = (cardNum) => {
     (finalNum, num) => (finalNum += num)
   );
   console.log(reducedArray);
-  const ccValidity = reducedArray % 10 ? true : false;
+  // const ccValidity = reducedArray % 10 ? true : false;
   // return ccValidity;
   // console.log(reducedArray);
-  // const ccValidity = reducedArray % 10;
+  const ccValidity = reducedArray % 10;
   console.log(ccValidity);
-  return ccValidity ? true : false;
+  return ccValidity ? false : true;
   return ccValidity;
 
   //   cardNum.filter(otherDigit=>)
 };
 // console.log(validateCred(valid1));
 
-const findInvalidCards = validateCred(valid5);
+const findInvalidCards = validateCred(invalid1);
 console.log(findInvalidCards);
