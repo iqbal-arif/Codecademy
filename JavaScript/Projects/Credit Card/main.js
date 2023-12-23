@@ -77,13 +77,13 @@ const validateCred = (cardNum) => {
   // console.log(reducedArray);
   const ccValidity = reducedArray % 10;
   console.log(ccValidity);
-  return ccValidity ? false : true;
+  return ccValidity ? true : false;
   return ccValidity;
 
   //   cardNum.filter(otherDigit=>)
 };
 // console.log(validateCred(valid1));
 
-const findInvalidCards = validateCred(valid1);
+const findInvalidCards = validateCred(invalid5);
 
 console.log(findInvalidCards);
