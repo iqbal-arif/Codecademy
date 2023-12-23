@@ -52,13 +52,11 @@ const validateCred = (cardNum) => {
   console.log('evenindex', evenIndexNum);
   //   console.log(evenIndex);
   let doubleDigit = [];
-  for (let i = cardNum.length; i >= 0; i -= 2) {
+  for (let i = cardNum.length; i >= 1; i -= 2) {
     // console.log('Array Length', cardNum.length - 1);
     let otherIndex = i - 1;
-    console.log('othercard', cardNum[otherIndex]);
-    if (cardNum[otherIndex] === undefined) {
-      return;
-    }
+    console.log('othercard', i, cardNum[otherIndex]);
+
     let otherDigit = cardNum[otherIndex] * 2;
     // console.log(otherIndex, cardNum[otherIndex]);
     if (otherDigit > 9) {
@@ -67,7 +65,7 @@ const validateCred = (cardNum) => {
       doubleDigit.push(otherDigit);
     }
   }
-  console.log(doubleDigit);
+  // console.log(doubleDigit);
   const modifiedArray = evenIndexNum.concat(doubleDigit);
   console.log(modifiedArray);
   const reducedArray = modifiedArray.reduce(
@@ -86,6 +84,6 @@ const validateCred = (cardNum) => {
 };
 // console.log(validateCred(valid1));
 
-const findInvalidCards = validateCred(invalid1);
+const findInvalidCards = validateCred(valid1);
 
 console.log(findInvalidCards);
