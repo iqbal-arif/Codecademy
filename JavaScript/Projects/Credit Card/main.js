@@ -68,22 +68,23 @@ const validateCred = (cardNum) => {
   // console.log(doubleDigit);
   const modifiedArray = evenIndexNum.concat(doubleDigit);
   console.log(modifiedArray);
-  const reducedArray = modifiedArray.reduce(
-    (finalNum, num) => (finalNum += num)
-  );
+  const reducedArray = modifiedArray.reduce((finalNum, num) => {
+    return finalNum + num;
+  }, 0);
   console.log(reducedArray);
   // const ccValidity = reducedArray % 10 ? true : false;
   // return ccValidity;
   // console.log(reducedArray);
   const ccValidity = reducedArray % 10;
   console.log(ccValidity);
-  return ccValidity ? true : false;
-  return ccValidity;
+  ccValidity === 0 ? true : false;
+
+  // return ccValidity;
 
   //   cardNum.filter(otherDigit=>)
 };
 // console.log(validateCred(valid1));
 
-const findInvalidCards = validateCred(invalid5);
+const findInvalidCards = validateCred(valid1);
 
 console.log(findInvalidCards);
