@@ -54,7 +54,7 @@ const validateCred = (cardNum) => {
   let doubleDigit = [];
   for (let i = cardNum.length; i >= 1; i -= 2) {
     // console.log('Array Length', cardNum.length - 1);
-    let otherIndex = i - 1;
+    let otherIndex = i - 2;
     console.log('othercard', i, cardNum[otherIndex]);
 
     let otherDigit = cardNum[otherIndex] * 2;
@@ -77,14 +77,14 @@ const validateCred = (cardNum) => {
   // console.log(reducedArray);
   const ccValidity = reducedArray % 10;
   console.log(ccValidity);
-  ccValidity === 0 ? true : false;
+  return ccValidity === 0 ? true : false;
 
-  // return ccValidity;
+  return ccValidity;
 
   //   cardNum.filter(otherDigit=>)
 };
 // console.log(validateCred(valid1));
 
-const findInvalidCards = validateCred(valid1);
+const findInvalidCards = validateCred(valid2);
 
 console.log(findInvalidCards);
