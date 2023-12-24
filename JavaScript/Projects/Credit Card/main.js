@@ -85,6 +85,6 @@ const validateCred = (cardNum) => {
 };
 // console.log(validateCred(valid1));
 
-const findInvalidCards = validateCred(valid2);
+const findInvalidCards = validateCred(valid3);
 
 console.log(findInvalidCards);
