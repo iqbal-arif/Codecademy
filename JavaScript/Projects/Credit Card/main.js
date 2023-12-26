@@ -77,6 +77,11 @@ const validateCred = (cardNum) => {
   // console.log(reducedArray);
   const ccValidity = reducedArray % 10;
   console.log(ccValidity);
+  if (ccValidity) {
+    return true;
+  } else {
+    return false;
+  }
   return ccValidity === 0 ? true : false;
 
   return ccValidity;
