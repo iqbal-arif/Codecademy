@@ -52,17 +52,33 @@ const validateCred = (cardNum) => {
   console.log('evenindex', evenIndexNum);
   //   console.log(evenIndex);
   let doubleDigit = [];
-  for (let i = cardNum.length; i >= 1; i -= 2) {
-    // console.log('Array Length', cardNum.length - 1);
-    let otherIndex = i - 2;
-    console.log('othercard', i, cardNum[otherIndex]);
+  if (cardNum.length === 15) {
+    for (let i = cardNum.length; i >= 1; i -= 2) {
+      // console.log('Array Length', cardNum.length - 1);
+      let otherIndex = i - 1;
+      console.log('othercard', i, cardNum[otherIndex]);
 
-    let otherDigit = cardNum[otherIndex] * 2;
-    // console.log(otherIndex, cardNum[otherIndex]);
-    if (otherDigit > 9) {
-      doubleDigit.push(otherDigit - 9);
-    } else {
-      doubleDigit.push(otherDigit);
+      let otherDigit = cardNum[otherIndex] * 2;
+      // console.log(otherIndex, cardNum[otherIndex]);
+      if (otherDigit > 9) {
+        doubleDigit.push(otherDigit - 9);
+      } else {
+        doubleDigit.push(otherDigit);
+      }
+    }
+  } else {
+    for (let i = cardNum.length; i >= 1; i -= 2) {
+      // console.log('Array Length', cardNum.length - 1);
+      let otherIndex = i - 2;
+      console.log('othercard', i, cardNum[otherIndex]);
+
+      let otherDigit = cardNum[otherIndex] * 2;
+      // console.log(otherIndex, cardNum[otherIndex]);
+      if (otherDigit > 9) {
+        doubleDigit.push(otherDigit - 9);
+      } else {
+        doubleDigit.push(otherDigit);
+      }
     }
   }
   // console.log(doubleDigit);
