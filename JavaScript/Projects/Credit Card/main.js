@@ -42,7 +42,7 @@ const batch = [
 // const valid1 = [4, 5, 3, 9, 6, 7, 7, 9, 0, 8, 0, 1, 6, 8, 0, 8];
 //
 const validateCred = (cardNum) => {
-  console.log('ori-card', cardNum);
+  console.log('ori-card', cardNum.length, cardNum);
   let evenIndexNum = [];
   for (let e = 1; e < cardNum.length; e += 2) {
     // cardNum[e - 1] === -1 ? evenIndexNum.push(cardNum[e]) : 0;
