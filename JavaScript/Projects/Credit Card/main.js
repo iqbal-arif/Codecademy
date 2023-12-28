@@ -41,6 +41,7 @@ const batch = [
 // Add your functions below:
 // const valid1 = [4, 5, 3, 9, 6, 7, 7, 9, 0, 8, 0, 1, 6, 8, 0, 8];
 //
+/*
 const validateCred = (cardNum) => {
   console.log('ori-card', cardNum.length, cardNum);
   let evenIndexNum = [];
@@ -99,8 +100,16 @@ const validateCred = (cardNum) => {
 
   //   cardNum.filter(otherDigit=>)
 };
+*/
 // console.log(validateCred(valid1));
 
-const findInvalidCards = validateCred(valid3);
+const validateCred = (cardNum) => {
+  console.log('ori-card', cardNum.length, cardNum);
+  let evenIndexNum = [];
+  cardNum.forEach((element) => {
+    console.log(element.indexOf());
+  });
+};
+const findInvalidCards = validateCred(valid1);
 
 console.log(findInvalidCards);
