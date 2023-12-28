@@ -105,9 +105,10 @@ const validateCred = (cardNum) => {
 
 const validateCred = (cardNum) => {
   console.log('ori-card', cardNum.length, cardNum);
+  console.log(Object.keys(cardNum));
   let evenIndexNum = [];
   cardNum.forEach((element) => {
-    console.log(element.indexOf());
+    const itemIndex = element;
   });
 };
 const findInvalidCards = validateCred(valid1);
