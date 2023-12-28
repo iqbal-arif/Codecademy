@@ -55,7 +55,7 @@ const validateCred = (cardNum) => {
   if (cardNum.length === 15) {
     for (let i = cardNum.length; i >= 1; i -= 2) {
       // console.log('Array Length', cardNum.length - 1);
-      let otherIndex = i - 1;
+      let otherIndex = i - 2;
       console.log('othercard', i, cardNum[otherIndex]);
 
       let otherDigit = cardNum[otherIndex] * 2;
