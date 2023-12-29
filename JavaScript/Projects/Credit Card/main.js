@@ -107,9 +107,18 @@ const validateCred = (cardNum) => {
   console.log('ori-card', cardNum.length, cardNum);
   const itemKey = Object.keys(cardNum);
   console.log(itemKey);
-  if (itemKey / 2 === 0) {
-    return itemKey;
-  }
+  itemKey.forEach((item) => {
+    if (item % 2 == 0) {
+      // const evenKey = [];
+      // evenKey.push(item);
+      console.log(item);
+    }
+    // else {
+    //   const oddKey = [];
+    //   oddKey.push(item);
+    //   console.log(oddKey);
+    // }
+  });
   let evenIndexNum = [];
   cardNum.forEach((element) => {
     const itemIndex = element;
