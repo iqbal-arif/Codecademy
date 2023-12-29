@@ -108,7 +108,7 @@ const validateCred = (cardNum) => {
   console.log(Object.keys(cardNum));
   let evenIndexNum = [];
   cardNum.forEach((element) => {
-    const itemIndex = element;
+    const itemIndex = element.filter((item) => item / 2);
   });
 };
 const findInvalidCards = validateCred(valid1);
