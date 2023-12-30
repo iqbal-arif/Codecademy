@@ -133,6 +133,6 @@ const validateCred = (cardNum) => {
   });
 };
 */
-const findInvalidCards = validateCred(valid2);
+const findInvalidCards = validateCred(valid3);
 
 console.log(findInvalidCards);
