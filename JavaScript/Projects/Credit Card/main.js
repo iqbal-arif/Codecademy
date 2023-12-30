@@ -48,8 +48,8 @@ const validateCred = (cardNum) => {
   let oddIndexedNum = [];
   // for (let e = 1; e < cardNum.length; e += 2) {
   for (let e = 0; e < cardNum.length; e++) {
-    let evenIndex = evenNum[e];
-    let oddIndex = oddNum[e];
+    let evenIndex = cardNum[e];
+    let oddIndex = cardNum[e];
     // cardNum[e - 1] === -1 ? evenIndexNum.push(cardNum[e]) : 0;
     // console.log(e);
     // if (e % 2 == 0) {
@@ -58,7 +58,7 @@ const validateCred = (cardNum) => {
     // }
     e % 2 === 0 ? evenIndexedNum.push(evenIndex) : oddIndexedNum.push(oddIndex);
   }
-  console.log('evenindex', evenIndexedNum);
+  console.log('evenindex', evenIndexedNum, 'oddindex', oddIndexedNum);
   //   console.log(evenIndex);
   let doubleDigit = [];
   if (cardNum.length === 15) {
@@ -91,7 +91,7 @@ const validateCred = (cardNum) => {
     }
   }
   // console.log(doubleDigit);
-  const modifiedArray = evenIndexNum.concat(doubleDigit);
+  const modifiedArray = evenIndexedNum.concat(doubleDigit);
   console.log(modifiedArray);
   const reducedArray = modifiedArray.reduce((finalNum, num) => {
     return finalNum + num;
@@ -133,6 +133,6 @@ const validateCred = (cardNum) => {
   });
 };
 */
-const findInvalidCards = validateCred(valid1);
+const findInvalidCards = validateCred(valid2);
 
 console.log(findInvalidCards);
