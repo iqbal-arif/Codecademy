@@ -41,7 +41,7 @@ const batch = [
 // Add your functions below:
 // const valid1 = [4, 5, 3, 9, 6, 7, 7, 9, 0, 8, 0, 1, 6, 8, 0, 8];
 //
-/*
+
 const validateCred = (cardNum) => {
   console.log('ori-card', cardNum.length, cardNum);
   let evenIndexNum = [];
@@ -100,9 +100,9 @@ const validateCred = (cardNum) => {
 
   //   cardNum.filter(otherDigit=>)
 };
-*/
-// console.log(validateCred(valid1));
 
+// console.log(validateCred(valid1));
+/*
 const validateCred = (cardNum) => {
   console.log('ori-card', cardNum.length, cardNum);
   const itemKey = Object.keys(cardNum);
@@ -119,12 +119,12 @@ const validateCred = (cardNum) => {
     //   console.log(oddKey);
     // }
   });
-  let evenIndexNum = [];
   cardNum.forEach((element) => {
     const itemIndex = element;
     // console.log(itemIndex);
   });
 };
+*/
 const findInvalidCards = validateCred(valid1);
 
 console.log(findInvalidCards);
