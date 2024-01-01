@@ -54,9 +54,9 @@ const validateCred = (cardNum) => {
 
     let evenIndexX2 = evenIndex * 2;
     if (evenIndexX2 > 9) {
-      doubleDigit.push(otherDigit - 9);
+      doubleDigit.push(evenIndexX2 - 9);
     } else {
-      doubleDigit.push(otherDigit);
+      doubleDigit.push(evenIndexX2);
     }
     console.log('doubleDigit', doubleDigit);
     let oddIndex = cardNum[e];
