@@ -53,21 +53,21 @@ const validateCred = (cardNum) => {
     console.log(cardNum[e]);
     // Multiply evenIndex by 2 and checking if 9 needs to be subtracted
 
-    let evenIndexX2 = evenIndex * 2;
-    if (evenIndexX2 > 9) {
-      doubleDigit.push(evenIndexX2 - 9);
-    } else {
-      doubleDigit.push(evenIndexX2);
-    }
+    // let evenIndexX2 = evenIndex * 2;
+    // if (evenIndexX2 > 9) {
+    //   doubleDigit.push(evenIndexX2 - 9);
+    // } else {
+    //   doubleDigit.push(evenIndexX2);
+    // }
     // return 'doubleDigit', doubleDigit;
-    let oddIndex = cardNum[e];
+    // let oddIndex = cardNum[e];
     // cardNum[e - 1] === -1 ? evenIndexNum.push(cardNum[e]) : 0;
     // console.log(e);
     // if (e % 2 == 0) {
     //   let evenIndex = cardNum[e];
     //   evenIndexNum.push(evenIndex);
     // }
-    e % 2 === 0 ? evenIndexedNum.push(evenIndex) : oddIndexedNum.push(oddIndex);
+    // e % 2 === 0 ? evenIndexedNum.push(evenIndex) : oddIndexedNum.push(oddIndex);
   }
   console.log('evenindex', evenIndexedNum, 'oddindex', oddIndexedNum);
   //   console.log(evenIndex);
