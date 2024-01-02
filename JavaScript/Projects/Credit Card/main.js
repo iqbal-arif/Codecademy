@@ -59,7 +59,7 @@ const validateCred = (cardNum) => {
     } else {
       doubleDigit.push(evenIndexX2);
     }
-    return 'doubleDigit', doubleDigit;
+    // return 'doubleDigit', doubleDigit;
     let oddIndex = cardNum[e];
     // cardNum[e - 1] === -1 ? evenIndexNum.push(cardNum[e]) : 0;
     // console.log(e);
