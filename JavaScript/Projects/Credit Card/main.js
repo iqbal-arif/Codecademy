@@ -48,9 +48,9 @@ const validateCred = (cardNum) => {
   let oddIndexedNum = [];
   // for (let e = 1; e < cardNum.length; e += 2) {
   let doubleDigit = [];
+  let evenIndex = [];
   for (let e = 0; e < cardNum.length; e++) {
-    let evenIndex = cardNum[e];
-    console.log(evenIndex);
+    console.log(cardNum[e]);
     // Multiply evenIndex by 2 and checking if 9 needs to be subtracted
 
     let evenIndexX2 = evenIndex * 2;
