@@ -44,8 +44,8 @@ const batch = [
 
 const validateCred = (cardNum) => {
   console.log('ori-card', cardNum.length, cardNum);
-  let evenIndexedNum = [];
-  let oddIndexedNum = [];
+  // let evenIndexedNum = [];
+  // let oddIndexedNum = [];
   // for (let e = 1; e < cardNum.length; e += 2) {
   let doubleDigit = [];
   let evenIndex = [];
