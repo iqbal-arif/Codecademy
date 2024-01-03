@@ -44,8 +44,8 @@ const batch = [
 
 const validateCred = (cardNum) => {
   console.log('ori-card', cardNum.length, cardNum);
-  // let evenIndexedNum = [];
-  // let oddIndexedNum = [];
+  let evenIndexedNum = [];
+  let oddIndexedNum = [];
   // for (let e = 1; e < cardNum.length; e += 2) {
   let doubleDigit = [];
   let evenIndex = [];
@@ -63,11 +63,11 @@ const validateCred = (cardNum) => {
     // let oddIndex = cardNum[e];
     // cardNum[e - 1] === -1 ? evenIndexNum.push(cardNum[e]) : 0;
     // console.log(e);
-    // if (e % 2 == 0) {
-    //   let evenIndex = cardNum[e];
-    //   evenIndexNum.push(evenIndex);
-    // }
-    // e % 2 === 0 ? evenIndexedNum.push(evenIndex) : oddIndexedNum.push(oddIndex);
+    if (e % 2 == 0) {
+      let evenIndex = cardNum[e];
+      evenIndexedNum.push(evenIndex);
+    }
+    e % 2 === 0 ? evenIndexedNum.push(evenIndex) : oddIndexedNum.push(oddIndex);
   }
   console.log('evenindex', evenIndexedNum, 'oddindex', oddIndexedNum);
   //   console.log(evenIndex);
