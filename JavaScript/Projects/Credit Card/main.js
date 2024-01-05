@@ -126,7 +126,7 @@ const validateCred = (cardNum) => {
   });
 };
 */
-const findInvalidCards = validateCred(mystery2);
+const findInvalidCards = validateCred(valid1);
 
 console.log(findInvalidCards);
 
