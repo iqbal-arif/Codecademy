@@ -88,9 +88,9 @@ const validateCred = (cardNum) => {
     }
   });
   console.log('evenDoubleDigit', evenDoubleDigit);
-  // const modifiedArray = evenIndexedNum.concat(doubleDigit);
-  // console.log(modifiedArray);
-  const reducedArray = evenDoubleDigit.reduce((finalNum, num) => {
+  const modifiedArray = oddIndexedNum.concat(evenDoubleDigit);
+  console.log(modifiedArray);
+  const reducedArray = modifiedArray.reduce((finalNum, num) => {
     return finalNum + num;
   }, 0);
   console.log(reducedArray);
@@ -126,7 +126,7 @@ const validateCred = (cardNum) => {
   });
 };
 */
-const findInvalidCards = validateCred(valid1);
+const findInvalidCards = validateCred(mystery4);
 
 console.log(findInvalidCards);
 
