@@ -87,10 +87,10 @@ const validateCred = (cardNum) => {
       evenDoubleDigit.push(DDigit);
     }
   });
-  console.log(evenDoubleDigit);
-  const modifiedArray = evenIndexedNum.concat(doubleDigit);
-  console.log(modifiedArray);
-  const reducedArray = modifiedArray.reduce((finalNum, num) => {
+  console.log('evenDoubleDigit', evenDoubleDigit);
+  // const modifiedArray = evenIndexedNum.concat(doubleDigit);
+  // console.log(modifiedArray);
+  const reducedArray = evenDoubleDigit.reduce((finalNum, num) => {
     return finalNum + num;
   }, 0);
   console.log(reducedArray);
