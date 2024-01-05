@@ -100,10 +100,6 @@ const validateCred = (cardNum) => {
   const ccValidity = reducedArray % 10;
   console.log(ccValidity);
   return ccValidity === 0 ? true : false;
-
-  return ccValidity;
-
-  //   cardNum.filter(otherDigit=>)
 };
 
 // console.log(validateCred(valid1));
