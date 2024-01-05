@@ -77,9 +77,17 @@ const validateCred = (cardNum) => {
     e % 2 === 0 ? evenIndexedNum.push(evenIndex) : oddIndexedNum.push(oddIndex);
   }
   console.log('evenindex', evenIndexedNum, 'oddindex', oddIndexedNum);
-  //   console.log(evenIndex);
-  // let doubleDigit = [];
-  // console.log(doubleDigit);
+
+  let evenDoubleDigit = [];
+  evenIndexedNum.forEach((digit) => {
+    let DDigit = digit * 2;
+    if (DDigit > 9) {
+      evenDoubleDigit.push(DDigit - 9);
+    } else {
+      evenDoubleDigit.push(DDigit);
+    }
+  });
+  console.log(evenDoubleDigit);
   const modifiedArray = evenIndexedNum.concat(doubleDigit);
   console.log(modifiedArray);
   const reducedArray = modifiedArray.reduce((finalNum, num) => {
