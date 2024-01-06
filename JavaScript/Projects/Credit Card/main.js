@@ -50,6 +50,13 @@ const valid5 = [4, 5, 3, 9, 4, 0, 4, 9, 6, 7, 8, 6, 9, 6, 6, 6];
 
 const validateCred = (cardNum) => {
   console.log('ori-card', cardNum.length, cardNum);
+  let ccAmex = 3;
+  let ccVisa = 4;
+  let ccMaster = 5;
+  let ccDiscover =6;
+  cardNum.forEach(cc=> {
+    cc === 3 ?
+  })
   let evenIndexedNum = [];
   let oddIndexedNum = [];
   // for (let e = 1; e < cardNum.length; e += 2) {
