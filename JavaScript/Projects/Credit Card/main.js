@@ -50,12 +50,13 @@ const valid5 = [4, 5, 3, 9, 4, 0, 4, 9, 6, 7, 8, 6, 9, 6, 6, 6];
 
 const validateCred = (cardNum) => {
   console.log('ori-card', cardNum.length, cardNum);
+
   let ccAmex = 3;
   let ccVisa = 4;
   let ccMaster = 5;
   let ccDiscover = 6;
   let ccCompany = cardNum.forEach((cc) => {
-    console.log(cc);
+    let creditCompany;
     return cc === 3
       ? ccAmex
       : cc === 4
