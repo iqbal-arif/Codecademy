@@ -62,7 +62,9 @@ const validateCred = (cardNum) => {
       : cc === 5
       ? ccMaster
       : ccDiscover;
+    console.log(cc);
   });
+
   let evenIndexedNum = [];
   let oddIndexedNum = [];
   // for (let e = 1; e < cardNum.length; e += 2) {
