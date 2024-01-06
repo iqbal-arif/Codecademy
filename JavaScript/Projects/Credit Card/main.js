@@ -57,13 +57,13 @@ const validateCred = (cardNum) => {
   let ccDiscover = 6;
   let ccCompany = cardNum.forEach((cc) => {
     let creditCompany;
-    return cc === 3
-      ? ccAmex
-      : cc === 4
-      ? ccVisa
-      : cc === 5
-      ? ccMaster
-      : ccDiscover;
+    return cc === ccAmex
+      ? console.log('ccAmex')
+      : cc === ccVisa
+      ? 'ccVisa'
+      : cc === ccMaster
+      ? 'ccMaster'
+      : 'ccDiscover';
   });
   console.log(ccCompany);
 
