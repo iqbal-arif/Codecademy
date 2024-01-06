@@ -55,6 +55,7 @@ const validateCred = (cardNum) => {
   let ccVisa = 4;
   let ccMaster = 5;
   let ccDiscover = 6;
+  // Check for the first digit of the cc no,. card[0]
   let ccCompany = cardNum.forEach((cc) => {
     let creditCompany;
     return cc === ccAmex
