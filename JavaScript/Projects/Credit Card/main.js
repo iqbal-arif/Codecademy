@@ -54,17 +54,16 @@ const validateCred = (cardNum) => {
   let ccVisa = 4;
   let ccMaster = 5;
   let ccDiscover = 6;
-  console.log(
-    cardNum.forEach((cc) => {
-      return cc === 3
-        ? ccAmex
-        : cc === 4
-        ? ccVisa
-        : cc === 5
-        ? ccMaster
-        : ccDiscover;
-    })
-  );
+  let ccCompany = cardNum.forEach((cc) => {
+    return cc === 3
+      ? ccAmex
+      : cc === 4
+      ? ccVisa
+      : cc === 5
+      ? ccMaster
+      : ccDiscover;
+  });
+  console.log(ccCompany);
 
   let evenIndexedNum = [];
   let oddIndexedNum = [];
