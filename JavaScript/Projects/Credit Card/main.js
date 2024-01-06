@@ -55,6 +55,7 @@ const validateCred = (cardNum) => {
   let ccMaster = 5;
   let ccDiscover = 6;
   let ccCompany = cardNum.forEach((cc) => {
+    console.log(cc);
     return cc === 3
       ? ccAmex
       : cc === 4
