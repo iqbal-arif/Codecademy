@@ -48,8 +48,13 @@ const valid5 = [4, 5, 3, 9, 4, 0, 4, 9, 6, 7, 8, 6, 9, 6, 6, 6];
 */
 //
 
+function inValidCompanies(cd) {
+  console.log(cc.forEach((c) => c));
+}
+
 const validateCred = (cardNum) => {
   console.log('ori-card', cardNum.length, cardNum);
+  inValidCompanies(cardNum);
 
   let ccAmex = 3;
   let ccVisa = 4;
@@ -153,10 +158,11 @@ const validateCred = (cardNum) => {
   });
 };
 */
-const findInvalidCards = validateCred(mystery4);
+const findInvalidCards = validateCred(valid1);
+const idInvalidCardCompanies = inValidCompanies(creditCard);
 
 console.log(findInvalidCards);
-
+console.log;
 /*
 if (cardNum.length === 15) {
   for (let i = cardNum.length; i >= 1; i -= 2) {
