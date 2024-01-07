@@ -48,7 +48,7 @@ const valid5 = [4, 5, 3, 9, 4, 0, 4, 9, 6, 7, 8, 6, 9, 6, 6, 6];
 */
 //
 
-function inValidCompanies(cd) {
+function inValidCompanies(cc) {
   console.log(cc.forEach((c) => c));
 }
 
