@@ -55,18 +55,27 @@ const validateCred = (cardNum) => {
   let ccVisa = 4;
   let ccMaster = 5;
   let ccDiscover = 6;
-  // Check for the first digit of the cc no,. card[0]
-  let ccCompany = cardNum.forEach((cc) => {
-    let creditCompany;
-    return cc === ccAmex
+  let cardID =
+    cardNum[0] === ccAmex
       ? console.log('ccAmex')
-      : cc === ccVisa
+      : cardNum[0] === ccVisa
       ? 'ccVisa'
-      : cc === ccMaster
+      : cardNum[0] === ccMaster
       ? 'ccMaster'
       : 'ccDiscover';
-  });
-  console.log(ccCompany);
+  console.log(cardID);
+  // Check for the first digit of the cc no,. card[0]
+  // let ccCompany = cardNum.forEach((cc) => {
+  //   let creditCompany;
+  //   return cc === ccAmex
+  //     ? console.log('ccAmex')
+  //     : cc === ccVisa
+  //     ? 'ccVisa'
+  //     : cc === ccMaster
+  //     ? 'ccMaster'
+  //     : 'ccDiscover';
+  // });
+  // console.log(ccCompany);
 
   let evenIndexedNum = [];
   let oddIndexedNum = [];
