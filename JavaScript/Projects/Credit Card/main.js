@@ -55,6 +55,7 @@ inValidCompanies = (cc) => {
   let ccDiscover = 6;
   let compList = [];
   cc.forEach((comp) => {
+    console.log(comp.length);
     comp.forEach((c) => {
       console.log(c);
     });
