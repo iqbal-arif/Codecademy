@@ -48,27 +48,34 @@ const valid5 = [4, 5, 3, 9, 4, 0, 4, 9, 6, 7, 8, 6, 9, 6, 6, 6];
 */
 //
 
-function inValidCompanies(cc) {
-  return cc.forEach((c) => console.log('invalidList', c.length, c));
-}
+inValidCompanies = (cc) => {
+  let ccAmex = 3;
+  let ccVisa = 4;
+  let ccMaster = 5;
+  let ccDiscover = 6;
+  let compList = [];
+  cc.forEach((comp) => {
+    comp.forEach((c) => {
+      console.log(c);
+    });
+    // console.log('invalidList', c.length, c)})
+    // let cardID =
+    //   c[0] === ccAmex
+    //     ? console.log('ccAmex')
+    //     : c[0] === ccVisa
+    //     ? 'ccVisa'
+    //     : c[0] === ccMaster
+    //     ? 'ccMaster'
+    //     : 'ccDiscover';
+    // console.log(cardID);
+  });
+  console.log(compList);
+};
 
 const validateCred = (cardNum) => {
   console.log('ori-card', cardNum.length, cardNum);
   // inValidCompanies(cardNum);
 
-  let ccAmex = 3;
-  let ccVisa = 4;
-  let ccMaster = 5;
-  let ccDiscover = 6;
-  let cardID =
-    cardNum[0] === ccAmex
-      ? console.log('ccAmex')
-      : cardNum[0] === ccVisa
-      ? 'ccVisa'
-      : cardNum[0] === ccMaster
-      ? 'ccMaster'
-      : 'ccDiscover';
-  console.log(cardID);
   // Check for the first digit of the cc no,. card[0]
   // let ccCompany = cardNum.forEach((cc) => {
   //   let creditCompany;
