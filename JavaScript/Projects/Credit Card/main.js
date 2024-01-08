@@ -54,11 +54,11 @@ inValidCompanies = (cc) => {
   let ccMaster = 5;
   let ccDiscover = 6;
   let compList = [];
-  cc.forEach((comp) => {
-    console.log(comp.length);
-    comp.forEach((c) => {
-      console.log(c);
-    });
+  cc.forEach((comp, i) => {
+    console.log(comp.length, i, comp[0]);
+    // comp.forEach((c) => {
+    //   console.log(c);
+    // });
     // console.log('invalidList', c.length, c)})
     // let cardID =
     //   c[0] === ccAmex
