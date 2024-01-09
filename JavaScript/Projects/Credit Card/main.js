@@ -64,8 +64,8 @@ inValidCompanies = (cc) => {
         : comp[0] === ccMaster
         ? console.log(i, 'ccMaster')
         : console.log(i, 'ccDiscover');
-    console.log('Comp Id', compList.push(idComp));
   });
+  console.log('Comp Id', compList.push(idComp));
 };
 
 const validateCred = (cardNum) => {
