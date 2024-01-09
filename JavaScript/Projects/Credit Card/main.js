@@ -54,18 +54,23 @@ inValidCompanies = (cc) => {
   let ccMaster = 5;
   let ccDiscover = 6;
   let compList = [];
-  let idComp = cc.forEach((comp, i) => {
+  cc.forEach((comp, i) => {
     console.log(comp.length, i, comp[0]);
-    return comp[0] === ccAmex
-      ? console.log(i, 'ccAmex')
-      : comp[0] === ccVisa
-      ? console.log(i, 'ccVisa')
-      : comp[0] === ccMaster
-      ? console.log(i, 'ccMaster')
-      : console.log(i, 'ccDiscover');
+    let idComp =
+      comp[0] === ccAmex
+        ? // ? console.log(i, 'ccAmex')
+          'ccAmex'
+        : comp[0] === ccVisa
+        ? 'ccVisa'
+        : // ? console.log(i, 'ccVisa')
+        comp[0] === ccMaster
+        ? 'ccMaster'
+        : // ? console.log(i, 'ccMaster')
+          'ccDiscover';
+    // : console.log(i, 'ccDiscover');
+    console.log('Comp Id', console.log(idComp));
   });
   // console.log('Comp Id', compList.push(idComp));
-  console.log('Comp Id', console.log(idComp));
 };
 
 const validateCred = (cardNum) => {
