@@ -54,16 +54,15 @@ inValidCompanies = (cc) => {
   let ccMaster = 5;
   let ccDiscover = 6;
   let compList = [];
-  cc.forEach((comp, i) => {
+  let idComp = cc.forEach((comp, i) => {
     console.log(comp.length, i, comp[0]);
-    let idComp =
-      comp[0] === ccAmex
-        ? console.log(i, 'ccAmex')
-        : comp[0] === ccVisa
-        ? console.log(i, 'ccVisa')
-        : comp[0] === ccMaster
-        ? console.log(i, 'ccMaster')
-        : console.log(i, 'ccDiscover');
+    comp[0] === ccAmex
+      ? console.log(i, 'ccAmex')
+      : comp[0] === ccVisa
+      ? console.log(i, 'ccVisa')
+      : comp[0] === ccMaster
+      ? console.log(i, 'ccMaster')
+      : console.log(i, 'ccDiscover');
   });
   console.log('Comp Id', compList.push(idComp));
 };
