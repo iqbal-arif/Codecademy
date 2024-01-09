@@ -56,7 +56,7 @@ inValidCompanies = (cc) => {
   let compList = [];
   let idComp = cc.forEach((comp, i) => {
     console.log(comp.length, i, comp[0]);
-    comp[0] === ccAmex
+    return comp[0] === ccAmex
       ? console.log(i, 'ccAmex')
       : comp[0] === ccVisa
       ? console.log(i, 'ccVisa')
@@ -64,7 +64,8 @@ inValidCompanies = (cc) => {
       ? console.log(i, 'ccMaster')
       : console.log(i, 'ccDiscover');
   });
-  console.log('Comp Id', compList.push(idComp));
+  // console.log('Comp Id', compList.push(idComp));
+  console.log('Comp Id', console.log(idComp));
 };
 
 const validateCred = (cardNum) => {
