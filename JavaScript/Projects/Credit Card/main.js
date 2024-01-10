@@ -55,7 +55,7 @@ inValidCompanies = (cc) => {
   let ccDiscover = 6;
   let compList = [];
   cc.forEach((comp, i) => {
-    console.log(comp.length, i, comp[0]);
+    // console.log(comp.length, i, comp[0]);
     let idComp =
       comp[0] === ccAmex
         ? // ? console.log(i, 'ccAmex')
