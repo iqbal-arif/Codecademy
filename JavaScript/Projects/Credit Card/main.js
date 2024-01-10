@@ -69,6 +69,7 @@ inValidCompanies = (cc) => {
           'ccDiscover';
     // : console.log(i, 'ccDiscover');
     console.log('Comp Id', console.log(idComp));
+    return idComp;
   });
   console.log(compList.push(idComp));
   // console.log('Comp Id', compList.push(idComp));
