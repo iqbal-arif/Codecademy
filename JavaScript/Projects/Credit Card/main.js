@@ -151,26 +151,7 @@ const validateCred = (cardNum) => {
 
 // console.log(validateCred(valid1));
 /*
-const validateCred = (cardNum) => {
-  console.log('ori-card', cardNum.length, cardNum);
-  const itemKey = Object.keys(cardNum);
-  console.log(itemKey);
-  itemKey.forEach((item) => {
-    if (item % 2 == 0) {
-      // const evenKey = [];
-      // evenKey.push(item);
-      console.log(item);
-    }
-    // else {
-    //   const oddKey = [];
-    //   oddKey.push(item);
-    //   console.log(oddKey);
-    // }
-  });
-  cardNum.forEach((element) => {
-    const itemIndex = element;
-    // console.log(itemIndex);
-  });
+
 };
 */
 const idInvalidCardCompanies = inValidCompanies(batch);
