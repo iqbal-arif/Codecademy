@@ -76,7 +76,6 @@ inValidCompanies = (cc) => {
     }
     return idComp;
   });
-  // console.log(compList.push(idComp));
   // console.log('Comp Id', compList.push(idComp));
 };
 
@@ -95,7 +94,6 @@ const validateCred = (cardNum) => {
   //     ? 'ccMaster'
   //     : 'ccDiscover';
   // });
-  // console.log(ccCompany);
 
   let evenIndexedNum = [];
   let oddIndexedNum = [];
