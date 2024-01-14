@@ -149,7 +149,6 @@ const validateCred = (cardNum) => {
   return ccValidity === 0 ? true : false;
 };
 
-// console.log(validateCred(valid1));
 /*
 
 };
