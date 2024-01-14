@@ -116,7 +116,6 @@ const validateCred = (cardNum) => {
     let oddIndex = cardNum[e];
     let evenIndex = cardNum[e];
     // cardNum[e - 1] === -1 ? evenIndexNum.push(cardNum[e]) : 0;
-    // console.log(e);
     // if (e % 2 == 0) {
     //   let evenIndex = cardNum[e];
     //   evenIndexedNum.push(evenIndex);
@@ -143,7 +142,6 @@ const validateCred = (cardNum) => {
   console.log(reducedArray);
   // const ccValidity = reducedArray % 10 ? true : false;
   // return ccValidity;
-  // console.log(reducedArray);
   const ccValidity = reducedArray % 10;
   console.log(ccValidity);
   return ccValidity === 0 ? true : false;
