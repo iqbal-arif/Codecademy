@@ -62,7 +62,6 @@ inValidCompanies = (cc) => {
         ? 'ccMaster'
         : // ? console.log(i, 'ccMaster')
           'ccDiscover';
-    // : console.log(i, 'ccDiscover');
     console.log('Comp Id', console.log(idComp));
     */
 
