@@ -153,7 +153,7 @@ const findInvalidCards = validateCred(valid1);
 
 console.log(findInvalidCards);
 console.log;
-/*
+// /*
 /*
 const validateCred = (cardNum) => {
   console.log('ori-card', cardNum.length, cardNum);
