@@ -177,3 +177,7 @@ const validateCred = (cardNum) => {
   });
 };
 */
+//Run all card Type
+const allCard = (cardList) => {
+  console.log(cardList);
+};
