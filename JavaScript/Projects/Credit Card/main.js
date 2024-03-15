@@ -181,3 +181,9 @@ const validateCred = (cardNum) => {
 const allCard = (cardList) => {
   console.log(cardList);
 };
+
+function allValidCard(cardList) {
+  cardList.forEach((element) => {
+    console.log(element);
+  });
+}
