@@ -187,3 +187,12 @@ function allValidCard(cardList) {
     console.log(element);
   });
 }
+
+function businessType(batch) {
+  const validBusinessArray = [];
+  batch.forEach((element) => {
+    if (element === 'valid') {
+      validBusinessArray.push(element);
+    }
+  });
+}
