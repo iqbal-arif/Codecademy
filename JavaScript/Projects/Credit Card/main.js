@@ -38,6 +38,15 @@ const batch = [
   mystery5,
 ];
 
+const allCards = (valid) => {
+  const cardAdd = 0;
+
+  valid.forEach((element) => {
+    cardAdd++;
+    console.log(element);
+  });
+};
+
 // Add your functions below:
 
 //
