@@ -55,6 +55,14 @@ const companyList = ['Amex', 'Visa', 'Mastercard', 'Discover'];
 function companyList(companyList) {
   companyList.forEach((element) => {
     console.log(element);
+
+    if (companyList === 'Amex') {
+      console.log('Amex');
+    } else if (companyList === ' Mastercard') {
+      console.log('Master Card');
+    } else if (companyList === 'Discover') {
+      console.log('Discover');
+    }
   });
 }
 
