@@ -15,4 +15,12 @@ const returnRandBase = () => {
 
 //   console.log(mockUpStrand());
 
+//Factory Funcion
+
+const pAequorFactory = (orgNumber, newStrand) =>{
+    return {
+            specimenNum : orgNumber,
+            dna : newStrand
+    }
+};
 
