@@ -21,9 +21,9 @@ const pAequorFactory = (orgNumber, newStrand) =>{
     return {
             specimenNum : orgNumber,
             dna : newStrand
-    },
+    };
 
-    set orgNumber(newName){
+    set uniqueSpecimenNum(orgNumber){
         //Verify that newName is a non-empty string before setting as name property
         if (typeof newName === 'string' && newName.length > 0){
           this._name = newName; 
