@@ -62,6 +62,8 @@ function companyList(companyList) {
       console.log('Master Card');
     } else if (companyList === 'Discover') {
       console.log('Discover');
+    } else {
+      console.log('Invalid Card. Not found in stack');
     }
   });
 }
