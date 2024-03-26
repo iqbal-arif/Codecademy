@@ -65,6 +65,8 @@ function companyList(companyList) {
     } else {
       console.log('Invalid Card. Not found in stack');
     }
+
+    return element;
   });
 }
 
