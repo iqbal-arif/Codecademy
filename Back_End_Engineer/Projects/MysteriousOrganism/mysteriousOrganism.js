@@ -18,7 +18,7 @@ const returnRandBase = () => {
 //Factory Funcion
 
 const pAequorFactory = (orgNumber, newStrand) =>{
-   /* 
+  
     uniqueSpecimenNum(orgNumber) {
         //Verify that newName is a non-empty string before setting as name property
         if (typeof newName === 'string' && newName.length > 0){
@@ -33,4 +33,3 @@ const pAequorFactory = (orgNumber, newStrand) =>{
     };
 };
 
-*/
