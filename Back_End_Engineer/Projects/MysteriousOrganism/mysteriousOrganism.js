@@ -19,7 +19,7 @@ const returnRandBase = () => {
 
 const pAequorFactory = (orgNumber, newStrand) =>{
   
-    uniqueSpecimenNum(orgNumber) {
+    uniqueSpecimenNum(orgNumber) ;{
         //Verify that newName is a non-empty string before setting as name property
         if (typeof newName === 'string' && newName.length > 0){
             this._name = newName; 
