@@ -22,3 +22,15 @@ Learning is social. Whatever you’re working on, be sure to connect with the Co
 ---
 
 Git is a software that allows you to keep track of changes made to a project over time. Git works by recording the changes you make to a project, storing those changes, then allowing you to reference them as needed.
+
+**2.git init**
+
+---
+
+Now that we have started working on the screenplay, let’s turn the sorcerers-code directory into a Git project. We do this with:
+
+```
+git init
+```
+
+The word init means initialize. The command sets up all the tools Git needs to begin tracking changes made to the project.
