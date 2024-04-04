@@ -52,7 +52,7 @@ const allCards = (valid) => {
 //
 
 const companyList = ['Amex', 'Visa', 'Mastercard', 'Discover'];
-/*
+
 function companyList(companyList) {
   companyList.forEach((element) => {
     console.log(element);
@@ -72,7 +72,7 @@ function companyList(companyList) {
     return element;
   });
 }
-*/
+
 inValidCompanies = (cc) => {
   let ccAmex = 3;
   let ccVisa = 4;
