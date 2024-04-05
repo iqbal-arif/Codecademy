@@ -73,10 +73,11 @@ function companyList(companyList) {
   });
 }
 
- function otherValidCompanies(companyList){
+function otherValidCompanies(companyList) {
   companyList.forEach((element) => {
-    console.log(element);}
- }
+    console.log(element);
+  });
+}
 inValidCompanies = (cc) => {
   let ccAmex = 3;
   let ccVisa = 4;
