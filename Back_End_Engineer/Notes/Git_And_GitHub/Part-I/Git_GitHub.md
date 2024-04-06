@@ -124,10 +124,20 @@ git log
 You have now been introduced to the fundamental Git workflow. You learned a lot! Let’s take a moment to generalize:
 
 1.  Git is the industry-standard version control system for web developers
-2.  Use Git commands to help keep track of changes made to a project:
-    1.  **_git init_** creates a new Git repository
-    2.  **_git status_** inspects the contents of the working directory and staging area
-    3.  **_git add adds_** files from the working directory to the staging area
-    4.  **_git diff shows_** the difference between the working directory and the staging area
-    5.  **_git commit_** permanently stores file changes from the staging area in the repository
-    6.  **\***git log\*\*\* shows a list of all previous commits
+2.  Use Git commands to help keep track of changes made to a project: 1. **_git init_** creates a new Git repository 2. **_git status_** inspects the contents of the working directory and staging area 3. **_git add adds_** files from the working directory to the staging area 4. **_git diff shows_** the difference between the working directory and the staging area 5. **_git commit_** permanently stores file changes from the staging area in the repository 6. **\***git log\*\*\* shows a list of all previous commits
+
+        /********/*/******************/*/*****************/*/*******************/*/***************/*/
+
+    **1.head commit**
+
+---
+
+In Git, the commit you are currently on is known as the HEAD commit. In many cases, the most recently made commit is the HEAD commit.
+
+To see the HEAD commit, enter:
+
+```
+git show HEAD
+```
+
+The output of this command will display everything the git log command displays for the HEAD commit, plus all the file changes that were committed.
