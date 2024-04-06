@@ -48,3 +48,41 @@ A10: git log 👏 You got it!
 
 Q11: You accidentally deleted lines from a file. Which command can undo your mistake?
 A11: git checkout HEAD filename 👏 You got it!
+
+Q12: Which statement is true about the command below?
+
+```
+git reset 844d1f7
+```
+
+A12: HEAD will reset to the commit whose SHA starts with 844D1F7 👏 You got it!
+
+Q13: In Git, the HEAD commit is
+A13: The commit you are currently on. 👏 You got it!
+
+Q14: Why use Git backtracking commands?
+A14:
+
+1. To go back to a previous commit.
+2. To discard changes in teh working directory.
+3. To unstage a file from the staging area.
+
+Q15: Which command removes file changes from the staging area?
+A15: git reset HEAD filename
+
+Q16: Why use the command below?
+
+```
+git checkout HEAD filename
+```
+
+A16: To restore the file in the working directory to look as it did in your last commit
+
+Q17: What Git command gives the output below?
+
+```
+Unstaged changes after reset:
+M       file.txt
+```
+
+A17: git reset HEAD file.txt
