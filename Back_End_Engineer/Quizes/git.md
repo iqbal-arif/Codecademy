@@ -42,3 +42,9 @@ git add filename
 ```
 
 A9: The file you wish to add to the staging area. 👏 You got it!
+
+Q10: Which Git command lets you view the SHAs of all previous commits?
+A10: git log 👏 You got it!
+
+Q11: You accidentally deleted lines from a file. Which command can undo your mistake?
+A11: git checkout HEAD filename 👏 You got it!
