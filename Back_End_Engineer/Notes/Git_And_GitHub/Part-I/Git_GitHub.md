@@ -115,6 +115,7 @@ Often with Git, you’ll need to refer back to an earlier version of a project. 
 
 ```
 git log
+// Also gives the commit SHA ids commit 5d692065cf51a2f50ea8e7b19b5a7ae512f633ba
 ```
 
 **Generalizations**
@@ -160,4 +161,74 @@ Here, filename again is the actual name of the file. If the file is named change
 
 ```
 git checkout HEAD changes.txt
+
+// will restore the original file to last commit
 ```
+
+**3. more git add**
+
+---
+
+The hamlet repository we are working on contains five files. In Git, it’s common to change many files, add those files to the staging area, and commit them to a repository in a single commit.
+
+For example, say you want to change the character “LARRY” to “LAERTES” in the script. The name currently appears in two files. After you change the name in both files, you could add the changed files to the staging area with:
+
+```
+git add filename_1 filename_2
+```
+
+Note the word filename above refers to the name of the file you are adding to the staging area, such as scene-3.txt.
+
+**4. git reset |**
+
+---
+
+Great! The files you’ve added to the staging area belong in the same commit.
+
+What if, before you commit, you accidentally delete an important line from scene-2.txt? Unthinkingly, you add scene-2.txt to the staging area. The file change is unrelated to the Larry/Laertes swap and you don’t want to include it in the commit.
+
+We can unstage that file from the staging area using
+
+```
+git reset HEAD filename
+```
+
+**_This command resets the file in the staging area to be the same as the HEAD commit. It does not discard file changes from the working directory, it just removes them from the staging area._**
+
+**5. git reset ||**
+
+---
+
+Creating a project is like hiking in a forest. Sometimes you take a wrong turn and find yourself lost.
+
+Just like retracing your steps on that hike, Git enables you to rewind to the part before you made the wrong turn. You can do this with:
+
+```
+git reset commit_SHA
+```
+
+This command works by using the first 7 characters of the SHA of a previous commit. For example, if the SHA of the previous commit is 5d692065cf51a2f50ea8e7b19b5a7ae512f633ba, use:
+
+```
+git reset 5d69206
+```
+
+HEAD is now set to that previous commit.
+
+**6. git reset review**
+
+---
+
+To better understand git reset commit_SHA, notice the diagram on the right. Each circle represents a commit.
+
+Before reset:
+
+    HEAD is at the most recent commit
+
+After resetting:
+
+    HEAD goes to a previously made commit of your choice
+    The gray commits are no longer part of your project
+    You have in essence rewound the project’s history
+
+**_Check gitReset.GIF file_**
