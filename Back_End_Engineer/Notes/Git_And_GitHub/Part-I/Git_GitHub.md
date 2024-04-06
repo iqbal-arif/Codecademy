@@ -128,7 +128,7 @@ You have now been introduced to the fundamental Git workflow. You learned a lot!
 
         /********/*/******************/*/*****************/*/*******************/*/***************/*/
 
-    **1.head commit**
+**1.head commit**
 
 ---
 
@@ -141,3 +141,23 @@ git show HEAD
 ```
 
 The output of this command will display everything the git log command displays for the HEAD commit, plus all the file changes that were committed.
+
+**2. git checkout**
+
+---
+
+What if you decide to change the ghost’s line in the working directory, but then decide you wanted to discard that change?
+
+You could rewrite the line how it was originally, but what if you forgot the exact wording? The command
+
+```
+git checkout HEAD filename
+```
+
+will restore the file in your working directory to look exactly as it did when you last made a commit.
+
+Here, filename again is the actual name of the file. If the file is named changes.txt, the command would be
+
+```
+git checkout HEAD changes.txt
+```
