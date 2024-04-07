@@ -1,0 +1,30 @@
+Q1. The file road-not-taken.txt doesn’t look right at all! Perhaps a rival poet snuck in and changed it while you were getting coffee. Good thing you’ve been committing often.
+
+   1.  Checkout the HEAD version of road-not-taken.txt to discard changes made to the working directory.
+
+   Discard changes
+   ```
+   git checkout HEAD road-not-taken.txt
+   or shortcut
+   git checkout -- road-nto-take.txt
+   ```
+
+
+Q2. Now that you’ve restored and completed road-not-taken.txt and oven-bird.txt and added a line to fire-and-ice.txt, add all three of the files to the staging area with a single command. 
+```
+git add road-not-taken.txt oven-bird.txt fire-and-ice.txt
+
+```
+
+Q3. fire-and-ice.txt could be better. Before you commit, remove this file from the staging area
+
+```
+git rest fire-and-ice.txt
+```
+
+Q4: Now that you’ve removed fire-and-ice.txt, make a commit.
+
+```
+git commit -m "Updated ove-bird.txt and road-not-taken.txt"
+```
+
