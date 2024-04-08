@@ -101,13 +101,13 @@ inValidCompanies = (cc) => {
           'ccDiscover';
     console.log('Comp Id', console.log(idComp));
 
-    let idComp;
+    let companyId;
     if (comp[0] === ccAmex) {
-      idComp = 'ccAmex';
+      companyId = 'ccAmex';
     } else if (comp[0] === ccVisa) {
-      idComp = 'ccVisa';
+      companyId = 'ccVisa';
     } else if (comp[0] === ccVisa) {
-      idComp = 'ccVisa';
+      companyId = 'ccVisa';
     }
     return idComp;
   });
