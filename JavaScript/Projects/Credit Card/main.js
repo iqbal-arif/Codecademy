@@ -87,7 +87,7 @@ inValidCompanies = (cc) => {
   let compList = [];
   cc.forEach((comp, i) => {
     // console.log(comp.length, i, comp[0]);
-    /*
+
     let idComp =
       comp[0] === ccAmex
         ? // ? console.log(i, 'ccAmex')
@@ -100,15 +100,14 @@ inValidCompanies = (cc) => {
         : // ? console.log(i, 'ccMaster')
           'ccDiscover';
     console.log('Comp Id', console.log(idComp));
-    */
 
-    let idComp;
+    let companyId;
     if (comp[0] === ccAmex) {
-      idComp = 'ccAmex';
+      companyId = 'ccAmex';
     } else if (comp[0] === ccVisa) {
-      idComp = 'ccVisa';
+      companyId = 'ccVisa';
     } else if (comp[0] === ccVisa) {
-      idComp = 'ccVisa';
+      companyId = 'ccVisa';
     }
     return idComp;
   });
