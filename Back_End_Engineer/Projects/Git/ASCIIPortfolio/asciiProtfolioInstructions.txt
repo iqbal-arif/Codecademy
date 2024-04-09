@@ -5,3 +5,30 @@ ASCII art is art made from only the letters, numbers and symbols you can type on
 In this project, you’ll use Git backtracking commands to undo mistakes made to an ASCII art portfolio!
 
 If you get stuck during this project or would like to see an experienced developer work through it, click “Get Unstuck“ to see a project walkthrough video.
+
+
+1. The ASCII face in portrait.txt had a goatee in the last commit, but it was deleted in the working directory. Taking a second look, you want the goatee back.
+
+Discard changes in the working directory for portrait.txt.
+
+Close and reopen portrait.txt to see the result.
+
+A: git  checkout HEAD filename
+
+2. Add the file to the staging area.
+
+A: git add filename
+
+3. Make a commit.
+
+A: git commit -m "Add comment here"
+
+4. If you know you want to add every file in the working directory to the staging area, instead of adding each file individually
+
+A: git add .
+
+5. It turns out that house.txt is an experiment and doesn’t belong in the commit you’re staging. Reset the staging area to remove house.txt.
+
+A: git reset HEAD house.txt
+
+
