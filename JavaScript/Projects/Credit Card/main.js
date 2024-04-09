@@ -100,7 +100,7 @@ inValidCompanies = (cc) => {
         : // ? console.log(i, 'ccMaster')
           'ccDiscover';
     console.log('Comp Id', console.log(idComp));
-
+/*
     let companyId;
     if (comp[0] === ccAmex) {
       companyId = 'ccAmex';
@@ -113,7 +113,7 @@ inValidCompanies = (cc) => {
   });
   // console.log('Comp Id', compList.push(idComp));
 };
-
+*/
 const validateCred = (cardNum) => {
   console.log('ori-card', cardNum.length, cardNum);
   // inValidCompanies(cardNum);
