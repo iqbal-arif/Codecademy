@@ -52,7 +52,7 @@ const allCards = (valid) => {
 //
 
 const companyList = ['Amex', 'Visa', 'Mastercard', 'Discover'];
-
+/*
 function companyList(companyList) {
   companyList.forEach((element) => {
     console.log(element);
@@ -72,7 +72,7 @@ function companyList(companyList) {
     return element;
   });
 }
-/*
+
 function otherValidCompanies(companyList) {
   companyList.forEach((element) => {
     console.log(element);
@@ -87,7 +87,7 @@ inValidCompanies = (cc) => {
   let compList = [];
   cc.forEach((comp, i) => {
     // console.log(comp.length, i, comp[0]);
-
+    /*
     let idComp =
       comp[0] === ccAmex
         ? // ? console.log(i, 'ccAmex')
@@ -100,7 +100,6 @@ inValidCompanies = (cc) => {
         : // ? console.log(i, 'ccMaster')
           'ccDiscover';
     console.log('Comp Id', console.log(idComp));
-
     let companyId;
     if (comp[0] === ccAmex) {
       companyId = 'ccAmex';
@@ -110,10 +109,10 @@ inValidCompanies = (cc) => {
       companyId = 'ccVisa';
     }
     return idComp;
+    */
   });
   // console.log('Comp Id', compList.push(idComp));
 };
-
 const validateCred = (cardNum) => {
   console.log('ori-card', cardNum.length, cardNum);
   // inValidCompanies(cardNum);
