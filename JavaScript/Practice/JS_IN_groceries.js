@@ -16,7 +16,7 @@ groceries( [{item: 'Cheese Balls'}] );
 const groceries = (groceryList) => {
   const groceryItem = Object.values(groceryList);
 
-  //   console.log(groceryItem);
+  console.log(groceryItem);
   let itemList = groceryList.map((item) => item.item);
   //   Add AND with push
   // Use splice and push to add and
@@ -25,7 +25,7 @@ const groceries = (groceryList) => {
     itemList = itemList.toString();
     return 'List to String', itemList;
   }
-  //   console.log(itemList.toString());
+  console.log(itemList.toString());
   //Reverse loop (looping backward)
   //   for (let i = itemList.length - 1; i >= 0; i--) {
   //   }
