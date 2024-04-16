@@ -45,8 +45,8 @@ const groceries = (groceryList) => {
     // console.log('Outside If-block', itemStr);
   }
   let itemListStr = itemList.toString();
-  console.log(itemStrReplace); //comment
-  console.log(itemStr); //comment
+  //console.log(itemStrReplace); //comment
+  // console.log(itemStr); //comment
   //   if (j === itemList.length - 1) {
   //   }
 };
