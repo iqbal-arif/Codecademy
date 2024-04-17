@@ -25,7 +25,7 @@ const groceries = (groceryList) => {
     itemList = itemList.toString();
     return 'List to String', itemList;
   }
-  //console.log(itemList.toString()); // uncomment this one
+  // console.log(itemList.toString()); // uncomment this one
   //Reverse loop (looping backward)
   //   for (let i = itemList.length - 1; i >= 0; i--) {
   //   }
@@ -40,7 +40,7 @@ const groceries = (groceryList) => {
       itemStr = itemStr.replace(/[,]/g, ', ');
       itemStr = itemStr.replace(', and,', ' and ');
       //   return 'Inside block', itemStr;
-      //  console.log('Inside block', `'${itemStr}'.`);// uncomment this one
+      console.log('Inside block', `'${itemStr}'.`); // uncomment this one
     }
     // console.log('Outside If-block', itemStr);
   }
