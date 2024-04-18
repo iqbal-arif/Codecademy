@@ -25,7 +25,7 @@ const groceries = (groceryList) => {
     itemList = itemList.toString();
     return 'List to String', itemList;
   }
-  // console.log(itemList.toString()); // uncomment this one
+  console.log(itemList.toString()); // uncomment this one
   //Reverse loop (looping backward)
   //   for (let i = itemList.length - 1; i >= 0; i--) {
   //   }
