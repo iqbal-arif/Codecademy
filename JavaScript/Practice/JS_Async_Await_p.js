@@ -6,7 +6,7 @@
 function helloWorld() {
   return new Promise((resolve) => {
     setTimeout(() => {
-      resolve('Hello World!');
+      resolve('Hello World! after 2 second timeout');
     }, 2000);
   });
 }
