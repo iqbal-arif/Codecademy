@@ -6,7 +6,7 @@
 function helloWorld() {
   return new Promise((resolve) => {
     setTimeout(() => {
-      resolve('Hello World!');
+      resolve('Hello World! after 2 second timeout');
     }, 2000);
   });
 }
@@ -49,7 +49,7 @@ try {
   let user = JSON2.parse(json); // <-- no errors
   alert(user.name); // no name!
 } catch (e) {
-  alert('Invalid JSON data!');
+  alert('Invalid JSON data! name property does not exists');
 }
 /*
 JavaScript async functions uses try...catch statements for error handling. This method allows shared error handling for synchronous and asynchronous code.
@@ -105,13 +105,13 @@ The JavaScript async...await syntax allows multiple promises to be initiated and
 7. Resolving JavaScript Promises
 ********************************
 */
-let promise1 = Promise.resolve(5);
-let promise2 = 44;
-let promise3 = new Promise(function (resolve, reject) {
+let promise11 = Promise.resolve(5);
+let promise22 = 44;
+let promise33 = new Promise(function (resolve, reject) {
   setTimeout(resolve, 100, 'foo');
 });
 
-Promise.all([promise1, promise2, promise3]).then(function (values) {
+Promise.all([promise11, promise22, promise33]).then(function (values) {
   console.log(values);
 });
 // expected output: Array [5, 44, "foo"]
