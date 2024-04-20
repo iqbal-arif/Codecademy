@@ -86,3 +86,24 @@ M       file.txt
 ```
 
 A17: git reset HEAD file.txt
+
+
+**GitHub**
+***
+
+Q18: Which of the following is not a best practice when submitting a pull request?
+A17: Submitting a pull request with untested code.
+👏 Correct, you should ALWAYS testing that code can run and compile without errors before submitting a pull request.
+
+Q19: How would you define a Git branch?
+A19: A pointer to a set of code changes independent from other branches.
+
+Q20: What are the major steps in the Github flow?
+
+
+1. Work on a specific branch
+2. Commit changes and push code to remote repository
+3. Create pull request
+4. Discuss pull request with reviewers
+5. Merge branch once pull request accepted
+👏 You got it!
