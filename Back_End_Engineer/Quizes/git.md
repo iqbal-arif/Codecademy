@@ -100,10 +100,19 @@ A19: A pointer to a set of code changes independent from other branches.
 
 Q20: What are the major steps in the Github flow?
 
-
+A20: 
 1. Work on a specific branch
 2. Commit changes and push code to remote repository
 3. Create pull request
 4. Discuss pull request with reviewers
 5. Merge branch once pull request accepted
+👏 You got it!
+
+Q21: Complete the Git commands steps in order to push code changes from your local repository to the remote repository on GitHub.
+
+A21:
+1. git add
+2. git commit -m "..."
+3. git push
+
 👏 You got it!
