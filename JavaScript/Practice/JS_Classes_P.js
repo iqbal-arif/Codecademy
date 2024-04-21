@@ -4,12 +4,13 @@
 ******************
 */
 class Dog {
-  constructor(name) {
+  constructor(name, character) {
     this._name = name;
+    this._character = character;
   }
 
   introduce() {
-    console.log('This is ' + this._name + ' !');
+    console.log('This is ' + this_character + 'dog name' + this._name + ' !');
   }
 
   // A static method
@@ -18,7 +19,7 @@ class Dog {
   }
 }
 
-const myDog = new Dog('Buster');
+const myDog = new Dog('Buster', 'talented');
 myDog.introduce();
 
 // Calling the static method
