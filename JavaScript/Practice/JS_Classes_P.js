@@ -43,10 +43,16 @@ class Song {
   play() {
     console.log('Song playing!');
   }
+
+  publishedBy() {
+    console.log('Mac Grahill');
+  }
 }
 
 const mySong = new Song();
 mySong.play();
+
+mySong.publishedBy();
 /*
 JavaScript supports the concept of classes as a syntax for creating objects. Classes specify the shared properties and methods that objects produced from the class will have.
 
@@ -111,14 +117,16 @@ Child classes have access to all of the instance properties and methods of the p
 ********************
 */
 class Song {
-  constructor(title, artist) {
+  constructor(title, artist, written) {
     this.title = title;
     this.artist = artist;
+    this.written = written;
   }
 }
 
-const mySong3 = new Song('Bohemian Rhapsody', 'Queen');
+const mySong3 = new Song('Bohemian Rhapsody', 'Queen', "April'24");
 console.log(mySong.title);
+console.log(mySong.written);
 /*
 Classes can have a constructor method. This is a special method that is called when the object is created (instantiated). Constructor methods are usually used to set initial values for the object.
 */
