@@ -69,9 +69,11 @@ const person = {
   age: 27,
   hobby: 'knitting',
   goal: 'learning JavaScript',
+  deleteObj : "Delete this object",
 };
 
 delete person.hobby; // or delete person[hobby];
+delete person.deleteObj; // this object will be deleted.
 
 console.log(person);
 /*
