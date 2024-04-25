@@ -141,6 +141,11 @@ plusFive(3); // 8
 // Since f has a function value, it can be invoked.
 f(9); // 14
 
+let plusTwo = (number) => number + 2;
+
+let func = plusTwo;
+func(2);
+
 /*
 In JavaScript, functions are a data type just as strings, numbers, and arrays are data types. Therefore, functions can be assigned as values to variables, but are different from all other data types because they can be invoked.
 */
