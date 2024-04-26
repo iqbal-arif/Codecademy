@@ -180,6 +180,11 @@ let hof2 = (func) => {
   return `this function returned ${value}`;
 };
 
+let hof3 = (func) => {
+  let funcValue = func(15, 10);
+  return `This function returns ${funcValue}`;
+};
+
 hof(cb2); // 'this function returned 8'
 /*
 Use the parameter func with the correct values to yield 8.
