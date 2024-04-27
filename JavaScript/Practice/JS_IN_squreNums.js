@@ -18,3 +18,10 @@ function squareNums(aOn) {
 }
 
 squareNums(numbers);
+
+const toCubed = (num) => num * num * num;
+function numCubed(cube) {
+  return cube.map(numCubed);
+}
+
+numCubed(numbers);
