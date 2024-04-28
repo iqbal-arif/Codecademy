@@ -303,9 +303,9 @@ A13: true  Correct
 
 /*Q14: What will the following code return?
  */
-const animals = ['bears', 'cats', 'dogs', 'elephants', 'giraffes'];
+const animals2 = ['bears', 'cats', 'dogs', 'elephants', 'giraffes'];
 
-animals.every((animal) => animal.length < 5);
+animals2.every((animal) => animal.length < 5);
 /*
 A14: false  Correct
 */
