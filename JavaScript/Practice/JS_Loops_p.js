@@ -48,6 +48,9 @@ for (let i = items.length - 1; i >= 0; i -= 1) {
 // Prints: 1. banana
 // Prints: 0. apricot
 
+
+
+
 A for loop can iterate “in reverse” by initializing the loop variable to the starting value, testing for when the variable hits the ending value, and decrementing (subtracting from) the loop variable at each iteration.
 */
 
@@ -60,6 +63,15 @@ do {
   console.log(x);
   i++;
 } while (i < 5);
+
+y = 0;
+j = 0;
+
+do {
+  y = y + i + j;
+  console.log(y);
+  j++;
+} while (j < 5);
 
 /*
 // Prints: 0 1 3 6 10
