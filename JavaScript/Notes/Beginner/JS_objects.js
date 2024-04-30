@@ -118,6 +118,7 @@ const spaceship3 = { type: 'shuttle' };
 spaceship3 = { type: 'alien' }; // TypeError: Assignment to constant variable.
 spaceship3.type = 'alien'; // Changes the value of the type property
 spaceship3.speed = 'Mach 5'; // Creates a new key of 'speed' with a value of 'Mach 5'
+spaceship3.macSpeed = 'Mach 9'; // Added new key of 'speed with a value of 'Mach 9'
 /*
 You can delete a property from an object with the delete operator.
 */
