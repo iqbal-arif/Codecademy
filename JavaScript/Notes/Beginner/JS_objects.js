@@ -138,6 +138,7 @@ let spaceship5 = {
   homePlanet: 'Earth',
   color: 'silver',
   'Secret Mission': 'Discover life outside of Earth.',
+  'Secret Mission2': 'Discover the life in Mars.',
 };
 
 // Write your code below
@@ -146,6 +147,7 @@ spaceship5.color = 'glorious gold';
 spaceship5.numEngines = 7;
 
 delete spaceship5['Secret Mission'];
+delete spaceship5['Secret Mission2'];
 
 /*
 6. Methods
