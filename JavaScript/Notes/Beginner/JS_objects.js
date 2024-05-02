@@ -305,6 +305,7 @@ let spaceship9 = {
   homePlanet: 'Earth',
   color: 'red',
 };
+
 let tryReassignment = (obj) => {
   obj = {
     identified: false,
@@ -335,6 +336,11 @@ let spaceship10 = {
   homePlanet: 'Earth',
 };
 
+let boyUniform = {
+  'Shirt Type': 'Boys',
+  'Shirt Sleeve': 'Full',
+};
+
 // Write your code below
 /*
 1.
@@ -344,6 +350,10 @@ Write a function greenEnergy() that has an object as a parameter and sets that o
 */
 let greenEnergy = (obj) => {
   obj['Fuel Type'] = 'avocado oil';
+};
+
+let girlUniform = (uniform) => {
+  (uniform['Shirt Type'] = 'Girls'), (uniform['Shirt Sleeve'] = 'Full conical');
 };
 
 /*
